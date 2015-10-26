@@ -3,9 +3,11 @@
   <remote fetch="git://github.com/couchbase/" name="couchbase" review="review.couchbase.org"/>
   <remote fetch="ssh://git@github.com/couchbase/" name="couchbase-priv" review="review.couchbase.org"/>
   <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps" review="review.couchbase.org"/>
+  <remote fetch="git://github.com/mikewied/" name="mikewied"/>
   
   <default remote="couchbase" revision="master"/>
   
+  <project groups="notdefault,enterprise" name="backup" path="goproj/src/github.com/couchbase/backup" remote="couchbase-priv" revision="ab1cb2b0499988e9a4a1fc3e337f51a27b5ac8e7" upstream="master"/>
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4"/>
   <project name="blance" path="godeps/src/github.com/couchbase/blance" revision="3d39b57188c372649beedd5c13c9003156d5a055" upstream="master"/>
   <project name="bleve" path="godeps/src/github.com/blevesearch/bleve" remote="blevesearch" revision="21473509b2123a0a184a50c272ac6d812f59d038"/>
@@ -15,7 +17,7 @@
     <annotation name="PRODUCT" value="couchbase-server"/>
     <annotation name="RELEASE" value="watson"/>
     <annotation name="VERSION" value="4.5.0"/>
-    <annotation name="BLD_NUM" value="467"/>
+    <annotation name="BLD_NUM" value="468"/>
     </project>
   <project name="cbauth" path="godeps/src/github.com/couchbase/cbauth" revision="1323b92ac2619c29d50e588e59d7a6b4839da629" upstream="master"/>
   <project name="cbft" path="goproj/src/github.com/couchbase/cbft" revision="c591a5606d10899b062c0d6e61513fd16f91dabd" upstream="master"/>
@@ -30,7 +32,7 @@
   <project name="couchstore" revision="2fa9324b0524a8d9ffff52655a36ceee093113e8" upstream="master"/>
   <project name="cznic-b" path="godeps/src/github.com/cznic/b" remote="couchbasedeps" revision="b96e30f1b7bd34b0b9d8760798d67eca83d7f09e"/>
   <project name="dparval" path="godeps/src/github.com/couchbase/dparval" revision="9def03782da875a2477c05bf64985db3f19f59ae" upstream="master"/>
-  <project name="ep-engine" revision="115557abe3842211818616dc15dc76ab87656652" upstream="master"/>
+  <project name="ep-engine" revision="aabc9c7a99e878541e33a67c85997b77409aed94" upstream="master"/>
   <project name="forestdb" revision="6f1a293ef67e5109a86fc04cde07a8f85b0e744e" upstream="master"/>
   <project name="geocouch" revision="bd7db4f1274ce17db3db358bb676bf9a641a4439" upstream="master"/>
   <project name="go-bindata-assetfs" path="godeps/src/github.com/elazarl/go-bindata-assetfs" remote="couchbasedeps" revision="d5cac425555ca5cf00694df246e04f05e6a55150"/>
@@ -40,6 +42,7 @@
   <project name="go-porterstemmer" path="godeps/src/github.com/blevesearch/go-porterstemmer" remote="blevesearch" revision="23a2c8e5cf1f380f27722c6d2ae8896431dc7d0e"/>
   <project name="go-slab" path="godeps/src/github.com/couchbase/go-slab" revision="1f5f7f282713ccfab3f46b1610cb8da34bcf676f" upstream="master"/>
   <project name="go-zookeeper" path="godeps/src/github.com/samuel/go-zookeeper" remote="couchbasedeps" revision="fa6674abf3f4580b946a01bf7a1ce4ba8766205b"/>
+  <project groups="notdefault,enterprise" name="gocb" path="godeps/src/github.com/mikewied/gocb" remote="mikewied" revision="31488195349c06be41e520e6d4d631de257d027c" upstream="master"/>
   <project name="goforestdb" path="godeps/src/github.com/couchbase/goforestdb" revision="43a3d87ef6c562e77bf96dddf604ae9b20f3c1f5" upstream="master"/>
   <project name="gojson" path="godeps/src/github.com/dustin/gojson" remote="couchbasedeps" revision="af16e0e771e2ed110f2785564ae33931de8829e4"/>
   <project name="golang-snappy" path="godeps/src/github.com/golang/snappy" remote="couchbasedeps" revision="723cc1e459b8eea2dea4583200fd60757d40097a"/>
@@ -58,7 +61,7 @@
   <project name="moxi" revision="6df29f93c935e16479a72c4a11c488b8673f5e0d" upstream="master"/>
   <project name="mux" path="godeps/src/github.com/gorilla/mux" remote="couchbasedeps" revision="8a875a034c69b940914d83ea03d3f1299b4d094b"/>
   <project name="npipe" path="godeps/src/github.com/natefinch/npipe" remote="couchbasedeps" revision="272c8150302e83f23d32a355364578c9c13ab20f"/>
-  <project name="ns_server" revision="9a6ddb26118cf4967e63ba1e63efeb18016f64d7" upstream="master"/>
+  <project name="ns_server" revision="7e32247cce6f34a5c66c75e377cbb0c97bfe7ecf" upstream="master"/>
   <project name="platform" revision="01bc6fa56d28370e3ba8ecdb7100f59af94dc37e" upstream="master"/>
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="655cdfa588ea190e901bc5590e65d5621688847c"/>
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="01be86f09b9910e0a11d5ece7215b1fe00caed63" upstream="master"/>
@@ -68,7 +71,7 @@
   <project name="subjson" revision="886c2a577f2df0089e87a2057a90a8f547d087f6" upstream="master"/>
   <project name="testrunner" revision="b467f0adbbbaedc5394c9e1555950e3570114c1b" upstream="master"/>
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="601048ad6acbab6cedd582db09b8c4839ff25b15"/>
-  <project name="tlm" revision="ae070dd1dc6f2bf07e5b3a7bc267340f85a2678b" upstream="master">
+  <project name="tlm" revision="95cf6410ad56da87c95eafc857952a76e7e027c0" upstream="master">
     <copyfile dest="GNUmakefile" src="GNUmakefile"/>
     <copyfile dest="Makefile" src="Makefile"/>
     <copyfile dest="CMakeLists.txt" src="CMakeLists.txt"/>
