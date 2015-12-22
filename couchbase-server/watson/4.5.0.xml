@@ -9,7 +9,7 @@
   <default remote="couchbase" revision="master"/>
   
   <project groups="notdefault,clion" name="CLion-Project-Setup" path=".idea" remote="couchbaselabs" revision="a46128fb614e391045f9d7c7bb7e91e55888070f" upstream="master"/>
-  <project groups="notdefault,enterprise" name="backup" path="goproj/src/github.com/couchbase/backup" remote="couchbase-priv" revision="1f876e98d80774893caa637061474dcc74f7be8b"/>
+  <project groups="notdefault,enterprise" name="backup" path="goproj/src/github.com/couchbase/backup" remote="couchbase-priv" revision="0207f7a2ea79a01402fe478d04a187c2a91f0c1a" upstream="master"/>
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4"/>
   <project name="blance" path="godeps/src/github.com/couchbase/blance" revision="8a44cfcdf8d1566e534f34b947c0c5e519233973" upstream="master"/>
   <project name="bleve" path="godeps/src/github.com/blevesearch/bleve" remote="blevesearch" revision="8efbd556a3b7daed4dfc82351be0e4b51543d282"/>
@@ -20,7 +20,7 @@
     <annotation name="PRODUCT" value="couchbase-server"/>
     <annotation name="RELEASE" value="watson"/>
     <annotation name="VERSION" value="4.5.0"/>
-    <annotation name="BLD_NUM" value="839"/>
+    <annotation name="BLD_NUM" value="840"/>
     </project>
   <project name="cbauth" path="godeps/src/github.com/couchbase/cbauth" revision="1323b92ac2619c29d50e588e59d7a6b4839da629" upstream="master"/>
   <project name="cbft" path="goproj/src/github.com/couchbase/cbft" revision="212b7b88beebd8cb32b6c19e3e3c290757a9eab4" upstream="master"/>
@@ -80,5 +80,6 @@
     <copyfile dest="Makefile" src="Makefile"/>
     <copyfile dest="CMakeLists.txt" src="CMakeLists.txt"/>
   </project>
+  <project name="ts" path="godeps/src/github.com/olekukonko/ts" remote="couchbasedeps" revision="ecf753e7c962639ab5a1fb46f7da627d4c0a04b8"/>
   <project groups="notdefault,packaging" name="voltron" remote="couchbase-priv" revision="5d60d1f414568957a76d8f5bc023ef966691d3a3" upstream="master"/>
 </manifest>
