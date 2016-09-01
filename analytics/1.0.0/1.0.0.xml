@@ -1,0 +1,17 @@
+<manifest>
+  <remote fetch="git://github.com/apache" name="apache" review="asterix-gerrit.ics.uci.edu"/>
+  <remote fetch="git://github.com/couchbase" name="couchbase" review="review.couchbase.org"/>
+  <remote fetch="ssh://git@github.com/couchbaselabs/" name="couchbaselabs-priv" review="review.couchbase.org"/>
+  
+  <default remote="apache" revision="master"/>
+  
+  <project name="asterix-opt" path="asterixdb/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="e1e24232894ab6c09067f0a3d3cb73200eac1c3b" upstream="master"/>
+  <project name="build" remote="couchbase" revision="dc0ed4ce74b1bc9db69b0139202907ff80c62a0d" upstream="master">
+    <annotation name="PRODUCT" value="analytics"/>
+    <annotation name="RELEASE" value="1.0.0"/>
+    <annotation name="VERSION" value="1.0.0"/>
+    <annotation name="BLD_NUM" value="100"/>
+    </project>
+  <project name="incubator-asterixdb" path="asterixdb" revision="9b5405a684bf86d62ff45f64a9c4e3bfaf3b5224" upstream="master"/>
+  <project name="java-dcp-client" remote="couchbaselabs-priv" revision="e017630cf940984d9c563ab428a027d5cc160bbe" upstream="master"/>
+</manifest>
