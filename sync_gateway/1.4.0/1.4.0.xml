@@ -1,18 +1,18 @@
 <manifest>
-  <remote fetch="git://github.com/coreos/" name="coreos"/>
-  <remote fetch="git://github.com/couchbase/" name="couchbase"/>
-  <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps"/>
-  <remote fetch="git://github.com/couchbaselabs/" name="couchbaselabs"/>
+  <remote fetch="https://github.com/coreos/" name="coreos"/>
+  <remote fetch="https://github.com/couchbase/" name="couchbase"/>
+  <remote fetch="https://github.com/couchbasedeps/" name="couchbasedeps"/>
+  <remote fetch="https://github.com/couchbaselabs/" name="couchbaselabs"/>
   <remote fetch="ssh://github.com/couchbaselabs/" name="couchbaselabs_private"/>
-  <remote fetch="git://github.com/elazarl/" name="elazarl"/>
-  <remote fetch="git://github.com/gorilla/" name="gorilla"/>
-  <remote fetch="git://github.com/jonboulle/" name="jonboulle"/>
-  <remote fetch="git://github.com/kardianos/" name="kardianos"/>
-  <remote fetch="git://github.com/mreiferson/" name="mreiferson"/>
-  <remote fetch="git://github.com/natefinch/" name="natefinch"/>
-  <remote fetch="git://github.com/rcrowley/" name="rcrowley"/>
-  <remote fetch="git://github.com/samuel/" name="samuel"/>
-  <remote fetch="git://github.com/tleyden/" name="tleyden"/>
+  <remote fetch="https://github.com/elazarl/" name="elazarl"/>
+  <remote fetch="https://github.com/gorilla/" name="gorilla"/>
+  <remote fetch="https://github.com/jonboulle/" name="jonboulle"/>
+  <remote fetch="https://github.com/kardianos/" name="kardianos"/>
+  <remote fetch="https://github.com/mreiferson/" name="mreiferson"/>
+  <remote fetch="https://github.com/natefinch/" name="natefinch"/>
+  <remote fetch="https://github.com/rcrowley/" name="rcrowley"/>
+  <remote fetch="https://github.com/samuel/" name="samuel"/>
+  <remote fetch="https://github.com/tleyden/" name="tleyden"/>
   
   <default remote="couchbase" revision="master"/>
   
@@ -21,7 +21,7 @@
     <annotation name="PRODUCT" value="sync_gateway"/>
     <annotation name="RELEASE" value="1.4.0"/>
     <annotation name="VERSION" value="1.4.0"/>
-    <annotation name="BLD_NUM" value="10"/>
+    <annotation name="BLD_NUM" value="11"/>
     </project>
   <project groups="notdefault,sg-accel" name="cb-heartbeat" path="godeps/src/github.com/couchbase/cb-heartbeat" revision="8e3ecd19340dabed7ad4fea9d9944ab97b5f916d"/>
   <project groups="notdefault,sg-accel" name="cbauth" path="godeps/src/github.com/couchbase/cbauth" revision="1323b92ac2619c29d50e588e59d7a6b4839da629"/>
@@ -53,7 +53,7 @@
   <project name="sg-bucket" path="godeps/src/github.com/couchbase/sg-bucket" revision="392e93091880de7d5ad8b83b99f90902cd98ce6e"/>
   <project name="sg-replicate" path="godeps/src/github.com/couchbaselabs/sg-replicate" remote="couchbaselabs" revision="9313a67a9234d96f3073a979b22bea5b322b56d6"/>
   <project groups="notdefault,sg-accel" name="sync-gateway-accel" path="godeps/src/github.com/couchbaselabs/sync-gateway-accel" remote="couchbaselabs_private" revision="051d395d93c0a4a564ab24ba2aa56253ea6cd889" upstream="master"/>
-  <project name="sync_gateway" path="godeps/src/github.com/couchbase/sync_gateway" revision="843cf2a369a4f482a34c284331f010b1a108a332" upstream="master"/>
+  <project name="sync_gateway" path="godeps/src/github.com/couchbase/sync_gateway" revision="c9b351efcd03373383a3f3bf5c66a85ec680a5ad" upstream="master"/>
   <project name="sync_gateway_admin_ui" path="godeps/src/github.com/couchbaselabs/sync_gateway_admin_ui" remote="couchbaselabs" revision="4195073f3c64830ca5bad14016dc5de732211c32"/>
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="9d4e42a20653790449273b3c85e67d6d8bae6e2e"/>
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="c980adc4a823548817b9c47d38c6ca6b7d7d8b6a"/>
