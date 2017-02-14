@@ -1,18 +1,18 @@
 <manifest>
-  <remote fetch="git://github.com/amoudi87" name="amoudi"/>
   <remote fetch="git://github.com/apache" name="apache" review="asterix-gerrit.ics.uci.edu"/>
   <remote fetch="git://github.com/couchbase" name="couchbase" review="review.couchbase.org"/>
+  <remote fetch="git://github.com/couchbaselabs" name="couchbaselabs" review="review.couchbase.org"/>
   <remote fetch="ssh://git@github.com/couchbaselabs/" name="couchbaselabs-priv" review="review.couchbase.org"/>
   
   <default remote="couchbase" revision="master"/>
   
+  <project name="analytics-dcp-client" path="cbas/asterixdb/asterix-opt/java-dcp-client" remote="couchbaselabs" revision="6d378b5b60a79cb77b819f482977277639b5f234" upstream="master"/>
   <project name="asterix-opt" path="cbas/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="de810cd0a26632163e46dc7736d585f516d4e1d7" upstream="master"/>
   <project name="asterixdb" path="cbas" remote="apache" revision="45d4f6c948c6071fc22d94c4b8f00d62947e7b33" upstream="master"/>
-  <project name="build" revision="835791466eb8021f52eac37bf583e87faca9a80a" upstream="master">
+  <project name="build" revision="335eac7cc0d7dae3a7897d1fc4a8c820851d286e" upstream="master">
     <annotation name="PRODUCT" value="analytics"/>
     <annotation name="RELEASE" value="1.0.0"/>
     <annotation name="VERSION" value="1.0.0"/>
-    <annotation name="BLD_NUM" value="501"/>
+    <annotation name="BLD_NUM" value="502"/>
     </project>
-  <project name="java-dcp-client" path="cbas/asterixdb/asterix-opt/java-dcp-client" remote="amoudi" revision="6d378b5b60a79cb77b819f482977277639b5f234" upstream="master"/>
 </manifest>
