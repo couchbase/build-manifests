@@ -13,10 +13,10 @@
   <default remote="couchbase" revision="master"/>
   
   <project name="analytics-dcp-client" path="analytics/asterixdb/asterix-opt/java-dcp-client" remote="couchbaselabs" revision="6d378b5b60a79cb77b819f482977277639b5f234" upstream="master"/>
-  <project name="asterix-opt" path="analytics/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="61f09ef1bf5f985d762863e2b032af29ed2187cd" upstream="master">
+  <project name="asterix-opt" path="analytics/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="1e775f7ce4854cfa8dbe497e44d2c50d6b18b151" upstream="master">
     <copyfile dest="analytics/CMakeLists.txt" src="CMakeLists.txt"/>
   </project>
-  <project name="asterixdb" path="analytics" remote="asterixdb" revision="65da60c85c3fb6a8f2a138cd4327a0f4ad7d4f6c" upstream="master"/>
+  <project name="asterixdb" path="analytics" remote="asterixdb" revision="c09658f500fc0f9f3d794cdb242eb2fb840af9b5" upstream="master"/>
   <project groups="notdefault,enterprise" name="backup" path="goproj/src/github.com/couchbase/backup" remote="couchbase-priv" revision="cc641af162f1954a2e1bd2e75b67e7d222a611db" upstream="master"/>
   <project name="bark" path="godeps/src/github.com/betable/bark" remote="betable" revision="0ee24938b0efbd80dfd2b2c7210b1a89322d8aa3" upstream="master"/>
   <project groups="kv" name="benchmark" remote="couchbasedeps" revision="9341d705a14afed7c4e0f8a22b1e6e8a6259fcc4"/>
@@ -27,11 +27,11 @@
   <project name="blevex" path="godeps/src/github.com/blevesearch/blevex" remote="blevesearch" revision="74982cb46454f14f9f2dc7b5ec63ad6c9b7a3286"/>
   <project name="bolt" path="godeps/src/github.com/boltdb/bolt" remote="couchbasedeps" revision="51f99c862475898df9773747d3accd05a7ca33c1"/>
   <project name="buffer" path="godeps/src/github.com/tdewolff/buffer" remote="couchbasedeps" revision="43cef5ba7b6ce99cc410632dad46cf1c6c97026e"/>
-  <project groups="notdefault,build" name="build" path="cbbuild" revision="f0bd66b87771bc121b0d25f134b487bf8843c16e" upstream="master">
+  <project groups="notdefault,build" name="build" path="cbbuild" revision="f0e6a24432e0d842fe700243414b593219e29724" upstream="master">
     <annotation name="PRODUCT" value="server-analytics"/>
     <annotation name="RELEASE" value="spock"/>
     <annotation name="VERSION" value="5.0.0"/>
-    <annotation name="BLD_NUM" value="117"/>
+    <annotation name="BLD_NUM" value="118"/>
     </project>
   <project name="cbas" path="goproj/src/github.com/couchbaselabs/cbas" remote="couchbaselabs" revision="af7c19da64d40aec942baa19b2662ec40e6df875" upstream="master"/>
   <project name="cbauth" path="godeps/src/github.com/couchbase/cbauth" revision="cd18e15ddb28f6a047ca682f658f9baece44a446" upstream="master"/>
