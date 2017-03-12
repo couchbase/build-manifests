@@ -13,7 +13,7 @@
   <default remote="couchbase" revision="master"/>
   
   <project name="analytics-dcp-client" path="analytics/asterixdb/asterix-opt/java-dcp-client" remote="couchbaselabs" revision="de2886ed538313a52979549f3834fc7c9e60e139" upstream="master"/>
-  <project name="asterix-opt" path="analytics/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="5f8cc27c45b94c4650c16bedfcff7a6325a43684" upstream="master">
+  <project name="asterix-opt" path="analytics/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="d7a68ab8ea6c6944128b0c86cdd73c295e83c20b" upstream="master">
     <copyfile dest="analytics/CMakeLists.txt" src="CMakeLists.txt"/>
   </project>
   <project name="asterixdb" path="analytics" remote="asterixdb" revision="61401f980b66b117c522883b4884d16ec09ea1e6" upstream="master"/>
@@ -27,11 +27,11 @@
   <project name="blevex" path="godeps/src/github.com/blevesearch/blevex" remote="blevesearch" revision="74982cb46454f14f9f2dc7b5ec63ad6c9b7a3286"/>
   <project name="bolt" path="godeps/src/github.com/boltdb/bolt" remote="couchbasedeps" revision="51f99c862475898df9773747d3accd05a7ca33c1"/>
   <project name="buffer" path="godeps/src/github.com/tdewolff/buffer" remote="couchbasedeps" revision="43cef5ba7b6ce99cc410632dad46cf1c6c97026e"/>
-  <project groups="notdefault,build" name="build" path="cbbuild" revision="54a433ccd168adfd0e7b78523a56a2a331793f50" upstream="master">
+  <project groups="notdefault,build" name="build" path="cbbuild" revision="ca0029ba0f1ea8b907b71412c19e7a4cb9716a54" upstream="master">
     <annotation name="PRODUCT" value="server-analytics"/>
     <annotation name="RELEASE" value="spock"/>
     <annotation name="VERSION" value="5.0.0"/>
-    <annotation name="BLD_NUM" value="197"/>
+    <annotation name="BLD_NUM" value="198"/>
     </project>
   <project name="cbas" path="goproj/src/github.com/couchbaselabs/cbas" remote="couchbaselabs" revision="af7c19da64d40aec942baa19b2662ec40e6df875" upstream="master"/>
   <project name="cbauth" path="godeps/src/github.com/couchbase/cbauth" revision="30a4d1212cbf1665bd4cbb7227f7deae5c3019c3" upstream="master"/>
