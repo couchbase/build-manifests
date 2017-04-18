@@ -1,4 +1,5 @@
 <manifest>
+  <remote fetch="git://github.com/civetweb/" name="civetweb"/>
   <remote fetch="git://github.com/couchbase/" name="couchbase" review="review.couchbase.org"/>
   <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps"/>
   <remote fetch="git://github.com/couchbaselabs/" name="couchbaselabs" review="review.couchbase.org"/>
@@ -15,9 +16,10 @@
     <annotation name="PRODUCT" value="couchbase-lite-ios"/>
     <annotation name="RELEASE" value="master"/>
     <annotation name="VERSION" value="2.0.0"/>
-    <annotation name="BLD_NUM" value="125"/>
+    <annotation name="BLD_NUM" value="126"/>
     </project>
-  <project name="couchbase-lite-core" path="couchbase-lite-ios/vendor/couchbase-lite-core" revision="ee5b430fba57cf0037ba6ed05980c0a4f99ef14e" upstream="master"/>
+  <project name="civetweb" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/civetweb" remote="civetweb" revision="7947ec1f3d5b7a7ec83e28c23704dd1fbb64e4d4"/>
+  <project name="couchbase-lite-core" path="couchbase-lite-ios/vendor/couchbase-lite-core" revision="0ff3b6b030130fecfffd612f3fb2852298a34f39" upstream="master"/>
   <project name="couchbase-lite-ios" revision="a3aae55ea6b6cb78e2e916c32093b83df0904aad" upstream="feature/2.0"/>
   <project name="couchbase-lite-libcrypto" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/openssl" remote="couchbaselabs" revision="94b6733f77d0675f9e2a3809ece4103650082ccc"/>
   <project name="fleece" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="9119cda16f0821632fcbb68039c5d8dd57c932e9"/>
