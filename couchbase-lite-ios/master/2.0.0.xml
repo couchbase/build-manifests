@@ -4,6 +4,7 @@
   <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps"/>
   <remote fetch="git://github.com/couchbaselabs/" name="couchbaselabs" review="review.couchbase.org"/>
   <remote fetch="git://github.com/google/" name="google"/>
+  <remote fetch="git://github.com/openssl/" name="openssl"/>
   <remote fetch="git://github.com/rudi-cilibrasi/" name="rudi-cilibrasi"/>
   <remote fetch="git://github.com/snej/" name="snej"/>
   
@@ -12,19 +13,20 @@
   <project name="BLIP-Cpp" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/BLIP-Cpp" remote="couchbaselabs" revision="6dfdc892707f7efb72a67f8d861f5d3a6d9cab5e"/>
   <project name="MYUtilities" path="couchbase-lite-ios/vendor/MYUtilities" remote="snej" revision="8155874b62cbebe43a88b84a52d3bbafad3bd46f"/>
   <project name="SQLiteCpp" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="2a688a9aee64c4be463524de75da7750709e1478"/>
-  <project name="build" revision="1ef80c1b0c01d5f532e924ae5b339c115abbe5a3" upstream="master">
+  <project name="build" revision="5a0cd313874da7cb42a070ed2b44220ec170fa58" upstream="master">
     <annotation name="PRODUCT" value="couchbase-lite-ios"/>
     <annotation name="RELEASE" value="master"/>
     <annotation name="VERSION" value="2.0.0"/>
-    <annotation name="BLD_NUM" value="204"/>
+    <annotation name="BLD_NUM" value="205"/>
     </project>
   <project name="civetweb" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/civetweb" remote="civetweb" revision="7947ec1f3d5b7a7ec83e28c23704dd1fbb64e4d4"/>
-  <project name="couchbase-lite-core" path="couchbase-lite-ios/vendor/couchbase-lite-core" revision="85099f2f343f8d9f8f4fb8dcb1dc91e68d338e14" upstream="master"/>
+  <project name="couchbase-lite-core" path="couchbase-lite-ios/vendor/couchbase-lite-core" revision="94bce6435e355633bad25f44d98f13083498d165"/>
   <project name="couchbase-lite-ios" revision="7ccb9dd03d12eec424ad61ce9e3eb48b2cdd6707" upstream="feature/2.0"/>
   <project name="couchbase-lite-libcrypto" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/openssl" remote="couchbaselabs" revision="94b6733f77d0675f9e2a3809ece4103650082ccc"/>
   <project name="fleece" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="5e50192b1e709d072b1fa0ce7de397f5300d32f0"/>
   <project name="googletest" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780"/>
   <project name="jsonsl" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/fleece/vendor/jsonsl" remote="snej" revision="c6a296bd25cc3c43e98340b9e8f7e3c482ec50d1"/>
+  <project name="openssl" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/openssl/vendor/openssl" remote="openssl" revision="e216bf9d7ca761718f34e8b3094fcb32c7a143e4"/>
   <project name="sqlite3-unicodesn" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/sqlite3-unicodesn" remote="snej" revision="a348530f5621084f7dc562ff85a72d8c6fe135a4"/>
   <project name="zlib" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/BLIP-Cpp/vendor/zlib" remote="couchbasedeps" revision="cacf7f1d4e3d44d871b605da3b647f07d718623f"/>
   <project name="zlibcomplete" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/BLIP-Cpp/vendor/zlibcomplete" remote="rudi-cilibrasi" revision="0908e99ea699f1093657147c73ab3aae460cb91f"/>
