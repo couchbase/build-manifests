@@ -6,6 +6,7 @@
   <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps" review="review.couchbase.org"/>
   <remote fetch="git://github.com/couchbaselabs/" name="couchbaselabs" review="review.couchbase.org"/>
   <remote fetch="ssh://git@github.com/couchbaselabs/" name="couchbaselabs-priv" review="review.couchbase.org"/>
+  <remote fetch="https://github.com/go-ini" name="go-ini"/>
   <remote fetch="https://github.com/mblow/" name="mblow"/>
   
   <default remote="couchbase" revision="master"/>
@@ -15,7 +16,7 @@
   <project name="asterix-opt" path="analytics/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="7a4b3dfabf34a23876d8e89e0681d854607cb4cf" upstream="master">
     <copyfile dest="analytics/CMakeLists.txt" src="CMakeLists.txt"/>
   </project>
-  <project name="asterixdb" path="analytics" remote="asterixdb" revision="2cd936670f2aec3607e4d2640f034cafbb7f3bf6" upstream="master"/>
+  <project name="asterixdb" path="analytics" remote="asterixdb" revision="de0ece7f151cd26cf3bf455fd0aa95df51f35d55" upstream="master"/>
   <project groups="notdefault,enterprise" name="backup" path="goproj/src/github.com/couchbase/backup" remote="couchbase-priv" revision="78712c9312c020219aebbc75cfee4d3be2b786d7" upstream="master"/>
   <project groups="kv" name="benchmark" remote="couchbasedeps" revision="9e3465560240ffb242b50a47cb7f19251a12ee42"/>
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4"/>
@@ -29,7 +30,7 @@
     <annotation name="PRODUCT" value="server-analytics"/>
     <annotation name="RELEASE" value="spock"/>
     <annotation name="VERSION" value="5.0.0"/>
-    <annotation name="BLD_NUM" value="519"/>
+    <annotation name="BLD_NUM" value="520"/>
     </project>
   <project name="cbas" path="goproj/src/github.com/couchbaselabs/cbas" remote="couchbaselabs" revision="512bc694c66a6c79018b960e57241aba936e4a08" upstream="master"/>
   <project name="cbas-ui" revision="3473cdd6d72f35d8629c9424a250414c7e02a09f" upstream="master"/>
@@ -83,6 +84,7 @@
   <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" revision="b9ead4dcbd97062369da1c8e29180a6705a2c2cc" upstream="master"/>
   <project name="gtreap" path="godeps/src/github.com/steveyen/gtreap" remote="couchbasedeps" revision="0abe01ef9be25c4aedc174758ec2d917314d6d70"/>
   <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="f2a7066027cdf1c06ff9d62d279854bd80ceae98" upstream="master"/>
+  <project name="ini" path="godeps/src/github.com/ini" remote="go-ini" revision="d3de07a94d22b4a0972deb4b96d790c2c0ce8333" upstream="master"/>
   <project name="jsonx" path="godeps/src/gopkg.in/couchbaselabs/jsonx.v1" remote="couchbaselabs" revision="5b7baa20429a46a5543ee259664cc86502738cad" upstream="master"/>
   <project name="levigo" path="godeps/src/github.com/jmhodges/levigo" remote="couchbasedeps" revision="1ddad808d437abb2b8a55a950ec2616caa88969b"/>
   <project name="liner" path="godeps/src/github.com/peterh/liner" remote="couchbasedeps" revision="ad1edfd30321d8f006ccf05f1e0524adeb943060"/>
