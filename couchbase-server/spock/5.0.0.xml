@@ -20,7 +20,7 @@
     <annotation name="PRODUCT" value="couchbase-server"/>
     <annotation name="RELEASE" value="spock"/>
     <annotation name="VERSION" value="5.0.0"/>
-    <annotation name="BLD_NUM" value="3376"/>
+    <annotation name="BLD_NUM" value="3377"/>
     </project>
   <project name="cbauth" path="godeps/src/github.com/couchbase/cbauth" revision="ca7240bc1d5d55a82420d8bc1f656411940c6371" upstream="master"/>
   <project name="cbflag" path="godeps/src/github.com/couchbase/cbflag" revision="f64db5ae4bb3b9f8e4fa0a0cc1cea40d2831cc68" upstream="master"/>
@@ -87,7 +87,7 @@
   <project name="net" path="godeps/src/golang.org/x/net" remote="couchbasedeps" revision="8968c61983e8f51a91b8c0ef25bf739278c89634"/>
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="af818d141e61a41f923998dd23434a06ac2fdb7f" upstream="master"/>
   <project name="npipe" path="godeps/src/github.com/natefinch/npipe" remote="couchbasedeps" revision="272c8150302e83f23d32a355364578c9c13ab20f"/>
-  <project name="ns_server" revision="9dc0ac70b9fbe5fc6dcd4e978cd97c1911528928" upstream="master"/>
+  <project name="ns_server" revision="cf6fbbae83486c4bbf7771c47784ebac1b68ab35" upstream="master"/>
   <project name="parse" path="godeps/src/github.com/tdewolff/parse" remote="couchbasedeps" revision="0334a869253aca4b3a10c56c3f3139b394aec3a9"/>
   <project name="pflag" path="godeps/src/github.com/spf13/pflag" remote="couchbasedeps" revision="a232f6d9f87afaaa08bafaff5da685f974b83313"/>
   <project groups="kv" name="phosphor" revision="854dc39d2ec3461a2edcb56d232ab077af228684" upstream="master"/>
@@ -103,12 +103,13 @@
   <project name="strconv" path="godeps/src/github.com/tdewolff/strconv" remote="couchbasedeps" revision="9b189f5be77f33c46776f24dbddb2a7ab32af214"/>
   <project groups="kv" name="subjson" revision="85ed622c5959fa1c20c83993aec0e2293d7fd20f" upstream="master"/>
   <project groups="solaris,notdefault" name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="9d4e42a20653790449273b3c85e67d6d8bae6e2e"/>
-  <project name="testrunner" revision="daf9712fb2e6d766a6cfaf5570bda98673bdbe94" upstream="master"/>
+  <project name="testrunner" revision="2a76d06db4b9c0527e00f4d396e7a599d1d763cc" upstream="master"/>
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="601048ad6acbab6cedd582db09b8c4839ff25b15"/>
   <project groups="kv" name="tlm" revision="e5a73e363dbb3486e804d6deabc3bb5786487ed5" upstream="master">
     <copyfile dest="GNUmakefile" src="GNUmakefile"/>
     <copyfile dest="Makefile" src="Makefile"/>
     <copyfile dest="CMakeLists.txt" src="CMakeLists.txt"/>
+    <copyfile dest=".clang-format" src="dot-clang-format"/>
   </project>
   <project name="ts" path="godeps/src/github.com/olekukonko/ts" remote="couchbasedeps" revision="ecf753e7c962639ab5a1fb46f7da627d4c0a04b8"/>
   <project groups="notdefault,packaging" name="voltron" remote="couchbase-priv" revision="128b2e2f86c3968f9866c8a86f697f7187f1a33e"/>
