@@ -6,13 +6,12 @@
   <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps" review="review.couchbase.org"/>
   <remote fetch="git://github.com/couchbaselabs/" name="couchbaselabs" review="review.couchbase.org"/>
   <remote fetch="ssh://git@github.com/couchbaselabs/" name="couchbaselabs-priv" review="review.couchbase.org"/>
-  <remote fetch="git://github.com/tomclegg/" name="tomclegg"/>
   
   <default remote="couchbase" revision="master"/>
   
   <project name="analytics-dcp-client" path="analytics/asterixdb/asterix-opt/java-dcp-client" remote="couchbaselabs" revision="0179377e094103f2450c03437d4a4eb9dc2e6320" upstream="master"/>
-  <project name="analytics_ns_server" path="ns_server" remote="couchbaselabs" revision="ede7a09be89d209c480c3c267fde9b45b7a8af7b" upstream="master"/>
-  <project name="asterix-opt" path="analytics/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="6160b7e00c5fe63e6f8813d95309ffbe6f3dfd7e" upstream="master">
+  <project name="analytics_ns_server" path="ns_server" remote="couchbaselabs" revision="b70ab04875acbe3ff6b7ac6a140a837246a412d2" upstream="master"/>
+  <project name="asterix-opt" path="analytics/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="202a6197f662a879637aa9492431fbfedade9a9d" upstream="master">
     <copyfile dest="analytics/CMakeLists.txt" src="CMakeLists.txt"/>
   </project>
   <project name="asterixdb" path="analytics" remote="asterixdb" revision="a5e3d0ea7ca81dc5249b73eb0e29c8d48ac86591" upstream="master"/>
@@ -29,9 +28,9 @@
     <annotation name="PRODUCT" value="server-analytics"/>
     <annotation name="RELEASE" value="spock"/>
     <annotation name="VERSION" value="5.0.0"/>
-    <annotation name="BLD_NUM" value="657"/>
+    <annotation name="BLD_NUM" value="658"/>
     </project>
-  <project name="cbas" path="goproj/src/github.com/couchbaselabs/cbas" remote="couchbaselabs" revision="fbf0fefa0096d7ab217715ac1b7c76398209f05f" upstream="master"/>
+  <project name="cbas" path="goproj/src/github.com/couchbaselabs/cbas" remote="couchbaselabs" revision="2a42e9c6fa8ffc8d4b3fc71e9b352d81e8fcc80b" upstream="master"/>
   <project name="cbas-ui" revision="25eb58dea71e78c302be21e8c73126ff38759bea" upstream="master"/>
   <project name="cbauth" path="godeps/src/github.com/couchbase/cbauth" revision="4f0ce347fbe95c435db15eae5ccf982ec8e1b93f" upstream="master"/>
   <project name="cbflag" path="godeps/src/github.com/couchbase/cbflag" revision="f64db5ae4bb3b9f8e4fa0a0cc1cea40d2831cc68" upstream="master"/>
@@ -95,7 +94,6 @@
   <project name="mousetrap" path="godeps/src/github.com/inconshreveable/mousetrap" remote="couchbasedeps" revision="76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"/>
   <project groups="kv" name="moxi" revision="b872a06c9bd3f7cc9b5bba6a09ddd9f47284ec2b" upstream="master"/>
   <project name="mux" path="godeps/src/github.com/gorilla/mux" remote="couchbasedeps" revision="043ee6597c29786140136a5747b6a886364f5282"/>
-  <project name="nbtee" path="godeps/src/github.com/tomclegg/nbtee" remote="tomclegg" revision="1e959ce7dc6ab164431826ad4296ec8b453d4d64" upstream="master"/>
   <project name="net" path="godeps/src/golang.org/x/net" remote="couchbasedeps" revision="8968c61983e8f51a91b8c0ef25bf739278c89634"/>
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="20deb54d09a3d4a28c0e34799b43b6075a5a9f2e" upstream="master"/>
   <project name="npipe" path="godeps/src/github.com/natefinch/npipe" remote="couchbasedeps" revision="272c8150302e83f23d32a355364578c9c13ab20f"/>
@@ -113,7 +111,7 @@
   <project name="strconv" path="godeps/src/github.com/tdewolff/strconv" remote="couchbasedeps" revision="9b189f5be77f33c46776f24dbddb2a7ab32af214"/>
   <project groups="kv" name="subjson" revision="85ed622c5959fa1c20c83993aec0e2293d7fd20f" upstream="master"/>
   <project groups="solaris,notdefault" name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="9d4e42a20653790449273b3c85e67d6d8bae6e2e"/>
-  <project name="testrunner" revision="8b9992d6171d4d625ea156a94e506fb2c012edd8" upstream="master"/>
+  <project name="testrunner" revision="5b5d59e33946e96a7aa59cbbe9144e0ce731826c" upstream="master"/>
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="601048ad6acbab6cedd582db09b8c4839ff25b15"/>
   <project groups="kv" name="tlm" revision="5ecfca4fc173e4843a9c5d2e5e0415c63a82c619">
     <copyfile dest="GNUmakefile" src="GNUmakefile"/>
