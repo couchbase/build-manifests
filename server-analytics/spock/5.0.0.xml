@@ -9,9 +9,9 @@
   
   <default remote="couchbase" revision="master"/>
   
-  <project name="analytics-dcp-client" path="analytics/asterixdb/asterix-opt/java-dcp-client" remote="couchbaselabs" revision="a8ab72e3611abd4404081e5cdcd014cc1638ce3f" upstream="master"/>
+  <project name="analytics-dcp-client" path="analytics/asterixdb/asterix-opt/java-dcp-client" remote="couchbaselabs" revision="6337ed79811008cb59133a9139e76afad15a1831" upstream="master"/>
   <project name="analytics_ns_server" path="ns_server" remote="couchbaselabs" revision="b70ab04875acbe3ff6b7ac6a140a837246a412d2" upstream="master"/>
-  <project name="asterix-opt" path="analytics/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="41e21a8d3d7b9972da697ca56aa0a7ee11ded022" upstream="master">
+  <project name="asterix-opt" path="analytics/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="3a5dbf962e1bced002bce51ce869567dea80e06d" upstream="master">
     <copyfile dest="analytics/CMakeLists.txt" src="CMakeLists.txt"/>
   </project>
   <project name="asterixdb" path="analytics" remote="asterixdb" revision="b879175e8373736e7de13bb63e924d875af74581" upstream="master"/>
@@ -28,7 +28,7 @@
     <annotation name="PRODUCT" value="server-analytics"/>
     <annotation name="RELEASE" value="spock"/>
     <annotation name="VERSION" value="5.0.0"/>
-    <annotation name="BLD_NUM" value="662"/>
+    <annotation name="BLD_NUM" value="663"/>
     </project>
   <project name="cbas" path="goproj/src/github.com/couchbaselabs/cbas" remote="couchbaselabs" revision="2a42e9c6fa8ffc8d4b3fc71e9b352d81e8fcc80b" upstream="master"/>
   <project name="cbas-ui" revision="25eb58dea71e78c302be21e8c73126ff38759bea" upstream="master"/>
@@ -111,7 +111,7 @@
   <project name="strconv" path="godeps/src/github.com/tdewolff/strconv" remote="couchbasedeps" revision="9b189f5be77f33c46776f24dbddb2a7ab32af214"/>
   <project groups="kv" name="subjson" revision="85ed622c5959fa1c20c83993aec0e2293d7fd20f" upstream="master"/>
   <project groups="solaris,notdefault" name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="9d4e42a20653790449273b3c85e67d6d8bae6e2e"/>
-  <project name="testrunner" revision="363ca11db1d6d26fa52ad5f40c82e87e2f6a3786" upstream="master"/>
+  <project name="testrunner" revision="1313d05e7446c5756faf127fccf05eb4981e020b" upstream="master"/>
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="601048ad6acbab6cedd582db09b8c4839ff25b15"/>
   <project groups="kv" name="tlm" revision="5ecfca4fc173e4843a9c5d2e5e0415c63a82c619">
     <copyfile dest="GNUmakefile" src="GNUmakefile"/>
