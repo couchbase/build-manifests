@@ -5,11 +5,11 @@
   
   <default remote="couchbase" revision="master"/>
   
-  <project name="build" path="cbbuild" revision="d2a4fdd28bc3eb0c1e2927dc69b396f83acf00e7" upstream="master">
+  <project name="build" path="cbbuild" revision="ff6a06c56cccde448c53ff371974507a3cbfa640" upstream="master">
     <annotation name="PRODUCT" value="cbq"/>
     <annotation name="RELEASE" value="5.0.0"/>
     <annotation name="VERSION" value="5.0.0"/>
-    <annotation name="BLD_NUM" value="676"/>
+    <annotation name="BLD_NUM" value="677"/>
     </project>
   <project name="crypto" path="godeps/src/golang.org/x/crypto" remote="couchbasedeps" revision="f23ba3a5ee43012fcb4b92e1a2a405a92554f4f2"/>
   <project name="go-couchbase" path="godeps/src/github.com/couchbase/go-couchbase" revision="ce48bd27b23323ccb0966f2067abc60d0ca7c28e" upstream="master"/>
@@ -21,7 +21,7 @@
   <project name="goutils" path="godeps/src/github.com/couchbase/goutils" revision="7a02f3df0ea980574216f469c192985a2083b957" upstream="master"/>
   <project name="liner" path="godeps/src/github.com/peterh/liner" remote="couchbasedeps" revision="ad1edfd30321d8f006ccf05f1e0524adeb943060"/>
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="6c375ede9caf37a7392db5658aa1b90fbfb6a7d5" upstream="master"/>
-  <project name="tlm" revision="8468ebe09972f72d35f7645b1eb15e5a9be3a67d" upstream="master">
+  <project name="tlm" revision="5233fa958631663ce8d683f92313f246f07e448d" upstream="master">
     <copyfile dest="CMakeLists.txt" src="CMakeLists-cbq.txt"/>
   </project>
 </manifest>
