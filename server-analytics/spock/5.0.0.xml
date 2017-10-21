@@ -10,11 +10,11 @@
   <default remote="couchbase" revision="master"/>
   
   <project name="analytics-dcp-client" path="analytics/asterixdb/asterix-opt/java-dcp-client" remote="couchbaselabs" revision="2ba7e7a17bd3a9c13aff730bdb53e6d6178432af" upstream="master"/>
-  <project name="analytics_ns_server" path="ns_server" remote="couchbaselabs" revision="d33192a265fc9d1833f4e7dec65111d853e01472" upstream="master"/>
-  <project name="asterix-opt" path="analytics/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="cf54cc0309e876d00610e108023d4444c0a70613" upstream="master">
+  <project name="analytics_ns_server" path="ns_server" remote="couchbaselabs" revision="d1af2cc69bcee176fcee2e31dfe1fe79d45dff0b" upstream="master"/>
+  <project name="asterix-opt" path="analytics/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="9ea46cae90da7b77ee9ad9ab0e489530133a9027" upstream="master">
     <copyfile dest="analytics/CMakeLists.txt" src="CMakeLists.txt"/>
   </project>
-  <project name="asterixdb" path="analytics" remote="asterixdb" revision="9782f8a295595efad74fd494960cd2680f3e7c42" upstream="master"/>
+  <project name="asterixdb" path="analytics" remote="asterixdb" revision="7e76a0797388d5c8f92a96c7fa6b4cf30c0886f0" upstream="master"/>
   <project groups="notdefault,enterprise" name="backup" path="goproj/src/github.com/couchbase/backup" remote="couchbase-priv" revision="46b0e793e7ed30638099752f1c78668783cd3576"/>
   <project groups="kv" name="benchmark" remote="couchbasedeps" revision="9e3465560240ffb242b50a47cb7f19251a12ee42"/>
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4"/>
@@ -28,7 +28,7 @@
     <annotation name="PRODUCT" value="server-analytics"/>
     <annotation name="RELEASE" value="spock"/>
     <annotation name="VERSION" value="5.0.0"/>
-    <annotation name="BLD_NUM" value="806"/>
+    <annotation name="BLD_NUM" value="807"/>
     </project>
   <project name="cbas" path="goproj/src/github.com/couchbaselabs/cbas" remote="couchbaselabs" revision="329c0b719e16076d818f884edbe582b066cdb334" upstream="master"/>
   <project name="cbas-ui" revision="0ce637c1ece67b7d69342a7be04c858ac58037e2" upstream="master"/>
