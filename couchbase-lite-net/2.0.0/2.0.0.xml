@@ -1,0 +1,33 @@
+<manifest>
+  <remote fetch="git://github.com/ARMmbed" name="ARMmbed"/>
+  <remote fetch="git://github.com/couchbase/" name="couchbase" review="review.couchbase.org"/>
+  <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps"/>
+  <remote fetch="git://github.com/couchbaselabs/" name="couchbaselabs" review="review.couchbase.org"/>
+  <remote fetch="git://github.com/google/" name="google"/>
+  <remote fetch="git://github.com/rudi-cilibrasi/" name="rudi-cilibrasi"/>
+  <remote fetch="git://github.com/snej/" name="snej"/>
+  
+  <default remote="couchbase" revision="master"/>
+  
+  <project name="BLIP-Cpp" path="couchbase-lite-net/vendor/couchbase-lite-core/vendor/BLIP-Cpp" remote="couchbaselabs" revision="7c2569c6222064ae5faaf0753fc55171a3de6264"/>
+  <project name="SQLiteCpp" path="couchbase-lite-net/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="0a7be5d4b78ff2c96da4e0a173b87bf6a528ff41"/>
+  <project name="build" path="cbbuild" revision="a028d6896550b4d95d4a8764582b78aecda36617" upstream="master">
+    <annotation name="PRODUCT" value="couchbase-lite-net"/>
+    <annotation name="RELEASE" value="2.0.0"/>
+    <annotation name="VERSION" value="2.0.0"/>
+    <annotation name="BLD_NUM" value="386"/>
+    </project>
+  <project name="civetweb" path="couchbase-lite-net/vendor/couchbase-lite-core/vendor/civetweb" remote="couchbasedeps" revision="4c5e6815e527522a154a7a4ccf97d849657ffc68"/>
+  <project name="couchbase-lite-core" path="couchbase-lite-net/vendor/couchbase-lite-core" revision="78584b9190a260947422245d0b9bf6909ed9fc0b"/>
+  <project name="couchbase-lite-core.wiki" path="couchbase-lite-net/vendor/couchbase-lite-core/wiki" revision="82071aba28241ad895eed3e67a0b8b52daa9da8e"/>
+  <project name="couchbase-lite-libsqlcipher" path="couchbase-lite-net/vendor/couchbase-lite-core/vendor/sqlcipher" remote="couchbaselabs" revision="a02343c0dfd841cde35b361eeeb9c89d32822f6a"/>
+  <project name="couchbase-lite-net" revision="352eb2f4245017ec1432456aa43162091d9c8b83" upstream="feature/api-v2"/>
+  <project name="fleece" path="couchbase-lite-net/vendor/couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="080d246d21b3a434a3772ec8bb4880010f7cf9e8"/>
+  <project name="googletest" path="couchbase-lite-net/vendor/couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780"/>
+  <project name="jsonsl" path="couchbase-lite-net/vendor/couchbase-lite-core/vendor/fleece/vendor/jsonsl" remote="snej" revision="c6a296bd25cc3c43e98340b9e8f7e3c482ec50d1"/>
+  <project name="mbedtls" path="couchbase-lite-net/vendor/couchbase-lite-core/vendor/sqlcipher/vendor/mbedtls" remote="ARMmbed" revision="f2a597fa3dd1c7b15e0fee62f6932b253295803d"/>
+  <project name="sqlcipher" path="couchbase-lite-net/vendor/couchbase-lite-core/vendor/sqlcipher/vendor/sqlcipher" remote="couchbasedeps" revision="4cbdafc900d44fd6bc94818231008d0dfd305d5a"/>
+  <project name="sqlite3-unicodesn" path="couchbase-lite-net/vendor/couchbase-lite-core/vendor/sqlite3-unicodesn" remote="snej" revision="3618677cb797aefa774ca1d6a358e9b67dd37281"/>
+  <project name="zlib" path="couchbase-lite-net/vendor/couchbase-lite-core/vendor/BLIP-Cpp/vendor/zlib" remote="couchbasedeps" revision="cacf7f1d4e3d44d871b605da3b647f07d718623f"/>
+  <project name="zlibcomplete" path="couchbase-lite-net/vendor/couchbase-lite-core/vendor/BLIP-Cpp/vendor/zlibcomplete" remote="rudi-cilibrasi" revision="0908e99ea699f1093657147c73ab3aae460cb91f"/>
+</manifest>
