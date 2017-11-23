@@ -11,10 +11,10 @@
   
   <project name="analytics-dcp-client" path="analytics/asterixdb/asterix-opt/java-dcp-client" remote="couchbaselabs" revision="3a1c23900803cbd1938dd1ae2de11b599410c17f" upstream="master"/>
   <project name="analytics_ns_server" path="ns_server" remote="couchbaselabs" revision="29814515defb04590ad754864602cc37eb0fe4f4" upstream="master"/>
-  <project name="asterix-opt" path="analytics/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="7c28739b17570ba01611ed9f42e5a7539fc91bbb" upstream="master">
+  <project name="asterix-opt" path="analytics/asterixdb/asterix-opt" remote="couchbaselabs-priv" revision="71ba4bf0858741ef8f8ee6e244514e0486fbf1d8" upstream="master">
     <copyfile dest="analytics/CMakeLists.txt" src="CMakeLists.txt"/>
   </project>
-  <project name="asterixdb" path="analytics" remote="asterixdb" revision="4dad5dfa87bd7e353f60a7889478a2966daa43ef" upstream="master"/>
+  <project name="asterixdb" path="analytics" remote="asterixdb" revision="98b9d603e8531139a4668af48092e9c961ee41fb" upstream="master"/>
   <project groups="notdefault,enterprise" name="backup" path="goproj/src/github.com/couchbase/backup" remote="couchbase-priv" revision="bedc522f381a114421e3663a79bba903e5ad9e61" upstream="master"/>
   <project groups="kv" name="benchmark" remote="couchbasedeps" revision="9e3465560240ffb242b50a47cb7f19251a12ee42"/>
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4"/>
@@ -28,7 +28,7 @@
     <annotation name="PRODUCT" value="server-analytics"/>
     <annotation name="RELEASE" value="vulcan"/>
     <annotation name="VERSION" value="5.1.0"/>
-    <annotation name="BLD_NUM" value="910"/>
+    <annotation name="BLD_NUM" value="911"/>
     </project>
   <project name="cbas" path="goproj/src/github.com/couchbaselabs/cbas" remote="couchbaselabs" revision="549b5bc1afeb5b8371df95b5b32db08dcf9b983c" upstream="master"/>
   <project name="cbas-ui" revision="0ce637c1ece67b7d69342a7be04c858ac58037e2" upstream="master"/>
@@ -115,7 +115,7 @@
   <project name="strconv" path="godeps/src/github.com/tdewolff/strconv" remote="couchbasedeps" revision="9b189f5be77f33c46776f24dbddb2a7ab32af214"/>
   <project groups="kv" name="subjson" revision="85ed622c5959fa1c20c83993aec0e2293d7fd20f" upstream="master"/>
   <project groups="solaris,notdefault" name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="9d4e42a20653790449273b3c85e67d6d8bae6e2e"/>
-  <project name="testrunner" revision="034107a198e169aeef280299f6ea1fd9fc8b0e37" upstream="master"/>
+  <project name="testrunner" revision="c5009ed862c18aea4e5848f703c3bab8d8c8affb" upstream="master"/>
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="601048ad6acbab6cedd582db09b8c4839ff25b15"/>
   <project groups="kv" name="tlm" revision="c2096eb1266c8534814941d6545553b2e55d3fcb" upstream="analytics-dp">
     <copyfile dest="GNUmakefile" src="GNUmakefile"/>
