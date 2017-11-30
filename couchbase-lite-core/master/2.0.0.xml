@@ -12,18 +12,18 @@
   
   <project name="BLIP-Cpp" path="couchbase-lite-core/vendor/BLIP-Cpp" remote="couchbaselabs" revision="e89d3b8e4539f92254965dbe0aeadd2b65a90c35"/>
   <project name="SQLiteCpp" path="couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="0a7be5d4b78ff2c96da4e0a173b87bf6a528ff41"/>
-  <project name="build" path="cbbuild" revision="a6336018d9d24efc91c342f880419bd1d8c02b26" upstream="master">
+  <project name="build" path="cbbuild" revision="cddfd52fc8b3afc774e10f211b98575e8db67293" upstream="master">
     <copyfile dest="CMakeLists.txt" src="scripts/jenkins/lite-core/CMakeLists.txt"/>
     <annotation name="PRODUCT" value="couchbase-lite-core"/>
     <annotation name="RELEASE" value="master"/>
     <annotation name="VERSION" value="2.0.0"/>
-    <annotation name="BLD_NUM" value="485"/>
+    <annotation name="BLD_NUM" value="486"/>
     </project>
   <project name="civetweb" path="couchbase-lite-core/vendor/civetweb" remote="couchbasedeps" revision="587ab786822dc41ada51a19416abcda5b9a9dba1"/>
-  <project name="couchbase-lite-core" revision="e65ca3d913467623c3cc479aaab0044ac647ffb0" upstream="master"/>
-  <project name="couchbase-lite-core.wiki" path="couchbase-lite-core/wiki" revision="513824e52867aba6af1b23f0f7a3e989427b43f3"/>
-  <project name="couchbase-lite-libsqlcipher" path="couchbase-lite-core/vendor/sqlcipher" remote="couchbaselabs" revision="1d961d07ab63b86d4cc68b35c678182ac3c7bb21"/>
-  <project name="fleece" path="couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="c5f0735cf3e2806b04c9d252f795e13ecb3abdae"/>
+  <project name="couchbase-lite-core" revision="2d23479f91a115397936bff80bd14f7a6d8f3ec0" upstream="release/2.0DB020"/>
+  <project name="couchbase-lite-core.wiki" path="couchbase-lite-core/wiki" revision="82071aba28241ad895eed3e67a0b8b52daa9da8e"/>
+  <project name="couchbase-lite-libsqlcipher" path="couchbase-lite-core/vendor/sqlcipher" remote="couchbaselabs" revision="0e91b4f39f8ae99b42b45a4b0cd15a8321f76903"/>
+  <project name="fleece" path="couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="1f3fcc7e722916ceb40040141c9ab912ebf3695e"/>
   <project name="googletest" path="couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780"/>
   <project name="jsonsl" path="couchbase-lite-core/vendor/fleece/vendor/jsonsl" remote="snej" revision="c6a296bd25cc3c43e98340b9e8f7e3c482ec50d1"/>
   <project name="mbedtls" path="couchbase-lite-core/vendor/sqlcipher/vendor/mbedtls" remote="ARMmbed" revision="f2a597fa3dd1c7b15e0fee62f6932b253295803d"/>
