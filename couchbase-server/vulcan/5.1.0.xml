@@ -1,5 +1,4 @@
 <manifest>
-  <remote fetch="https://github.com/apache/" name="asterixdb" review="asterix-gerrit.ics.uci.edu"/>
   <remote fetch="git://github.com/blevesearch/" name="blevesearch"/>
   <remote fetch="git://github.com/couchbase/" name="couchbase" review="review.couchbase.org"/>
   <remote fetch="ssh://git@github.com/couchbase/" name="couchbase-priv" review="review.couchbase.org"/>
@@ -11,7 +10,7 @@
   
   <project groups="notdefault,enterprise,analytics" name="analytics-dcp-client" path="analytics/java-dcp-client" remote="couchbaselabs" revision="86426dbec8bd3ac7cb94f077007ff24d2e366da6" upstream="master"/>
   <project groups="notdefault,enterprise,analytics" name="asterix-opt" path="analytics" remote="couchbaselabs-priv" revision="93178186de566f51720059d15a5e4f78af86c7b8" upstream="master"/>
-  <project groups="notdefault,enterprise,analytics" name="asterixdb" path="analytics/asterixdb" remote="asterixdb" revision="b4d166b3ca042ce34d737f5d2a4fb758fa45d3e5" upstream="master"/>
+  <project groups="notdefault,enterprise,analytics" name="asterixdb" path="analytics/asterixdb" revision="b4d166b3ca042ce34d737f5d2a4fb758fa45d3e5" upstream="master"/>
   <project groups="notdefault,enterprise" name="backup" path="goproj/src/github.com/couchbase/backup" remote="couchbase-priv" revision="68ae8c965621f73e0e877775f41d43889358067e" upstream="master"/>
   <project groups="kv" name="benchmark" remote="couchbasedeps" revision="9e3465560240ffb242b50a47cb7f19251a12ee42"/>
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4"/>
@@ -21,11 +20,11 @@
   <project name="blevex" path="godeps/src/github.com/blevesearch/blevex" remote="blevesearch" revision="090b7a1971e18e66d8e8775c90c9534aed566ffb"/>
   <project name="bolt" path="godeps/src/github.com/boltdb/bolt" remote="couchbasedeps" revision="51f99c862475898df9773747d3accd05a7ca33c1"/>
   <project name="buffer" path="godeps/src/github.com/tdewolff/buffer" remote="couchbasedeps" revision="43cef5ba7b6ce99cc410632dad46cf1c6c97026e"/>
-  <project groups="notdefault,build" name="build" path="cbbuild" revision="b48ec7bf93dc2c09c605bca32ff8bd0cd6b2bf47" upstream="master">
+  <project groups="notdefault,build" name="build" path="cbbuild" revision="cb5b6af1244bea56c1ca1ddc94c045932011c3db" upstream="master">
     <annotation name="PRODUCT" value="couchbase-server"/>
     <annotation name="RELEASE" value="vulcan"/>
     <annotation name="VERSION" value="5.1.0"/>
-    <annotation name="BLD_NUM" value="1566"/>
+    <annotation name="BLD_NUM" value="1567"/>
     </project>
   <project groups="notdefault,enterprise,analytics" name="cbas" path="goproj/src/github.com/couchbaselabs/cbas" remote="couchbaselabs" revision="549b5bc1afeb5b8371df95b5b32db08dcf9b983c" upstream="master"/>
   <project groups="analytics" name="cbas-ui" revision="d4a700f7af018ed0e107551a4668ae13f5baa36e" upstream="master"/>
@@ -85,7 +84,7 @@
   <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="b7f04cf61d4a21f3b3f8e7e39e1ffbcb26eb7161" upstream="master"/>
   <project name="json-iterator-go" path="godeps/src/github.com/json-iterator/go" remote="couchbasedeps" revision="f7279a603edee96fe7764d3de9c6ff8cf9970994"/>
   <project name="jsonx" path="godeps/src/gopkg.in/couchbaselabs/jsonx.v1" remote="couchbaselabs" revision="5b7baa20429a46a5543ee259664cc86502738cad" upstream="master"/>
-  <project groups="kv" name="kv_engine" revision="46dc122550b2c7e734fce47f1135e267e7cf00b7" upstream="master"/>
+  <project groups="kv" name="kv_engine" revision="a8d31eda08eb02aa94cbdccbae32c22ab8e04572" upstream="master"/>
   <project name="levigo" path="godeps/src/github.com/jmhodges/levigo" remote="couchbasedeps" revision="1ddad808d437abb2b8a55a950ec2616caa88969b"/>
   <project name="liner" path="godeps/src/github.com/peterh/liner" remote="couchbasedeps" revision="ad1edfd30321d8f006ccf05f1e0524adeb943060"/>
   <project name="liner" path="godeps/src/github.com/sbinet/liner" remote="couchbasedeps" revision="d9335eee40a45a4f5d74524c90040d6fe6013d50"/>
@@ -107,7 +106,7 @@
   <project groups="kv" name="platform" revision="fe3bef917e4781eaa398dd8bbc39eca9a84550bc" upstream="master"/>
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="655cdfa588ea190e901bc5590e65d5621688847c"/>
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="bb0c584a5e99e0ac07c5e93ab2cae5cfcba1ba85" upstream="master"/>
-  <project name="query-ui" revision="e4deb11add5c558abcfe6ce47b3fc88f8ef8839c" upstream="master"/>
+  <project name="query-ui" revision="7af97e3b0db27dd421b9b660a00f7952a06280cb" upstream="master"/>
   <project name="retriever" path="godeps/src/github.com/couchbase/retriever" revision="e3419088e4d3b4fe3aad3b364fdbe9a154f85f17" upstream="master"/>
   <project name="roaring" path="godeps/src/github.com/RoaringBitmap/roaring" remote="couchbasedeps" revision="dd6b41e153cc91db0440d4155626f8e2c2f298a4"/>
   <project name="segment" path="godeps/src/github.com/blevesearch/segment" remote="blevesearch" revision="762005e7a34fd909a84586299f1dd457371d36ee"/>
