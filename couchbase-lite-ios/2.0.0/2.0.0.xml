@@ -1,5 +1,6 @@
 <manifest>
   <remote fetch="git://github.com/ARMmbed" name="ARMmbed"/>
+  <remote fetch="git://github.com/arangodb/" name="arangodb"/>
   <remote fetch="git://github.com/couchbase/" name="couchbase" review="review.couchbase.org"/>
   <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps"/>
   <remote fetch="git://github.com/couchbaselabs/" name="couchbaselabs" review="review.couchbase.org"/>
@@ -12,11 +13,11 @@
   <project name="BLIP-Cpp" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/BLIP-Cpp" remote="couchbaselabs" revision="e89d3b8e4539f92254965dbe0aeadd2b65a90c35"/>
   <project name="MYUtilities" path="couchbase-lite-ios/vendor/MYUtilities" remote="snej" revision="acefb41ffe29093cead9ad55394434ee2e0016ff"/>
   <project name="SQLiteCpp" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="0a7be5d4b78ff2c96da4e0a173b87bf6a528ff41"/>
-  <project name="build" revision="f8e0f38e89e664fd4804eb316f4226fed7bf7128" upstream="master">
+  <project name="build" revision="6a0ee279e06df2d8f0afedbae3efec86b325ff5e" upstream="master">
     <annotation name="PRODUCT" value="couchbase-lite-ios"/>
     <annotation name="RELEASE" value="2.0.0"/>
     <annotation name="VERSION" value="2.0.0"/>
-    <annotation name="BLD_NUM" value="520"/>
+    <annotation name="BLD_NUM" value="521"/>
     </project>
   <project name="civetweb" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/civetweb" remote="couchbasedeps" revision="587ab786822dc41ada51a19416abcda5b9a9dba1"/>
   <project name="couchbase-lite-core" path="couchbase-lite-ios/vendor/couchbase-lite-core" revision="a4e383370664747f0a85f9af7f63c59557e747c6"/>
@@ -26,6 +27,7 @@
   <project name="fleece" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="a6fb61f3b63d2c5596478e763d41bed2c5d434b0"/>
   <project name="googletest" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780"/>
   <project name="jsonsl" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/fleece/vendor/jsonsl" remote="snej" revision="c6a296bd25cc3c43e98340b9e8f7e3c482ec50d1"/>
+  <project name="linenoise-ng" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/linenoise-ng" remote="arangodb" revision="4754bee2d8eb3c4511e6ac87cac62255b2011e2f"/>
   <project name="mbedtls" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/sqlcipher/vendor/mbedtls" remote="ARMmbed" revision="f2a597fa3dd1c7b15e0fee62f6932b253295803d"/>
   <project name="sqlcipher" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/sqlcipher/vendor/sqlcipher" remote="couchbasedeps" revision="4cbdafc900d44fd6bc94818231008d0dfd305d5a"/>
   <project name="sqlite3-unicodesn" path="couchbase-lite-ios/vendor/couchbase-lite-core/vendor/sqlite3-unicodesn" remote="snej" revision="db055ec4ffef64051a6940b0cae5c39a23092ff2"/>
