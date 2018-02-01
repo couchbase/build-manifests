@@ -10,8 +10,8 @@
   
   <project groups="kv" name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="d200fc0f68695d4aef1fad5c3c8cc55f8c033014" upstream="refs/tags/0.9.7"/>
   <project groups="notdefault,enterprise,analytics" name="analytics-dcp-client" path="analytics/java-dcp-client" remote="couchbaselabs" revision="6a6e6fb4f7ba8694ff2d4a658dd30fd05bb98f45" upstream="master"/>
-  <project groups="notdefault,enterprise,analytics" name="asterix-opt" path="analytics" remote="couchbaselabs-priv" revision="d43fecc0647425b7afce4e9f8d5b4339e6d53f7c" upstream="master"/>
-  <project groups="notdefault,enterprise,analytics" name="asterixdb" path="analytics/asterixdb" revision="caf43069baf53259b10087745d931e341f109be1" upstream="master"/>
+  <project groups="notdefault,enterprise,analytics" name="asterix-opt" path="analytics" remote="couchbaselabs-priv" revision="6607abccc5e13e6a287674f2f9ccf39497cca330" upstream="master"/>
+  <project groups="notdefault,enterprise,analytics" name="asterixdb" path="analytics/asterixdb" revision="10e5ad1a789d436639863273028f565960dface0" upstream="master"/>
   <project groups="notdefault,enterprise" name="backup" path="goproj/src/github.com/couchbase/backup" remote="couchbase-priv" revision="fc8b23e0a1b45fef80a1d7b9bec2ade3b1766a01" upstream="master"/>
   <project groups="kv" name="benchmark" remote="couchbasedeps" revision="9e3465560240ffb242b50a47cb7f19251a12ee42"/>
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4"/>
@@ -25,7 +25,7 @@
     <annotation name="PRODUCT" value="couchbase-server"/>
     <annotation name="RELEASE" value="vulcan"/>
     <annotation name="VERSION" value="5.5.0"/>
-    <annotation name="BLD_NUM" value="1799"/>
+    <annotation name="BLD_NUM" value="1800"/>
     </project>
   <project groups="notdefault,enterprise,analytics" name="cbas" path="goproj/src/github.com/couchbaselabs/cbas" remote="couchbaselabs" revision="786e63c4599aa10cce8be8156464b52b394cf6c6" upstream="master"/>
   <project groups="analytics" name="cbas-ui" revision="99e3d64be7ccb8cac2076619fe33fbc65b764df7" upstream="master"/>
@@ -103,7 +103,7 @@
   <project name="net" path="godeps/src/golang.org/x/net" remote="couchbasedeps" revision="8968c61983e8f51a91b8c0ef25bf739278c89634"/>
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="4f5714e663ad109e0ad1bdcbcf48d226179d62f5" upstream="master"/>
   <project name="npipe" path="godeps/src/github.com/natefinch/npipe" remote="couchbasedeps" revision="272c8150302e83f23d32a355364578c9c13ab20f"/>
-  <project name="ns_server" revision="83bfb9bc930789b3393d6681ddb2b0f5a3b85ee5" upstream="master"/>
+  <project name="ns_server" revision="f1318a0ecf8d6e054338d60384a814413398e22c" upstream="master"/>
   <project name="parse" path="godeps/src/github.com/tdewolff/parse" remote="couchbasedeps" revision="0334a869253aca4b3a10c56c3f3139b394aec3a9"/>
   <project name="pflag" path="godeps/src/github.com/spf13/pflag" remote="couchbasedeps" revision="a232f6d9f87afaaa08bafaff5da685f974b83313"/>
   <project groups="kv" name="phosphor" revision="af16481d2b9ece1a82fdb1fc8ea8033373818fa3" upstream="master"/>
@@ -111,7 +111,7 @@
   <project groups="kv" name="platform" revision="7acb4fed24c198d49ea4b3a3662b2ed2ba5a727f" upstream="master"/>
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="655cdfa588ea190e901bc5590e65d5621688847c"/>
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="30e6c8cee3b89d3a2ad267abc7b285657562abba" upstream="master"/>
-  <project name="query-ui" revision="f1dfa3cab77a44b408aada7b99bf6ea3255065ae" upstream="master"/>
+  <project name="query-ui" revision="accf6d3b527f4a913b6fee24c3a1fd3ff16f2868" upstream="master"/>
   <project name="retriever" path="godeps/src/github.com/couchbase/retriever" revision="e3419088e4d3b4fe3aad3b364fdbe9a154f85f17" upstream="master"/>
   <project name="roaring" path="godeps/src/github.com/RoaringBitmap/roaring" remote="couchbasedeps" revision="01d244c43a7e8d1191a4f369f5908ea9eb9bc9ac"/>
   <project name="segment" path="godeps/src/github.com/blevesearch/segment" remote="blevesearch" revision="762005e7a34fd909a84586299f1dd457371d36ee"/>
@@ -123,7 +123,7 @@
   <project groups="solaris,notdefault" name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="9d4e42a20653790449273b3c85e67d6d8bae6e2e"/>
   <project name="testrunner" revision="81ac19421e4db65900c4fa11a5b94b8f41cc526b" upstream="master"/>
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="601048ad6acbab6cedd582db09b8c4839ff25b15"/>
-  <project groups="kv" name="tlm" revision="d9c884d9254911834a16c7841a954ce73644dafa" upstream="master">
+  <project groups="kv" name="tlm" revision="0611538a5f76e30ac1ee87918c5206d0049c1596" upstream="master">
     <copyfile dest="GNUmakefile" src="GNUmakefile"/>
     <copyfile dest="Makefile" src="Makefile"/>
     <copyfile dest="CMakeLists.txt" src="CMakeLists.txt"/>
