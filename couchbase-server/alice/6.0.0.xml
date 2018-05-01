@@ -21,11 +21,11 @@
   <project name="blevex" path="godeps/src/github.com/blevesearch/blevex" remote="blevesearch" revision="4b158bb555a3297565afecf6fae675c74f1e47df"/>
   <project name="bolt" path="godeps/src/github.com/boltdb/bolt" remote="couchbasedeps" revision="51f99c862475898df9773747d3accd05a7ca33c1"/>
   <project name="buffer" path="godeps/src/github.com/tdewolff/buffer" remote="couchbasedeps" revision="43cef5ba7b6ce99cc410632dad46cf1c6c97026e"/>
-  <project groups="notdefault,build" name="build" path="cbbuild" revision="38300356d009f6c377afba0b33b423fffb9b577f" upstream="master">
+  <project groups="notdefault,build" name="build" path="cbbuild" revision="38300356d009f6c377afba0b33b423fffb9b577f" upstream="vulcan">
     <annotation name="PRODUCT" value="couchbase-server"/>
     <annotation name="RELEASE" value="alice"/>
     <annotation name="VERSION" value="6.0.0"/>
-    <annotation name="BLD_NUM" value="1084"/>
+    <annotation name="BLD_NUM" value="1085"/>
     </project>
   <project groups="notdefault,enterprise,analytics" name="cbas" path="goproj/src/github.com/couchbaselabs/cbas" remote="couchbaselabs" revision="ed3ac67195e8505046f962c117a442b8292951c5" upstream="master"/>
   <project groups="analytics" name="cbas-ui" revision="3890a4136a78a70233bc9d848367a85e9daa4fe8" upstream="master"/>
@@ -56,7 +56,7 @@
   <project name="geocouch" revision="2a0e73f43451045f157640eec59ced72da18471f"/>
   <project name="ghistogram" path="godeps/src/github.com/couchbase/ghistogram" revision="d910dd063dd68fb4d2a1ba344440f834ebb4ef62" upstream="master"/>
   <project name="go-bindata-assetfs" path="godeps/src/github.com/elazarl/go-bindata-assetfs" remote="couchbasedeps" revision="57eb5e1fc594ad4b0b1dbea7b286d299e0cb43c2"/>
-  <project name="go-couchbase" path="godeps/src/github.com/couchbase/go-couchbase" revision="61d6cbd0da56a89a1b2f2ca54c3a1e83fe17fc96" upstream="master"/>
+  <project name="go-couchbase" path="godeps/src/github.com/couchbase/go-couchbase" revision="16db1f1fe037412f12738fa4d8448c549c4edd77" upstream="master"/>
   <project name="go-curl" path="godeps/src/github.com/andelf/go-curl" remote="couchbasedeps" revision="3b0453ce6faae42ab4d8cdb9ac1f93919c9d8d69" upstream="20161221-couchbase"/>
   <project name="go-jsonpointer" path="godeps/src/github.com/dustin/go-jsonpointer" remote="couchbasedeps" revision="75939f54b39e7dafae879e61f65438dadc5f288c"/>
   <project name="go-metrics" path="godeps/src/github.com/rcrowley/go-metrics" remote="couchbasedeps" revision="dee209f2455f101a5e4e593dea94872d2c62d85d"/>
@@ -76,7 +76,7 @@
   <project name="gojson" path="godeps/src/github.com/dustin/gojson" remote="couchbasedeps" revision="af16e0e771e2ed110f2785564ae33931de8829e4"/>
   <project name="golang-snappy" path="godeps/src/github.com/golang/snappy" remote="couchbasedeps" revision="723cc1e459b8eea2dea4583200fd60757d40097a"/>
   <project name="goleveldb" path="godeps/src/github.com/syndtr/goleveldb" remote="couchbasedeps" revision="fa5b5c78794bc5c18f330361059f871ae8c2b9d6"/>
-  <project name="gomemcached" path="godeps/src/github.com/couchbase/gomemcached" revision="a8d5692cf80648cf926fbdabd8eb2f019a97a5dd" upstream="master"/>
+  <project name="gomemcached" path="godeps/src/github.com/couchbase/gomemcached" revision="a0f176b5fc3a4b915b4e7491ccdeefda7e75fc38" upstream="master"/>
   <project name="gometa" path="goproj/src/github.com/couchbase/gometa" revision="df22eb995051c99d2417db1f424d0c08994e828f" upstream="master"/>
   <project groups="kv" name="googletest" remote="couchbasedeps" revision="f397fa5ec6365329b2e82eb2d8c03a7897bbefb5"/>
   <project name="goskiplist" path="godeps/src/github.com/ryszard/goskiplist" remote="couchbasedeps" revision="2dfbae5fcf46374f166f8969cb07e167f1be6273"/>
@@ -91,7 +91,7 @@
   <project name="jsonx" path="godeps/src/gopkg.in/couchbaselabs/jsonx.v1" remote="couchbaselabs" revision="5b7baa20429a46a5543ee259664cc86502738cad" upstream="master"/>
   <project groups="kv" name="kv_engine" revision="084b8e883815683a20d85ffd86f4d56f721bea7e" upstream="vulcan"/>
   <project name="levigo" path="godeps/src/github.com/jmhodges/levigo" remote="couchbasedeps" revision="1ddad808d437abb2b8a55a950ec2616caa88969b"/>
-  <project groups="notdefault,enterprise" name="libcouchbase" revision="d1c122e451a884a51acbcab265ed7bb2b84551df" upstream="master"/>
+  <project groups="notdefault,enterprise" name="libcouchbase" revision="9c0ab8aa9f334af09f31b5a2d8fe4865faa95f27" upstream="master"/>
   <project name="liner" path="godeps/src/github.com/peterh/liner" remote="couchbasedeps" revision="3681c2a912330352991ecdd642f257efe5b85518"/>
   <project name="liner" path="godeps/src/github.com/sbinet/liner" remote="couchbasedeps" revision="d9335eee40a45a4f5d74524c90040d6fe6013d50"/>
   <project name="minify" path="godeps/src/github.com/tdewolff/minify" remote="couchbasedeps" revision="ede45cc53f43891267b1fe7c689db9c76d4ce0fb"/>
@@ -138,6 +138,6 @@
   <project name="ts" path="godeps/src/github.com/olekukonko/ts" remote="couchbasedeps" revision="ecf753e7c962639ab5a1fb46f7da627d4c0a04b8"/>
   <project name="uuid" path="godeps/src/github.com/google/uuid" remote="couchbasedeps" revision="dec09d789f3dba190787f8b4454c7d3c936fed9e"/>
   <project name="vellum" path="godeps/src/github.com/couchbase/vellum" revision="eb6ae3743b3f300f2136f83ca78c08cc071edbd4" upstream="master"/>
-  <project groups="notdefault,packaging" name="voltron" remote="couchbase-priv" revision="08ecbd3e235193b18d47393a8b9def49d85467ed" upstream="master"/>
+  <project groups="notdefault,packaging" name="voltron" remote="couchbase-priv" revision="08ecbd3e235193b18d47393a8b9def49d85467ed" upstream="vulcan"/>
   <project name="zstd" path="godeps/src/github.com/DataDog/zstd" remote="couchbasedeps" revision="aebefd9fcb99f22cd691ef778a12ed68f0e6a1ab"/>
 </manifest>
