@@ -12,6 +12,7 @@
   <remote fetch="https://github.com/kardianos/" name="kardianos"/>
   <remote fetch="https://github.com/mreiferson/" name="mreiferson"/>
   <remote fetch="https://github.com/natefinch/" name="natefinch"/>
+  <remote fetch="https://github.com/opentracing/" name="opentracing"/>
   <remote fetch="https://github.com/pkg/" name="pkg"/>
   <remote fetch="https://github.com/rcrowley/" name="rcrowley"/>
   <remote fetch="https://github.com/samuel/" name="samuel"/>
@@ -25,7 +26,7 @@
     <annotation name="PRODUCT" value="sync_gateway"/>
     <annotation name="RELEASE" value="2.1.0"/>
     <annotation name="VERSION" value="2.1.0"/>
-    <annotation name="BLD_NUM" value="82"/>
+    <annotation name="BLD_NUM" value="83"/>
     </project>
   <project groups="notdefault,sg-accel" name="cb-heartbeat" path="godeps/src/github.com/couchbase/cb-heartbeat" revision="aedb0776e80d25a79d4b17c1f322a75a2c52a518"/>
   <project groups="notdefault,sg-accel" name="cbauth" path="godeps/src/github.com/couchbase/cbauth" revision="1323b92ac2619c29d50e588e59d7a6b4839da629"/>
@@ -46,10 +47,10 @@
   <project name="go-systemd" path="godeps/src/github.com/coreos/go-systemd" remote="coreos" revision="1d9051fe7a349daf6dac904c0b277c3520c09368"/>
   <project name="go.assert" path="godeps/src/github.com/couchbaselabs/go.assert" remote="couchbaselabs" revision="cfb33e3a0dac05ae1ecbc0e97188c5cf746a1b78"/>
   <project name="go.uuid" path="godeps/src/github.com/satori/go.uuid" remote="satori" revision="5bf94b69c6b68ee1b541973bb8e1144db23a194b"/>
-  <project name="gocb" path="godeps/src/github.com/couchbase/gocb" revision="72b08dc5389b2536dd073f16a093a964edce65eb"/>
+  <project name="gocb" path="godeps/src/github.com/couchbase/gocb" revision="eb0048566506484772bb1be22c1cf0c8cd9def05"/>
   <project name="gocbconnstr" path="godeps/src/github.com/couchbaselabs/gocbconnstr" remote="couchbaselabs" revision="710456e087a6d497e87f41d0a9d98d6a75672186"/>
   <project name="gocbconnstr" path="godeps/src/gopkg.in/couchbaselabs/gocbconnstr.v1" remote="couchbaselabs" revision="710456e087a6d497e87f41d0a9d98d6a75672186"/>
-  <project name="gocbcore" path="godeps/src/gopkg.in/couchbase/gocbcore.v7" revision="de2ebfbb130fe9df6ffdacde73f799f17a72e70b"/>
+  <project name="gocbcore" path="godeps/src/gopkg.in/couchbase/gocbcore.v7" revision="7b68c492c29f3f952a00a4ba97dac14cc4b2b57e"/>
   <project name="gomemcached" path="godeps/src/github.com/couchbase/gomemcached" revision="39fe61b0969ae38f8c6841e9c19c5ad9e57d2b75"/>
   <project name="goutils" path="godeps/src/github.com/couchbase/goutils" revision="5823a0cbaaa9008406021dc5daf80125ea30bba6"/>
   <project name="jsonx" path="godeps/src/gopkg.in/couchbaselabs/jsonx.v1" remote="couchbaselabs" revision="5b7baa20429a46a5543ee259664cc86502738cad"/>
@@ -57,6 +58,7 @@
   <project name="mux" path="godeps/src/github.com/gorilla/mux" remote="gorilla" revision="043ee6597c29786140136a5747b6a886364f5282"/>
   <project name="net" path="godeps/src/golang.org/x/net" remote="couchbasedeps" revision="8968c61983e8f51a91b8c0ef25bf739278c89634"/>
   <project name="npipe" path="godeps/src/github.com/natefinch/npipe" remote="natefinch" revision="0938d701e50e580f5925c773055eb6d6b32a0cbc"/>
+  <project name="opentracing-go" path="godeps/src/github.com/opentracing/opentracing-go" remote="opentracing" revision="6c572c00d1830223701e155de97408483dfcd14a"/>
   <project name="osext" path="godeps/src/github.com/kardianos/osext" remote="kardianos" revision="29ae4ffbc9a6fe9fb2bc5029050ce6996ea1d3bc"/>
   <project name="otto" path="godeps/src/github.com/robertkrimen/otto" remote="couchbasedeps" revision="a813c59b1b4471ff7ecd3b533bac2f7e7d178784"/>
   <project name="pkg" path="godeps/src/github.com/coreos/pkg" remote="coreos" revision="160ae6282d8c48a33d8c150e4e4817fdef8a5cde"/>
@@ -66,7 +68,7 @@
   <project name="sg-replicate" path="godeps/src/github.com/couchbaselabs/sg-replicate" remote="couchbaselabs" revision="b0907c1dc06bfb60354416769e40bb07b4367d88"/>
   <project name="sourcemap" path="godeps/src/gopkg.in/sourcemap.v1" remote="go-sourcemap" revision="6e83acea0053641eff084973fee085f0c193c61a"/>
   <project groups="notdefault,sg-accel" name="sync-gateway-accel" path="godeps/src/github.com/couchbaselabs/sync-gateway-accel" remote="couchbaselabs_private" revision="551d6ff8d7b84979133b4d5991f9159e33e8d3ce"/>
-  <project name="sync_gateway" path="godeps/src/github.com/couchbase/sync_gateway" revision="87d9f60dbbcc63fce589215024abad8790c7fd07" upstream="master"/>
+  <project name="sync_gateway" path="godeps/src/github.com/couchbase/sync_gateway" revision="ef09c9244b8af65716ca871c0c315770212ef0c3" upstream="master"/>
   <project name="sync_gateway_admin_ui" path="godeps/src/github.com/couchbaselabs/sync_gateway_admin_ui" remote="couchbaselabs" revision="93c74bac9ddc2979ab895a37087c225c998b03bf"/>
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="9d4e42a20653790449273b3c85e67d6d8bae6e2e"/>
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="bd91bbf73e9a4a801adbfb97133c992678533126"/>
