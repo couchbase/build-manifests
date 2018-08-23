@@ -1,0 +1,15 @@
+<manifest>
+  <remote fetch="git://github.com/couchbase/" name="couchbase"/>
+  <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps"/>
+  
+  <default remote="couchbase" revision="master"/>
+  
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="PRODUCT" value="cbdeps/libuv"/>
+    <annotation name="RELEASE" value="1.20.3"/>
+    <annotation name="VERSION" value="1.20.3"/>
+    <annotation name="BLD_NUM" value="1"/>
+    </project>
+  <project name="build-tools" revision="32e74194140651f190346deac68658da40176997" upstream="master"/>
+  <project name="libuv" remote="couchbasedeps" revision="8cfd67e59195251dff793ee47c185c9d6a8f3818" upstream="refs/tags/v1.20.3"/>
+</manifest>
