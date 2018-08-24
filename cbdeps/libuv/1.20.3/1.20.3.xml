@@ -1,7 +1,6 @@
 <manifest>
   <remote fetch="git://github.com/couchbase/" name="couchbase"/>
   <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps"/>
-  <remote fetch="git://github.com/minddrive/" name="minddrive"/>
   
   <default remote="couchbase" revision="master"/>
   
@@ -9,8 +8,8 @@
     <annotation name="PRODUCT" value="cbdeps/libuv"/>
     <annotation name="RELEASE" value="1.20.3"/>
     <annotation name="VERSION" value="1.20.3"/>
-    <annotation name="BLD_NUM" value="12"/>
+    <annotation name="BLD_NUM" value="13"/>
     </project>
-  <project name="build-tools" remote="minddrive" revision="831f367109c9f8f445de49edc31303d8ccd3a51c" upstream="master"/>
+  <project name="build-tools" revision="7cb17ba7790ff04cfc1c61c37cd509662acf8da6" upstream="master"/>
   <project name="libuv" remote="couchbasedeps" revision="8cfd67e59195251dff793ee47c185c9d6a8f3818" upstream="refs/tags/v1.20.3"/>
 </manifest>
