@@ -1,6 +1,7 @@
 <manifest>
   <remote fetch="git://github.com/couchbase/" name="couchbase"/>
   <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps"/>
+  <remote fetch="git://github.com/minddrive/" name="minddrive"/>
   
   <default remote="couchbase" revision="master"/>
   
@@ -8,8 +9,8 @@
     <annotation name="PRODUCT" value="cbdeps/jemalloc"/>
     <annotation name="RELEASE" value="4.5.0.1"/>
     <annotation name="VERSION" value="4.5.0.1"/>
-    <annotation name="BLD_NUM" value="2"/>
+    <annotation name="BLD_NUM" value="3"/>
     </project>
-  <project name="build-tools" revision="14928eb5eb24b1a85478f4e9c876533db4e55016" upstream="master"/>
+  <project name="build-tools" remote="minddrive" revision="83a7af0bc6679c3d461d3b4f3edfad5e47ec9f74" upstream="master"/>
   <project name="jemalloc" remote="couchbasedeps" revision="17c897976c60b0e6e4f4a365c751027244dada7a" upstream="stable-4"/>
 </manifest>
