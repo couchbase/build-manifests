@@ -1,16 +1,15 @@
 <manifest>
-  <remote fetch="git://github.com/couchbase/" name="couchbase"/>
-  <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps"/>
-  <remote fetch="git://github.com/minddrive/" name="minddrive"/>
+  <remote fetch="git://github.com/couchbase/" name="couchbase" />
+  <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps" />
   
-  <default remote="couchbase" revision="master"/>
+  <default remote="couchbase" revision="master" />
   
   <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
-    <annotation name="PRODUCT" value="cbdeps/zlib"/>
-    <annotation name="RELEASE" value="1.2.11"/>
-    <annotation name="VERSION" value="1.2.11"/>
-    <annotation name="BLD_NUM" value="1"/>
-    </project>
-  <project name="build-tools" remote="minddrive" revision="193a5b2516beec254655b7e302b9c476b7a4fa31" upstream="master"/>
-  <project name="zlib" remote="couchbasedeps" revision="cacf7f1d4e3d44d871b605da3b647f07d718623f" upstream="refs/tags/v1.2.11"/>
+    <annotation name="RELEASE" value="1.2.11" />
+    <annotation name="PRODUCT" value="cbdeps::zlib" />
+    <annotation name="BLD_NUM" value="2" />
+    <annotation name="VERSION" value="1.2.11" />
+  </project>
+  <project name="build-tools" revision="976b046872e4d1ed9ba61c3dc87576ff3efc9eb5" upstream="master" />
+  <project name="zlib" remote="couchbasedeps" revision="cacf7f1d4e3d44d871b605da3b647f07d718623f" upstream="refs/tags/v1.2.11" />
 </manifest>
