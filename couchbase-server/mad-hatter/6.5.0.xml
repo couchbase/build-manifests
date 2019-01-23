@@ -22,7 +22,7 @@
   <project groups="notdefault,build" name="build" path="cbbuild" revision="b859b6ebf7c1a1e816803c81c2cd5a9bdbbb2065" upstream="master">
     <annotation name="RELEASE" value="mad-hatter" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="2123" />
+    <annotation name="BLD_NUM" value="2124" />
     <annotation name="VERSION" value="6.5.0" />
   </project>
   <project groups="notdefault,enterprise,analytics" name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="7cf2c2f0ef55f0ec4acf5e0ebcfa2acd97fcad61" upstream="master" />
@@ -99,6 +99,7 @@
   <project groups="notdefault,enterprise" name="libcouchbase" revision="563eac51f6b2b045b096763b055eaa707bf83bb1" upstream="master" />
   <project name="liner" path="godeps/src/github.com/peterh/liner" remote="couchbasedeps" revision="3681c2a912330352991ecdd642f257efe5b85518" />
   <project name="liner" path="godeps/src/github.com/sbinet/liner" remote="couchbasedeps" revision="d9335eee40a45a4f5d74524c90040d6fe6013d50" />
+  <project groups="notdefault,enterprise,kv_ee" name="magma" remote="couchbase-priv" revision="2d34cf7beab9c1017e42f83d28146becff36b1c6" upstream="master" />
   <project name="minify" path="godeps/src/github.com/tdewolff/minify" remote="couchbasedeps" revision="ede45cc53f43891267b1fe7c689db9c76d4ce0fb" />
   <project name="mmap-go" path="godeps/src/github.com/edsrzf/mmap-go" remote="couchbasedeps" revision="935e0e8a636ca4ba70b713f3e38a19e1b77739e8" />
   <project name="mobile-service" path="goproj/src/github.com/couchbase/mobile-service" revision="3a858d5dce867f3f79fbdee93ef42f975419ed1c" upstream="master" />
@@ -134,7 +135,7 @@
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="7fbe1cd0fcc20051e1fcb87fbabec4a1bacaaeba" />
   <project name="testrunner" revision="f07832b5b6efcf3b8a81ea008b1f99b54cc82adf" upstream="master" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="88f656faf3f37f690df1a32515b479415e1a6769" />
-  <project groups="kv" name="tlm" revision="d44637848d35a83b964265d9a68ce13d85f1666e" upstream="master">
+  <project groups="kv" name="tlm" revision="3e38a0883880f3834385ee9930297cebbe9edb92" upstream="master">
     <copyfile dest="GNUmakefile" src="GNUmakefile" />
     <copyfile dest="Makefile" src="Makefile" />
     <copyfile dest="CMakeLists.txt" src="CMakeLists.txt" />
