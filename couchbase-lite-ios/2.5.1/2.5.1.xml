@@ -1,0 +1,38 @@
+<manifest>
+  <remote fetch="git://github.com/ARMmbed" name="ARMmbed" />
+  <remote fetch="git://github.com/arangodb/" name="arangodb" />
+  <remote fetch="git://github.com/couchbase/" name="couchbase" review="review.couchbase.org" />
+  <remote fetch="ssh://git@github.com/couchbase/" name="couchbase-priv" review="review.couchbase.org" />
+  <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps" />
+  <remote fetch="git://github.com/couchbaselabs/" name="couchbaselabs" review="review.couchbase.org" />
+  <remote fetch="ssh://git@github.com/couchbaselabs/" name="couchbaselabs-priv" review="review.couchbase.org" />
+  <remote fetch="git://github.com/google/" name="google" />
+  <remote fetch="git://github.com/rudi-cilibrasi/" name="rudi-cilibrasi" />
+  <remote fetch="git://github.com/snej/" name="snej" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="BLIP-Cpp" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/BLIP-Cpp" remote="couchbaselabs" revision="0a6346a133860967b4492e6e731843ae9b453587" />
+  <project name="MYUtilities" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/MYUtilities" remote="snej" revision="33e7e5820433aa70d38e1c5e54b13e74a91ae57f" />
+  <project name="SQLiteCpp" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="676a2d7529d3acd7a7ef05b03be91e2e27c55739" />
+  <project name="build" revision="671ea1d94ad417c1a301094098b1ceae8462fd04">
+    <annotation name="RELEASE" value="2.5.1" />
+    <annotation name="PRODUCT" value="couchbase-lite-ios" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="2.5.1" />
+  </project>
+  <project name="civetweb" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/civetweb" remote="couchbasedeps" revision="4341c169a789b917a4fe1cdd24f55e507d855ff5" />
+  <project name="couchbase-lite-core" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core" revision="4ed72ceebbb92e6d248fbd938174e578d226ab05" />
+  <project groups="enterprise,notdefault" name="couchbase-lite-core-EE" path="couchbase-lite-ios-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="3bfc618860793a5a2778688cfa85ca58e161c128" />
+  <project name="couchbase-lite-core.wiki" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
+  <project name="couchbase-lite-ios" path="couchbase-lite-ios-ee/couchbase-lite-ios" revision="a8e22d834d75872c372b5b7c084ee20e043ef02f" upstream="release/iridium" />
+  <project groups="enterprise,notdefault" name="couchbase-lite-ios-ee" remote="couchbaselabs-priv" revision="1435d201e624a41b1efbf8581858513d0e825773" upstream="release/iridium" />
+  <project name="fleece" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="f97b4d757930a500fdfa916f066115e4ab80df9c" />
+  <project name="googletest" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
+  <project name="jsonsl" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/fleece/vendor/jsonsl" remote="snej" revision="684b60f9af68b8c397422e74d0c2dd206de16a2c" />
+  <project name="mbedtls" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/mbedtls" remote="ARMmbed" revision="9f77017a8daf3e1fb75f7904a2e6e8960410dca9" />
+  <project groups="notdefault" name="mobile-testkit" remote="couchbaselabs-priv" revision="bb478323b2a86a5d54d53711ca20d54bb78f0bfd" upstream="master" />
+  <project name="product-texts" revision="53fe2af5d7cf5201f3d7fbe76391d62e652c153f" upstream="master" />
+  <project name="sqlite3-unicodesn" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/sqlite3-unicodesn" remote="snej" revision="43445380e5c3ecb546472f86d5c56732a4267a3a" />
+  <project name="zlib" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/BLIP-Cpp/vendor/zlib" remote="couchbasedeps" revision="cacf7f1d4e3d44d871b605da3b647f07d718623f" />
+</manifest>
