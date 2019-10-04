@@ -1,0 +1,14 @@
+<manifest>
+  <remote fetch="git://github.com/couchbase/" name="couchbase" />
+  <remote fetch="git://github.com/couchbasebuild/" name="couchbasebuild" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="89467fdea78ec6c84fa423756a1210056ac5c199">
+    <annotation name="RELEASE" value="0.9.9" />
+    <annotation name="PRODUCT" value="python_tools::cbdep" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="0.9.9" />
+  </project>
+  <project name="cbdep" remote="couchbasebuild" revision="75f16eb5a0e165be329e6a9acb9fa3157c78eb9d" upstream="master" />
+</manifest>
