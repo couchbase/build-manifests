@@ -7,12 +7,15 @@
   
   <default remote="couchbase" revision="master"/>
   
+  <project name="blance" path="godeps/src/github.com/couchbase/blance" revision="5cd1345cca3ed72f1e63d41d622fcda73e63fea8"/>
   <project name="build" path="cbbuild" revision="d519f77629dcfd769c425267752fca095906d7bc" upstream="master">
     <annotation name="PRODUCT" value="sync_gateway"/>
     <annotation name="RELEASE" value="2.7.0"/>
     <annotation name="VERSION" value="2.7.0"/>
-    <annotation name="BLD_NUM" value="57"/>
+    <annotation name="BLD_NUM" value="58"/>
     </project>
+  <project name="cbauth" path="godeps/src/github.com/couchbase/cbauth" revision="82614adbe4d480de5675d8eee9b21a180a779222"/>
+  <project name="cbgt" path="godeps/src/github.com/couchbase/cbgt" revision="6478dd22181e70f5ef5a2116bc59ef5175671a6f"/>
   <project name="clockwork" path="godeps/src/github.com/jonboulle/clockwork" remote="couchbasedeps" revision="ed104f61ea4877bea08af6f759805674861e968d"/>
   <project name="clog" path="godeps/src/github.com/couchbase/clog" revision="dcae66272b24600ae0005fa06b511cfae8914d3d"/>
   <project groups="notdefault,cb_sg_enterprise" name="concurrent" path="godeps/src/github.com/modern-go/concurrent" remote="couchbasedeps" revision="bacd9c7ef1dd9b15be4a9909b8ac7a4e313eec94"/>
@@ -25,14 +28,16 @@
   <project name="go-couchbase" path="godeps/src/github.com/couchbase/go-couchbase" revision="f83e63d76bc41c5b61e022db2d5463f776dc545f"/>
   <project groups="notdefault,cb_sg_enterprise" name="go-diff" path="godeps/src/github.com/sergi/go-diff" remote="couchbasedeps" revision="da645544ed44df016359bd4c0e3dc60ee3a0da43"/>
   <project groups="notdefault,cb_sg_enterprise" name="go-fleecedelta" path="godeps/src/github.com/couchbaselabs/go-fleecedelta" remote="couchbaselabs_private" revision="68cf89ddc17d5fed0c1424083439585bec964590"/>
+  <project name="go-metrics" path="godeps/src/github.com/rcrowley/go-metrics" remote="couchbasedeps" revision="dee209f2455f101a5e4e593dea94872d2c62d85d"/>
   <project name="go-metrics-1" path="godeps/src/github.com/samuel/go-metrics" remote="couchbasedeps" revision="52e6232924c9e785c3c4117b63a3e58b1f724544"/>
   <project name="go-oidc" path="godeps/src/github.com/coreos/go-oidc" remote="couchbasedeps" revision="5aa9381f6e998aa16cc96b4347d33dcc29792864"/>
   <project name="go-ole" path="godeps/src/github.com/go-ole/go-ole" remote="couchbasedeps" revision="ae2e2a20879aabdd3a51104ab6a4328af2773948"/>
   <project name="go-systemd" path="godeps/src/github.com/coreos/go-systemd" remote="couchbasedeps" revision="1d9051fe7a349daf6dac904c0b277c3520c09368"/>
   <project name="go.assert" path="godeps/src/github.com/couchbaselabs/go.assert" remote="couchbaselabs" revision="cfb33e3a0dac05ae1ecbc0e97188c5cf746a1b78"/>
-  <project name="gocb" path="godeps/src/github.com/couchbase/gocb" revision="d46732ea85f0ca44f82842ca2996bd2a21995172"/>
+  <project name="gocb" path="godeps/src/github.com/couchbase/gocb" revision="d5dc4f6170174357adee38c22e81721d1918b09e"/>
+  <project name="gocb" path="godeps/src/gopkg.in/couchbase/gocb.v1" revision="d5dc4f6170174357adee38c22e81721d1918b09e"/>
   <project name="gocbconnstr" path="godeps/src/gopkg.in/couchbaselabs/gocbconnstr.v1" remote="couchbaselabs" revision="3c902e3ed6c25b53d53f6a9d26cc4f7a85c0fcf8"/>
-  <project name="gocbcore" path="godeps/src/gopkg.in/couchbase/gocbcore.v7" revision="5905fd813f0ec718a59374725efaab4993560436"/>
+  <project name="gocbcore" path="godeps/src/gopkg.in/couchbase/gocbcore.v7" revision="bbbfeaf52639128d7736a5a03a9011a71b152ab6"/>
   <project name="gomemcached" path="godeps/src/github.com/couchbase/gomemcached" revision="db06807997e6f778fe135571140a0c4f1f59723c"/>
   <project name="gopsutil" path="godeps/src/github.com/shirou/gopsutil" remote="couchbasedeps" revision="cce2d16538b41615132a07ec08d5bdc91c1851e3"/>
   <project name="gosigar" path="godeps/src/github.com/elastic/gosigar" remote="couchbasedeps" revision="f498c67133bcded80f5966ee63acfe68cff4e6bf"/>
@@ -55,7 +60,7 @@
   <project name="sg-bucket" path="godeps/src/github.com/couchbase/sg-bucket" revision="de3a040899d6acf57077599b2ea15b3677f56864"/>
   <project name="sg-replicate" path="godeps/src/github.com/couchbaselabs/sg-replicate" remote="couchbaselabs" revision="d6eb45633e5784f5161973b04317e192931972a3"/>
   <project name="sourcemap" path="godeps/src/gopkg.in/sourcemap.v1" remote="couchbasedeps" revision="6e83acea0053641eff084973fee085f0c193c61a"/>
-  <project name="sync_gateway" path="godeps/src/github.com/couchbase/sync_gateway" revision="8cd83253a973676a42ffa8bbb5fe718ad6650c87" upstream="master"/>
+  <project name="sync_gateway" path="godeps/src/github.com/couchbase/sync_gateway" revision="dbff96dc08013f32ae085ce26f54b202150573fa" upstream="master"/>
   <project name="sync_gateway_admin_ui" path="godeps/src/github.com/couchbaselabs/sync_gateway_admin_ui" remote="couchbaselabs" revision="93c74bac9ddc2979ab895a37087c225c998b03bf"/>
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="98c5dad5d1a0e8a73845ecc8897d0bd56586511d" upstream="release-branch.go1.11"/>
   <project name="testify" path="godeps/src/github.com/stretchr/testify" remote="couchbasedeps" revision="04af85275a5c7ac09d16bb3b9b2e751ed45154e5"/>
