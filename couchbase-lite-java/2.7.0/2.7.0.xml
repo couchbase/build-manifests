@@ -1,0 +1,28 @@
+<manifest>
+  <remote fetch="git://github.com/couchbase/" name="couchbase" review="review.couchbase.org" />
+  <remote fetch="ssh://git@github.com/couchbase/" name="couchbase-priv" review="review.couchbase.org" />
+  <remote fetch="ssh://git@github.com/couchbaselabs/" name="couchbaselabs-priv" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project groups="notdefault" name="build" path="cbbuild" revision="5f3415b1a8ff88eeac8afe0cc6c12bd73a997c3d">
+    <annotation name="RELEASE" value="2.7.0" />
+    <annotation name="PRODUCT" value="couchbase-lite-java" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="2.7.0" />
+  </project>
+  <project name="couchbase-lite-build" revision="6d35d5c08fd14f806013742e4a2a71f99c4499fc" upstream="master">
+    <linkfile dest="settings.gradle" src="all/settings-ee.gradle" />
+    <linkfile dest="version.txt" src="all/version.txt" />
+  </project>
+  <project name="couchbase-lite-core" revision="b4090106884ce95a4dfabc2556f19ccc5cdfc467" sync-s="true" upstream="master" />
+  <project name="couchbase-lite-core-EE" remote="couchbase-priv" revision="df1951bf3e4469908d28babd3323c25f61873dea" sync-s="true" upstream="master" />
+  <project name="couchbase-lite-java" revision="8afbf3e2175288f24c3080a0bb00cf813ffb72ed" upstream="master" />
+  <project name="couchbase-lite-java-ee" remote="couchbaselabs-priv" revision="cf423e0dc0aed10f9190caa3118d3e3e925cd919" upstream="master">
+    <linkfile dest="build.gradle" src="build.gradle" />
+    <linkfile dest="gradle" src="gradle" />
+    <linkfile dest="gradlew" src="gradlew" />
+    <linkfile dest="gradlew.bat" src="gradlew.bat" />
+    <linkfile dest="gradlew.properties" src="gradlew.properties" />
+  </project>
+</manifest>
