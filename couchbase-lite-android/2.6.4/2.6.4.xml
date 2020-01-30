@@ -1,0 +1,29 @@
+<manifest>
+  <remote fetch="git://github.com/couchbase/" name="couchbase" review="review.couchbase.org" />
+  <remote fetch="ssh://git@github.com/couchbase/" name="couchbase-priv" review="review.couchbase.org" />
+  <remote fetch="ssh://git@github.com/couchbaselabs/" name="couchbaselabs-priv" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="release/cobalt" />
+  
+  <project groups="notdefault" name="build" path="cbbuild" revision="5f3415b1a8ff88eeac8afe0cc6c12bd73a997c3d">
+    <annotation name="RELEASE" value="2.6.4" />
+    <annotation name="PRODUCT" value="couchbase-lite-android" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="2.6.4" />
+  </project>
+  <project name="couchbase-lite-android" revision="7a5d6241dc10701adcea248b1cfa16bf67235003" upstream="release/cobalt" />
+  <project name="couchbase-lite-android-ee" remote="couchbaselabs-priv" revision="25b30782b010661097fe54e13a948679e8d55512" upstream="release/cobalt">
+    <linkfile dest="build.gradle" src="build.gradle" />
+    <linkfile dest="gradle" src="gradle" />
+    <linkfile dest="gradlew" src="gradlew" />
+    <linkfile dest="gradlew.bat" src="gradlew.bat" />
+    <linkfile dest="gradlew.properties" src="gradlew.properties" />
+  </project>
+  <project name="couchbase-lite-build" revision="bc6878aa458e50fe62e569f9d5befc836d8e5f0f" upstream="release/cobalt">
+    <linkfile dest="settings.gradle" src="android/settings-ee.gradle" />
+    <linkfile dest="version.txt" src="android/version.txt" />
+  </project>
+  <project name="couchbase-lite-core" revision="78d97ec01b334aef77641428a6f2a2e75340faac" sync-s="true" upstream="release/cobalt" />
+  <project name="couchbase-lite-core-EE" remote="couchbase-priv" revision="df1951bf3e4469908d28babd3323c25f61873dea" sync-s="true" upstream="release/cobalt" />
+  <project name="couchbase-lite-java" revision="a865e06d305b660c9647c6bce92b277e4afc430d" upstream="release/cobalt" />
+</manifest>
