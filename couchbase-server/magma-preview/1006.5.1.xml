@@ -11,7 +11,7 @@
   
   <project groups="kv" name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="bc8aef24ea57884464027f841c1ad7436a42c615" />
   <project groups="notdefault,enterprise,analytics" name="analytics-dcp-client" path="analytics/java-dcp-client" revision="691cec38f47eaab04ad81556cc065d22f1eb8749" />
-  <project groups="notdefault,enterprise,analytics" name="asterixdb" path="analytics/asterixdb" revision="df7c02d77f907a1e587f297e511e43f7d697785f" upstream="mad-hatter" />
+  <project groups="notdefault,enterprise,analytics" name="asterixdb" path="analytics/asterixdb" revision="7d660a089bcf4118cb5ff6d11db116c7360e44bc" upstream="mad-hatter" />
   <project groups="backup,notdefault,enterprise" name="backup" path="goproj/src/github.com/couchbase/backup" remote="couchbase-priv" revision="0c763f9aa8acc502ee9a5a84e5dd3bc0d924a316" upstream="mad-hatter" />
   <project groups="kv" name="benchmark" remote="couchbasedeps" revision="74b24058ad4914b837200d0341050657ba154e4a" />
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4" />
@@ -23,11 +23,11 @@
   <project groups="notdefault,build" name="build" path="cbbuild" revision="07174391f2c769f5f50dd1c405340aa38cd3f886" upstream="master">
     <annotation name="RELEASE" value="magma-preview" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="1091" />
+    <annotation name="BLD_NUM" value="1092" />
     <annotation name="VERSION" value="1006.5.1" />
   </project>
   <project groups="notdefault,enterprise,analytics" name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="6938f549fde15cb7fb825420509ebf528cbb9925" upstream="mad-hatter" />
-  <project groups="notdefault,enterprise,analytics" name="cbas-core" path="analytics" remote="couchbase-priv" revision="3c6d8c11d847f856702bff124caaa54c7a2be941" upstream="mad-hatter" />
+  <project groups="notdefault,enterprise,analytics" name="cbas-core" path="analytics" remote="couchbase-priv" revision="4558e24b99f2d2c6481e63afa6a3bcc28e9c2f9c" upstream="mad-hatter" />
   <project groups="analytics" name="cbas-ui" revision="8744108f25c4520b09009ff277d35223e208fe30" />
   <project name="cbauth" path="godeps/src/github.com/couchbase/cbauth" revision="82614adbe4d480de5675d8eee9b21a180a779222" upstream="master" />
   <project groups="backup" name="cbflag" path="godeps/src/github.com/couchbase/cbflag" revision="9892b6db3537c54be7719f47ad25e0d513333b3e" upstream="master" />
@@ -41,7 +41,7 @@
   <project groups="notdefault,kv_ee,enterprise" name="couch_rocks" remote="couchbase-priv" revision="75f37fa46bfe5e445dee077157303968a3e09126" upstream="master" />
   <project groups="kv" name="couchbase-cli" revision="c5221b1300105a0692a3add065cb57f320722cea" upstream="master" />
   <project name="couchdb" revision="f47945baa733653fb0ab268d8f11c62104f6689f" upstream="mad-hatter" />
-  <project groups="notdefault,packaging" name="couchdbx-app" revision="6bf93c48217400824f0a68e6e2631af1a4f0d352" upstream="master" />
+  <project groups="notdefault,packaging" name="couchdbx-app" revision="b9d0680aaff5af4782bf479fc7c3abc7b45894ee" upstream="master" />
   <project groups="kv" name="couchstore" revision="1671a4be4dc978014102d51d705becd2fe3dc8db" upstream="mad-hatter" />
   <project groups="backup" name="crypto" path="godeps/src/golang.org/x/crypto" remote="couchbasedeps" revision="bd6f299fb381e4c3393d1c4b1f0b94f5e77650c8" />
   <project name="cuckoofilter" path="godeps/src/github.com/seiflotfy/cuckoofilter" remote="couchbasedeps" revision="d04838794ab86926d32b124345777e55e6f43974" />
@@ -98,12 +98,12 @@
   <project name="json-iterator-go" path="godeps/src/github.com/json-iterator/go" remote="couchbasedeps" revision="f7279a603edee96fe7764d3de9c6ff8cf9970994" />
   <project name="jsonparser" path="godeps/src/github.com/buger/jsonparser" remote="couchbasedeps" revision="bf1c66bbce23153d89b23f8960071a680dbef54b" />
   <project groups="backup" name="jsonx" path="godeps/src/gopkg.in/couchbaselabs/jsonx.v1" remote="couchbaselabs" revision="5b7baa20429a46a5543ee259664cc86502738cad" upstream="master" />
-  <project groups="kv" name="kv_engine" remote="apaar" revision="14c50d7e3ba37019cac8756e4e9daaade1fd95cf" upstream="magma" />
+  <project groups="kv" name="kv_engine" remote="apaar" revision="193320b0b70133b2b8422716f8fec65615949eef" upstream="magma" />
   <project name="levigo" path="godeps/src/github.com/jmhodges/levigo" remote="couchbasedeps" revision="1ddad808d437abb2b8a55a950ec2616caa88969b" />
   <project groups="notdefault,enterprise" name="libcouchbase" revision="7c3a10084cf259ecb47b0a0ecb15be9a65f7bc80" />
   <project name="liner" path="godeps/src/github.com/peterh/liner" remote="couchbasedeps" revision="6f820f8f90ce9482ffbd40bb15f9ea9932f4942d" />
   <project name="liner" path="godeps/src/github.com/sbinet/liner" remote="couchbasedeps" revision="d9335eee40a45a4f5d74524c90040d6fe6013d50" />
-  <project groups="notdefault,enterprise,kv_ee" name="magma" remote="couchbase-priv" revision="07899ea44b39dc3a76ecbf82b5abd769fe2274ba" upstream="master" />
+  <project groups="notdefault,enterprise,kv_ee" name="magma" remote="couchbase-priv" revision="b6fab884c9bb29de593eac87e6a86921706816d3" upstream="master" />
   <project name="minify" path="godeps/src/github.com/tdewolff/minify" remote="couchbasedeps" revision="ede45cc53f43891267b1fe7c689db9c76d4ce0fb" />
   <project name="mmap-go" path="godeps/src/github.com/edsrzf/mmap-go" remote="couchbasedeps" revision="935e0e8a636ca4ba70b713f3e38a19e1b77739e8" />
   <project name="mobile-service" path="goproj/src/github.com/couchbase/mobile-service" revision="4672fde0390f115a25f4f4bfe9d1511836de47a7" upstream="master" />
