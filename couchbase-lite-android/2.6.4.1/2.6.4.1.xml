@@ -8,11 +8,11 @@
   <project groups="notdefault" name="build" path="cbbuild" revision="5f3415b1a8ff88eeac8afe0cc6c12bd73a997c3d">
     <annotation name="RELEASE" value="2.6.4.1" />
     <annotation name="PRODUCT" value="couchbase-lite-android" />
-    <annotation name="BLD_NUM" value="1" />
+    <annotation name="BLD_NUM" value="2" />
     <annotation name="VERSION" value="2.6.4.1" />
   </project>
-  <project name="couchbase-lite-android" revision="7a5d6241dc10701adcea248b1cfa16bf67235003" upstream="release/cobalt" />
-  <project name="couchbase-lite-android-ee" remote="couchbaselabs-priv" revision="25b30782b010661097fe54e13a948679e8d55512" upstream="release/cobalt">
+  <project name="couchbase-lite-android" revision="5a9845802581649f93c4a521a5b1d266d920cf96" upstream="release/cobalt" />
+  <project name="couchbase-lite-android-ee" remote="couchbaselabs-priv" revision="285f9f336e72124afa019a737103a0069e6e35c4" upstream="hotfix/CBSE-8026">
     <linkfile dest="build.gradle" src="build.gradle" />
     <linkfile dest="gradle" src="gradle" />
     <linkfile dest="gradlew" src="gradlew" />
@@ -23,7 +23,7 @@
     <linkfile dest="settings.gradle" src="android/settings-ee.gradle" />
     <linkfile dest="version.txt" src="android/version.txt" />
   </project>
-  <project name="couchbase-lite-core" revision="565c8978237eb0dd2e9d7647221a74c41d8ea1cb" sync-s="true" upstream="release/cobalt" />
+  <project name="couchbase-lite-core" revision="0143169280a3b690075d6fe5b5375eeb8947dc8a" sync-s="true" upstream="fix/logging-deadlocks" />
   <project name="couchbase-lite-core-EE" remote="couchbase-priv" revision="df1951bf3e4469908d28babd3323c25f61873dea" sync-s="true" upstream="release/cobalt" />
   <project name="couchbase-lite-java" revision="a865e06d305b660c9647c6bce92b277e4afc430d" upstream="release/cobalt" />
 </manifest>
