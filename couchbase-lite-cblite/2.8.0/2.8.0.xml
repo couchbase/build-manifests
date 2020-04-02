@@ -7,34 +7,37 @@
   <remote fetch="git://github.com/couchbaselabs/" name="couchbaselabs" review="review.couchbase.org" />
   <remote fetch="ssh://git@github.com/couchbaselabs/" name="couchbaselabs-priv" review="review.couchbase.org" />
   <remote fetch="git://github.com/google/" name="google" />
+  <remote fetch="git://github.com/leetal/" name="leetal" />
   <remote fetch="git://github.com/rudi-cilibrasi/" name="rudi-cilibrasi" />
   <remote fetch="git://github.com/snej/" name="snej" />
   
   <default remote="couchbase" revision="master" />
   
-  <project name="BLIP-Cpp" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/BLIP-Cpp" remote="couchbaselabs" revision="8bbba50dcb3d023eb07df0f0649389e7c8c003a9" />
-  <project name="SQLiteCpp" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="d0c5991ca3262f6a5fd7b6c8d9773ef9fbe0206d" />
-  <project name="build" path="cbbuild" revision="c80bef8f86361400d574badb3e5cb4a6b57a5350">
+  <project name="SQLiteCpp" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="999bc8995f827fed34d60c126b57da693fdb34bc" />
+  <project name="build" path="cbbuild" revision="a8ba0a9d6058381edc320648cafaf696a611908c">
     <annotation name="RELEASE" value="2.8.0" />
     <annotation name="PRODUCT" value="couchbase-lite-cblite" />
-    <annotation name="BLD_NUM" value="6" />
+    <annotation name="BLD_NUM" value="7" />
     <annotation name="VERSION" value="2.8.0" />
   </project>
   <project name="civetweb" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/civetweb" remote="couchbasedeps" revision="4341c169a789b917a4fe1cdd24f55e507d855ff5" />
-  <project name="couchbase-lite-core" path="couchbase-mobile-tools/vendor/couchbase-lite-core" revision="044919a168e334b4ecc5b3ab185038bc1d6bfdf8" upstream="master" />
+  <project name="couchbase-lite-core" path="couchbase-mobile-tools/vendor/couchbase-lite-core" revision="f33d371975d2cc869d9787fccf74fb500dceeaad" upstream="master" />
   <project name="couchbase-lite-core.wiki" path="couchbase-mobile-tools/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
-  <project name="couchbase-mobile-tools" remote="couchbaselabs" revision="daa36c9bd06d4fcdb3e6db1c595afcecd0ff191b" upstream="master">
+  <project name="couchbase-mobile-tools" remote="couchbaselabs" revision="b472717056f30953dfa0d8eeb5143ac5e904219d" upstream="master">
     <copyfile dest="CMakeLists.txt" src="ci/cblite/CMakeLists.txt" />
   </project>
-  <project name="fleece" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="5de597d2f7b415ac0d10231480283741dd12de04" />
+  <project name="fleece" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="839110956e84fd8dbfba68883c5f0559ace47d8a" />
   <project name="googletest" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
+  <project name="ios-cmake" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/ios-cmake" remote="leetal" revision="29668dbcd9ef2fd7369140b7e9bd9df0485497f6" />
   <project name="jsonsl" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/fleece/vendor/jsonsl" remote="snej" revision="684b60f9af68b8c397422e74d0c2dd206de16a2c" />
   <project name="linenoise-ng" path="couchbase-mobile-tools/vendor/linenoise-ng" remote="arangodb" revision="4754bee2d8eb3c4511e6ac87cac62255b2011e2f" />
-  <project name="mbedtls" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/mbedtls" remote="ARMmbed" revision="9f77017a8daf3e1fb75f7904a2e6e8960410dca9" />
+  <project name="mbed-crypto" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/mbedtls/crypto" remote="couchbasedeps" revision="6572da5ba51abf56b3f0cc554fa3efec8f847a24" />
+  <project name="mbedtls" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/mbedtls" remote="couchbasedeps" revision="a58f37d36f7b8692c378ffee20909a80bcb364bc" />
   <project name="peg" path="couchbase-mobile-tools/vendor/peg" remote="snej" revision="5722a4b087e58d5cc93ed13fc18e2530948498c1" />
-  <project name="product-texts" revision="7a3aa547b3f5eb3ea28d279a08384609cd2cea7c" upstream="master" />
+  <project name="product-texts" revision="74c19969e8ef1b5309077a03885d00e273378f6c" upstream="master" />
+  <project name="sockpp" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/sockpp" remote="couchbasedeps" revision="77fd47715d858bfdf3cdc5a7aa132b99563cd2db" />
   <project name="sqlite3-unicodesn" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/sqlite3-unicodesn" remote="snej" revision="9042c6eed69e98623ad64e27cec4c1f7f60dde92" />
   <project name="tlm" revision="2d46e032cf08727e8e5fab67d05c4f1b051989e4" />
-  <project name="zlib" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/BLIP-Cpp/vendor/zlib" remote="couchbasedeps" revision="cacf7f1d4e3d44d871b605da3b647f07d718623f" />
+  <project name="zlib" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/zlib" remote="couchbasedeps" revision="cacf7f1d4e3d44d871b605da3b647f07d718623f" />
   <project name="zlibcomplete" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/BLIP-Cpp/vendor/zlibcomplete" remote="rudi-cilibrasi" revision="0908e99ea699f1093657147c73ab3aae460cb91f" />
 </manifest>
