@@ -1,0 +1,13 @@
+<manifest>
+  <remote fetch="git://github.com/couchbase/" name="couchbase" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="f2a16b53bb74146f20d18ba2c0443d5f10a9a550">
+    <annotation name="RELEASE" value="1.0.1" />
+    <annotation name="PRODUCT" value="couchbase-exporter" />
+    <annotation name="BLD_NUM" value="100" />
+    <annotation name="VERSION" value="1.0.1" />
+  </project>
+  <project name="couchbase-exporter" revision="4c00d2658ca8f533b80fa198958c8adc78d565da" upstream="1.0.x" />
+</manifest>
