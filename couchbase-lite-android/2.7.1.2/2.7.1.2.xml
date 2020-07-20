@@ -1,0 +1,36 @@
+<manifest>
+  <remote fetch="git://github.com/ARMmbed" name="ARMmbed" />
+  <remote fetch="git://github.com/couchbase/" name="couchbase" review="review.couchbase.org" />
+  <remote fetch="ssh://git@github.com/couchbase/" name="couchbase-priv" review="review.couchbase.org" />
+  <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps" />
+  <remote fetch="git://github.com/couchbaselabs/" name="couchbaselabs" review="review.couchbase.org" />
+  <remote fetch="ssh://git@github.com/couchbaselabs/" name="couchbaselabs-priv" review="review.couchbase.org" />
+  <remote fetch="git://github.com/google/" name="google" />
+  <remote fetch="git://github.com/snej/" name="snej" />
+  
+  <default remote="couchbase" revision="release/mercury" />
+  
+  <project groups="notdefault" name="build" path="cbbuild" revision="5f3415b1a8ff88eeac8afe0cc6c12bd73a997c3d">
+    <annotation name="RELEASE" value="2.7.1.2" />
+    <annotation name="PRODUCT" value="couchbase-lite-android" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="2.7.1.2" />
+  </project>
+  <project name="couchbase-lite-android" revision="2fb25069b881acb82c7de9d264c8cdc523f0efea" upstream="release/mercury" />
+  <project name="couchbase-lite-android-ee" remote="couchbaselabs-priv" revision="6ea6620e0c1b438394f53d47dcaeeebbf1fe26fb" upstream="release/mercury">
+    <linkfile dest="build.gradle" src="build.gradle" />
+    <linkfile dest="gradle" src="gradle" />
+    <linkfile dest="gradlew" src="gradlew" />
+    <linkfile dest="gradlew.bat" src="gradlew.bat" />
+    <linkfile dest="gradlew.properties" src="gradlew.properties" />
+  </project>
+  <project name="couchbase-lite-build" revision="6d35d5c08fd14f806013742e4a2a71f99c4499fc" upstream="release/mercury">
+    <linkfile dest="settings.gradle" src="all/settings-all.gradle" />
+    <linkfile dest="version.txt" src="all/version.txt" />
+  </project>
+  <project name="couchbase-lite-core" revision="a7e82ab40d398c6484caa3be214d0047c99f921c" sync-s="true" upstream="hotfix/2.7.1.2" />
+  <project name="couchbase-lite-core-EE" remote="couchbase-priv" revision="7c953e73c2249b09326e0588a710d611f3d31d98" sync-s="true" upstream="hotfix/2.7.1.1" />
+  <project name="couchbase-lite-java" revision="1bbff060795df4284f94791c372eaa6e142bf904" upstream="hotfix/2.7.1.2" />
+  <project name="couchbase-lite-java-ee" remote="couchbaselabs-priv" revision="d351bc8bd0b0be0f1fd54d922132e45506bce024" upstream="release/android/mercury" />
+  <project name="product-texts" revision="74c19969e8ef1b5309077a03885d00e273378f6c" upstream="master" />
+</manifest>
