@@ -9,8 +9,8 @@
   <default remote="couchbase" revision="master" />
   
   <project groups="kv" name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="42148d72f34d6865b2a6706c106cd72ee68216a5" />
-  <project groups="notdefault,enterprise,analytics" name="analytics-dcp-client" path="analytics/java-dcp-client" revision="33d1b0046fe3c525fa1f371e8746418b6599a839" upstream="master" />
-  <project groups="notdefault,enterprise,analytics" name="asterixdb" path="analytics/asterixdb" revision="a556b84c8f3c2208c08ef4d5af7ac7b0f1ee9413" upstream="master" />
+  <project groups="notdefault,enterprise,analytics" name="analytics-dcp-client" path="analytics/java-dcp-client" revision="2902119fdbc4af72e53ff58fb1ae55e327b3774a" upstream="master" />
+  <project groups="notdefault,enterprise,analytics" name="asterixdb" path="analytics/asterixdb" revision="1b62173c7e68290bda93be30e804be63c97ae3ba" upstream="master" />
   <project groups="backup,notdefault,enterprise" name="backup" remote="couchbase-priv" revision="41f0e6fa735a93df9f8f6eb7d97ef009b67381cf" upstream="master" />
   <project name="bbolt" path="godeps/src/go.etcd.io/bbolt" remote="couchbasedeps" revision="68cc10a767ea1c6b9e8dcb9847317ff192d6d974" />
   <project groups="kv" name="benchmark" remote="couchbasedeps" revision="74b24058ad4914b837200d0341050657ba154e4a" />
@@ -22,7 +22,7 @@
   <project groups="notdefault,build" name="build" path="cbbuild" revision="6a64bf55f7c134aac499288dfecdf1afbbf13e3b" upstream="master">
     <annotation name="RELEASE" value="cheshire-cat" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="3381" />
+    <annotation name="BLD_NUM" value="3382" />
     <annotation name="VERSION" value="7.0.0" />
   </project>
   <project groups="notdefault,enterprise,analytics" name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="1fb00194d8f8049ae7011b80002fbb82e2dc66ae" upstream="master" />
@@ -98,7 +98,7 @@
   <project name="jsonparser" path="godeps/src/github.com/buger/jsonparser" remote="couchbasedeps" revision="bf1c66bbce23153d89b23f8960071a680dbef54b" />
   <project name="jsonschema" path="godeps/src/github.com/santhosh-tekuri/jsonschema" remote="couchbasedeps" revision="137f44a49015e5060a447c331aa37de6e0f50267" />
   <project name="jsonx" path="godeps/src/gopkg.in/couchbaselabs/jsonx.v1" remote="couchbaselabs" revision="5b7baa20429a46a5543ee259664cc86502738cad" upstream="master" />
-  <project groups="kv" name="kv_engine" revision="f285f2f32d10c8953ca7d92a2b2fae6d722a829e" upstream="master" />
+  <project groups="kv" name="kv_engine" revision="d114dcc78eff0a31c2469a8f424e414259faaee1" upstream="master" />
   <project name="libcouchbase" revision="daf4619d6e8d68f386a5d276777ba123536fc397" />
   <project name="liner" path="godeps/src/github.com/peterh/liner" remote="couchbasedeps" revision="6f820f8f90ce9482ffbd40bb15f9ea9932f4942d" />
   <project name="liner" path="godeps/src/github.com/sbinet/liner" remote="couchbasedeps" revision="d9335eee40a45a4f5d74524c90040d6fe6013d50" />
@@ -141,7 +141,7 @@
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="12a6c2dcc1e4cb348b57847c73987099e261714b" />
   <project name="testrunner" revision="fbcd73ca240d31763f4bd55de52d79b5c0e6e757" upstream="master" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="88f656faf3f37f690df1a32515b479415e1a6769" />
-  <project groups="kv" name="tlm" revision="5e5c5e2d050e79fc8b5c7e66e00827f07f4b20e4" upstream="master">
+  <project groups="kv" name="tlm" revision="fa2487e3651cb06a2df91aeff094b6f6aad19458" upstream="master">
     <copyfile dest="GNUmakefile" src="GNUmakefile" />
     <copyfile dest="Makefile" src="Makefile" />
     <copyfile dest="CMakeLists.txt" src="CMakeLists.txt" />
