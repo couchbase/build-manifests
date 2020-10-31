@@ -1,0 +1,37 @@
+<manifest>
+  <remote fetch="git://github.com/ARMmbed" name="ARMmbed" />
+  <remote fetch="git://github.com/couchbase/" name="couchbase" review="review.couchbase.org" />
+  <remote fetch="ssh://git@github.com/couchbase/" name="couchbase-priv" review="review.couchbase.org" />
+  <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps" />
+  <remote fetch="git://github.com/couchbaselabs/" name="couchbaselabs" review="review.couchbase.org" />
+  <remote fetch="ssh://git@github.com/couchbaselabs/" name="couchbaselabs-priv" review="review.couchbase.org" />
+  <remote fetch="git://github.com/google/" name="google" />
+  <remote fetch="git://github.com/leetal" name="leetal" />
+  <remote fetch="git://github.com/snej/" name="snej" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="SQLiteCpp" path="cbl-java/core/vendor/SQLiteCpp" remote="couchbasedeps" revision="7b250854fffbdc13e2d040a7e96be8e561e51d08" />
+  <project groups="notdefault" name="build" path="cbbuild" revision="fa5df77677945a629aeb82aeaa3d43218df2a88d">
+    <annotation name="RELEASE" value="2.8.1" />
+    <annotation name="PRODUCT" value="couchbase-lite-android" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="2.8.1" />
+  </project>
+  <project name="couchbase-lite-core" path="cbl-java/core" revision="e25884358722da0939f325b8f0a31c53ccbafad2" upstream="release/hydrogen" />
+  <project name="couchbase-lite-core-EE" path="cbl-java/couchbase-lite-core-EE" remote="couchbase-priv" revision="ae77e3c1eb940cecd5267e1e54c38eccf6033cad" upstream="release/hydrogen" />
+  <project name="couchbase-lite-core.wiki" path="cbl-java/core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
+  <project name="couchbase-lite-java-ce" path="cbl-java/ce" revision="a05062720d3459c893d6af486e2080ba6efd0550" upstream="android/release/hydrogen" />
+  <project name="couchbase-lite-java-common" path="cbl-java/common" revision="8686d96a81ce533ab9c4902594a1ce6998fa8dde" upstream="android/release/hydrogen" />
+  <project name="couchbase-lite-java-ee-root" path="cbl-java" remote="couchbaselabs-priv" revision="a9c0287d1e7b53aee569c0e2f245b01873f8de44" upstream="android/release/hydrogen" />
+  <project name="fleece" path="cbl-java/core/vendor/fleece" remote="couchbaselabs" revision="74459d55e35789e9c5a930d4cdcc276b603c37d3" />
+  <project name="googletest" path="cbl-java/core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
+  <project name="ios-cmake" path="cbl-java/core/vendor/ios-cmake" remote="leetal" revision="29668dbcd9ef2fd7369140b7e9bd9df0485497f6" />
+  <project name="jsonsl" path="cbl-java/core/vendor/fleece/vendor/jsonsl" remote="snej" revision="684b60f9af68b8c397422e74d0c2dd206de16a2c" />
+  <project name="mbed-crypto" path="cbl-java/core/vendor/mbedtls/crypto" remote="couchbasedeps" revision="6572da5ba51abf56b3f0cc554fa3efec8f847a24" />
+  <project name="mbedtls" path="cbl-java/core/vendor/mbedtls" remote="couchbasedeps" revision="ec3a2712b1bd77158dd42b28681101c4da6f3c93" />
+  <project name="product-texts" path="cbl-java/legal" revision="9a27722a1a4c9aede65b95c38f42a33235d242e0" upstream="master" />
+  <project name="sockpp" path="cbl-java/core/vendor/sockpp" remote="couchbasedeps" revision="8dad5c3c2dc7e5b926bcf4e2fb3ec272dc85dff1" />
+  <project name="sqlite3-unicodesn" path="cbl-java/core/vendor/sqlite3-unicodesn" remote="snej" revision="9042c6eed69e98623ad64e27cec4c1f7f60dde92" />
+  <project name="zlib" path="cbl-java/core/vendor/zlib" remote="couchbasedeps" revision="cacf7f1d4e3d44d871b605da3b647f07d718623f" />
+</manifest>
