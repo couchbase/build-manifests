@@ -1,0 +1,15 @@
+<manifest>
+  <remote fetch="git://github.com/couchbase/" name="couchbase" />
+  <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="RELEASE" value="2.22" />
+    <annotation name="PRODUCT" value="cbdeps::prometheus" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="2.22" />
+  </project>
+  <project name="build-tools" revision="df9a41d2459e8d2bdbbe6f8c0f25a0723487f737" upstream="master" />
+  <project name="prometheus" path="goproj/src/github.com/prometheus/prometheus" remote="couchbasedeps" revision="06133a3ceb039fe83e23ef234943a2a254c83504" upstream="couchbase-v2.22" />
+</manifest>
