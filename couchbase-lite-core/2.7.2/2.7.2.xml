@@ -1,0 +1,36 @@
+<manifest>
+  <remote fetch="git://github.com/ARMmbed" name="ARMmbed" />
+  <remote fetch="git://github.com/arangodb/" name="arangodb" />
+  <remote fetch="git://github.com/ceejatec/" name="ceejatec" />
+  <remote fetch="git://github.com/couchbase/" name="couchbase" review="review.couchbase.org" />
+  <remote fetch="ssh://git@github.com/couchbase/" name="couchbase-priv" review="review.couchbase.org" />
+  <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps" />
+  <remote fetch="git://github.com/couchbaselabs/" name="couchbaselabs" review="review.couchbase.org" />
+  <remote fetch="git://github.com/google/" name="google" />
+  <remote fetch="git://github.com/rudi-cilibrasi/" name="rudi-cilibrasi" />
+  <remote fetch="git://github.com/snej/" name="snej" />
+  
+  <default remote="couchbase" revision="release/mercury" />
+  
+  <project name="BLIP-Cpp" path="couchbase-lite-core/vendor/BLIP-Cpp" remote="couchbaselabs" revision="8bbba50dcb3d023eb07df0f0649389e7c8c003a9" />
+  <project name="SQLiteCpp" path="couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="d0c5991ca3262f6a5fd7b6c8d9773ef9fbe0206d" />
+  <project name="build" path="cbbuild" revision="2e9d89d03b360f2d9f9c9ddbdc8fa532d41ab3d9">
+    <annotation name="RELEASE" value="2.7.2" />
+    <annotation name="PRODUCT" value="couchbase-lite-core" />
+    <annotation name="BLD_NUM" value="1" />
+    <copyfile dest="CMakeLists.txt" src="scripts/jenkins/lite-core/CMakeLists.txt" />
+    <annotation name="VERSION" value="2.7.2" />
+  </project>
+  <project name="civetweb" path="couchbase-lite-core/vendor/civetweb" remote="couchbasedeps" revision="4341c169a789b917a4fe1cdd24f55e507d855ff5" />
+  <project name="couchbase-lite-core" revision="e915dd9f70cc27f9dae7fc0d00daea9e83ffb669" upstream="release/mercury" />
+  <project groups="notdefault,enterprise" name="couchbase-lite-core-EE" remote="couchbase-priv" revision="df1951bf3e4469908d28babd3323c25f61873dea" upstream="release/mercury" />
+  <project name="couchbase-lite-core.wiki" path="couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
+  <project name="fleece" path="couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="ff90e4f6ed0307b1f3f7e013a82f31fcb0033cf4" />
+  <project name="googletest" path="couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
+  <project name="jsonsl" path="couchbase-lite-core/vendor/fleece/vendor/jsonsl" remote="snej" revision="684b60f9af68b8c397422e74d0c2dd206de16a2c" />
+  <project name="mbedtls" path="couchbase-lite-core/vendor/mbedtls" remote="ARMmbed" revision="9f77017a8daf3e1fb75f7904a2e6e8960410dca9" />
+  <project name="sqlite3-unicodesn" path="couchbase-lite-core/vendor/sqlite3-unicodesn" remote="snej" revision="9042c6eed69e98623ad64e27cec4c1f7f60dde92" />
+  <project name="tlm" revision="2d46e032cf08727e8e5fab67d05c4f1b051989e4" />
+  <project name="zlib" path="couchbase-lite-core/vendor/BLIP-Cpp/vendor/zlib" remote="couchbasedeps" revision="cacf7f1d4e3d44d871b605da3b647f07d718623f" />
+  <project name="zlibcomplete" path="couchbase-lite-core/vendor/BLIP-Cpp/vendor/zlibcomplete" remote="rudi-cilibrasi" revision="0908e99ea699f1093657147c73ab3aae460cb91f" />
+</manifest>
