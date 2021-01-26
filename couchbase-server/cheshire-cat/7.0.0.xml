@@ -10,8 +10,8 @@
   
   <project groups="kv" name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="42148d72f34d6865b2a6706c106cd72ee68216a5" />
   <project groups="notdefault,enterprise,analytics" name="analytics-dcp-client" path="analytics/java-dcp-client" revision="cec78257aad9da01581a4d1081a8d120d720458c" upstream="master" />
-  <project groups="notdefault,enterprise,analytics" name="asterixdb" path="analytics/asterixdb" revision="8bcc6d26254bc84eab8f1f08304ccd95582e316a" upstream="cheshire-cat" />
-  <project groups="backup,notdefault,enterprise" name="backup" remote="couchbase-priv" revision="c8fd444fb224991b944bacb66b3783d17653c4e0" upstream="master" />
+  <project groups="notdefault,enterprise,analytics" name="asterixdb" path="analytics/asterixdb" revision="13828a1debd397cb10293f57e4b0bb0291734b21" upstream="cheshire-cat" />
+  <project groups="backup,notdefault,enterprise" name="backup" remote="couchbase-priv" revision="e0e5255ac2732fc0e063085c7299406f001de8d2" upstream="master" />
   <project name="bbolt" path="godeps/src/go.etcd.io/bbolt" remote="couchbasedeps" revision="68cc10a767ea1c6b9e8dcb9847317ff192d6d974" />
   <project groups="kv" name="benchmark" path="third_party/google-benchmark" remote="couchbasedeps" revision="8039b4030795b1c9b8cedb78e3a2a6fb89574b6e" upstream="refs/tags/v1.5.1" />
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4" />
@@ -21,14 +21,14 @@
   <project groups="notdefault,build" name="build" path="cbbuild" revision="360c5fb9ef895f529d33caf73213e9b3be2a9c41" upstream="master">
     <annotation name="RELEASE" value="cheshire-cat" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="4310" />
+    <annotation name="BLD_NUM" value="4311" />
     <annotation name="VERSION" value="7.0.0" />
   </project>
   <project groups="notdefault,enterprise,analytics" name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="fed61ab393b864c7e006184d669e098ccdccdd31" upstream="master" />
   <project groups="notdefault,enterprise,analytics" name="cbas-core" path="analytics" remote="couchbase-priv" revision="8238c25a26e976760fc6ebae8039e65158af0226" upstream="cheshire-cat" />
   <project groups="notdefault,enterprise,analytics" name="cbas-ui" revision="90c1dd55f87ff52b3d27876c62e76f8b781187cd" upstream="master" />
   <project groups="backup" name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="0eaf917092a2a0063989e9a08b4a7ac3abf09e1e" upstream="master" />
-  <project groups="backup,notdefault,enterprise" name="cbbs" remote="couchbase-priv" revision="51b8c5ebfb88f457ed0b96e2a722ad1a7a0693fa" upstream="master" />
+  <project groups="backup,notdefault,enterprise" name="cbbs" remote="couchbase-priv" revision="82b4172900794f631f03a20543c76b991eab9319" upstream="master" />
   <project name="cbflag" path="godeps/src/github.com/couchbase/cbflag" revision="3393038a55d7deca3628df6b01322f50fbed039c" upstream="master" />
   <project name="cbft" revision="adfee41ebaf272ac2046fed326d765e6d1b58683" upstream="master" />
   <project groups="notdefault,enterprise" name="cbftx" remote="couchbase-priv" revision="44e0db97937d22c3c35ba1e28a9e6f62e6833d84" upstream="master" />
@@ -54,7 +54,7 @@
   <project name="geocouch" revision="3e8040787139e3c67766ce50398860c185737b8a" upstream="master" />
   <project name="ghistogram" path="godeps/src/github.com/couchbase/ghistogram" revision="259e7fdc7f2874ccca8b179431b2071143d4e86c" upstream="master" />
   <project name="go-bindata-assetfs" path="godeps/src/github.com/elazarl/go-bindata-assetfs" remote="couchbasedeps" revision="57eb5e1fc594ad4b0b1dbea7b286d299e0cb43c2" />
-  <project groups="backup" name="go-couchbase" path="goproj/src/github.com/couchbase/go-couchbase" revision="c04035124b17427663771bd1bdc98f38cad82993" upstream="master" />
+  <project groups="backup" name="go-couchbase" path="goproj/src/github.com/couchbase/go-couchbase" revision="8e416c37c8efaa369807438040be829974e6604b" upstream="master" />
   <project name="go-curl" path="godeps/src/github.com/andelf/go-curl" remote="couchbasedeps" revision="f0b2afc926ec79be5d7f30393b3485352781a705" upstream="20161221-couchbase" />
   <project name="go-curl" path="godeps/src/github.com/couchbasedeps/go-curl" remote="couchbasedeps" revision="f0b2afc926ec79be5d7f30393b3485352781a705" upstream="20161221-couchbase" />
   <project name="go-genproto" path="godeps/src/google.golang.org/genproto" remote="couchbasedeps" revision="2b5a72b8730b0b16380010cfe5286c42108d88e7" />
@@ -82,7 +82,7 @@
   <project name="golang-snappy" path="godeps/src/github.com/golang/snappy" remote="couchbasedeps" revision="723cc1e459b8eea2dea4583200fd60757d40097a" />
   <project name="golang-tools" path="godeps/src/golang.org/x/tools" remote="couchbasedeps" revision="a28dfb48e06b2296b66678872c2cb638f0304f20" />
   <project name="goleveldb" path="godeps/src/github.com/syndtr/goleveldb" remote="couchbasedeps" revision="fa5b5c78794bc5c18f330361059f871ae8c2b9d6" />
-  <project groups="backup" name="gomemcached" path="goproj/src/github.com/couchbase/gomemcached" revision="c432ccf49f320adf4f7c827e3fbd31d6ea4cdf2b" upstream="master" />
+  <project groups="backup" name="gomemcached" path="goproj/src/github.com/couchbase/gomemcached" revision="8402409748366ee745c0bddcbe972ebbd124aef5" upstream="master" />
   <project name="gometa" path="goproj/src/github.com/couchbase/gometa" revision="b0e38b71d71103a8f690929008c46f27719ed8a6" upstream="master" />
   <project groups="kv" name="googletest" path="third_party/googletest" remote="couchbasedeps" revision="703bd9caab50b139428cea1aaff9974ebee5742e" upstream="refs/tags/release-1.10.0" />
   <project name="goskiplist" path="godeps/src/github.com/ryszard/goskiplist" remote="couchbasedeps" revision="2dfbae5fcf46374f166f8969cb07e167f1be6273" />
@@ -98,7 +98,7 @@
   <project name="jsonparser" path="godeps/src/github.com/buger/jsonparser" remote="couchbasedeps" revision="bf1c66bbce23153d89b23f8960071a680dbef54b" />
   <project name="jsonschema" path="godeps/src/github.com/santhosh-tekuri/jsonschema" remote="couchbasedeps" revision="137f44a49015e5060a447c331aa37de6e0f50267" />
   <project name="jsonx" path="godeps/src/gopkg.in/couchbaselabs/jsonx.v1" remote="couchbaselabs" revision="5b7baa20429a46a5543ee259664cc86502738cad" upstream="master" />
-  <project groups="kv" name="kv_engine" revision="77d1dcd6b17d578011d7cdb1d5dc3f951fd54008" upstream="master" />
+  <project groups="kv" name="kv_engine" revision="3d768cc7bd04d2af6e73342001a95d0460cb29df" upstream="master" />
   <project name="libcouchbase" revision="daf4619d6e8d68f386a5d276777ba123536fc397" />
   <project name="liner" path="godeps/src/github.com/peterh/liner" remote="couchbasedeps" revision="6f820f8f90ce9482ffbd40bb15f9ea9932f4942d" />
   <project name="liner" path="godeps/src/github.com/sbinet/liner" remote="couchbasedeps" revision="d9335eee40a45a4f5d74524c90040d6fe6013d50" />
@@ -129,7 +129,7 @@
   <project groups="kv" name="platform" revision="d53a268ad36effe026cc00375a6b67e6e7e23d7a" upstream="master" />
   <project groups="kv" name="product-texts" revision="32a9b254081ddf9385df54b1b32d4bb057731a16" upstream="master" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="ddf22928ea3c56eb4292a0adbbf5001b1e8e7d0d" />
-  <project name="query" path="goproj/src/github.com/couchbase/query" revision="e84a6fccd98bfdb982e8a080e8a55725d584d015" upstream="master" />
+  <project name="query" path="goproj/src/github.com/couchbase/query" revision="4ffa302833197a6963507a23f885eb36bc9b1134" upstream="master" />
   <project groups="notdefault,enterprise" name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="f135a214d960b29c3bc5b5de01e083d2e64a872c" upstream="master" />
   <project name="query-ui" revision="352b0ed823fca9785f8e29546d99be3cb32091f8" upstream="master" />
   <project name="retriever" path="godeps/src/github.com/couchbase/retriever" revision="e3419088e4d3b4fe3aad3b364fdbe9a154f85f17" upstream="master" />
