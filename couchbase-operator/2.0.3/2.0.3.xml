@@ -1,14 +1,14 @@
 <manifest>
-  <remote fetch="ssh://git@github.com/couchbase/" name="couchbase-priv" review="review.couchbase.org" />
-  <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" />
   
   <default remote="couchbase-priv" revision="master" />
   
   <project name="build" path="cbbuild" revision="8ba9841f5fd3b60f22203be47bc6e81f7b9b6b2e">
     <annotation name="RELEASE" value="2.0.3" />
     <annotation name="PRODUCT" value="couchbase-operator" />
-    <annotation name="BLD_NUM" value="117" />
+    <annotation name="BLD_NUM" value="118" />
     <annotation name="VERSION" value="2.0.3" />
   </project>
-  <project name="couchbase-operator" path="goproj/src/github.com/couchbase/couchbase-operator" revision="8bfbc51cf6ed241816ea58ecd1a16ed15ea43add" upstream="2.0.x" />
+  <project name="couchbase-operator" path="goproj/src/github.com/couchbase/couchbase-operator" revision="e0311b418c6dc4611071d0dcc4cabfeda75cc5aa" upstream="2.0.x" />
 </manifest>
