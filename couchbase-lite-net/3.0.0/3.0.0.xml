@@ -1,15 +1,15 @@
 <manifest>
-  <remote fetch="git://github.com/ARMmbed" name="ARMmbed" />
-  <remote fetch="git://github.com/arangodb/" name="arangodb" />
-  <remote fetch="git://github.com/couchbase/" name="couchbase" review="review.couchbase.org" />
-  <remote fetch="ssh://git@github.com/couchbase/" name="couchbase-priv" review="review.couchbase.org" />
-  <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps" />
-  <remote fetch="git://github.com/couchbaselabs/" name="couchbaselabs" review="review.couchbase.org" />
-  <remote fetch="ssh://git@github.com/couchbaselabs/" name="couchbaselabs-priv" review="review.couchbase.org" />
-  <remote fetch="git://github.com/google/" name="google" />
-  <remote fetch="git://github.com/leetal/" name="leetal" />
-  <remote fetch="git://github.com/rudi-cilibrasi/" name="rudi-cilibrasi" />
-  <remote fetch="git://github.com/snej/" name="snej" />
+  <remote name="ARMmbed" fetch="git://github.com/ARMmbed" />
+  <remote name="arangodb" fetch="git://github.com/arangodb/" />
+  <remote name="couchbase" fetch="git://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" />
+  <remote name="couchbaselabs" fetch="git://github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="google" fetch="git://github.com/google/" />
+  <remote name="leetal" fetch="git://github.com/leetal/" />
+  <remote name="rudi-cilibrasi" fetch="git://github.com/rudi-cilibrasi/" />
+  <remote name="snej" fetch="git://github.com/snej/" />
   
   <default remote="couchbase" revision="master" />
   
@@ -18,15 +18,15 @@
   <project name="build" path="cbbuild" revision="5547da1aeb276479ba3adc9cd25bf9795640d976">
     <annotation name="RELEASE" value="3.0.0" />
     <annotation name="PRODUCT" value="couchbase-lite-net" />
-    <annotation name="BLD_NUM" value="36" />
+    <annotation name="BLD_NUM" value="37" />
     <annotation name="VERSION" value="3.0.0" />
   </project>
   <project name="civetweb" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/civetweb" remote="couchbasedeps" revision="4341c169a789b917a4fe1cdd24f55e507d855ff5" />
   <project name="couchbase-lite-core" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core" revision="c04ceb32e569c7540d1ba393417a94bcebfd6a6a" />
-  <project groups="enterprise,notdefault" name="couchbase-lite-core-EE" path="couchbase-lite-net-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="ae77e3c1eb940cecd5267e1e54c38eccf6033cad" />
+  <project name="couchbase-lite-core-EE" path="couchbase-lite-net-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="ae77e3c1eb940cecd5267e1e54c38eccf6033cad" groups="enterprise,notdefault" />
   <project name="couchbase-lite-core.wiki" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
-  <project name="couchbase-lite-net" path="couchbase-lite-net-ee/couchbase-lite-net" revision="f24c9ab4f4a173e809f54961999d3447eee0794f" upstream="master" />
-  <project groups="enterprise,notdefault" name="couchbase-lite-net-ee" remote="couchbaselabs-priv" revision="28277408ab0d1a0c492d27ffaa08e42044eba501" upstream="master" />
+  <project name="couchbase-lite-net" path="couchbase-lite-net-ee/couchbase-lite-net" revision="2fe79da07e0928f1f261479d98a89a07bb8a89ff" upstream="master" />
+  <project name="couchbase-lite-net-ee" remote="couchbaselabs-priv" revision="28277408ab0d1a0c492d27ffaa08e42044eba501" upstream="master" groups="enterprise,notdefault" />
   <project name="fleece" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="d13738f4bb4d6f96b8bf19ebab11ac768b139f8f" />
   <project name="googletest" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
   <project name="ios-cmake" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/ios-cmake" remote="leetal" revision="29668dbcd9ef2fd7369140b7e9bd9df0485497f6" />
