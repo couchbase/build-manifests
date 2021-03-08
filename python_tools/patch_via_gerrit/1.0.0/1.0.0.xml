@@ -1,14 +1,14 @@
 <manifest>
-  <remote fetch="git://github.com/couchbase/" name="couchbase" />
-  <remote fetch="git://github.com/couchbasebuild/" name="couchbasebuild" />
+  <remote name="couchbase" fetch="git://github.com/couchbase/" />
+  <remote name="couchbasebuild" fetch="git://github.com/couchbasebuild/" />
   
   <default remote="couchbase" revision="master" />
   
   <project name="build" path="cbbuild" revision="89467fdea78ec6c84fa423756a1210056ac5c199">
     <annotation name="RELEASE" value="1.0.0" />
     <annotation name="PRODUCT" value="python_tools::patch_via_gerrit" />
-    <annotation name="BLD_NUM" value="12" />
+    <annotation name="BLD_NUM" value="13" />
     <annotation name="VERSION" value="1.0.0" />
   </project>
-  <project name="patch_via_gerrit" remote="couchbasebuild" revision="1ccbb15a4d3fd739e79da5dd8d9113e284c6b8a3" upstream="master" />
+  <project name="patch_via_gerrit" remote="couchbasebuild" revision="ab02b5b4cb0f082410c41735d3beb59000447f4d" upstream="master" />
 </manifest>
