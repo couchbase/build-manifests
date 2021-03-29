@@ -9,8 +9,8 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="42148d72f34d6865b2a6706c106cd72ee68216a5" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="3a1a699de0498f2931b86ada316c760bc4057f22" upstream="cheshire-cat" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="6c5903ada976be29dd82dee327d99bdcb617c7a1" upstream="cheshire-cat" groups="notdefault,enterprise,analytics" />
-  <project name="backup" remote="couchbase-priv" revision="1814a7b09d57f616c4e5af9ace03da48f0f89970" upstream="master" groups="backup,notdefault,enterprise" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="2e9815a4212f3fc39b8f5f1b00226b5339fefd3f" upstream="cheshire-cat" groups="notdefault,enterprise,analytics" />
+  <project name="backup" remote="couchbase-priv" revision="c637e976346bfbe6b2c278b132a3da6df27e6966" upstream="master" groups="backup,notdefault,enterprise" />
   <project name="bbolt" path="godeps/src/go.etcd.io/bbolt" remote="couchbasedeps" revision="68cc10a767ea1c6b9e8dcb9847317ff192d6d974" />
   <project name="benchmark" path="third_party/google-benchmark" remote="couchbasedeps" revision="8039b4030795b1c9b8cedb78e3a2a6fb89574b6e" upstream="refs/tags/v1.5.1" groups="kv" />
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4" />
@@ -20,7 +20,7 @@
   <project name="build" path="cbbuild" revision="732cf178b57d32ecf99bb65c067710029cc8bebe" upstream="master" groups="notdefault,build">
     <annotation name="RELEASE" value="cheshire-cat" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="4810" />
+    <annotation name="BLD_NUM" value="4811" />
     <annotation name="VERSION" value="7.0.0" />
     <annotation name="PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="Cheshire-Cat" />
@@ -30,7 +30,7 @@
   <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="1ba496791392f551060a9056818d3e0c7afdaecc" upstream="cheshire-cat" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="66b3ca4dc44e679f6cecfd6bc763362f455a798d" upstream="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="0eaf917092a2a0063989e9a08b4a7ac3abf09e1e" upstream="master" groups="backup" />
-  <project name="cbbs" remote="couchbase-priv" revision="673b5a426379e7a3a276ad86f6a35b513bc37807" upstream="master" groups="backup,notdefault,enterprise" />
+  <project name="cbbs" remote="couchbase-priv" revision="085f5293405aba923d67e3fd9c1410fc49c3f111" upstream="master" groups="backup,notdefault,enterprise" />
   <project name="cbflag" path="godeps/src/github.com/couchbase/cbflag" revision="3393038a55d7deca3628df6b01322f50fbed039c" upstream="master" />
   <project name="cbft" revision="4870b1775e22902aec09fe8a59d85d0264a0d364" upstream="master" />
   <project name="cbftx" remote="couchbase-priv" revision="29e142235df35fb41dc40d15008cf7e458caed75" upstream="master" groups="notdefault,enterprise" />
@@ -104,7 +104,7 @@
   <project name="liner" path="godeps/src/github.com/peterh/liner" remote="couchbasedeps" revision="6f820f8f90ce9482ffbd40bb15f9ea9932f4942d" />
   <project name="liner" path="godeps/src/github.com/sbinet/liner" remote="couchbasedeps" revision="d9335eee40a45a4f5d74524c90040d6fe6013d50" />
   <project name="logstats" path="godeps/src/github.com/couchbase/logstats" revision="b6030b3d1dd07fc9fd047b699466ac2c90d48a5b" upstream="master" />
-  <project name="magma" remote="couchbase-priv" revision="4cd87df0ba3541a4885a6f7a928af77f9d6e855a" upstream="master" groups="notdefault,enterprise,kv_ee" />
+  <project name="magma" remote="couchbase-priv" revision="1fde4df850b5e0e3c930698f1dfcdc91fd7882db" upstream="master" groups="notdefault,enterprise,kv_ee" />
   <project name="minify" path="godeps/src/github.com/tdewolff/minify" remote="couchbasedeps" revision="ede45cc53f43891267b1fe7c689db9c76d4ce0fb" />
   <project name="mmap-go" path="godeps/src/github.com/blevesearch/mmap-go" remote="blevesearch" revision="99940f54c59671cf69e10b2e4041fabce88eb9b2" />
   <project name="mmap-go" path="godeps/src/github.com/edsrzf/mmap-go" remote="couchbasedeps" revision="935e0e8a636ca4ba70b713f3e38a19e1b77739e8" />
@@ -128,7 +128,7 @@
   <project name="pierrec-xxHash" path="godeps/src/github.com/pierrec/xxHash" remote="couchbasedeps" revision="a0006b13c722f7f12368c00a3d3c2ae8a999a0c6" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="6262d4b2bf9492368ed0f42b567802aea12ce8af" upstream="master" groups="notdefault,enterprise" />
   <project name="platform" revision="6e41fc4e00da1d88e7af04468c2f8a6071216616" upstream="master" groups="kv" />
-  <project name="product-metadata" revision="4054a98014232cbe1b1cd1a3c0c16ae2be54b938" upstream="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="34cd56f0b5007e36728701cc5290d7ee79e919ab" upstream="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="3e293c3463119411a862f1bb6fa8d8b203cf5e38" upstream="master" groups="kv" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="ddf22928ea3c56eb4292a0adbbf5001b1e8e7d0d" />
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="85e1a9dfa00d98a2175beabc10237f27e21dfa23" upstream="master" groups="bsl" />
