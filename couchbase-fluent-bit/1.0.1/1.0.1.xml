@@ -1,0 +1,13 @@
+<manifest>
+  <remote name="couchbase" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="8ba9841f5fd3b60f22203be47bc6e81f7b9b6b2e">
+    <annotation name="RELEASE" value="1.0.1" />
+    <annotation name="PRODUCT" value="couchbase-fluent-bit" />
+    <annotation name="BLD_NUM" value="100" />
+    <annotation name="VERSION" value="1.0.1" />
+  </project>
+  <project name="couchbase-fluent-bit" revision="6ad598fcfb55f19c05a2228fe2fc4ecf9cdba259" upstream="master" />
+</manifest>
