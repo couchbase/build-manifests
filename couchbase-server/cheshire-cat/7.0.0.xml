@@ -8,8 +8,8 @@
   <default remote="couchbase" revision="master" />
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="42148d72f34d6865b2a6706c106cd72ee68216a5" groups="kv" />
-  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="33b25f300c60ca8a59cd2b891dc9f6b95776a15c" upstream="cheshire-cat" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="ce5f3aa366421a1106c842c3a818e283fe050f3d" upstream="cheshire-cat" groups="notdefault,enterprise,analytics" />
+  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="013e5c6dd0a808ef53608556b41cc167b77dfaa4" upstream="cheshire-cat" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="bcd71969e50bfbf36faa0c175c39266b55c602e0" upstream="cheshire-cat" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="8bc9286e530af20178e913ef7839ada29f599759" upstream="master" groups="backup,notdefault,enterprise" />
   <project name="bbolt" path="godeps/src/go.etcd.io/bbolt" remote="couchbasedeps" revision="68cc10a767ea1c6b9e8dcb9847317ff192d6d974" />
   <project name="benchmark" path="third_party/google-benchmark" remote="couchbasedeps" revision="8039b4030795b1c9b8cedb78e3a2a6fb89574b6e" upstream="refs/tags/v1.5.1" groups="kv" />
@@ -20,14 +20,14 @@
   <project name="build" path="cbbuild" revision="6a2340fd7fd8bbcc376442baa6cdc8abe225d226" upstream="master" groups="notdefault,build">
     <annotation name="RELEASE" value="cheshire-cat" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="4889" />
+    <annotation name="BLD_NUM" value="4890" />
     <annotation name="VERSION" value="7.0.0" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="Cheshire-Cat" />
     <annotation name="BSL_CHANGE_DATE" value="April 1, 2025" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="fbd8bf9b2ef7ef7e253a740c778ff234a32cfd09" upstream="master" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="6279fe46b9d261d175a84594b7fd2a8515e8ece7" upstream="cheshire-cat" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="1ac62970b74126ace30a39423b454702e88c0d0b" upstream="cheshire-cat" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="db17b8f9c85e8a45b5bc951566e063fdeeae2ec6" upstream="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="0eaf917092a2a0063989e9a08b4a7ac3abf09e1e" upstream="master" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="39274a72c9c46cd93529b68fc1b7c3ede002aaeb" upstream="master" groups="backup,notdefault,enterprise" />
@@ -118,7 +118,7 @@
   <project name="net" path="godeps/src/golang.org/x/net" remote="couchbasedeps" revision="44b7c21cbf19450f38b337eb6b6fe4f6496fb5b3" />
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="f49c4f5a3205c828d2cdb91c324d9eb434a53a16" upstream="master" />
   <project name="npipe" path="godeps/src/github.com/natefinch/npipe" remote="couchbasedeps" revision="272c8150302e83f23d32a355364578c9c13ab20f" />
-  <project name="ns_server" revision="1ba9046a026ae7cfc8740e73421faf223d1c8c7c" upstream="master" groups="bsl" />
+  <project name="ns_server" revision="4ababe3336660e1c700749831f394fb82cbdca03" upstream="master" groups="bsl" />
   <project name="opentracing-go" path="godeps/src/github.com/opentracing/opentracing-go" remote="couchbasedeps" revision="1949ddbfd147afd4d964a9f00b24eb291e0e7c38" />
   <project name="parse" path="godeps/src/github.com/tdewolff/parse" remote="couchbasedeps" revision="0334a869253aca4b3a10c56c3f3139b394aec3a9" />
   <project name="participle" path="godeps/src/github.com/alecthomas/participle" remote="couchbasedeps" revision="d638c6e1953ed899e05a34da3935146790c60e46" />
