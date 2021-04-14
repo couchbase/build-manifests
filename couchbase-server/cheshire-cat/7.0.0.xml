@@ -9,8 +9,8 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="42148d72f34d6865b2a6706c106cd72ee68216a5" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="5b4cc1af9f1b226c721281ef15a322da8bfddc4c" upstream="cheshire-cat" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="681cd3601e1c1215c29d76ea667b8324facdd2f7" upstream="cheshire-cat" groups="notdefault,enterprise,analytics" />
-  <project name="backup" remote="couchbase-priv" revision="4287b9e0f5c447165b3d08fa64d7c01564847868" upstream="master" groups="backup,notdefault,enterprise" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="1940f26a56508e06774f98f76d6fb37d65178051" upstream="cheshire-cat" groups="notdefault,enterprise,analytics" />
+  <project name="backup" remote="couchbase-priv" revision="e567555cd5a1b91bf81b212f7b6c1d5a65ba2e60" upstream="master" groups="backup,notdefault,enterprise" />
   <project name="bbolt" path="godeps/src/go.etcd.io/bbolt" remote="couchbasedeps" revision="68cc10a767ea1c6b9e8dcb9847317ff192d6d974" />
   <project name="benchmark" path="third_party/google-benchmark" remote="couchbasedeps" revision="8039b4030795b1c9b8cedb78e3a2a6fb89574b6e" upstream="refs/tags/v1.5.1" groups="kv" />
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4" />
@@ -20,7 +20,7 @@
   <project name="build" path="cbbuild" revision="1b3b7078728f62092632fb84ce9534b7a04ebd78" upstream="master" groups="notdefault,build">
     <annotation name="RELEASE" value="cheshire-cat" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="4942" />
+    <annotation name="BLD_NUM" value="4943" />
     <annotation name="VERSION" value="7.0.0" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="Cheshire-Cat" />
@@ -43,7 +43,7 @@
   <project name="couchbase-cli" revision="02b1dd10b4c06bb136d304226fd9d5cf9690b069" upstream="master" groups="kv" />
   <project name="couchdb" revision="8a75fd2faa89f95158de1776354ceccf3e762753" upstream="master" />
   <project name="couchdbx-app" revision="d6cd6456c20d340016b767cf1b3017f4f35f95c0" upstream="master" groups="notdefault,packaging" />
-  <project name="couchstore" revision="6879776919178e7335e3a9e177ee6beddf9f009f" upstream="master" groups="kv" />
+  <project name="couchstore" revision="c780c9da1c14e2f9230ca0b62ca061d3c8c23ae6" upstream="master" groups="kv" />
   <project name="crypto" path="godeps/src/golang.org/x/crypto" remote="couchbasedeps" revision="bd6f299fb381e4c3393d1c4b1f0b94f5e77650c8" />
   <project name="cuckoofilter" path="godeps/src/github.com/seiflotfy/cuckoofilter" remote="couchbasedeps" revision="d04838794ab86926d32b124345777e55e6f43974" />
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="57492c80834575f4199cff5fff94cb4f4c7c6af6" upstream="master" />
@@ -128,10 +128,10 @@
   <project name="pierrec-xxHash" path="godeps/src/github.com/pierrec/xxHash" remote="couchbasedeps" revision="a0006b13c722f7f12368c00a3d3c2ae8a999a0c6" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="51029eed424ccc52a7b73f4d26a4ff5e930ce103" upstream="master" groups="notdefault,enterprise" />
   <project name="platform" revision="72cf6f8a5968e4ede5b3a9283a00e7c7534ca95c" upstream="master" groups="kv" />
-  <project name="product-metadata" revision="0c25ed8c5c7670802346c93b0f138cad531c2e18" upstream="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="5563354c04025f65952b16191ee5bc62e989b3a5" upstream="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="53c8232b2da832e34a4b36adbd151691a447d632" upstream="master" groups="kv" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="ddf22928ea3c56eb4292a0adbbf5001b1e8e7d0d" />
-  <project name="query" path="goproj/src/github.com/couchbase/query" revision="b4b1e82840d44c7a6ff1d9603af40e1bd3b219d4" upstream="master" groups="bsl" />
+  <project name="query" path="goproj/src/github.com/couchbase/query" revision="bdc7cd46ca679a5465ea6233886f29aec64df232" upstream="master" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="af39a170ba5814cf3bcbff8d9aaa3d7533856262" upstream="master" groups="notdefault,enterprise" />
   <project name="query-ui" revision="2b148a66bb6fc5db24001a8eebcf941ac87c39c5" upstream="master" />
   <project name="retriever" path="godeps/src/github.com/couchbase/retriever" revision="e3419088e4d3b4fe3aad3b364fdbe9a154f85f17" upstream="master" />
