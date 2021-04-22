@@ -1,29 +1,29 @@
 <manifest>
-  <remote fetch="git://github.com/couchbase/" name="couchbase" review="review.couchbase.org" />
-  <remote fetch="ssh://git@github.com/couchbase/" name="couchbase-priv" review="review.couchbase.org" />
-  <remote fetch="ssh://git@github.com/couchbaselabs/" name="couchbaselabs-priv" review="review.couchbase.org" />
+  <remote name="couchbase" fetch="git://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
   
   <default remote="couchbase" revision="release/mercury" />
   
-  <project groups="notdefault" name="build" path="cbbuild" revision="5f3415b1a8ff88eeac8afe0cc6c12bd73a997c3d">
+  <project name="build" path="cbbuild" revision="5f3415b1a8ff88eeac8afe0cc6c12bd73a997c3d" groups="notdefault">
     <annotation name="RELEASE" value="2.7.1" />
     <annotation name="PRODUCT" value="couchbase-lite-java" />
-    <annotation name="BLD_NUM" value="33" />
+    <annotation name="BLD_NUM" value="34" />
     <annotation name="VERSION" value="2.7.1" />
   </project>
-  <project name="couchbase-lite-build" revision="6d35d5c08fd14f806013742e4a2a71f99c4499fc" upstream="release/mercury">
-    <linkfile dest="settings.gradle" src="all/settings-ee.gradle" />
-    <linkfile dest="version.txt" src="all/version.txt" />
+  <project name="couchbase-lite-build" revision="6d35d5c08fd14f806013742e4a2a71f99c4499fc" upstream="release/mercury" dest-branch="release/mercury">
+    <linkfile src="all/settings-ee.gradle" dest="settings.gradle" />
+    <linkfile src="all/version.txt" dest="version.txt" />
   </project>
-  <project name="couchbase-lite-core" revision="4c36b7f37a5db49cf1c54ca54a76569d9045090a" sync-s="true" upstream="release/mercury" />
-  <project name="couchbase-lite-core-EE" remote="couchbase-priv" revision="df1951bf3e4469908d28babd3323c25f61873dea" sync-s="true" upstream="release/mercury" />
-  <project name="couchbase-lite-java" revision="e8fdf70563212fa9ff5ecc4ebadf863868a9aad9" upstream="release/java/mercury" />
-  <project name="couchbase-lite-java-ee" remote="couchbaselabs-priv" revision="bc131a781dbda28e490952b4228f45b9712cec05" upstream="release/java/mercury">
-    <linkfile dest="build.gradle" src="build.gradle" />
-    <linkfile dest="gradle" src="gradle" />
-    <linkfile dest="gradlew" src="gradlew" />
-    <linkfile dest="gradlew.bat" src="gradlew.bat" />
-    <linkfile dest="gradlew.properties" src="gradlew.properties" />
+  <project name="couchbase-lite-core" revision="4c36b7f37a5db49cf1c54ca54a76569d9045090a" upstream="release/mercury" dest-branch="release/mercury" sync-s="true" />
+  <project name="couchbase-lite-core-EE" remote="couchbase-priv" revision="df1951bf3e4469908d28babd3323c25f61873dea" upstream="release/mercury" dest-branch="release/mercury" sync-s="true" />
+  <project name="couchbase-lite-java" revision="a9fa31fdb944b141e50c1d6abecafa9cfe371386" upstream="release/java/mercury" dest-branch="release/java/mercury" />
+  <project name="couchbase-lite-java-ee" remote="couchbaselabs-priv" revision="3cc6276785399b258471f3d2e615fe73970c2ff3" upstream="release/java/mercury" dest-branch="release/java/mercury">
+    <linkfile src="build.gradle" dest="build.gradle" />
+    <linkfile src="gradle" dest="gradle" />
+    <linkfile src="gradlew" dest="gradlew" />
+    <linkfile src="gradlew.bat" dest="gradlew.bat" />
+    <linkfile src="gradlew.properties" dest="gradlew.properties" />
   </project>
-  <project name="product-texts" revision="9a27722a1a4c9aede65b95c38f42a33235d242e0" upstream="master" />
+  <project name="product-texts" revision="53c8232b2da832e34a4b36adbd151691a447d632" upstream="master" dest-branch="master" />
 </manifest>
