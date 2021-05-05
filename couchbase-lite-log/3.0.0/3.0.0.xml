@@ -14,13 +14,13 @@
   <project name="build" path="cbbuild" revision="a8ba0a9d6058381edc320648cafaf696a611908c">
     <annotation name="RELEASE" value="3.0.0" />
     <annotation name="PRODUCT" value="couchbase-lite-log" />
-    <annotation name="BLD_NUM" value="100" />
+    <annotation name="BLD_NUM" value="101" />
     <annotation name="VERSION" value="3.0.0" />
   </project>
   <project name="civetweb" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/civetweb" remote="couchbasedeps" revision="4341c169a789b917a4fe1cdd24f55e507d855ff5" />
-  <project name="couchbase-lite-core" path="couchbase-mobile-tools/vendor/couchbase-lite-core" revision="b8e45b8109a52d6d8186d0c52bbace1f1714cc32" upstream="master" />
+  <project name="couchbase-lite-core" path="couchbase-mobile-tools/vendor/couchbase-lite-core" revision="b8e45b8109a52d6d8186d0c52bbace1f1714cc32" upstream="master" dest-branch="master" />
   <project name="couchbase-lite-core.wiki" path="couchbase-mobile-tools/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
-  <project name="couchbase-mobile-tools" remote="couchbaselabs" revision="4151815c70c8c3256be4c454940d28f75e227cda" upstream="master">
+  <project name="couchbase-mobile-tools" remote="couchbaselabs" revision="4151815c70c8c3256be4c454940d28f75e227cda" upstream="master" dest-branch="master">
     <copyfile src="ci/cbl-log/CMakeLists.txt" dest="CMakeLists.txt" />
   </project>
   <project name="fleece" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="3fab9906b5dea00236e464fb52d00b594f3b0157" />
@@ -31,7 +31,7 @@
   <project name="mbed-crypto" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/mbedtls/crypto" remote="couchbasedeps" revision="6572da5ba51abf56b3f0cc554fa3efec8f847a24" />
   <project name="mbedtls" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/mbedtls" remote="couchbasedeps" revision="eafaf1605d11e8ea3c9e6a9a251e616f5587f3fd" />
   <project name="peg" path="couchbase-mobile-tools/vendor/peg" remote="snej" revision="5722a4b087e58d5cc93ed13fc18e2530948498c1" />
-  <project name="product-texts" revision="53c8232b2da832e34a4b36adbd151691a447d632" upstream="master" />
+  <project name="product-texts" revision="93ca4456d3448f6a72bd38c3836e411e0d2ce972" upstream="master" dest-branch="master" />
   <project name="sockpp" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/sockpp" remote="couchbasedeps" revision="ffde73af5a834b074348f11f17f942fdeda5b7b4" />
   <project name="sqlite3-unicodesn" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/sqlite3-unicodesn" remote="snej" revision="9e0b20dfa4618c95a039bb5eaa7c40a70e0e1597" />
   <project name="tlm" revision="2d46e032cf08727e8e5fab67d05c4f1b051989e4" />
