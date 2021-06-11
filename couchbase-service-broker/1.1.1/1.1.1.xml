@@ -1,0 +1,16 @@
+<manifest>
+  <remote name="couchbase" fetch="git://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="8ba9841f5fd3b60f22203be47bc6e81f7b9b6b2e">
+    <annotation name="RELEASE" value="1.1.1" />
+    <annotation name="PRODUCT" value="couchbase-service-broker" />
+    <annotation name="BLD_NUM" value="100" />
+    <annotation name="VERSION" value="1.1.1" />
+    <annotation name="GOVERSION" value="1.16.3" />
+  </project>
+  <project name="couchbase-service-broker" remote="couchbaselabs-priv" revision="4f3c353d414e7fd17f47be4bef9e2ce3f672ed8e" upstream="master" dest-branch="master" />
+  <project name="service-broker" path="couchbase-service-broker/service-broker" revision="92c7eb2a6a6c25e9a878ecf519ebdb61fc1cbc7e" upstream="refs/tags/0.0.9" dest-branch="refs/tags/0.0.9" />
+</manifest>
