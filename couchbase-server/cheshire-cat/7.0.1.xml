@@ -20,7 +20,7 @@
   <project name="build" path="cbbuild" revision="c7b42af187dfa9a924833c4c8ae6b308e99f0a66" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="cheshire-cat" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="5856" />
+    <annotation name="BLD_NUM" value="5857" />
     <annotation name="VERSION" value="7.0.1" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.0" />
@@ -51,7 +51,7 @@
   <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="4d144c5446d8567aa39b250398b614d49410c10e" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="37f49624f6fa357dd9c65e89dffdcaa8b91d83f3" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
   <project name="flatbuffers" path="godeps/src/github.com/google/flatbuffers" remote="couchbasedeps" revision="1a8968225130caeddd16e227678e6f8af1926303" />
-  <project name="forestdb" revision="43c6128f1b54fcc92bbbfaf7d6061d1a024c7050" upstream="cb-master" dest-branch="cb-master" groups="backup" />
+  <project name="forestdb" revision="43c6128f1b54fcc92bbbfaf7d6061d1a024c7050" groups="backup" />
   <project name="fwd" path="godeps/src/github.com/philhofer/fwd" remote="couchbasedeps" revision="bb6d471dc95d4fe11e432687f8b70ff496cf3136" />
   <project name="geocouch" revision="3e8040787139e3c67766ce50398860c185737b8a" upstream="master" dest-branch="master" />
   <project name="ghistogram" path="godeps/src/github.com/couchbase/ghistogram" revision="259e7fdc7f2874ccca8b179431b2071143d4e86c" upstream="master" dest-branch="master" />
@@ -128,7 +128,7 @@
   <project name="pierrec-xxHash" path="godeps/src/github.com/pierrec/xxHash" remote="couchbasedeps" revision="a0006b13c722f7f12368c00a3d3c2ae8a999a0c6" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="ee4322dbe9e36de1fdf8333bfb17b28e21dcc6a9" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
   <project name="platform" revision="249057fe027f1697d79b2226af71cc47214b5397" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="kv" />
-  <project name="product-metadata" revision="53e97f6e7fc28d923623ac3839414f4f5b4f3b3d" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="0a921afa89cb65187a58446c4ee0ab005bb9b57e" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="457b7c10d6e81e60bb4781bf47101f42ebe5ea1e" upstream="master" dest-branch="master" groups="kv" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="ddf22928ea3c56eb4292a0adbbf5001b1e8e7d0d" />
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="dda0e9aa64ff82bff4d99caca86ebed851951912" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="bsl" />
@@ -136,12 +136,12 @@
   <project name="query-ui" revision="b9bbd59dc14b36e74be5d5c365f4c5ff069ee74f" upstream="master" dest-branch="master" />
   <project name="retriever" path="godeps/src/github.com/couchbase/retriever" revision="e3419088e4d3b4fe3aad3b364fdbe9a154f85f17" upstream="master" dest-branch="master" />
   <project name="roaring" path="godeps/src/github.com/RoaringBitmap/roaring" remote="couchbasedeps" revision="4208ad825dda03a6a3d2197df8ec57948aebcc12" />
-  <project name="sigar" revision="ebbea95dc3d23a8c0951020f068f990a23f17d1a" upstream="master" dest-branch="master" groups="kv" />
+  <project name="sigar" revision="aa56bc7b92311e7db76ba4f0ae9da75ebebc0df1" groups="kv" />
   <project name="spdlog" path="third_party/spdlog" remote="couchbasedeps" revision="20967a170429d0d37e09a485bc3cf5b153554924" upstream="v1.1.0-couchbase" dest-branch="v1.1.0-couchbase" groups="kv" />
   <project name="strconv" path="godeps/src/github.com/tdewolff/strconv" remote="couchbasedeps" revision="9b189f5be77f33c46776f24dbddb2a7ab32af214" />
   <project name="subjson" revision="d02afad5c89a853a89329d52b8b6dcc20143c628" upstream="master" dest-branch="master" groups="kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="12a6c2dcc1e4cb348b57847c73987099e261714b" />
-  <project name="testrunner" revision="0b041b4e58c639e310cd4efb9745a13cb6ba4ecc" upstream="master" dest-branch="master" />
+  <project name="testrunner" revision="ab6033919274f5f0deb1aa6d9bd611e5733dca2f" upstream="master" dest-branch="master" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="88f656faf3f37f690df1a32515b479415e1a6769" />
   <project name="tlm" revision="8e6392c59bcddb38aa6bee2599c8a4874ccaba60" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
