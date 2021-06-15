@@ -20,14 +20,14 @@
   <project name="build" path="cbbuild" revision="ac3bfdac03766236de193524c29dc9c2c677d391" groups="notdefault,build">
     <annotation name="RELEASE" value="cheshire-cat" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="5295" />
+    <annotation name="BLD_NUM" value="5296" />
     <annotation name="VERSION" value="7.0.0" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.0" />
     <annotation name="BSL_CHANGE_DATE" value="July 1, 2025" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="6309b1b8805de1839cb2744672f5c56c77efc7da" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="a1bed4a4db06db1ea87c3a119d5665fd2d460bdb" upstream="7.0.0" dest-branch="7.0.0" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="c0324e5b98080c94d1522a5b7c6f115f1b010604" upstream="7.0.0" dest-branch="7.0.0" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="563d979312439f18d0ee645522349142ab540281" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="0eaf917092a2a0063989e9a08b4a7ac3abf09e1e" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="ee67b936b51df34c021308a924c0f1c0be218e77" groups="backup,notdefault,enterprise" />
@@ -51,7 +51,7 @@
   <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="4d144c5446d8567aa39b250398b614d49410c10e" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="37f49624f6fa357dd9c65e89dffdcaa8b91d83f3" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
   <project name="flatbuffers" path="godeps/src/github.com/google/flatbuffers" remote="couchbasedeps" revision="1a8968225130caeddd16e227678e6f8af1926303" />
-  <project name="forestdb" revision="43c6128f1b54fcc92bbbfaf7d6061d1a024c7050" upstream="cb-master" dest-branch="cb-master" groups="backup" />
+  <project name="forestdb" revision="43c6128f1b54fcc92bbbfaf7d6061d1a024c7050" groups="backup" />
   <project name="fwd" path="godeps/src/github.com/philhofer/fwd" remote="couchbasedeps" revision="bb6d471dc95d4fe11e432687f8b70ff496cf3136" />
   <project name="geocouch" revision="3e8040787139e3c67766ce50398860c185737b8a" />
   <project name="ghistogram" path="godeps/src/github.com/couchbase/ghistogram" revision="259e7fdc7f2874ccca8b179431b2071143d4e86c" />
@@ -141,7 +141,7 @@
   <project name="strconv" path="godeps/src/github.com/tdewolff/strconv" remote="couchbasedeps" revision="9b189f5be77f33c46776f24dbddb2a7ab32af214" />
   <project name="subjson" revision="d02afad5c89a853a89329d52b8b6dcc20143c628" groups="kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="12a6c2dcc1e4cb348b57847c73987099e261714b" />
-  <project name="testrunner" revision="464527cadc1264da3ec2ca137603c708bf807bd8" upstream="master" dest-branch="master" />
+  <project name="testrunner" revision="fd762011f1befbcb9bc86e880a883f2324ed2ad9" upstream="master" dest-branch="master" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="88f656faf3f37f690df1a32515b479415e1a6769" />
   <project name="tlm" revision="3f29ae3986c20a54f466a4da3012b8ed3f4a615f" groups="kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
