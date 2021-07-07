@@ -22,7 +22,7 @@
   <project name="build" path="cbbuild" revision="0473d67894d44ecdefb2e3289b0ae95465d035a1" upstream="mad-hatter" dest-branch="mad-hatter" groups="notdefault,build">
     <annotation name="RELEASE" value="mad-hatter" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="9784" />
+    <annotation name="BLD_NUM" value="9785" />
     <annotation name="VERSION" value="6.6.3" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="d5f875b6ff8a0a39cded510d4c06d8c4a2fe232a" upstream="mad-hatter" dest-branch="mad-hatter" groups="notdefault,enterprise,analytics" />
@@ -93,12 +93,12 @@
   <project name="goskiplist" path="godeps/src/github.com/ryszard/goskiplist" remote="couchbasedeps" revision="2dfbae5fcf46374f166f8969cb07e167f1be6273" />
   <project name="gosnappy" path="godeps/src/github.com/syndtr/gosnappy" remote="couchbasedeps" revision="156a073208e131d7d2e212cb749feae7c339e846" />
   <project name="goutils" path="godeps/src/github.com/couchbase/goutils" revision="b49639060d85b267c5bdb7d4e3246d4ccca94e79" upstream="mad-hatter" dest-branch="mad-hatter" groups="backup" />
-  <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" revision="365aa02e505db088b306f8f317648b65d80b14a5" upstream="mad-hatter" dest-branch="mad-hatter" />
+  <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" revision="31506afeb8bad99df49fadeee36b5485da6e5c1f" upstream="mad-hatter" dest-branch="mad-hatter" />
   <project name="grpc-go" path="godeps/src/google.golang.org/grpc" remote="couchbasedeps" revision="f6d0f9ee430895e87ef1ceb5ac8f39725bafceef" upstream="refs/tags/v1.24.0" dest-branch="refs/tags/v1.24.0" />
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="57542c7e7ced375346e9ac55dad85b942cfad556" upstream="refs/tags/v0.25.0" dest-branch="refs/tags/v0.25.0" groups="kv" />
   <project name="gtreap" path="godeps/src/github.com/steveyen/gtreap" remote="couchbasedeps" revision="0abe01ef9be25c4aedc174758ec2d917314d6d70" />
   <project name="httprouter" path="godeps/src/github.com/julienschmidt/httprouter" remote="couchbasedeps" revision="975b5c4c7c21c0e3d2764200bf2aa8e34657ae6e" />
-  <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="0edf2cad56622101562397bf2265a32a0671bc1e" upstream="mad-hatter" dest-branch="mad-hatter" />
+  <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="91c7ac840b71a543220069300f77600b19943d09" upstream="mad-hatter" dest-branch="mad-hatter" />
   <project name="json-iterator-go" path="godeps/src/github.com/json-iterator/go" remote="couchbasedeps" revision="f7279a603edee96fe7764d3de9c6ff8cf9970994" groups="backup" />
   <project name="jsonparser" path="godeps/src/github.com/buger/jsonparser" remote="couchbasedeps" revision="df3ea76ece10095374fd1c9a22a4fb85a44efc42" />
   <project name="jsonx" path="godeps/src/gopkg.in/couchbaselabs/jsonx.v1" remote="couchbaselabs" revision="5b7baa20429a46a5543ee259664cc86502738cad" groups="backup" />
@@ -120,7 +120,7 @@
   <project name="net" path="godeps/src/golang.org/x/net" remote="couchbasedeps" revision="d8887717615a059821345a5c23649351b52a1c0b" groups="backup" />
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="1cc0c3058bef77ef4b87d623e1024b0cd048d015" upstream="mad-hatter" dest-branch="mad-hatter" />
   <project name="npipe" path="godeps/src/github.com/natefinch/npipe" remote="couchbasedeps" revision="272c8150302e83f23d32a355364578c9c13ab20f" />
-  <project name="ns_server" revision="5ff29d6c831de7614ecd15bd3111b90c553b90d0" upstream="mad-hatter" dest-branch="mad-hatter" />
+  <project name="ns_server" revision="14d508e66e60800202adf6fcdf6db7fc7c136f96" upstream="mad-hatter" dest-branch="mad-hatter" />
   <project name="opentracing-go" path="godeps/src/github.com/opentracing/opentracing-go" remote="couchbasedeps" revision="1949ddbfd147afd4d964a9f00b24eb291e0e7c38" groups="backup" />
   <project name="parse" path="godeps/src/github.com/tdewolff/parse" remote="couchbasedeps" revision="0334a869253aca4b3a10c56c3f3139b394aec3a9" />
   <project name="participle" path="godeps/src/github.com/alecthomas/participle" remote="couchbasedeps" revision="bf8340a459bd383e5eb7d44a9a1b3af23b6cf8cd" />
@@ -132,7 +132,7 @@
   <project name="platform" revision="3c3da324d27421284e4564aba255a6cd73ec4edf" upstream="mad-hatter" dest-branch="mad-hatter" groups="kv" />
   <project name="product-texts" revision="53c8232b2da832e34a4b36adbd151691a447d632" upstream="mad-hatter" dest-branch="mad-hatter" groups="kv" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="84668698ea25b64748563aa20726db66a6b8d299" />
-  <project name="query" path="goproj/src/github.com/couchbase/query" revision="ee558ca459e0937af385b75b99532a77387e93bd" upstream="mad-hatter" dest-branch="mad-hatter" />
+  <project name="query" path="goproj/src/github.com/couchbase/query" revision="9243976f3fedca0f110234429ca5bc0fa38ea2f3" upstream="mad-hatter" dest-branch="mad-hatter" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="e64e4991602b4f818a5abdbe2495454170332304" upstream="mad-hatter" dest-branch="mad-hatter" groups="notdefault,enterprise" />
   <project name="query-ui" revision="237f460d8276e334e500446706a7c676221d0a0f" upstream="mad-hatter" dest-branch="mad-hatter" />
   <project name="retriever" path="godeps/src/github.com/couchbase/retriever" revision="e3419088e4d3b4fe3aad3b364fdbe9a154f85f17" />
