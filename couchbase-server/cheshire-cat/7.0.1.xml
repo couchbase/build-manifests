@@ -20,7 +20,7 @@
   <project name="build" path="cbbuild" revision="68ee323a62cd88a0f86b8dc18516f6761c6d2d17" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,build">
     <annotation name="RELEASE" value="cheshire-cat" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="5982" />
+    <annotation name="BLD_NUM" value="5983" />
     <annotation name="VERSION" value="7.0.1" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.0" />
@@ -32,7 +32,7 @@
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="ac1d7154ec05cfe6e0d3d7e8d3475f912d2aba06" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="backup,bsl" />
   <project name="cbbs" remote="couchbase-priv" revision="14b5806ed66b4ac767ebc65097a2609a276fb36f" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="backup,notdefault,enterprise" />
   <project name="cbflag" path="godeps/src/github.com/couchbase/cbflag" revision="54f929f0d126bf134601ace36ffbc4197c00ffbe" upstream="master" dest-branch="master" groups="bsl" />
-  <project name="cbft" revision="8089392fa06bab88eacfb9a8ad08a2ad69be4a70" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="bsl" />
+  <project name="cbft" revision="3ae187890b9e37e1069a0fb1f4189057f69a95c2" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="bsl" />
   <project name="cbftx" remote="couchbase-priv" revision="71e30531cadda33561b410ca431f3fcc52bd1af2" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
   <project name="cbgt" revision="fbfd72fc399c5c443c93dd4b1b7ed79f1a944efc" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="bsl" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="d65738f74dad4d052812caced063da1a95db8567" upstream="master" dest-branch="master" groups="bsl" />
@@ -114,11 +114,11 @@
   <project name="mousetrap" path="godeps/src/github.com/inconshreveable/mousetrap" remote="couchbasedeps" revision="76626ae9c91c4f2a10f34cad8ce83ea42c93bb75" />
   <project name="msgp" path="godeps/src/github.com/tinylib/msgp" remote="couchbasedeps" revision="5bb5e1aed7ba5bcc93307153b020e7ffe79b0509" />
   <project name="mux" path="godeps/src/github.com/gorilla/mux" remote="couchbasedeps" revision="043ee6597c29786140136a5747b6a886364f5282" />
-  <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="cf96a9e2b690f74deb0f36ab93f289e926ebccc2" upstream="cheshire-cat" dest-branch="cheshire-cat" />
+  <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="c38df87a17c3ab4b38456ddfd22a65fedfc56a93" upstream="cheshire-cat" dest-branch="cheshire-cat" />
   <project name="net" path="godeps/src/golang.org/x/net" remote="couchbasedeps" revision="44b7c21cbf19450f38b337eb6b6fe4f6496fb5b3" />
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="89c78ce461c1e1d24e34b5027618104aeb8ecf01" upstream="cheshire-cat" dest-branch="cheshire-cat" />
   <project name="npipe" path="godeps/src/github.com/natefinch/npipe" remote="couchbasedeps" revision="272c8150302e83f23d32a355364578c9c13ab20f" />
-  <project name="ns_server" revision="f39c0390454de3d1794d81738336473c6bdeaf72" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="bsl" />
+  <project name="ns_server" revision="c203fd2cd2476ec86f635131b2fc5dbe3347f278" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="bsl" />
   <project name="opentracing-go" path="godeps/src/github.com/opentracing/opentracing-go" remote="couchbasedeps" revision="1949ddbfd147afd4d964a9f00b24eb291e0e7c38" />
   <project name="parse" path="godeps/src/github.com/tdewolff/parse" remote="couchbasedeps" revision="0334a869253aca4b3a10c56c3f3139b394aec3a9" />
   <project name="participle" path="godeps/src/github.com/alecthomas/participle" remote="couchbasedeps" revision="d638c6e1953ed899e05a34da3935146790c60e46" />
@@ -128,10 +128,10 @@
   <project name="pierrec-xxHash" path="godeps/src/github.com/pierrec/xxHash" remote="couchbasedeps" revision="a0006b13c722f7f12368c00a3d3c2ae8a999a0c6" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="2ca0f187c8d6adfcaea21636c8e0301386167610" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
   <project name="platform" revision="88505bcda4aca96fb3722028994aab27ec181e5b" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="kv" />
-  <project name="product-metadata" revision="459ed478ca5c1e26c2337ba4d1b74a5a732bc3c7" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="d8b182eef42aa88788a1b252aa565f14eded1897" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="457b7c10d6e81e60bb4781bf47101f42ebe5ea1e" upstream="master" dest-branch="master" groups="kv" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="ddf22928ea3c56eb4292a0adbbf5001b1e8e7d0d" />
-  <project name="query" path="goproj/src/github.com/couchbase/query" revision="d732cc702976212ce034f55d1bd1478ce6e2e54b" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="bsl" />
+  <project name="query" path="goproj/src/github.com/couchbase/query" revision="0f8ef24d072d2babea2ba0bbd7b4e04c109374df" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="95798e0373adcb346278efdd4ae7458929acbf05" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
   <project name="query-ui" revision="e3e2ea4382c39c51fbf77f610b959ec558ed3fcd" upstream="master" dest-branch="master" />
   <project name="retriever" path="godeps/src/github.com/couchbase/retriever" revision="e3419088e4d3b4fe3aad3b364fdbe9a154f85f17" upstream="master" dest-branch="master" />
