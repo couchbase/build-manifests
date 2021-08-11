@@ -14,14 +14,14 @@
   <project name="build" path="cbbuild" revision="9261a4ae60d71b3de4477ec6a1a2b3008585feba" upstream="master" dest-branch="master">
     <annotation name="RELEASE" value="3.0.0" />
     <annotation name="PRODUCT" value="couchbase-lite-c" />
-    <annotation name="BLD_NUM" value="81" />
+    <annotation name="BLD_NUM" value="82" />
     <copyfile src="scripts/jenkins/lite-c/CMakeLists.txt" dest="CMakeLists.txt" />
     <annotation name="VERSION" value="3.0.0" />
   </project>
-  <project name="couchbase-lite-c" revision="0465e1fdff0159a2645ce1290d93db0a4cff533b" upstream="master" dest-branch="master" />
-  <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="f6769fc0d395c1790a2e1f766f4f24979f6336f0" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
+  <project name="couchbase-lite-c" revision="02bb386dff1c949fe58f60d5259f2b12839597f4" upstream="master" dest-branch="master" />
+  <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="f14bf5914276d64356361fdb6e839f52ef328753" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
   <project name="couchbase-lite-core" path="couchbase-lite-c/vendor/couchbase-lite-core" revision="2708cea91befa9f2959c1cd826c554abc00f971f" />
-  <project name="couchbase-lite-core-EE" path="couchbase-lite-c-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="29abceb2f62428d58c23948117f82fe5ad4d7b09" groups="notdefault,enterprise" />
+  <project name="couchbase-lite-core-EE" path="couchbase-lite-c-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="aac1f2f96daa56fa1de0c976dbeae0e09c64826c" groups="notdefault,enterprise" />
   <project name="couchbase-lite-core.wiki" path="couchbase-lite-c/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
   <project name="fleece" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="b820e033f6c4b9c220480ab14ebad9a83562a769" />
   <project name="googletest" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
