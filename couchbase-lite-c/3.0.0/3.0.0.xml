@@ -11,14 +11,14 @@
   <default remote="couchbase" revision="master" />
   
   <project name="SQLiteCpp" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="7b250854fffbdc13e2d040a7e96be8e561e51d08" />
-  <project name="build" path="cbbuild" revision="48069dcec023dbf1b77f8f1a97c287433446a3ab" upstream="master" dest-branch="master">
+  <project name="build" path="cbbuild" revision="1a14c1d4b38fa513bf2712fc7b01a254f64fd1ca" upstream="master" dest-branch="master">
     <annotation name="RELEASE" value="3.0.0" />
     <annotation name="PRODUCT" value="couchbase-lite-c" />
-    <annotation name="BLD_NUM" value="93" />
+    <annotation name="BLD_NUM" value="94" />
     <copyfile src="scripts/jenkins/lite-c/CMakeLists.txt" dest="CMakeLists.txt" />
     <annotation name="VERSION" value="3.0.0" />
   </project>
-  <project name="couchbase-lite-c" revision="18544a4de870e823b788b672b9b95bfc15a68f48" upstream="master" dest-branch="master" />
+  <project name="couchbase-lite-c" revision="771a4b25a7f825a75f455712768e4b5dc2a2e375" upstream="master" dest-branch="master" />
   <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="f14bf5914276d64356361fdb6e839f52ef328753" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
   <project name="couchbase-lite-core" path="couchbase-lite-c/vendor/couchbase-lite-core" revision="2708cea91befa9f2959c1cd826c554abc00f971f" />
   <project name="couchbase-lite-core-EE" path="couchbase-lite-c-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="aac1f2f96daa56fa1de0c976dbeae0e09c64826c" groups="notdefault,enterprise" />
