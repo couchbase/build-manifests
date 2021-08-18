@@ -20,7 +20,7 @@
   <project name="build" path="cbbuild" revision="68ee323a62cd88a0f86b8dc18516f6761c6d2d17" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,build">
     <annotation name="RELEASE" value="cheshire-cat" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="6530" />
+    <annotation name="BLD_NUM" value="6531" />
     <annotation name="VERSION" value="7.0.2" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.0" />
@@ -48,7 +48,7 @@
   <project name="cuckoofilter" path="godeps/src/github.com/seiflotfy/cuckoofilter" remote="couchbasedeps" revision="d04838794ab86926d32b124345777e55e6f43974" />
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="57492c80834575f4199cff5fff94cb4f4c7c6af6" upstream="master" dest-branch="master" />
   <project name="errors" path="godeps/src/github.com/pkg/errors" remote="couchbasedeps" revision="30136e27e2ac8d167177e8a583aa4c3fea5be833" />
-  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="716e09260281332562668af7aa7dc475336b8fda" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
+  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="7ce7ca1d6dc976db22472146c7ebb13b750d44b0" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="37f49624f6fa357dd9c65e89dffdcaa8b91d83f3" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
   <project name="flatbuffers" path="godeps/src/github.com/google/flatbuffers" remote="couchbasedeps" revision="1a8968225130caeddd16e227678e6f8af1926303" />
   <project name="forestdb" revision="43c6128f1b54fcc92bbbfaf7d6061d1a024c7050" groups="backup" />
@@ -128,7 +128,7 @@
   <project name="pierrec-xxHash" path="godeps/src/github.com/pierrec/xxHash" remote="couchbasedeps" revision="a0006b13c722f7f12368c00a3d3c2ae8a999a0c6" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="760b46cc67817789d4628c4a9ae86e42dc56d0de" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
   <project name="platform" revision="88505bcda4aca96fb3722028994aab27ec181e5b" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="kv" />
-  <project name="product-metadata" revision="71227e92de1e761e5008d5b9f6c964e351cf16a2" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="41c9ccb47c7a7833ed35e71b7c1376c9b5873712" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="457b7c10d6e81e60bb4781bf47101f42ebe5ea1e" upstream="master" dest-branch="master" groups="kv" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="ddf22928ea3c56eb4292a0adbbf5001b1e8e7d0d" />
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="d268c7e6e0feac1b71e92c9c518b4059a1c89c23" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="bsl" />
@@ -143,7 +143,7 @@
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="12a6c2dcc1e4cb348b57847c73987099e261714b" />
   <project name="testrunner" revision="7ec04e298f93b4c8c52383068e752037f965eafe" upstream="cheshire-cat" dest-branch="cheshire-cat" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="88f656faf3f37f690df1a32515b479415e1a6769" />
-  <project name="tlm" revision="653ec105b8facd1c96abfb13e5f5174c3c9afbb0" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="kv">
+  <project name="tlm" revision="55651fbfe9e6e2c8df20d1d596c80ae6c70d6d8a" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
     <copyfile src="CMakeLists.txt" dest="CMakeLists.txt" />
@@ -152,6 +152,6 @@
     <copyfile src="third-party-CMakeLists.txt" dest="third_party/CMakeLists.txt" />
   </project>
   <project name="uuid" path="godeps/src/github.com/google/uuid" remote="couchbasedeps" revision="dec09d789f3dba190787f8b4454c7d3c936fed9e" />
-  <project name="voltron" remote="couchbase-priv" revision="45b668c1c0c890d7cb22b8ea676da5cd2000a2f7" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="voltron" remote="couchbase-priv" revision="f68ea83c79a4274e63bc26eae3074c3346735dc4" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="zstd" path="godeps/src/github.com/DataDog/zstd" remote="couchbasedeps" revision="aebefd9fcb99f22cd691ef778a12ed68f0e6a1ab" />
 </manifest>
