@@ -11,23 +11,23 @@
   <remote name="rudi-cilibrasi" fetch="git://github.com/rudi-cilibrasi/" />
   <remote name="snej" fetch="git://github.com/snej/" />
   
-  <default remote="couchbase" revision="master" />
+  <default remote="couchbase" revision="release/lithium" />
   
   <project name="BLIP-Cpp" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/BLIP-Cpp" remote="couchbaselabs" revision="96dd437a898aa70e8a28d361c32a10d809e70110" />
   <project name="MYUtilities" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/MYUtilities" remote="snej" revision="33e7e5820433aa70d38e1c5e54b13e74a91ae57f" />
   <project name="SQLiteCpp" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="7b250854fffbdc13e2d040a7e96be8e561e51d08" />
-  <project name="build" revision="b020be871d21b7348d9ef28b63e6cd736e68d5d9" upstream="master" dest-branch="master">
+  <project name="build" revision="4f060f0dd016560fa2b1546f887ca2bf4040f4e3" upstream="master" dest-branch="master">
     <annotation name="RELEASE" value="3.0.0" />
     <annotation name="PRODUCT" value="couchbase-lite-ios" />
-    <annotation name="BLD_NUM" value="268" />
+    <annotation name="BLD_NUM" value="269" />
     <annotation name="VERSION" value="3.0.0" />
   </project>
   <project name="civetweb" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/civetweb" remote="couchbasedeps" revision="4341c169a789b917a4fe1cdd24f55e507d855ff5" />
-  <project name="couchbase-lite-core" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core" revision="d705ae2ad680fa9228d28ab8a07594587f889b84" />
+  <project name="couchbase-lite-core" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core" revision="f1f28c2bad1d42e530d1e909cd75a0b0b2562216" />
   <project name="couchbase-lite-core-EE" path="couchbase-lite-ios-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="b8eeafae1c8ecac38ed0ba912ac5a47c289ff021" groups="enterprise,notdefault" />
   <project name="couchbase-lite-core.wiki" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
-  <project name="couchbase-lite-ios" path="couchbase-lite-ios-ee/couchbase-lite-ios" revision="8f1c9bc6ddcfaddc99943fb6c13d10acc037e38e" upstream="master" dest-branch="master" />
-  <project name="couchbase-lite-ios-ee" remote="couchbaselabs-priv" revision="c0e725651cb526ee0e976879c2da24b05c2928d8" upstream="master" dest-branch="master" groups="enterprise,notdefault" />
+  <project name="couchbase-lite-ios" path="couchbase-lite-ios-ee/couchbase-lite-ios" revision="4cc0bf8170c94bb1b63c4f1c86230f291c868a66" upstream="release/lithium" dest-branch="release/lithium" />
+  <project name="couchbase-lite-ios-ee" remote="couchbaselabs-priv" revision="176c9be5ccd8428b0ea18fb27a69b7057b33ce84" upstream="release/lithium" dest-branch="release/lithium" groups="enterprise,notdefault" />
   <project name="fleece" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="d6a6727add426510731512451af435a926b51e16" />
   <project name="googletest" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
   <project name="ios-cmake" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/ios-cmake" remote="leetal" revision="29668dbcd9ef2fd7369140b7e9bd9df0485497f6" />
