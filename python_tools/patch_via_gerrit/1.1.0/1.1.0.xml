@@ -1,0 +1,16 @@
+<manifest>
+  <remote name="couchbase" fetch="git://github.com/couchbase/" />
+  <remote name="couchbasebuild" fetch="git://github.com/couchbasebuild/" />
+  <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="89467fdea78ec6c84fa423756a1210056ac5c199">
+    <annotation name="RELEASE" value="1.1.0" />
+    <annotation name="PRODUCT" value="python_tools::patch_via_gerrit" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="1.1.0" />
+  </project>
+  <project name="patch_via_gerrit" remote="couchbasebuild" revision="0826e8a180e393f74eada7d03e362b65bbf85b2a" upstream="master" dest-branch="master" />
+  <project name="pyinstaller" remote="couchbasedeps" revision="54083110106d2c20e45364d1f98457880dcbd31e" upstream="couchbase-develop" dest-branch="couchbase-develop" />
+</manifest>
