@@ -1,14 +1,14 @@
 <manifest>
-  <remote name="ARMmbed" fetch="git://github.com/ARMmbed" />
-  <remote name="couchbase" fetch="git://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="ARMmbed" fetch="https://github.com/ARMmbed" />
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
   <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
-  <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" />
-  <remote name="couchbaselabs" fetch="git://github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
   <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
-  <remote name="google" fetch="git://github.com/google/" />
-  <remote name="leetal" fetch="git://github.com/leetal/" />
-  <remote name="rudi-cilibrasi" fetch="git://github.com/rudi-cilibrasi/" />
-  <remote name="snej" fetch="git://github.com/snej/" />
+  <remote name="google" fetch="https://github.com/google/" />
+  <remote name="leetal" fetch="https://github.com/leetal/" />
+  <remote name="rudi-cilibrasi" fetch="https://github.com/rudi-cilibrasi/" />
+  <remote name="snej" fetch="https://github.com/snej/" />
   
   <default remote="couchbase" revision="release/lithium" />
   
@@ -16,11 +16,11 @@
   <project name="build" path="cbbuild" revision="a8ba0a9d6058381edc320648cafaf696a611908c">
     <annotation name="RELEASE" value="3.0.0" />
     <annotation name="PRODUCT" value="couchbase-lite-cblite" />
-    <annotation name="BLD_NUM" value="203" />
+    <annotation name="BLD_NUM" value="204" />
     <annotation name="VERSION" value="3.0.0" />
   </project>
   <project name="civetweb" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/civetweb" remote="couchbasedeps" revision="4341c169a789b917a4fe1cdd24f55e507d855ff5" />
-  <project name="couchbase-lite-core" path="couchbase-mobile-tools/vendor/couchbase-lite-core" revision="6265d618c78f3f739ea9801de024bfc8c8216f81" upstream="release/lithium" dest-branch="release/lithium" />
+  <project name="couchbase-lite-core" path="couchbase-mobile-tools/vendor/couchbase-lite-core" revision="b018a12db01222d451b4f7b95478d4825bc19954" upstream="release/lithium" dest-branch="release/lithium" />
   <project name="couchbase-lite-core-EE" path="couchbase-mobile-tools/vendor/couchbase-lite-core-EE" remote="couchbase-priv" revision="d1821646675b42eb8b5cb944456a25f2e2d99c53" upstream="release/lithium" dest-branch="release/lithium" />
   <project name="couchbase-lite-core.wiki" path="couchbase-mobile-tools/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
   <project name="couchbase-mobile-tools" remote="couchbaselabs" revision="691ea913056ad56b9b165b5c60329497fb31033b" upstream="release/lithium" dest-branch="release/lithium">
