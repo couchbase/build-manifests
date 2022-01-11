@@ -1,20 +1,20 @@
 <manifest>
-  <remote name="arangodb" fetch="git://github.com/arangodb/" />
-  <remote name="couchbase" fetch="git://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="arangodb" fetch="https://github.com/arangodb/" />
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
   <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
-  <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" />
-  <remote name="couchbaselabs" fetch="git://github.com/couchbaselabs/" review="review.couchbase.org" />
-  <remote name="google" fetch="git://github.com/google/" />
-  <remote name="leetal" fetch="git://github.com/leetal/" />
-  <remote name="snej" fetch="git://github.com/snej/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="google" fetch="https://github.com/google/" />
+  <remote name="leetal" fetch="https://github.com/leetal/" />
+  <remote name="snej" fetch="https://github.com/snej/" />
   
   <default remote="couchbase" revision="master" />
   
   <project name="SQLiteCpp" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="7b250854fffbdc13e2d040a7e96be8e561e51d08" />
-  <project name="build" path="cbbuild" revision="f26398009eb21f40e95785ce25b59d36f6bdcce9" upstream="master" dest-branch="master">
+  <project name="build" path="cbbuild" revision="42e8aee77fc581456ad4503f392c8ae7df87f614" upstream="master" dest-branch="master">
     <annotation name="RELEASE" value="3.1.0" />
     <annotation name="PRODUCT" value="couchbase-lite-c" />
-    <annotation name="BLD_NUM" value="62" />
+    <annotation name="BLD_NUM" value="63" />
     <copyfile src="scripts/jenkins/lite-c/CMakeLists.txt" dest="CMakeLists.txt" />
     <annotation name="VERSION" value="3.1.0" />
   </project>
