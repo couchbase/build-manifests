@@ -1,33 +1,33 @@
 <manifest>
-  <remote name="ARMmbed" fetch="git://github.com/ARMmbed" />
-  <remote name="arangodb" fetch="git://github.com/arangodb/" />
-  <remote name="couchbase" fetch="git://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="ARMmbed" fetch="https://github.com/ARMmbed" />
+  <remote name="arangodb" fetch="https://github.com/arangodb/" />
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
   <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
-  <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" />
-  <remote name="couchbaselabs" fetch="git://github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
   <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
-  <remote name="google" fetch="git://github.com/google/" />
-  <remote name="leetal" fetch="git://github.com/leetal/" />
-  <remote name="rudi-cilibrasi" fetch="git://github.com/rudi-cilibrasi/" />
-  <remote name="snej" fetch="git://github.com/snej/" />
+  <remote name="google" fetch="https://github.com/google/" />
+  <remote name="leetal" fetch="https://github.com/leetal/" />
+  <remote name="rudi-cilibrasi" fetch="https://github.com/rudi-cilibrasi/" />
+  <remote name="snej" fetch="https://github.com/snej/" />
   
   <default remote="couchbase" revision="release/lithium" />
   
   <project name="BLIP-Cpp" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/BLIP-Cpp" remote="couchbaselabs" revision="96dd437a898aa70e8a28d361c32a10d809e70110" />
   <project name="MYUtilities" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/MYUtilities" remote="snej" revision="33e7e5820433aa70d38e1c5e54b13e74a91ae57f" />
   <project name="SQLiteCpp" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="7b250854fffbdc13e2d040a7e96be8e561e51d08" />
-  <project name="build" revision="f26398009eb21f40e95785ce25b59d36f6bdcce9" upstream="master" dest-branch="master">
+  <project name="build" revision="42e8aee77fc581456ad4503f392c8ae7df87f614" upstream="master" dest-branch="master">
     <annotation name="RELEASE" value="3.0.0" />
     <annotation name="PRODUCT" value="couchbase-lite-ios" />
-    <annotation name="BLD_NUM" value="341" />
+    <annotation name="BLD_NUM" value="342" />
     <annotation name="VERSION" value="3.0.0" />
   </project>
   <project name="civetweb" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/civetweb" remote="couchbasedeps" revision="4341c169a789b917a4fe1cdd24f55e507d855ff5" />
-  <project name="couchbase-lite-core" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core" revision="03524fed93bd963041d689c5749564cfc2c74827" />
+  <project name="couchbase-lite-core" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core" revision="6265d618c78f3f739ea9801de024bfc8c8216f81" />
   <project name="couchbase-lite-core-EE" path="couchbase-lite-ios-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="d1821646675b42eb8b5cb944456a25f2e2d99c53" groups="enterprise,notdefault" />
   <project name="couchbase-lite-core.wiki" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
-  <project name="couchbase-lite-ios" path="couchbase-lite-ios-ee/couchbase-lite-ios" revision="d85684f2865284a56a97398fef8d69ee3e7df456" upstream="release/lithium" dest-branch="release/lithium" />
-  <project name="couchbase-lite-ios-ee" remote="couchbaselabs-priv" revision="5eaa5515d6fead028b1dbcf85d350df22f30568b" upstream="release/lithium" dest-branch="release/lithium" groups="enterprise,notdefault" />
+  <project name="couchbase-lite-ios" path="couchbase-lite-ios-ee/couchbase-lite-ios" revision="aa25ce0461942c9ab159395e5bd403f88ff4df6c" upstream="release/lithium" dest-branch="release/lithium" />
+  <project name="couchbase-lite-ios-ee" remote="couchbaselabs-priv" revision="03af394a685b432ffa4be642dbecbd19e4bb6a06" upstream="release/lithium" dest-branch="release/lithium" groups="enterprise,notdefault" />
   <project name="fleece" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="4b5903f9415b1db182503458766497c8b84440b4" />
   <project name="googletest" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
   <project name="ios-cmake" path="couchbase-lite-ios-ee/couchbase-lite-ios/vendor/couchbase-lite-core/vendor/ios-cmake" remote="leetal" revision="29668dbcd9ef2fd7369140b7e9bd9df0485497f6" />
