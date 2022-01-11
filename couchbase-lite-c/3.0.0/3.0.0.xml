@@ -1,12 +1,12 @@
 <manifest>
-  <remote name="arangodb" fetch="git://github.com/arangodb/" />
-  <remote name="couchbase" fetch="git://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="arangodb" fetch="ssh://git@github.com/arangodb/" />
+  <remote name="couchbase" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
   <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
-  <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" />
-  <remote name="couchbaselabs" fetch="git://github.com/couchbaselabs/" review="review.couchbase.org" />
-  <remote name="google" fetch="git://github.com/google/" />
-  <remote name="leetal" fetch="git://github.com/leetal/" />
-  <remote name="snej" fetch="git://github.com/snej/" />
+  <remote name="couchbasedeps" fetch="ssh://git@github.com/couchbasedeps/" />
+  <remote name="couchbaselabs" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="google" fetch="ssh://git@github.com/google/" />
+  <remote name="leetal" fetch="ssh://git@github.com/leetal/" />
+  <remote name="snej" fetch="ssh://git@github.com/snej/" />
   
   <default remote="couchbase" revision="release/lithium" />
   
@@ -14,13 +14,13 @@
   <project name="build" path="cbbuild" revision="f26398009eb21f40e95785ce25b59d36f6bdcce9" upstream="master" dest-branch="master">
     <annotation name="RELEASE" value="3.0.0" />
     <annotation name="PRODUCT" value="couchbase-lite-c" />
-    <annotation name="BLD_NUM" value="179" />
+    <annotation name="BLD_NUM" value="180" />
     <copyfile src="scripts/jenkins/lite-c/CMakeLists.txt" dest="CMakeLists.txt" />
     <annotation name="VERSION" value="3.0.0" />
   </project>
-  <project name="couchbase-lite-c" revision="3b3aa413961edfa2a1dd6b93f7aae82008f2a977" upstream="release/lithium" dest-branch="release/lithium" />
+  <project name="couchbase-lite-c" revision="198ca19a79db13c4f7b41867dd9abfd0f0149f7c" upstream="release/lithium" dest-branch="release/lithium" />
   <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="988a7ecc73ae0387c6c34e0a6a17466db1c6db93" upstream="release/lithium" dest-branch="release/lithium" groups="notdefault,enterprise" />
-  <project name="couchbase-lite-core" path="couchbase-lite-c/vendor/couchbase-lite-core" revision="1d1ea1941fa7688e55fe8c654aec50153e96c7be" />
+  <project name="couchbase-lite-core" path="couchbase-lite-c/vendor/couchbase-lite-core" revision="6265d618c78f3f739ea9801de024bfc8c8216f81" />
   <project name="couchbase-lite-core-EE" path="couchbase-lite-c-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="d1821646675b42eb8b5cb944456a25f2e2d99c53" groups="notdefault,enterprise" />
   <project name="couchbase-lite-core.wiki" path="couchbase-lite-c/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
   <project name="fleece" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="4b5903f9415b1db182503458766497c8b84440b4" />
