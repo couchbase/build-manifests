@@ -1,20 +1,20 @@
 <manifest>
-  <remote name="arangodb" fetch="ssh://git@github.com/arangodb/" />
-  <remote name="couchbase" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="arangodb" fetch="https://github.com/arangodb/" />
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
   <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
-  <remote name="couchbasedeps" fetch="ssh://git@github.com/couchbasedeps/" />
-  <remote name="couchbaselabs" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
-  <remote name="google" fetch="ssh://git@github.com/google/" />
-  <remote name="leetal" fetch="ssh://git@github.com/leetal/" />
-  <remote name="snej" fetch="ssh://git@github.com/snej/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="google" fetch="https://github.com/google/" />
+  <remote name="leetal" fetch="https://github.com/leetal/" />
+  <remote name="snej" fetch="https://github.com/snej/" />
   
   <default remote="couchbase" revision="release/lithium" />
   
   <project name="SQLiteCpp" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="7b250854fffbdc13e2d040a7e96be8e561e51d08" />
-  <project name="build" path="cbbuild" revision="f26398009eb21f40e95785ce25b59d36f6bdcce9" upstream="master" dest-branch="master">
+  <project name="build" path="cbbuild" revision="ffa1243f456cec9e194b46fb5e518981c359edbf" upstream="master" dest-branch="master">
     <annotation name="RELEASE" value="3.0.0" />
     <annotation name="PRODUCT" value="couchbase-lite-c" />
-    <annotation name="BLD_NUM" value="180" />
+    <annotation name="BLD_NUM" value="181" />
     <copyfile src="scripts/jenkins/lite-c/CMakeLists.txt" dest="CMakeLists.txt" />
     <annotation name="VERSION" value="3.0.0" />
   </project>
