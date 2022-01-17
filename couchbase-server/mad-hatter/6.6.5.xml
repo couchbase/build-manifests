@@ -22,11 +22,11 @@
   <project name="build" path="cbbuild" revision="9ce3eab0e9002c40a4445ebad84c8f33bf95842c" upstream="mad-hatter" dest-branch="mad-hatter" groups="notdefault,build">
     <annotation name="RELEASE" value="mad-hatter" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="10077" />
+    <annotation name="BLD_NUM" value="10078" />
     <annotation name="VERSION" value="6.6.5" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="b960ba6ed6b52c79e8cddd03b11db27964cdbe54" upstream="mad-hatter" dest-branch="mad-hatter" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="db7158750ee95f7c010e1649d34bf00e5f98f663" upstream="mad-hatter" dest-branch="mad-hatter" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="608af3872a90fcc0be918d32f96beaa9dfd7ac3d" upstream="mad-hatter" dest-branch="mad-hatter" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="567f441ff05424bf7ea0119a6160c1c22d7c7308" upstream="mad-hatter" dest-branch="mad-hatter" groups="analytics" />
   <project name="cbauth" path="godeps/src/github.com/couchbase/cbauth" revision="205f0c07a1db903b8aa9b9a19e14c5572f68bd1e" upstream="mad-hatter" dest-branch="mad-hatter" />
   <project name="cbflag" path="godeps/src/github.com/couchbase/cbflag" revision="9892b6db3537c54be7719f47ad25e0d513333b3e" groups="backup" />
@@ -146,7 +146,7 @@
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="12a6c2dcc1e4cb348b57847c73987099e261714b" groups="backup" />
   <project name="testrunner" revision="153676e77ec3a36be812ec09792100b4feee771d" upstream="mad-hatter" dest-branch="mad-hatter" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="88f656faf3f37f690df1a32515b479415e1a6769" groups="backup" />
-  <project name="tlm" revision="886c2da44ed477bc0bca2707569c8ff3850a61f5" upstream="mad-hatter" dest-branch="mad-hatter" groups="kv">
+  <project name="tlm" revision="38c86ab8bf47cdeaf321a1b0ade5480d74e79cfd" upstream="mad-hatter" dest-branch="mad-hatter" groups="kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
     <copyfile src="CMakeLists.txt" dest="CMakeLists.txt" />
