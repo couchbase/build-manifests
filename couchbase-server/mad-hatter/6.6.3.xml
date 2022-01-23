@@ -1,15 +1,15 @@
 <manifest>
-  <remote name="blevesearch" fetch="git://github.com/blevesearch/" />
-  <remote name="couchbase" fetch="git://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="blevesearch" fetch="https://github.com/blevesearch/" />
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
   <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
-  <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" review="review.couchbase.org" />
-  <remote name="couchbaselabs" fetch="git://github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" review="review.couchbase.org" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
   
   <default remote="couchbase" revision="master" />
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="42148d72f34d6865b2a6706c106cd72ee68216a5" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="1e34722e75d805eb61930773c91c36603f478212" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="8363dcb590e150036764f4dff80f6dd3b72aa729" upstream="6.6.3" dest-branch="6.6.3" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="fa0ddb63dd35c5dea4bd6a04b8b3a2cbbf11dddd" upstream="6.6.3" dest-branch="6.6.3" groups="notdefault,enterprise,analytics" />
   <project name="aws-sdk-go" path="godeps/src/github.com/aws/aws-sdk-go" remote="couchbasedeps" revision="8102d31deafaf68bed0ce981332a749932aa6ab1" groups="backup" />
   <project name="backup" path="goproj/src/github.com/couchbase/backup" remote="couchbase-priv" revision="3bd9a3ac0e9337d014d5a48176db9e0c4e10a02d" groups="backup,notdefault,enterprise" />
   <project name="benchmark" remote="couchbasedeps" revision="74b24058ad4914b837200d0341050657ba154e4a" groups="kv" />
@@ -22,11 +22,11 @@
   <project name="build" path="cbbuild" revision="0473d67894d44ecdefb2e3289b0ae95465d035a1" groups="notdefault,build">
     <annotation name="RELEASE" value="mad-hatter" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="9819" />
+    <annotation name="BLD_NUM" value="9820" />
     <annotation name="VERSION" value="6.6.3" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="d5f875b6ff8a0a39cded510d4c06d8c4a2fe232a" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="62b8dea01323419e7991191eeff1d5cd2410b2f6" upstream="6.6.3" dest-branch="6.6.3" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="56bd510dab35d1d9bdf306189d56a5196afb4a69" upstream="6.6.3" dest-branch="6.6.3" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="567f441ff05424bf7ea0119a6160c1c22d7c7308" groups="analytics" />
   <project name="cbauth" path="godeps/src/github.com/couchbase/cbauth" revision="205f0c07a1db903b8aa9b9a19e14c5572f68bd1e" />
   <project name="cbflag" path="godeps/src/github.com/couchbase/cbflag" revision="9892b6db3537c54be7719f47ad25e0d513333b3e" groups="backup" />
@@ -144,7 +144,7 @@
   <project name="strconv" path="godeps/src/github.com/tdewolff/strconv" remote="couchbasedeps" revision="9b189f5be77f33c46776f24dbddb2a7ab32af214" />
   <project name="subjson" revision="ae63ab4b653870e400855f8563da40dda49f0eb3" groups="kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="12a6c2dcc1e4cb348b57847c73987099e261714b" groups="backup" />
-  <project name="testrunner" revision="03961885372958ff80c3d341489ccdcf4a270d03" upstream="mad-hatter" dest-branch="mad-hatter" />
+  <project name="testrunner" revision="1248c04e753953afc1209787bccf419c2dc19642" upstream="mad-hatter" dest-branch="mad-hatter" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="88f656faf3f37f690df1a32515b479415e1a6769" groups="backup" />
   <project name="tlm" revision="e778060a873e19b12661093d1bc77543be73fe0b" groups="kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
