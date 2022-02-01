@@ -1,15 +1,15 @@
 <manifest>
-  <remote name="blevesearch" fetch="git://github.com/blevesearch/" />
-  <remote name="couchbase" fetch="git://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="blevesearch" fetch="https://github.com/blevesearch/" />
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
   <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
-  <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" review="review.couchbase.org" />
-  <remote name="couchbaselabs" fetch="git://github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" review="review.couchbase.org" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
   
   <default remote="couchbase" revision="master" />
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="42148d72f34d6865b2a6706c106cd72ee68216a5" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="dd9945475c9134042a2604865c68b2e937cedb95" groups="notdefault,enterprise,analytics,bsl" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="18022c09ab62df440158cf936fb16ee1edfaa998" upstream="7.0.3" dest-branch="7.0.3" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="9d6123e96742748b0ca0c06371a2c3b6e887a301" upstream="7.0.3" dest-branch="7.0.3" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="b4b3a72970dd9a5688ebb712b7d629fa3cddc72a" groups="backup,notdefault,enterprise" />
   <project name="bbolt" path="godeps/src/go.etcd.io/bbolt" remote="couchbasedeps" revision="68cc10a767ea1c6b9e8dcb9847317ff192d6d974" />
   <project name="benchmark" path="third_party/google-benchmark" remote="couchbasedeps" revision="8039b4030795b1c9b8cedb78e3a2a6fb89574b6e" groups="kv" />
@@ -20,14 +20,14 @@
   <project name="build" path="cbbuild" revision="7dfc9909c55d7db8fa0f3726a00b5784a4376a3d" groups="notdefault,build">
     <annotation name="RELEASE" value="cheshire-cat" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="7031" />
+    <annotation name="BLD_NUM" value="7032" />
     <annotation name="VERSION" value="7.0.3" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.0" />
     <annotation name="BSL_CHANGE_DATE" value="July 1, 2025" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="3cf8b71918dfffa09315f0e88d008db02360f0fa" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="c34ac4db75a97882734846a20e91c620c1147b27" upstream="7.0.3" dest-branch="7.0.3" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="50e39ffb225b4a823be0b2262bc1d9854babcf1e" upstream="7.0.3" dest-branch="7.0.3" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="5c9f762d5e002e9de2da7aec5bbb1cce309a2b35" groups="notdefault,enterprise,analytics,bsl" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="ac1d7154ec05cfe6e0d3d7e8d3475f912d2aba06" groups="backup,bsl" />
   <project name="cbbs" remote="couchbase-priv" revision="3a051de8db85fc319324349a0f6c3789164d2f68" groups="backup,notdefault,enterprise" />
