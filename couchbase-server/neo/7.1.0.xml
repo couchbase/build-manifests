@@ -9,7 +9,7 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="caed837aa163421a637222157b3f6353b4ca831a" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="b12fdebc8d449aa5595c1e3de28441c23f340857" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="cd050c80e4adc87f7f0ad537e2410117ef5101c2" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="81c526671dfca70ee1ebae9c64677e117a212362" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="19cd9bec51431acbaae84af569e3fc2e31a7b795" upstream="master" dest-branch="master" groups="backup,notdefault,enterprise" />
   <project name="bbolt" path="godeps/src/go.etcd.io/bbolt" remote="couchbasedeps" revision="68cc10a767ea1c6b9e8dcb9847317ff192d6d974" />
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4" />
@@ -18,14 +18,14 @@
   <project name="build" path="cbbuild" revision="3128986c037fee88227bf736a8eef32f2328062c" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="2241" />
+    <annotation name="BLD_NUM" value="2242" />
     <annotation name="VERSION" value="7.1.0" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="Neo" />
     <annotation name="BSL_CHANGE_DATE" value="March 31st, 2026" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="04d0936fd72ee572a2b16b5f01f22bac20454ecb" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="85a43cf221202f8b2c26c991e263e5d24cdf53f2" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="c6391785b1bf882ab027fff76cfdbe7f2f4ecb54" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="8d0144aa759120c6545100125a726276ed9193cb" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="090d271edb1a2dc2c5c78ef7c786bee0a7c5519a" upstream="master" dest-branch="master" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="e0890733d098702b09530e44a00a329f8cc9ff17" upstream="master" dest-branch="master" groups="backup,notdefault,enterprise" />
@@ -89,12 +89,12 @@
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="e1c381746c2625a76227255f999ae9f14a062208" upstream="refs/tags/v0.38.1" dest-branch="refs/tags/v0.38.1" groups="kv" />
   <project name="gtreap" path="godeps/src/github.com/steveyen/gtreap" remote="couchbasedeps" revision="0abe01ef9be25c4aedc174758ec2d917314d6d70" />
   <project name="httprouter" path="godeps/src/github.com/julienschmidt/httprouter" remote="couchbasedeps" revision="975b5c4c7c21c0e3d2764200bf2aa8e34657ae6e" />
-  <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="13864c5d04cfa40dddac3135af9c848eb433e64e" upstream="master" dest-branch="master" groups="bsl" />
+  <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="f842ccc90e52c2dc4aed2e0fc603ed54138da4f8" upstream="master" dest-branch="master" groups="bsl" />
   <project name="json-iterator-go" path="godeps/src/github.com/json-iterator/go" remote="couchbasedeps" revision="f7279a603edee96fe7764d3de9c6ff8cf9970994" />
   <project name="jsonparser" path="godeps/src/github.com/buger/jsonparser" remote="couchbasedeps" revision="df3ea76ece10095374fd1c9a22a4fb85a44efc42" />
   <project name="jsonschema" path="godeps/src/github.com/santhosh-tekuri/jsonschema" remote="couchbasedeps" revision="137f44a49015e5060a447c331aa37de6e0f50267" />
   <project name="jsonx" path="godeps/src/gopkg.in/couchbaselabs/jsonx.v1" remote="couchbaselabs" revision="5b7baa20429a46a5543ee259664cc86502738cad" upstream="master" dest-branch="master" groups="bsl" />
-  <project name="kv_engine" revision="280622f2947fa4c5156f2c2e78e993ea00864848" upstream="master" dest-branch="master" groups="kv,bsl" />
+  <project name="kv_engine" revision="f9c4a691b36bdaea82837693283af4b1b09b2a9d" upstream="master" dest-branch="master" groups="kv,bsl" />
   <project name="libcouchbase" revision="f6822fcc858240a37997a471a1e8f6643044d5b3" />
   <project name="liner" path="godeps/src/github.com/peterh/liner" remote="couchbasedeps" revision="6f820f8f90ce9482ffbd40bb15f9ea9932f4942d" />
   <project name="liner" path="godeps/src/github.com/sbinet/liner" remote="couchbasedeps" revision="d9335eee40a45a4f5d74524c90040d6fe6013d50" />
@@ -111,7 +111,7 @@
   <project name="net" path="godeps/src/golang.org/x/net" remote="couchbasedeps" revision="44b7c21cbf19450f38b337eb6b6fe4f6496fb5b3" />
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="e846065244fb22c52edaef2acbd1f885ff530d12" upstream="master" dest-branch="master" groups="bsl" />
   <project name="npipe" path="godeps/src/github.com/natefinch/npipe" remote="couchbasedeps" revision="272c8150302e83f23d32a355364578c9c13ab20f" />
-  <project name="ns_server" revision="52d2c700fe3839bc83026974ceacec6bfb5782ea" upstream="master" dest-branch="master" groups="bsl" />
+  <project name="ns_server" revision="527d04168f7acd54f73eab1685c9edabf4c66166" upstream="master" dest-branch="master" groups="bsl" />
   <project name="opentracing-go" path="godeps/src/github.com/opentracing/opentracing-go" remote="couchbasedeps" revision="1949ddbfd147afd4d964a9f00b24eb291e0e7c38" />
   <project name="participle" path="godeps/src/github.com/alecthomas/participle" remote="couchbasedeps" revision="d638c6e1953ed899e05a34da3935146790c60e46" />
   <project name="pflag" path="godeps/src/github.com/spf13/pflag" remote="couchbasedeps" revision="a232f6d9f87afaaa08bafaff5da685f974b83313" />
@@ -121,10 +121,10 @@
   <project name="pkcs8" path="godeps/src/github.com/youmark/pkcs8" remote="couchbasedeps" revision="1be2e3e5546da8a58903ff4adcfab015022538ea" upstream="refs/tags/v1.1" dest-branch="refs/tags/v1.1" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="818a95b6cdb76158451880b2b1cafb2627373bd6" upstream="master" dest-branch="master" groups="bsl,notdefault,enterprise" />
   <project name="platform" revision="cec8098a697d43073401a2888411cad94e016c92" upstream="neo" dest-branch="neo" groups="bsl,kv" />
-  <project name="product-metadata" revision="44a3a77d304db55f06e3909f6c735f95bcd851f0" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="689a419d1af0e1a723d8ff85b92521b03d004285" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="ea4fa7b0bfc100a0aec8f4d094c2cb378cddd9e0" upstream="master" dest-branch="master" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="ddf22928ea3c56eb4292a0adbbf5001b1e8e7d0d" />
-  <project name="query" path="goproj/src/github.com/couchbase/query" revision="81b422574525b7ea1afd56db7a4814efd30a0002" upstream="master" dest-branch="master" groups="bsl" />
+  <project name="query" path="goproj/src/github.com/couchbase/query" revision="e112431cecddde7a65bda573536ccc64da79322c" upstream="master" dest-branch="master" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="7e5aa81269ac42338039dd318992b8388bfa2513" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="query-ui" revision="09c97bd5369279a69d757ab487549bfc81542773" upstream="master" dest-branch="master" groups="bsl" />
   <project name="retriever" path="godeps/src/github.com/couchbase/retriever" revision="41c119406e0213a980939df5ff5b4c27fb9015fc" upstream="master" dest-branch="master" groups="bsl" />
