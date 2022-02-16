@@ -1,15 +1,15 @@
 <manifest>
-  <remote name="ARMmbed" fetch="git://github.com/ARMmbed" />
-  <remote name="arangodb" fetch="git://github.com/arangodb/" />
-  <remote name="couchbase" fetch="git://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="ARMmbed" fetch="https://github.com/ARMmbed" />
+  <remote name="arangodb" fetch="https://github.com/arangodb/" />
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
   <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
-  <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" />
-  <remote name="couchbaselabs" fetch="git://github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
   <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
-  <remote name="google" fetch="git://github.com/google/" />
-  <remote name="leetal" fetch="git://github.com/leetal/" />
-  <remote name="rudi-cilibrasi" fetch="git://github.com/rudi-cilibrasi/" />
-  <remote name="snej" fetch="git://github.com/snej/" />
+  <remote name="google" fetch="https://github.com/google/" />
+  <remote name="leetal" fetch="https://github.com/leetal/" />
+  <remote name="rudi-cilibrasi" fetch="https://github.com/rudi-cilibrasi/" />
+  <remote name="snej" fetch="https://github.com/snej/" />
   
   <default remote="couchbase" revision="release/hydrogen" />
   
@@ -18,14 +18,14 @@
   <project name="build" path="cbbuild" revision="5547da1aeb276479ba3adc9cd25bf9795640d976">
     <annotation name="RELEASE" value="2.8.8" />
     <annotation name="PRODUCT" value="couchbase-lite-net" />
-    <annotation name="BLD_NUM" value="2" />
+    <annotation name="BLD_NUM" value="3" />
     <annotation name="VERSION" value="2.8.8" />
   </project>
   <project name="civetweb" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/civetweb" remote="couchbasedeps" revision="4341c169a789b917a4fe1cdd24f55e507d855ff5" />
   <project name="couchbase-lite-core" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core" revision="9be447bb9c65599436865705e7cb9dd87401bf71" />
   <project name="couchbase-lite-core-EE" path="couchbase-lite-net-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="ae77e3c1eb940cecd5267e1e54c38eccf6033cad" groups="enterprise,notdefault" />
   <project name="couchbase-lite-core.wiki" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
-  <project name="couchbase-lite-net" path="couchbase-lite-net-ee/couchbase-lite-net" revision="d3b8da9cba5a022ba94d31774a63d7a2ce3adc19" upstream="release/hydrogen" dest-branch="release/hydrogen" />
+  <project name="couchbase-lite-net" path="couchbase-lite-net-ee/couchbase-lite-net" revision="66911e4feb1351d6e68445d11c01c5e81d5547db" upstream="release/hydrogen" dest-branch="release/hydrogen" />
   <project name="couchbase-lite-net-ee" remote="couchbaselabs-priv" revision="f200f985dc147fe189d69a7de8f41cf28e8cc936" upstream="release/hydrogen" dest-branch="release/hydrogen" groups="enterprise,notdefault" />
   <project name="fleece" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="7f5b3ed39b52ef972fc4d830d1ba91e4f8b0272f" />
   <project name="googletest" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
@@ -33,7 +33,7 @@
   <project name="jsonsl" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/fleece/vendor/jsonsl" remote="snej" revision="684b60f9af68b8c397422e74d0c2dd206de16a2c" />
   <project name="mbed-crypto" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/mbedtls/crypto" remote="couchbasedeps" revision="6572da5ba51abf56b3f0cc554fa3efec8f847a24" />
   <project name="mbedtls" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/mbedtls" remote="couchbasedeps" revision="ec3a2712b1bd77158dd42b28681101c4da6f3c93" />
-  <project name="product-texts" revision="457b7c10d6e81e60bb4781bf47101f42ebe5ea1e" upstream="master" dest-branch="master" />
+  <project name="product-texts" revision="eadf993131aced4b8df717198b3b057bbc4fd81a" upstream="master" dest-branch="master" />
   <project name="sockpp" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/sockpp" remote="couchbasedeps" revision="8dad5c3c2dc7e5b926bcf4e2fb3ec272dc85dff1" />
   <project name="sqlite3-unicodesn" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/sqlite3-unicodesn" remote="snej" revision="9e0b20dfa4618c95a039bb5eaa7c40a70e0e1597" />
   <project name="zlib" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/zlib" remote="couchbasedeps" revision="cacf7f1d4e3d44d871b605da3b647f07d718623f" />
