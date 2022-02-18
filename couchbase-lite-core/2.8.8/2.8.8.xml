@@ -1,12 +1,12 @@
 <manifest>
-  <remote name="arangodb" fetch="git://github.com/arangodb/" />
-  <remote name="couchbase" fetch="git://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="arangodb" fetch="https://github.com/arangodb/" />
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
   <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
-  <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" />
-  <remote name="couchbaselabs" fetch="git://github.com/couchbaselabs/" review="review.couchbase.org" />
-  <remote name="google" fetch="git://github.com/google/" />
-  <remote name="leetal" fetch="git://github.com/leetal/" />
-  <remote name="snej" fetch="git://github.com/snej/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="google" fetch="https://github.com/google/" />
+  <remote name="leetal" fetch="https://github.com/leetal/" />
+  <remote name="snej" fetch="https://github.com/snej/" />
   
   <default remote="couchbase" revision="release/hydrogen" />
   
@@ -14,15 +14,15 @@
   <project name="build" path="cbbuild" revision="2e9d89d03b360f2d9f9c9ddbdc8fa532d41ab3d9">
     <annotation name="RELEASE" value="2.8.8" />
     <annotation name="PRODUCT" value="couchbase-lite-core" />
-    <annotation name="BLD_NUM" value="3" />
+    <annotation name="BLD_NUM" value="4" />
     <copyfile src="scripts/jenkins/lite-core/CMakeLists.txt" dest="CMakeLists.txt" />
     <annotation name="VERSION" value="2.8.8" />
   </project>
   <project name="civetweb" path="couchbase-lite-core/vendor/civetweb" remote="couchbasedeps" revision="4341c169a789b917a4fe1cdd24f55e507d855ff5" />
-  <project name="couchbase-lite-core" revision="9be447bb9c65599436865705e7cb9dd87401bf71" upstream="release/hydrogen" dest-branch="release/hydrogen" />
+  <project name="couchbase-lite-core" revision="d28a1b8baecf6f16837a5f4a967f56d82734356b" upstream="release/hydrogen" dest-branch="release/hydrogen" />
   <project name="couchbase-lite-core-EE" remote="couchbase-priv" revision="ae77e3c1eb940cecd5267e1e54c38eccf6033cad" upstream="release/hydrogen" dest-branch="release/hydrogen" groups="notdefault,enterprise" />
   <project name="couchbase-lite-core.wiki" path="couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
-  <project name="fleece" path="couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="7f5b3ed39b52ef972fc4d830d1ba91e4f8b0272f" />
+  <project name="fleece" path="couchbase-lite-core/vendor/fleece" remote="couchbaselabs" revision="dfd01841d83895c4812c2e136bdb3a17340be9b6" />
   <project name="googletest" path="couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
   <project name="ios-cmake" path="couchbase-lite-core/vendor/ios-cmake" remote="leetal" revision="29668dbcd9ef2fd7369140b7e9bd9df0485497f6" />
   <project name="jsonsl" path="couchbase-lite-core/vendor/fleece/vendor/jsonsl" remote="snej" revision="684b60f9af68b8c397422e74d0c2dd206de16a2c" />
