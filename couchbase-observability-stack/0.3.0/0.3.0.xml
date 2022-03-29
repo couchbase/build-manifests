@@ -1,15 +1,20 @@
 <manifest>
   <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
   <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" />
+  <remote name="couchbaselabspriv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="fluent" fetch="https://github.com/fluent/" />
   
   <default remote="couchbaselabs" revision="main" />
   
   <project name="build" path="cbbuild" remote="couchbase" revision="dee6c7d470e9a21e350a65bda8374d2ba9bc00a6">
     <annotation name="RELEASE" value="0.3.0" />
     <annotation name="PRODUCT" value="couchbase-observability-stack" />
-    <annotation name="BLD_NUM" value="350" />
+    <annotation name="BLD_NUM" value="351" />
     <annotation name="VERSION" value="0.3.0" />
   </project>
-  <project name="observability" path="couchbase-observability-stack" revision="54d87a03934481bb70587b315a2cdbef2c9d86e2" upstream="main" dest-branch="main" />
+  <project name="cbmultimanager" path="couchbase-observability-stack/upstream/cbmultimanager" remote="couchbaselabspriv" revision="94b28ae31992bda2bc41ecefdebfcbe31415b0ed" upstream="master" dest-branch="master" />
+  <project name="couchbase-fluent-bit" path="couchbase-observability-stack/upstream/couchbase-fluent-bit" remote="couchbase" revision="a542e28db8925e282f044d4f05dcb0babfac6288" />
+  <project name="fluent-bit" path="couchbase-observability-stack/upstream/fluent-bit" remote="fluent" revision="2c4ccb5f67cf20a2b348d9057b73c7dd18b4a33f" clone-depth="1" />
+  <project name="observability" path="couchbase-observability-stack" revision="3f32c7b3d472eb7daa4bfabd2859b68b14d13a08" upstream="main" dest-branch="main" groups="default,oss" />
   <project name="product-texts" remote="couchbase" revision="eadf993131aced4b8df717198b3b057bbc4fd81a" upstream="master" dest-branch="master" />
 </manifest>
