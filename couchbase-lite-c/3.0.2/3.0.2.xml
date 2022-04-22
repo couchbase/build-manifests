@@ -12,11 +12,11 @@
   <project name="build" path="cbbuild" revision="36d8caa446adea89645a8c0bcd99ad994622eabe" upstream="master" dest-branch="master">
     <annotation name="RELEASE" value="3.0.2" />
     <annotation name="PRODUCT" value="couchbase-lite-c" />
-    <annotation name="BLD_NUM" value="12" />
+    <annotation name="BLD_NUM" value="13" />
     <copyfile src="scripts/jenkins/lite-c/CMakeLists.txt" dest="CMakeLists.txt" />
     <annotation name="VERSION" value="3.0.2" />
   </project>
-  <project name="couchbase-lite-c" revision="6d31478b78ec758058c7369482a5b2537ed7309d" upstream="release/lithium" dest-branch="release/lithium" />
+  <project name="couchbase-lite-c" revision="52bb881c241b38da05126979b92f459739493f8f" upstream="release/lithium" dest-branch="release/lithium" />
   <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="988a7ecc73ae0387c6c34e0a6a17466db1c6db93" upstream="release/lithium" dest-branch="release/lithium" groups="notdefault,enterprise" />
   <project name="couchbase-lite-core" path="couchbase-lite-c/vendor/couchbase-lite-core" revision="a6401bdcf3580fd71699e4e71b0c8b5abc309942" />
   <project name="couchbase-lite-core-EE" path="couchbase-lite-c-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="d1821646675b42eb8b5cb944456a25f2e2d99c53" groups="notdefault,enterprise" />
