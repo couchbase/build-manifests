@@ -12,14 +12,14 @@
   <project name="build" path="cbbuild" revision="0fa473373ab8317bd2abf67e1566ef3744d1e013" upstream="master" dest-branch="master">
     <annotation name="RELEASE" value="3.1.0" />
     <annotation name="PRODUCT" value="couchbase-lite-c" />
-    <annotation name="BLD_NUM" value="114" />
+    <annotation name="BLD_NUM" value="115" />
     <copyfile src="scripts/jenkins/lite-c/CMakeLists.txt" dest="CMakeLists.txt" />
     <annotation name="VERSION" value="3.1.0" />
   </project>
-  <project name="couchbase-lite-c" revision="3b385227e8f1e4cb134c0f3f5c7a2d4b5c484a8b" upstream="master" dest-branch="master" />
-  <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="81c5bae4f9a38e6def2c618d48980dc5f757d0b2" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
-  <project name="couchbase-lite-core" path="couchbase-lite-c/vendor/couchbase-lite-core" revision="dc13e786008fa3cf1049ca153cdc84ee7f42a837" />
-  <project name="couchbase-lite-core-EE" path="couchbase-lite-c-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="d632cb3bf17da889e185e3516b702ab06a7f22cb" groups="notdefault,enterprise" />
+  <project name="couchbase-lite-c" revision="1466add71090873ea83a70e95ecbd4388d0b5b91" upstream="master" dest-branch="master" />
+  <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="64995d2c769e07ef7cb1470d31de9432891b2e73" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
+  <project name="couchbase-lite-core" path="couchbase-lite-c/vendor/couchbase-lite-core" revision="0a5d8f1df282f3be60df3cf76c14a345db23c390" />
+  <project name="couchbase-lite-core-EE" path="couchbase-lite-c-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="5d9471875db04fd46ae72ad8dfb77f2682c1bf8c" groups="notdefault,enterprise" />
   <project name="couchbase-lite-core.wiki" path="couchbase-lite-c/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
   <project name="fleece" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/fleece" revision="af4f74cc54042974379d18fdd67be7a0f3093895" />
   <project name="googletest" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
