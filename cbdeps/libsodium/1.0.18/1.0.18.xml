@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="0fa473373ab8317bd2abf67e1566ef3744d1e013" upstream="master" dest-branch="master">
+    <annotation name="RELEASE" value="1.0.18" />
+    <annotation name="PRODUCT" value="cbdeps::libsodium" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="1.0.18" />
+  </project>
+  <project name="build-tools" revision="85e2252475d59489e8953bd9f2b1ddc029f95ad6" upstream="master" dest-branch="master" />
+  <project name="libsodium" remote="couchbasedeps" revision="940ef42797baa0278df6b7fd9e67c7590f87744b" upstream="refs/tags/1.0.18-RELEASE" dest-branch="refs/tags/1.0.18-RELEASE" />
+</manifest>
