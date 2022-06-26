@@ -9,7 +9,7 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="caed837aa163421a637222157b3f6353b4ca831a" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="28a01945b085e906bdd25c5d35e92d3c8c87ff1a" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="344eeb2ebb60f453d6422aadc1bd310bc1339d1b" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="f0fc2bfdb413c77e38e4b43100df5267faea1f7b" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="6f6e88efc7c01eb2b596260e2977cf5aede1a088" upstream="neo" dest-branch="neo" groups="backup,notdefault,enterprise" />
   <project name="bbolt" path="godeps/src/go.etcd.io/bbolt" remote="couchbasedeps" revision="68cc10a767ea1c6b9e8dcb9847317ff192d6d974" />
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4" />
@@ -18,14 +18,14 @@
   <project name="build" path="cbbuild" revision="e5d21de4a5e4ce048b7b330765529f71c6ff7e08" upstream="neo" dest-branch="neo" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="3331" />
+    <annotation name="BLD_NUM" value="3332" />
     <annotation name="VERSION" value="7.1.2" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.1" />
     <annotation name="BSL_CHANGE_DATE" value="April 1, 2026" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="cf4628ae5f8b69a3402764b83aeae1668a9d7659" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="bac98828a253157dad9e7774036ff71d72ad99f7" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="6aa2d12cc9620918a03c7fc71913c52ed593ca02" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="d7835030ccb0230ed1f8592993a7e85399fb812c" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="694763b234d64faaac75fbec427fc13132ccbcfe" upstream="neo" dest-branch="neo" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="5c487943626304b13a83da5334583b8b5f024f0c" upstream="neo" dest-branch="neo" groups="backup,notdefault,enterprise" />
@@ -90,7 +90,7 @@
   <project name="gtreap" path="godeps/src/github.com/steveyen/gtreap" remote="couchbasedeps" revision="0abe01ef9be25c4aedc174758ec2d917314d6d70" />
   <project name="hebrew" remote="couchbase-priv" revision="fd6a0a1013434e4ba8cae73f6c80d2433d72ed0b" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="httprouter" path="godeps/src/github.com/julienschmidt/httprouter" remote="couchbasedeps" revision="975b5c4c7c21c0e3d2764200bf2aa8e34657ae6e" />
-  <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="39191940b8fda1e9bb90273fb103ecaff16909f5" upstream="neo" dest-branch="neo" groups="bsl" />
+  <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="ca8169348a069db7c9563f71a560a584586a171a" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="json-iterator-go" path="godeps/src/github.com/json-iterator/go" remote="couchbasedeps" revision="f7279a603edee96fe7764d3de9c6ff8cf9970994" />
   <project name="jsonparser" path="godeps/src/github.com/buger/jsonparser" remote="couchbasedeps" revision="df3ea76ece10095374fd1c9a22a4fb85a44efc42" />
   <project name="jsonschema" path="godeps/src/github.com/santhosh-tekuri/jsonschema" remote="couchbasedeps" revision="137f44a49015e5060a447c331aa37de6e0f50267" />
@@ -133,7 +133,7 @@
   <project name="sigar" revision="e66221577adc083bfce0b17ea2f833fb49f28081" upstream="neo" dest-branch="neo" groups="kv" />
   <project name="subjson" revision="0820f83427d69c6eb737876eb2f2cf6aefa45802" upstream="neo" dest-branch="neo" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="12a6c2dcc1e4cb348b57847c73987099e261714b" />
-  <project name="testrunner" revision="9ae22bff4874b2393c1014326bf214ab73e54d76" upstream="master" dest-branch="master" />
+  <project name="testrunner" revision="9c2e2a2d834b210e6340957aa81a3f14c0f3efa8" upstream="master" dest-branch="master" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="22f1617af38ed4cd65b3b96e02bab267e560155c" upstream="refs/tags/v0.3.4" dest-branch="refs/tags/v0.3.4" />
   <project name="tlm" revision="3623279137a5e48ccb3bbe6b22fec22af926f473" upstream="neo" dest-branch="neo" groups="bsl,kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
