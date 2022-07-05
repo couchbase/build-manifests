@@ -1,5 +1,6 @@
 <manifest>
   <remote name="couchbase" fetch="https://github.com/couchbase" review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
   
   <default remote="couchbase" revision="master" />
   
@@ -7,8 +8,8 @@
     <annotation name="GO_VERSION" value="1.18.2" />
     <annotation name="RELEASE" value="0.1" />
     <annotation name="PRODUCT" value="direct-nebula" />
-    <annotation name="BLD_NUM" value="3" />
+    <annotation name="BLD_NUM" value="4" />
     <annotation name="VERSION" value="0.1" />
   </project>
-  <project name="direct-nebula" revision="f35a348b5bd3a5127c8fa3277da5c61261d2d053" upstream="master" dest-branch="master" />
+  <project name="direct-nebula" remote="couchbase-priv" revision="b29c3f446ddd080fa6f6d442dc1e617ce15d4d6f" upstream="master" dest-branch="master" />
 </manifest>
