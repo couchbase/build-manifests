@@ -18,14 +18,14 @@
   <project name="build" path="cbbuild" revision="e5d21de4a5e4ce048b7b330765529f71c6ff7e08" upstream="neo" dest-branch="neo" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="3364" />
+    <annotation name="BLD_NUM" value="3365" />
     <annotation name="VERSION" value="7.1.2" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.1" />
     <annotation name="BSL_CHANGE_DATE" value="April 1, 2026" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="7df39bb9c0ed4f425a776d06dd93d24f552682f9" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="52566ad6c879f6d7912a3dd49e600189879f92a1" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="6f2c632e57a5a975cec0803db53996bcc63fd8c5" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="0c53a0ea2ddb7bece0d5cd3c3571cb09584ab1a1" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="694763b234d64faaac75fbec427fc13132ccbcfe" upstream="neo" dest-branch="neo" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="c85c4e438247e64c2565f715c33f0ad16c76b9dd" upstream="neo" dest-branch="neo" groups="backup,notdefault,enterprise" />
@@ -133,7 +133,7 @@
   <project name="sigar" revision="410b89097cd635af112c9a21953a9e518f7aa13a" upstream="neo" dest-branch="neo" groups="kv" />
   <project name="subjson" revision="0820f83427d69c6eb737876eb2f2cf6aefa45802" upstream="neo" dest-branch="neo" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="12a6c2dcc1e4cb348b57847c73987099e261714b" />
-  <project name="testrunner" revision="42308e7bdd9612db5166307fe13a65d6e84aee73" upstream="master" dest-branch="master" />
+  <project name="testrunner" revision="936c61034892e79b0873d9723c8554d013b9a3ce" upstream="master" dest-branch="master" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="22f1617af38ed4cd65b3b96e02bab267e560155c" upstream="refs/tags/v0.3.4" dest-branch="refs/tags/v0.3.4" />
   <project name="tlm" revision="3623279137a5e48ccb3bbe6b22fec22af926f473" upstream="neo" dest-branch="neo" groups="bsl,kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
