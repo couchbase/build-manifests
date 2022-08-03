@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase-priv" revision="2.3.x" />
+  
+  <project name="build" path="cbbuild" revision="8ba9841f5fd3b60f22203be47bc6e81f7b9b6b2e">
+    <annotation name="RELEASE" value="2.3.2" />
+    <annotation name="PRODUCT" value="couchbase-operator" />
+    <annotation name="BLD_NUM" value="100" />
+    <annotation name="VERSION" value="2.3.2" />
+    <annotation name="GOVERSION" value="1.18.5" />
+  </project>
+  <project name="couchbase-operator" revision="dd20bb488d4f76429c94345efd37b1bb8e373c37" upstream="2.3.x" dest-branch="2.3.x" />
+</manifest>
