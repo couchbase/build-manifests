@@ -1,15 +1,18 @@
 <manifest>
-  <remote name="couchbase" fetch="git://github.com/couchbase/" />
-  <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" />
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" />
   
   <default remote="couchbase" revision="master" />
   
   <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
     <annotation name="RELEASE" value="2.23" />
     <annotation name="PRODUCT" value="cbdeps::prometheus" />
-    <annotation name="BLD_NUM" value="3" />
+    <annotation name="BLD_NUM" value="4" />
     <annotation name="VERSION" value="2.23" />
+    <annotation name="GOVERSION" value="1.18" />
   </project>
-  <project name="build-tools" revision="cb71402c6f6d3840d2013bd050d48a9682f990e1" upstream="master" dest-branch="master" />
-  <project name="prometheus" path="goproj/src/github.com/prometheus/prometheus" remote="couchbasedeps" revision="2ba8aea3a8180aeaeafb662fe7f6651307d02925" upstream="couchbase-v2.23" dest-branch="couchbase-v2.23" />
+  <project name="build-tools" revision="bdedd940c0da402b37ba3c0f58e9d7c00c82b4eb" upstream="master" dest-branch="master" />
+  <project name="golang" remote="couchbaselabs" revision="ecb06e3593ec3764e1a6c1332027f96479f25ac4" upstream="main" dest-branch="main" />
+  <project name="prometheus" path="goproj/src/github.com/prometheus/prometheus" remote="couchbasedeps" revision="363cad479157d45f26560fd1fb8f1acaf160702c" upstream="couchbase-v2.23" dest-branch="couchbase-v2.23" />
 </manifest>
