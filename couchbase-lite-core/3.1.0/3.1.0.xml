@@ -12,11 +12,12 @@
   <project name="build" path="cbbuild" revision="b0873a8e5340301c425e2e3c0f93da95f3a027cb">
     <annotation name="RELEASE" value="3.1.0" />
     <annotation name="PRODUCT" value="couchbase-lite-core" />
-    <annotation name="BLD_NUM" value="209" />
-    <copyfile src="scripts/jenkins/lite-core/CMakeLists.txt" dest="CMakeLists.txt" />
+    <annotation name="BLD_NUM" value="210" />
     <annotation name="VERSION" value="3.1.0" />
   </project>
-  <project name="couchbase-lite-core" revision="1a8017fc973a07193fc78db8b101febcdeb2b077" upstream="master" dest-branch="master" />
+  <project name="couchbase-lite-core" revision="1a8017fc973a07193fc78db8b101febcdeb2b077" upstream="master" dest-branch="master">
+    <copyfile src="jenkins/CMakeLists.txt" dest="CMakeLists.txt" />
+  </project>
   <project name="couchbase-lite-core-EE" remote="couchbase-priv" revision="5892f396d418bb2d7799547c540dacec1527c78b" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="couchbase-lite-core.wiki" path="couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
   <project name="fleece" path="couchbase-lite-core/vendor/fleece" revision="730474f28640f05a6e5267889fbbf576bfc45023" />
