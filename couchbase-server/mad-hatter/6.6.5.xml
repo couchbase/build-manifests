@@ -22,7 +22,7 @@
   <project name="build" path="cbbuild" revision="3f32dbee01ef203246c03294e1dce7f2dbe1656b" upstream="mad-hatter" dest-branch="mad-hatter" groups="notdefault,build">
     <annotation name="RELEASE" value="mad-hatter" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="10110" />
+    <annotation name="BLD_NUM" value="10111" />
     <annotation name="VERSION" value="6.6.5" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="b960ba6ed6b52c79e8cddd03b11db27964cdbe54" upstream="mad-hatter" dest-branch="mad-hatter" groups="notdefault,enterprise,analytics" />
@@ -146,7 +146,7 @@
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="12a6c2dcc1e4cb348b57847c73987099e261714b" groups="backup" />
   <project name="testrunner" revision="a0b89fba90ccf6415cf17d71e0e92fc794b5d9aa" upstream="mad-hatter" dest-branch="mad-hatter" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="88f656faf3f37f690df1a32515b479415e1a6769" groups="backup" />
-  <project name="tlm" revision="5ac6a1ead119fb34478b42b78608c4f153d28e73" upstream="mad-hatter" dest-branch="mad-hatter" groups="kv">
+  <project name="tlm" revision="22340814f9b31fb93be60f0def9633d2802b525e" upstream="mad-hatter" dest-branch="mad-hatter" groups="kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
     <copyfile src="CMakeLists.txt" dest="CMakeLists.txt" />
