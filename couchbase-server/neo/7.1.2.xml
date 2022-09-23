@@ -10,7 +10,7 @@
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="caed837aa163421a637222157b3f6353b4ca831a" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="28a01945b085e906bdd25c5d35e92d3c8c87ff1a" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="asterixdb" path="analytics/asterixdb" revision="8bc2f61b7c55b175e58f4577e824b946b2baa2f8" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
-  <project name="backup" remote="couchbase-priv" revision="dec7e90db62f1f255300c8658db61b51019735c6" upstream="neo" dest-branch="neo" groups="backup,notdefault,enterprise" />
+  <project name="backup" remote="couchbase-priv" revision="f575c77f1ad2b505296c1933feaeb4b57840f920" upstream="neo" dest-branch="neo" groups="backup,notdefault,enterprise" />
   <project name="bbolt" path="godeps/src/go.etcd.io/bbolt" remote="couchbasedeps" revision="68cc10a767ea1c6b9e8dcb9847317ff192d6d974" />
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4" />
   <project name="blance" path="godeps/src/github.com/couchbase/blance" revision="b2ec44a33677b3c64c516ed9e9c49721e266a58a" />
@@ -18,7 +18,7 @@
   <project name="build" path="cbbuild" revision="b70f9539dd9538d9c65f1ef584f85e28f7245c71" upstream="neo" dest-branch="neo" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="3437" />
+    <annotation name="BLD_NUM" value="3438" />
     <annotation name="VERSION" value="7.1.2" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.1" />
@@ -28,7 +28,7 @@
   <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="cf45a488ed27afe2c44f9c28eca5877b7b2e98ce" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="1f97d13590c9e783c095812e45235817e9724fe6" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="694763b234d64faaac75fbec427fc13132ccbcfe" upstream="neo" dest-branch="neo" groups="backup" />
-  <project name="cbbs" remote="couchbase-priv" revision="80741bf3b38205285301f53d890c5f68e5cf0810" upstream="neo" dest-branch="neo" groups="backup,notdefault,enterprise" />
+  <project name="cbbs" remote="couchbase-priv" revision="e7d920ae75d4d497f4eb587cdb195a6b44deb9f9" upstream="neo" dest-branch="neo" groups="backup,notdefault,enterprise" />
   <project name="cbft" revision="d55ad69bd3889e1c618be3847a55a1b673c14fc8" upstream="neo" dest-branch="neo" />
   <project name="cbftx" remote="couchbase-priv" revision="43902bacc62d5fedd335277ccd5ef894e355fc13" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
   <project name="cbgt" revision="f7e914eb5c8282bb47b48103c906389be38cb512" upstream="neo" dest-branch="neo" />
@@ -134,7 +134,7 @@
   <project name="sigar" revision="410b89097cd635af112c9a21953a9e518f7aa13a" upstream="neo" dest-branch="neo" groups="kv" />
   <project name="subjson" revision="0820f83427d69c6eb737876eb2f2cf6aefa45802" upstream="neo" dest-branch="neo" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="3a5387ad901e41d2e1a116ff1973fe04d15cd354" upstream="master" dest-branch="master" />
+  <project name="testrunner" revision="8b7eeea87844acf76c7449e67b6fe97cbeb60e21" upstream="master" dest-branch="master" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="383b2e75a7a4198c42f8f87833eefb772868a56f" upstream="refs/tags/v0.3.7" dest-branch="refs/tags/v0.3.7" />
   <project name="tlm" revision="9eebee1d4190883ee0d74c2a7660e263f467a4c8" upstream="neo" dest-branch="neo" groups="bsl,kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
