@@ -1,0 +1,13 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="89467fdea78ec6c84fa423756a1210056ac5c199">
+    <annotation name="RELEASE" value="100.0.1" />
+    <annotation name="PRODUCT" value="python_tools::cb-non-package-installer" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="100.0.1" />
+  </project>
+  <project name="cb-non-package-installer" revision="c0d903f00548a3871a3e16a01938a4e66ad16809" upstream="master" dest-branch="master" />
+</manifest>
