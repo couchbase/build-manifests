@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="RELEASE" value="1.1.1q" />
+    <annotation name="PRODUCT" value="cbdeps::openssl" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="1.1.1q" />
+  </project>
+  <project name="build-tools" revision="01625833184cbf0bb952209adbefe5c8c96b0304" upstream="master" dest-branch="master" />
+  <project name="openssl" remote="couchbasedeps" revision="29708a562a1887a91de0fa6ca668c71871accde9" upstream="refs/tags/OpenSSL_1_1_1q" dest-branch="refs/tags/OpenSSL_1_1_1q" />
+</manifest>
