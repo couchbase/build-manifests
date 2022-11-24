@@ -22,11 +22,11 @@
   <project name="build" path="cbbuild" revision="2370b49496634d650f4b80a8f40d04b41a17b2d1" upstream="alice" dest-branch="alice" groups="notdefault,build">
     <annotation name="RELEASE" value="alice" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="3363" />
+    <annotation name="BLD_NUM" value="3364" />
     <annotation name="VERSION" value="6.0.5" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbaselabs/cbas" remote="couchbase-priv" revision="caccf4ec99780ad99ae43683df7b4868b1305e0a" upstream="alice" dest-branch="alice" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="253e62a014da69a45aa5a52c476e68217d59838a" upstream="alice" dest-branch="alice" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="5bf55ab9c5ff37c22b353ad98fe925336098a449" upstream="alice" dest-branch="alice" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="d8f601c3109887a30deccab09b2177bf499c8711" upstream="alice" dest-branch="alice" groups="analytics" />
   <project name="cbauth" path="godeps/src/github.com/couchbase/cbauth" revision="0df84c7e3c6d95ff435c12a3c08c6f064db11e97" />
   <project name="cbflag" path="godeps/src/github.com/couchbase/cbflag" revision="80d2ad8892d806f5103f602fec0d80adaa4b628f" />
@@ -129,7 +129,7 @@
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="9d4e42a20653790449273b3c85e67d6d8bae6e2e" />
   <project name="testrunner" revision="a940f3cd20084c5ebd43f2d4a8a48231dd7cfbd5" upstream="alice" dest-branch="alice" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="601048ad6acbab6cedd582db09b8c4839ff25b15" />
-  <project name="tlm" revision="15a0fe342b6c06f325922327e7b0fad03463dc9b" upstream="alice" dest-branch="alice" groups="kv">
+  <project name="tlm" revision="2007c28f1942fccf414504d582bff44be8a769cb" upstream="alice" dest-branch="alice" groups="kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
     <copyfile src="CMakeLists.txt" dest="CMakeLists.txt" />
