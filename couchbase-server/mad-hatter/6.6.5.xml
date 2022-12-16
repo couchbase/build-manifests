@@ -22,7 +22,7 @@
   <project name="build" path="cbbuild" revision="3f32dbee01ef203246c03294e1dce7f2dbe1656b" groups="notdefault,build">
     <annotation name="RELEASE" value="mad-hatter" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="10119" />
+    <annotation name="BLD_NUM" value="10120" />
     <annotation name="VERSION" value="6.6.5" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="b960ba6ed6b52c79e8cddd03b11db27964cdbe54" groups="notdefault,enterprise,analytics" />
@@ -93,12 +93,12 @@
   <project name="goskiplist" path="godeps/src/github.com/ryszard/goskiplist" remote="couchbasedeps" revision="2dfbae5fcf46374f166f8969cb07e167f1be6273" />
   <project name="gosnappy" path="godeps/src/github.com/syndtr/gosnappy" remote="couchbasedeps" revision="156a073208e131d7d2e212cb749feae7c339e846" />
   <project name="goutils" path="godeps/src/github.com/couchbase/goutils" revision="2a0d5d4d4682afc418fdd579eec602367f7dde0f" groups="backup" />
-  <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" revision="473eb59fadcbdccded8ba02fc6af4868d93c6580" />
+  <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" revision="c1a8f61e1d13b456b281fb62cfe4ac4757db4598" upstream="6.6.5" dest-branch="6.6.5" />
   <project name="grpc-go" path="godeps/src/google.golang.org/grpc" remote="couchbasedeps" revision="f6d0f9ee430895e87ef1ceb5ac8f39725bafceef" upstream="refs/tags/v1.24.0" dest-branch="refs/tags/v1.24.0" />
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="57542c7e7ced375346e9ac55dad85b942cfad556" upstream="refs/tags/v0.25.0" dest-branch="refs/tags/v0.25.0" groups="kv" />
   <project name="gtreap" path="godeps/src/github.com/steveyen/gtreap" remote="couchbasedeps" revision="0abe01ef9be25c4aedc174758ec2d917314d6d70" />
   <project name="httprouter" path="godeps/src/github.com/julienschmidt/httprouter" remote="couchbasedeps" revision="975b5c4c7c21c0e3d2764200bf2aa8e34657ae6e" />
-  <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="48b52fb17dd7fd4e479b6509451a1891d1157515" upstream="mad-hatter" dest-branch="mad-hatter" />
+  <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="48b52fb17dd7fd4e479b6509451a1891d1157515" />
   <project name="json-iterator-go" path="godeps/src/github.com/json-iterator/go" remote="couchbasedeps" revision="f7279a603edee96fe7764d3de9c6ff8cf9970994" groups="backup" />
   <project name="jsonparser" path="godeps/src/github.com/buger/jsonparser" remote="couchbasedeps" revision="df3ea76ece10095374fd1c9a22a4fb85a44efc42" />
   <project name="jsonx" path="godeps/src/gopkg.in/couchbaselabs/jsonx.v1" remote="couchbaselabs" revision="5b7baa20429a46a5543ee259664cc86502738cad" groups="backup" />
@@ -144,7 +144,7 @@
   <project name="strconv" path="godeps/src/github.com/tdewolff/strconv" remote="couchbasedeps" revision="9b189f5be77f33c46776f24dbddb2a7ab32af214" />
   <project name="subjson" revision="ae63ab4b653870e400855f8563da40dda49f0eb3" groups="kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="12a6c2dcc1e4cb348b57847c73987099e261714b" groups="backup" />
-  <project name="testrunner" revision="2abbc0eb2c51d09847e33e37ac5ca1eadf3ab742" upstream="mad-hatter" dest-branch="mad-hatter" />
+  <project name="testrunner" revision="bcbc23b8ef373162dd69df27cbba5dccb49b7924" upstream="mad-hatter" dest-branch="mad-hatter" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="88f656faf3f37f690df1a32515b479415e1a6769" groups="backup" />
   <project name="tlm" revision="be8cba547f18654ff2670ecafab5fb95329d19d4" upstream="6.6.5" dest-branch="6.6.5" groups="kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
