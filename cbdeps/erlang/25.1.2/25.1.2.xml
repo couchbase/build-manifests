@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="RELEASE" value="25.1.2" />
+    <annotation name="PRODUCT" value="cbdeps::erlang" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="25.1.2" />
+  </project>
+  <project name="build-tools" revision="4cdb8e58cd383e25f289b7b5f9d30bac128f7681" upstream="master" dest-branch="master" />
+  <project name="erlang" remote="couchbasedeps" revision="3c5a558049bd3020ed6ab8c38126b2970a7d82c5" upstream="couchbase-25.1.2" dest-branch="couchbase-25.1.2" />
+</manifest>
