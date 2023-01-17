@@ -20,14 +20,14 @@
   <project name="build" path="cbbuild" revision="6681090e051cdc5b30243ac5e74137f728728f84" groups="notdefault,build">
     <annotation name="RELEASE" value="cheshire-cat" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="7659" />
+    <annotation name="BLD_NUM" value="7660" />
     <annotation name="VERSION" value="7.0.5" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.0" />
     <annotation name="BSL_CHANGE_DATE" value="July 1, 2025" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="04248b05b615ae1cf3aed44100f450326f48120c" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="a26b8bc436271d81b12b6aa75e11f42e746ef4f7" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="13378a6310722d3ba37054fe33fcc4da56ffca70" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="5c9f762d5e002e9de2da7aec5bbb1cce309a2b35" groups="notdefault,enterprise,analytics,bsl" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="47a704eab25048eb6712bc13d359145fa449e7d8" groups="backup,bsl" />
   <project name="cbbs" remote="couchbase-priv" revision="1b1d60545e46a3d8de417c2c605f2ac04484281e" groups="backup,notdefault,enterprise" />
@@ -99,7 +99,7 @@
   <project name="jsonparser" path="godeps/src/github.com/buger/jsonparser" remote="couchbasedeps" revision="df3ea76ece10095374fd1c9a22a4fb85a44efc42" />
   <project name="jsonschema" path="godeps/src/github.com/santhosh-tekuri/jsonschema" remote="couchbasedeps" revision="137f44a49015e5060a447c331aa37de6e0f50267" />
   <project name="jsonx" path="godeps/src/gopkg.in/couchbaselabs/jsonx.v1" remote="couchbaselabs" revision="03f375ceefb769799cfa0d64352fdcc9f1192368" />
-  <project name="kv_engine" revision="206fd0132e3fb88cc35b032fd97f431bd619ca65" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="kv,bsl" />
+  <project name="kv_engine" revision="206fd0132e3fb88cc35b032fd97f431bd619ca65" groups="kv,bsl" />
   <project name="libcouchbase" revision="513555d6c63dec7fd7166450282be92c6f74ef47" upstream="refs/tags/3.1.4" dest-branch="refs/tags/3.1.4" />
   <project name="liner" path="godeps/src/github.com/peterh/liner" remote="couchbasedeps" revision="6f820f8f90ce9482ffbd40bb15f9ea9932f4942d" />
   <project name="liner" path="godeps/src/github.com/sbinet/liner" remote="couchbasedeps" revision="d9335eee40a45a4f5d74524c90040d6fe6013d50" />
@@ -141,7 +141,7 @@
   <project name="strconv" path="godeps/src/github.com/tdewolff/strconv" remote="couchbasedeps" revision="9b189f5be77f33c46776f24dbddb2a7ab32af214" />
   <project name="subjson" revision="7f2d37f2842554ebeca0fc9663b15b9d60d1fad4" groups="kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="299009e32f2f0aab27831021ad854b0d6e72dd64" upstream="cheshire-cat" dest-branch="cheshire-cat" />
+  <project name="testrunner" revision="69b0defa93a524b7ccc2ed0c8441ed9767b05921" upstream="cheshire-cat" dest-branch="cheshire-cat" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="383b2e75a7a4198c42f8f87833eefb772868a56f" upstream="refs/tags/v0.3.7" dest-branch="refs/tags/v0.3.7" />
   <project name="tlm" revision="93f5fc61881c4cdcaf56f5d92c098bba44e89f12" groups="kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
