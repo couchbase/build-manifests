@@ -20,7 +20,7 @@
   <project name="build" path="cbbuild" revision="6681090e051cdc5b30243ac5e74137f728728f84" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,build">
     <annotation name="RELEASE" value="cheshire-cat" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="8014" />
+    <annotation name="BLD_NUM" value="8015" />
     <annotation name="VERSION" value="7.0.6" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.0" />
@@ -128,8 +128,8 @@
   <project name="pierrec-xxHash" path="godeps/src/github.com/pierrec/xxHash" remote="couchbasedeps" revision="a0006b13c722f7f12368c00a3d3c2ae8a999a0c6" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="fa6d010b8206d59828293ce0e216cd00d710e958" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
   <project name="platform" revision="a0107962c05957490b7a3a9554712fe9c3a2f162" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="kv" />
-  <project name="product-metadata" revision="d02ec0da13112614412dda740f862546d4f28d6c" upstream="master" dest-branch="master" groups="notdefault,packaging" />
-  <project name="product-texts" revision="554ed8481fee84517d3cef94bcf4099f24901a7c" upstream="master" dest-branch="master" groups="kv" />
+  <project name="product-metadata" revision="a2701a925ac8d69379155dae5bdeac1efc5795e3" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-texts" revision="70bd82c3a91503e0e187443511f1a00bde36e55f" upstream="master" dest-branch="master" groups="kv" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="ddf22928ea3c56eb4292a0adbbf5001b1e8e7d0d" />
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="6b4c5fc96bddf7f16cb88dcc6aea62fd249788f0" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="89ba0b528c610c8fc585810600ea56cf7a734505" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
@@ -143,7 +143,7 @@
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
   <project name="testrunner" revision="69b0defa93a524b7ccc2ed0c8441ed9767b05921" upstream="cheshire-cat" dest-branch="cheshire-cat" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="383b2e75a7a4198c42f8f87833eefb772868a56f" upstream="refs/tags/v0.3.7" dest-branch="refs/tags/v0.3.7" />
-  <project name="tlm" revision="93f5fc61881c4cdcaf56f5d92c098bba44e89f12" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="kv">
+  <project name="tlm" revision="f4440415c7fc03f6c89193aa28444d7713fb61bd" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
     <copyfile src="CMakeLists.txt" dest="CMakeLists.txt" />
