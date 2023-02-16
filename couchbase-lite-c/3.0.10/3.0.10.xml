@@ -12,13 +12,13 @@
   <project name="build" path="cbbuild" revision="1406b7feb5d65f586d2b9d3252a42934fd4197c4" upstream="master" dest-branch="master">
     <annotation name="RELEASE" value="3.0.10" />
     <annotation name="PRODUCT" value="couchbase-lite-c" />
-    <annotation name="BLD_NUM" value="1" />
+    <annotation name="BLD_NUM" value="2" />
     <copyfile src="scripts/jenkins/lite-c/CMakeLists.txt" dest="CMakeLists.txt" />
     <annotation name="VERSION" value="3.0.10" />
   </project>
-  <project name="couchbase-lite-c" revision="cc067e15930b6e51648e1299e8a794e3d2091ce5" upstream="release/lithium" dest-branch="release/lithium" />
+  <project name="couchbase-lite-c" revision="71441a20ed0efe9b5e7d9625d69b3b9861924748" upstream="release/lithium" dest-branch="release/lithium" />
   <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="3becb76d6387c93f46784df4acd9b79c5c3c1a4d" upstream="release/lithium" dest-branch="release/lithium" groups="notdefault,enterprise" />
-  <project name="couchbase-lite-core" path="couchbase-lite-c/vendor/couchbase-lite-core" revision="7721282531cec0c0c3106b26337afe9a6b803237" />
+  <project name="couchbase-lite-core" path="couchbase-lite-c/vendor/couchbase-lite-core" revision="95862d1157dc053193fa507829768d5d9f617a6a" />
   <project name="couchbase-lite-core-EE" path="couchbase-lite-c-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="156754ffda07da2065353d710b380b6b457d4d23" groups="notdefault,enterprise" />
   <project name="couchbase-lite-core.wiki" path="couchbase-lite-c/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
   <project name="fleece" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/fleece" revision="6364f7a0ff7fdcd9936e6dd26ef54ff935ac46ab" />
