@@ -6,16 +6,16 @@
   <remote name="google" fetch="https://github.com/google/" />
   <remote name="snej" fetch="https://github.com/snej/" />
   
-  <default remote="couchbase" revision="master" />
+  <default remote="couchbase" revision="release/3.1" />
   
   <project name="SQLiteCpp" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="703aefabca4a3381201395a53176a7c5eba78f5e" />
-  <project name="build" path="cbbuild" revision="1406b7feb5d65f586d2b9d3252a42934fd4197c4" upstream="master" dest-branch="master">
+  <project name="build" path="cbbuild" revision="bed282390f9dc098bc13cca67edd55f619befe4e" upstream="master" dest-branch="master">
     <annotation name="RELEASE" value="3.1.0" />
     <annotation name="PRODUCT" value="couchbase-lite-c" />
-    <annotation name="BLD_NUM" value="238" />
+    <annotation name="BLD_NUM" value="239" />
     <annotation name="VERSION" value="3.1.0" />
   </project>
-  <project name="couchbase-lite-c" revision="6d9497fdc4a5a1568d972ad079581c6e913cd6db" upstream="master" dest-branch="master">
+  <project name="couchbase-lite-c" revision="6d9497fdc4a5a1568d972ad079581c6e913cd6db" upstream="release/3.1" dest-branch="release/3.1">
     <copyfile src="jenkins/CMakeLists.txt" dest="CMakeLists.txt" />
   </project>
   <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="c3b84c20f5136aa286ede527d9ba11f05eec0a43" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
