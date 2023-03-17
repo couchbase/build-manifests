@@ -1,14 +1,14 @@
 <manifest>
-  <remote name="couchbase" fetch="git://github.com/couchbase/" />
-  <remote name="couchbasebuild" fetch="git://github.com/couchbasebuild/" />
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasebuild" fetch="https://github.com/couchbasebuild/" />
   
   <default remote="couchbase" revision="master" />
   
   <project name="build" path="cbbuild" revision="89467fdea78ec6c84fa423756a1210056ac5c199">
     <annotation name="RELEASE" value="1.0.2" />
     <annotation name="PRODUCT" value="python_tools::update_manifest_released" />
-    <annotation name="BLD_NUM" value="2" />
+    <annotation name="BLD_NUM" value="3" />
     <annotation name="VERSION" value="1.0.2" />
   </project>
-  <project name="update_manifest_released" remote="couchbasebuild" revision="8345b75534c271fecb3abc5eca1cc7b8e7d35500" upstream="master" dest-branch="master" />
+  <project name="update_manifest_released" remote="couchbasebuild" revision="6199ef6b12c26acff18694671b17bb255d289983" upstream="master" dest-branch="master" />
 </manifest>
