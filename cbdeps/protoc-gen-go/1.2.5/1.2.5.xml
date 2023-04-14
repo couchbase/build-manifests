@@ -1,15 +1,15 @@
 <manifest>
-  <remote name="couchbase" fetch="git://github.com/couchbase/" />
-  <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" />
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
   
   <default remote="couchbase" revision="master" />
   
   <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
     <annotation name="RELEASE" value="1.2.5" />
     <annotation name="PRODUCT" value="cbdeps::protoc-gen-go" />
-    <annotation name="BLD_NUM" value="4" />
+    <annotation name="BLD_NUM" value="5" />
     <annotation name="VERSION" value="1.2.5" />
   </project>
-  <project name="build-tools" revision="e05f7dc9a0c63ea0301af7890c572a775ffeeadd" upstream="master" dest-branch="master" />
+  <project name="build-tools" revision="9ced3a5ca796b911c4e16082c8ec24d99f41f806" upstream="master" dest-branch="master" />
   <project name="protobuf" path="protoc-gen-go" remote="couchbasedeps" revision="ddf22928ea3c56eb4292a0adbbf5001b1e8e7d0d" />
 </manifest>
