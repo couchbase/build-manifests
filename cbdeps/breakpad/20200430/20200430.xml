@@ -1,20 +1,20 @@
 <manifest>
-  <remote fetch="git://github.com/couchbase/" name="couchbase" />
-  <remote fetch="git://github.com/couchbasedeps/" name="couchbasedeps" />
-  <remote fetch="git://github.com/google/" name="google" />
-  <remote fetch="https://chromium.googlesource.com/" name="googlesource" />
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  <remote name="google" fetch="https://github.com/google/" />
+  <remote name="googlesource" fetch="https://chromium.googlesource.com/" />
   
   <default remote="couchbase" revision="master" />
   
   <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
     <annotation name="RELEASE" value="20200430" />
     <annotation name="PRODUCT" value="cbdeps::breakpad" />
-    <annotation name="BLD_NUM" value="2" />
+    <annotation name="BLD_NUM" value="3" />
     <annotation name="VERSION" value="20200430" />
   </project>
-  <project name="build-tools" revision="a60cd2b2b8aaf73960194a0653a7798d8aff8fb3" upstream="master" />
+  <project name="build-tools" revision="869773ada3768135303e1e989f39b76e21de0b55" upstream="master" dest-branch="master" />
   <project name="external/gyp" path="breakpad/src/tools/gyp" remote="googlesource" revision="324dd166b7c0b39d513026fa52d6280ac6d56770" />
-  <project name="google-breakpad" path="breakpad" remote="couchbasedeps" revision="755a0b13259ebd654f5d238cc70e357a61b38884" upstream="couchbase-20200430" />
+  <project name="google-breakpad" path="breakpad" remote="couchbasedeps" revision="755a0b13259ebd654f5d238cc70e357a61b38884" upstream="couchbase-20200430" dest-branch="couchbase-20200430" />
   <project name="googletest" path="breakpad/src/testing" remote="google" revision="5ec7f0c4a113e2f18ac2c6cc7df51ad6afc24081" />
   <project name="linux-syscall-support" path="breakpad/src/third_party/lss" remote="googlesource" revision="fd00dbbd0c06a309c657d89e9430143b179ff6db" />
   <project name="protobuf" path="breakpad/src/third_party/protobuf/protobuf" remote="google" revision="cb6dd4ef5f82e41e06179dcd57d3b1d9246ad6ac" />
