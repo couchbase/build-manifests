@@ -1,15 +1,15 @@
 <manifest>
-  <remote name="couchbase" fetch="git://github.com/couchbase/" />
-  <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/" />
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
   
   <default remote="couchbase" revision="master" />
   
   <project name="build" path="cbbuild" revision="71b9e64606a3a4eebc3705af92a912d96935b3b6">
     <annotation name="RELEASE" value="0.6" />
     <annotation name="PRODUCT" value="cbdeps::liburing" />
-    <annotation name="BLD_NUM" value="2" />
+    <annotation name="BLD_NUM" value="3" />
     <annotation name="VERSION" value="0.6" />
   </project>
-  <project name="build-tools" revision="a7bab71c782c6115ad91b7238f75cde93f4856cd" upstream="master" dest-branch="master" />
+  <project name="build-tools" revision="9ced3a5ca796b911c4e16082c8ec24d99f41f806" upstream="master" dest-branch="master" />
   <project name="liburing" remote="couchbasedeps" revision="f0c5c54945ae92a00cdbb43bdf3abaeab6bd3a23" upstream="refs/tags/liburing-0.6" dest-branch="refs/tags/liburing-0.6" />
 </manifest>
