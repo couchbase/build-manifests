@@ -9,7 +9,7 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="caed837aa163421a637222157b3f6353b4ca831a" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="d4bb7bf6444805681da7f564ee9f1ea71895c113" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="e42e1b99e7f9a5a7437234be89438f37a18a06d2" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="0445b7e4b962569625034f17d52552a18b4c979d" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="b5572a18a617c7445eff15bd9d07447ba8430378" upstream="neo" dest-branch="neo" groups="backup,notdefault,enterprise" />
   <project name="bbolt" path="godeps/src/go.etcd.io/bbolt" remote="couchbasedeps" revision="68cc10a767ea1c6b9e8dcb9847317ff192d6d974" />
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4" />
@@ -18,20 +18,20 @@
   <project name="build" path="cbbuild" revision="38898f2b80b38d059a77fd8116405142fdef2669" upstream="neo" dest-branch="neo" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="5723" />
+    <annotation name="BLD_NUM" value="5724" />
     <annotation name="VERSION" value="7.2.1" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.2" />
     <annotation name="BSL_CHANGE_DATE" value="April 1, 2026" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="f7ea66f5afc13368e6b538c6b72e7472eaaabafe" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="c1908c502aad3a6e809a575c6529172b4bf50fff" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="a4431c327517455406db92d8aaac0ab9b98e02e4" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="bca24852854206cbdc70095ddb15c9f07fa29196" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="860450708ded762f465fc03eef08138c8545d379" upstream="neo" dest-branch="neo" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="313647360e0468dfa2f870a4656d7a82bf83df0b" upstream="neo" dest-branch="neo" groups="backup,notdefault,enterprise" />
-  <project name="cbft" revision="02a030d5ccd77934f8713329395ca7ccad9d6115" upstream="neo" dest-branch="neo" />
-  <project name="cbftx" remote="couchbase-priv" revision="31cb03c796e9555bd5d323a704680625bab79a2f" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
-  <project name="cbgt" revision="d685dcd6c513b149c7e1aeeb0b09a8349a79b76f" upstream="neo" dest-branch="neo" />
+  <project name="cbft" revision="c18199e81e1d005a05d63931d0ba24bf5dceba9c" upstream="neo" dest-branch="neo" />
+  <project name="cbftx" remote="couchbase-priv" revision="bec63a19228965c718c9237199ff66107985c517" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
+  <project name="cbgt" revision="8d3fb88e2bb21f2e6cee69307aac2c69ccb2af78" upstream="neo" dest-branch="neo" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="ae0e924e54669e2c590dd70c6bdf742e8976e2d0" />
   <project name="chronicle" path="ns_server/deps/chronicle" revision="67d2c3a847d8feeedd2c76ab383b508f1c29549c" />
   <project name="clog" path="godeps/src/github.com/couchbase/clog" revision="f935d1fdfc36541b505cf86fea4822e4067f9c39" />
@@ -110,7 +110,7 @@
   <project name="mousetrap" path="godeps/src/github.com/inconshreveable/mousetrap" remote="couchbasedeps" revision="76626ae9c91c4f2a10f34cad8ce83ea42c93bb75" />
   <project name="msgp" path="godeps/src/github.com/tinylib/msgp" remote="couchbasedeps" revision="5bb5e1aed7ba5bcc93307153b020e7ffe79b0509" />
   <project name="mux" path="godeps/src/github.com/gorilla/mux" remote="couchbasedeps" revision="043ee6597c29786140136a5747b6a886364f5282" />
-  <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="374be069692d011f6e075448a43c3c9ac11288b9" upstream="neo" dest-branch="neo" groups="bsl" />
+  <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="0e862f0b0da94e2cd798661bf485a6d6f6abaff8" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="net" path="godeps/src/golang.org/x/net" remote="couchbasedeps" revision="44b7c21cbf19450f38b337eb6b6fe4f6496fb5b3" />
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="2575ec52bf5cf4c7ccc2cbc161eb38e46ce7b4a8" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="npipe" path="godeps/src/github.com/natefinch/npipe" remote="couchbasedeps" revision="272c8150302e83f23d32a355364578c9c13ab20f" />
@@ -127,7 +127,7 @@
   <project name="product-metadata" revision="ff7c24047435e393698847ec5147716017048636" groups="notdefault,packaging" />
   <project name="product-texts" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" upstream="master" dest-branch="master" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="84668698ea25b64748563aa20726db66a6b8d299" upstream="refs/tags/v1.3.5" dest-branch="refs/tags/v1.3.5" />
-  <project name="query" path="goproj/src/github.com/couchbase/query" revision="67704751233ecce3f8a36ddcb108139ca086b316" upstream="neo" dest-branch="neo" groups="bsl" />
+  <project name="query" path="goproj/src/github.com/couchbase/query" revision="99f0e4051c5a8672d52b2203c844077cf9d57d7c" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="5bdc90a7eeb901ced3119b826532238d84f5d214" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
   <project name="query-ui" revision="2d022ec7cd7d634ef287720f0f9a65e75fd6ffe3" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="retriever" path="godeps/src/github.com/couchbase/retriever" revision="295b11134f91d9451c3ae21895f5615fc7a61e31" groups="bsl" />
@@ -137,7 +137,7 @@
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
   <project name="testrunner" revision="a64a658d9b91e3cf7a01a9968ced46ef9e6f6172" upstream="neo" dest-branch="neo" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="383b2e75a7a4198c42f8f87833eefb772868a56f" upstream="refs/tags/v0.3.7" dest-branch="refs/tags/v0.3.7" />
-  <project name="tlm" revision="5dbb007c4ba5cab9edae64625f3415c2805cbf44" upstream="neo" dest-branch="neo" groups="bsl,kv">
+  <project name="tlm" revision="600a1236717a48d9b3a25a80f9996549a9b3a5db" upstream="neo" dest-branch="neo" groups="bsl,kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
     <copyfile src="CMakeLists.txt" dest="CMakeLists.txt" />
