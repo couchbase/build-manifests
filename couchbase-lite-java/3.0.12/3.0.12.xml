@@ -1,0 +1,34 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="google" fetch="https://github.com/google/" />
+  <remote name="snej" fetch="https://github.com/snej/" />
+  
+  <default remote="couchbase" revision="java/release/3.0" />
+  
+  <project name="SQLiteCpp" path="cbl-java/core/vendor/SQLiteCpp" remote="couchbasedeps" revision="4727e1c9f1cc07e1384031663cdad90fe3be7a6c" />
+  <project name="build" path="cbbuild" revision="fa5df77677945a629aeb82aeaa3d43218df2a88d" groups="notdefault">
+    <annotation name="RELEASE" value="3.0.12" />
+    <annotation name="PRODUCT" value="couchbase-lite-java" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="3.0.12" />
+  </project>
+  <project name="couchbase-lite-core" path="cbl-java/core" revision="cb2ba247358289b0e728c18ca40a10a8a2168935" />
+  <project name="couchbase-lite-core-EE" path="cbl-java/couchbase-lite-core-EE" remote="couchbase-priv" revision="156754ffda07da2065353d710b380b6b457d4d23" />
+  <project name="couchbase-lite-core.wiki" path="cbl-java/core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
+  <project name="couchbase-lite-java-ce" path="cbl-java/ce" revision="d43f015aaa8579267d1c8d38f484ec56d8d00896" />
+  <project name="couchbase-lite-java-common" path="cbl-java/common" revision="dcdc4481f9951e24fc7d88cb15dfbaa1472511c7" />
+  <project name="couchbase-lite-java-ee-root" path="cbl-java" remote="couchbaselabs-priv" revision="36e7dcd5a2fe6ea2d59630859b9f89c744ff2fcc" upstream="java/release/3.0" dest-branch="java/release/3.0" />
+  <project name="fleece" path="cbl-java/core/vendor/fleece" revision="6364f7a0ff7fdcd9936e6dd26ef54ff935ac46ab" />
+  <project name="googletest" path="cbl-java/core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
+  <project name="ios-cmake" path="cbl-java/core/vendor/ios-cmake" remote="couchbasedeps" revision="29668dbcd9ef2fd7369140b7e9bd9df0485497f6" />
+  <project name="jsonsl" path="cbl-java/core/vendor/fleece/vendor/jsonsl" remote="snej" revision="684b60f9af68b8c397422e74d0c2dd206de16a2c" />
+  <project name="mbedtls" path="cbl-java/core/vendor/mbedtls" remote="couchbasedeps" revision="e60e09de73933aadf7a400a15ae3fbdf75cfd15e" />
+  <project name="product-texts" path="cbl-java/legal" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" upstream="master" dest-branch="master" />
+  <project name="sockpp" path="cbl-java/core/vendor/sockpp" remote="couchbasedeps" revision="6fde3088edd41fa549dced003ba01a41fe0697cc" />
+  <project name="sqlite3-unicodesn" path="cbl-java/core/vendor/sqlite3-unicodesn" remote="couchbasedeps" revision="9e0b20dfa4618c95a039bb5eaa7c40a70e0e1597" />
+  <project name="zlib" path="cbl-java/core/vendor/zlib" remote="couchbasedeps" revision="04f42ceca40f73e2978b50e93806c2a18c1281fc" />
+</manifest>
