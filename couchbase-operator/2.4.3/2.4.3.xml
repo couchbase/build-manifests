@@ -1,0 +1,16 @@
+<manifest>
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
+  
+  <default remote="couchbase-priv" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="8ba9841f5fd3b60f22203be47bc6e81f7b9b6b2e">
+    <annotation name="RELEASE" value="2.4.3" />
+    <annotation name="PRODUCT" value="couchbase-operator" />
+    <annotation name="BLD_NUM" value="100" />
+    <annotation name="VERSION" value="2.4.3" />
+    <annotation name="GOVERSION" value="1.19" />
+  </project>
+  <project name="couchbase-operator" revision="284184b7a09ff07c0240e3eb347654af44c1b409" upstream="2.4.x" dest-branch="2.4.x" />
+  <project name="golang" remote="couchbaselabs" revision="5d4d65aa009c421f8353dc19ee831e62842824f6" upstream="main" dest-branch="main" />
+</manifest>
