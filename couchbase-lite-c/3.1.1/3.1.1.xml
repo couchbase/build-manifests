@@ -12,14 +12,14 @@
   <project name="build" path="cbbuild" revision="657961e37ac659dce878df7ddea57261f9b51500" upstream="master" dest-branch="master">
     <annotation name="RELEASE" value="3.1.1" />
     <annotation name="PRODUCT" value="couchbase-lite-c" />
-    <annotation name="BLD_NUM" value="2" />
+    <annotation name="BLD_NUM" value="3" />
     <annotation name="VERSION" value="3.1.1" />
   </project>
-  <project name="couchbase-lite-c" revision="89add9dff0644da95f0ce2b6cd785f5185a077a1" upstream="release/3.1" dest-branch="release/3.1">
+  <project name="couchbase-lite-c" revision="614bcd6d5d0b329e19e9d32b33c30ab82e765791" upstream="release/3.1" dest-branch="release/3.1">
     <copyfile src="jenkins/CMakeLists.txt" dest="CMakeLists.txt" />
   </project>
   <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="c3b84c20f5136aa286ede527d9ba11f05eec0a43" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
-  <project name="couchbase-lite-core" path="couchbase-lite-c/vendor/couchbase-lite-core" revision="bc52ab02b6ce504a7a6e74de405c805657ecbb18" />
+  <project name="couchbase-lite-core" path="couchbase-lite-c/vendor/couchbase-lite-core" revision="61f0a81bd25837a8242aeab28e4a3466b4018856" />
   <project name="couchbase-lite-core-EE" path="couchbase-lite-c-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="7570126f0a7799a20dd3405eec31c328f31942ee" groups="notdefault,enterprise" />
   <project name="couchbase-lite-core.wiki" path="couchbase-lite-c/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
   <project name="fleece" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/fleece" revision="dcaa54943e6fcf05a610476912299873b5328bf7" />
@@ -29,7 +29,7 @@
   <project name="litecore-download-script" path="couchbase-lite-c/vendor/couchbase-lite-core/tools" remote="couchbaselabs" revision="93274f9fb0936af0b754a408154a2a24d2dd0041" />
   <project name="mbedtls" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/mbedtls" remote="couchbasedeps" revision="e60e09de73933aadf7a400a15ae3fbdf75cfd15e" />
   <project name="product-texts" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" upstream="master" dest-branch="master" />
-  <project name="sockpp" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/sockpp" remote="couchbasedeps" revision="6fde3088edd41fa549dced003ba01a41fe0697cc" />
+  <project name="sockpp" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/sockpp" remote="couchbasedeps" revision="060fe2fcdc057643367d0623d21ce0d322e3ed74" />
   <project name="sqlite3-unicodesn" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/sqlite3-unicodesn" remote="couchbasedeps" revision="9e0b20dfa4618c95a039bb5eaa7c40a70e0e1597" />
   <project name="zlib" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/zlib" remote="couchbasedeps" revision="04f42ceca40f73e2978b50e93806c2a18c1281fc" />
 </manifest>
