@@ -1,0 +1,13 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="main" />
+  
+  <project name="build" path="cbbuild" revision="8ba9841f5fd3b60f22203be47bc6e81f7b9b6b2e">
+    <annotation name="RELEASE" value="1.0" />
+    <annotation name="PRODUCT" value="couchbase-odbc-driver" />
+    <annotation name="BLD_NUM" value="100" />
+    <annotation name="VERSION" value="1.0" />
+  </project>
+  <project name="couchbase-odbc-driver" revision="ff804079a32a8f699b184d7636406a7635796710" upstream="main" dest-branch="main" sync-s="true" />
+</manifest>
