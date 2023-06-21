@@ -10,7 +10,7 @@
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="42148d72f34d6865b2a6706c106cd72ee68216a5" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="7ce283070ea132af78b2bf0323b35a13a3218def" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise,analytics,bsl" />
   <project name="asterixdb" path="analytics/asterixdb" revision="35c42acd3c5de6a142714ff0bb83c64ce40db302" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise,analytics" />
-  <project name="backup" remote="couchbase-priv" revision="69d13230ead48195faa130eb3d81df8a7a3686ee" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="backup,notdefault,enterprise" />
+  <project name="backup" remote="couchbase-priv" revision="6436a7c188684fe9377bb8fce65c62c4b67a47f5" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="backup,notdefault,enterprise" />
   <project name="bbolt" path="godeps/src/go.etcd.io/bbolt" remote="couchbasedeps" revision="68cc10a767ea1c6b9e8dcb9847317ff192d6d974" />
   <project name="benchmark" path="third_party/google-benchmark" remote="couchbasedeps" revision="4405062b3a9491a706eda91e255de0311fdd3bc1" upstream="v1.5.1-couchbase" dest-branch="v1.5.1-couchbase" groups="kv" />
   <project name="bitset" path="godeps/src/github.com/willf/bitset" remote="couchbasedeps" revision="28a4168144bb8ac95454e1f51c84da1933681ad4" />
@@ -20,7 +20,7 @@
   <project name="build" path="cbbuild" revision="6681090e051cdc5b30243ac5e74137f728728f84" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,build">
     <annotation name="RELEASE" value="cheshire-cat" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="8025" />
+    <annotation name="BLD_NUM" value="8026" />
     <annotation name="VERSION" value="7.0.6" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.0" />
@@ -30,7 +30,7 @@
   <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="a8ceb2f45827cbd26cd1e2fbb8ac34f559b45812" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="5c9f762d5e002e9de2da7aec5bbb1cce309a2b35" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise,analytics,bsl" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="47a704eab25048eb6712bc13d359145fa449e7d8" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="backup,bsl" />
-  <project name="cbbs" remote="couchbase-priv" revision="ad2ba8c4e75e46d3e9aa879b36403d5a522060ae" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="backup,notdefault,enterprise" />
+  <project name="cbbs" remote="couchbase-priv" revision="4d767b71d8506e90ae8a779d1bd17647ea58fae6" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="backup,notdefault,enterprise" />
   <project name="cbft" revision="4dbdde8e1d3726b5880cd6d07918ab1bf56118ae" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="bsl" />
   <project name="cbftx" remote="couchbase-priv" revision="fb837d59bd11b3913de5da0f92e04da037917c81" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
   <project name="cbgt" revision="068ab0a1b342d90b89d65563c7a327a936a1cc2f" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="bsl" />
@@ -39,7 +39,7 @@
   <project name="clog" path="godeps/src/github.com/couchbase/clog" revision="f935d1fdfc36541b505cf86fea4822e4067f9c39" upstream="refs/tags/v0.1.0" dest-branch="refs/tags/v0.1.0" groups="bsl" />
   <project name="cobra" path="godeps/src/github.com/spf13/cobra" remote="couchbasedeps" revision="0f056af21f5f368e5b0646079d0094a2c64150f7" />
   <project name="context" path="godeps/src/github.com/gorilla/context" remote="couchbasedeps" revision="215affda49addc4c8ef7e2534915df2c8c35c6cd" />
-  <project name="couchbase-cli" revision="9378817615fcaff3e2eb518e4446c1362a816d09" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="kv" />
+  <project name="couchbase-cli" revision="782920672df6fdec17128b2a50ee4c046d550f66" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="kv" />
   <project name="couchdb" revision="2dbe819db0d3c6d380ac072e78d052ede7fa37ec" upstream="cheshire-cat" dest-branch="cheshire-cat" />
   <project name="couchdbx-app" revision="64bdc899ba72d021a3c1dde1a1aa5b698f42ee06" groups="notdefault,packaging" />
   <project name="couchstore" revision="4db15659ffd53122cf438a2e2383f7697a58e146" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="kv" />
@@ -128,7 +128,7 @@
   <project name="pierrec-xxHash" path="godeps/src/github.com/pierrec/xxHash" remote="couchbasedeps" revision="a0006b13c722f7f12368c00a3d3c2ae8a999a0c6" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="fa6d010b8206d59828293ce0e216cd00d710e958" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="notdefault,enterprise" />
   <project name="platform" revision="a0107962c05957490b7a3a9554712fe9c3a2f162" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="kv" />
-  <project name="product-metadata" revision="97ae822395448c134006e1e8725402c206bade2f" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="0f4803fba934d8117f42cc13f97725ab38f1c76b" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" upstream="master" dest-branch="master" groups="kv" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="ddf22928ea3c56eb4292a0adbbf5001b1e8e7d0d" />
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="4a45e6dd3b1be40ea86f75c27c839754684e6168" upstream="cheshire-cat" dest-branch="cheshire-cat" groups="bsl" />
