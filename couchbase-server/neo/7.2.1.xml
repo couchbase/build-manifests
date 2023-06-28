@@ -18,7 +18,7 @@
   <project name="build" path="cbbuild" revision="38898f2b80b38d059a77fd8116405142fdef2669" upstream="neo" dest-branch="neo" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="5823" />
+    <annotation name="BLD_NUM" value="5824" />
     <annotation name="VERSION" value="7.2.1" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.2" />
@@ -27,7 +27,7 @@
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="d84eead56856bcf477a05b9316748b08c27df37b" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="78e404b8ef8855b7418f4a5ee00d9a1398a0cf5c" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="1efab669bd1a13ac33acac9016f2008c1ce8921b" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
-  <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="b6bab68d967a1222fac4be8da7df6568c313bacc" upstream="neo" dest-branch="neo" groups="backup" />
+  <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="465dda8afecfbb9793a3ee980917e4d3c57a225d" upstream="neo" dest-branch="neo" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="34b876c0d9a71d4e73c5614e16b7604cb82018ea" upstream="neo" dest-branch="neo" groups="backup,notdefault,enterprise" />
   <project name="cbft" revision="3fbfc8f9a9a546b849fa16b3a96fe5c2162dd0a0" upstream="neo" dest-branch="neo" />
   <project name="cbftx" remote="couchbase-priv" revision="bec63a19228965c718c9237199ff66107985c517" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
@@ -114,7 +114,7 @@
   <project name="net" path="godeps/src/golang.org/x/net" remote="couchbasedeps" revision="44b7c21cbf19450f38b337eb6b6fe4f6496fb5b3" />
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="2575ec52bf5cf4c7ccc2cbc161eb38e46ce7b4a8" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="npipe" path="godeps/src/github.com/natefinch/npipe" remote="couchbasedeps" revision="272c8150302e83f23d32a355364578c9c13ab20f" />
-  <project name="ns_server" revision="07ad1483677422935baa543f85644ad6e77089e2" upstream="neo" dest-branch="neo" groups="bsl" />
+  <project name="ns_server" revision="fce1b512851e2cc3c396d8e5daa8cb1f0442e589" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="opentracing-go" path="godeps/src/github.com/opentracing/opentracing-go" remote="couchbasedeps" revision="1949ddbfd147afd4d964a9f00b24eb291e0e7c38" />
   <project name="participle" path="godeps/src/github.com/alecthomas/participle" remote="couchbasedeps" revision="d638c6e1953ed899e05a34da3935146790c60e46" />
   <project name="pflag" path="godeps/src/github.com/spf13/pflag" remote="couchbasedeps" revision="a232f6d9f87afaaa08bafaff5da685f974b83313" />
@@ -135,7 +135,7 @@
   <project name="sigar" revision="5297c47de27f84e2aa3507a4b8a227c0891820c8" upstream="neo" dest-branch="neo" groups="kv" />
   <project name="subjson" revision="0820f83427d69c6eb737876eb2f2cf6aefa45802" upstream="neo" dest-branch="neo" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="866b6445b5dd83ffbfe6fc5bb3400d1129a57bea" upstream="neo" dest-branch="neo" />
+  <project name="testrunner" revision="6b631f7817d2d72a1b5552669877e1e3975226c2" upstream="neo" dest-branch="neo" />
   <project name="text" path="godeps/src/golang.org/x/text" remote="couchbasedeps" revision="383b2e75a7a4198c42f8f87833eefb772868a56f" upstream="refs/tags/v0.3.7" dest-branch="refs/tags/v0.3.7" />
   <project name="tlm" revision="c310ac3ad7ee1281a5c81d8446d107fa18f3a58e" upstream="neo" dest-branch="neo" groups="bsl,kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
