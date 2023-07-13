@@ -1,0 +1,18 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="RELEASE" value="2.33.4" />
+    <annotation name="PRODUCT" value="cbdeps::prometheus" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="2.33.4" />
+    <annotation name="GOVERSION" value="1.20" />
+  </project>
+  <project name="build-tools" revision="6c9e21cef7b75fe78cee81ff775eb436b7194d3c" upstream="master" dest-branch="master" />
+  <project name="golang" remote="couchbaselabs" revision="5d4d65aa009c421f8353dc19ee831e62842824f6" upstream="main" dest-branch="main" />
+  <project name="prometheus" path="goproj/src/github.com/prometheus/prometheus" remote="couchbasedeps" revision="83032011a5d3e6102624fe58241a374a7201fee8" upstream="refs/tags/v2.33.4" dest-branch="refs/tags/v2.33.4" />
+</manifest>
