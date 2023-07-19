@@ -9,7 +9,7 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="42148d72f34d6865b2a6706c106cd72ee68216a5" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="1e34722e75d805eb61930773c91c36603f478212" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="85a3f577dfa61bc14a75c0b5fc1b6cbb349f1253" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="84c47cf88a3c22b8f5c224cc38dd3c86c886abfe" upstream="mad-hatter" dest-branch="mad-hatter" groups="notdefault,enterprise,analytics" />
   <project name="aws-sdk-go" path="godeps/src/github.com/aws/aws-sdk-go" remote="couchbasedeps" revision="8102d31deafaf68bed0ce981332a749932aa6ab1" groups="backup" />
   <project name="backup" path="goproj/src/github.com/couchbase/backup" remote="couchbase-priv" revision="7a1a44e8f3a6adda7e23c32d139c6c127f362a9e" groups="backup,notdefault,enterprise" />
   <project name="benchmark" remote="couchbasedeps" revision="a4f9b64b5e0a3c1d6dc8f4044f2fd8fe943fb36a" groups="kv" />
@@ -22,11 +22,11 @@
   <project name="build" path="cbbuild" revision="3f32dbee01ef203246c03294e1dce7f2dbe1656b" groups="notdefault,build">
     <annotation name="RELEASE" value="mad-hatter" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="10579" />
+    <annotation name="BLD_NUM" value="10580" />
     <annotation name="VERSION" value="6.6.6" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="3913c752dd9426e44fa408fcd0927028b57ea7bb" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="4f8f2852821b483c441c61ba541290c886eb867d" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="e33a1d68e7a072cd1feb485ffb292bc3d709cc13" upstream="mad-hatter" dest-branch="mad-hatter" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="567f441ff05424bf7ea0119a6160c1c22d7c7308" groups="analytics" />
   <project name="cbauth" path="godeps/src/github.com/couchbase/cbauth" revision="35a8e033a9142d8cfecbb4e3a36a7f818ba6c9e0" />
   <project name="cbflag" path="godeps/src/github.com/couchbase/cbflag" revision="9892b6db3537c54be7719f47ad25e0d513333b3e" groups="backup" />
@@ -133,7 +133,7 @@
   <project name="pierrec-xxHash" path="godeps/src/github.com/pierrec/xxHash" remote="couchbasedeps" revision="a0006b13c722f7f12368c00a3d3c2ae8a999a0c6" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="353ffbe5633d8df5fe424ea7ba16e5e96415bc26" groups="notdefault,enterprise" />
   <project name="platform" revision="3c3da324d27421284e4564aba255a6cd73ec4edf" groups="kv" />
-  <project name="product-texts" revision="53c8232b2da832e34a4b36adbd151691a447d632" groups="kv" />
+  <project name="product-texts" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" upstream="master" dest-branch="master" groups="kv" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="84668698ea25b64748563aa20726db66a6b8d299" />
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="69d85a42412568df610c345d24ee6318afa229fd" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="e64e4991602b4f818a5abdbe2495454170332304" groups="notdefault,enterprise" />
