@@ -8,21 +8,21 @@
   <default remote="couchbase" revision="master" />
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" groups="kv" />
-  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="b3630846e22d06bd3924fb18b72ccb7322054745" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="10abe2d91c80824c0dea20aa7fda2bc3f4cbdfa7" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="backup" remote="couchbase-priv" revision="8985795520b0938e40f69399685a30a8124ee5a8" upstream="master" dest-branch="master" groups="backup,notdefault,enterprise" />
+  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="16365e6f3bf641f439c431d7f867d01556e681a9" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="642c0fe79df3b42112f72270174fde3b4526f7fe" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="backup" remote="couchbase-priv" revision="2d30ca5f287bd0fd5c77a25cd66508a929e6e647" upstream="master" dest-branch="master" groups="backup,notdefault,enterprise" />
   <project name="build" path="cbbuild" revision="2beb97fb2e69a8f661d27821e77282dd1426d26a" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="morpheus" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="1385" />
+    <annotation name="BLD_NUM" value="1386" />
     <annotation name="VERSION" value="8.0.0" />
   </project>
-  <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="3935ad849de5fdf78427d65a0a457ffda1df6e14" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="29bdc8ff5e0e3bc81175d10c90d9cfc3ad0112c3" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="61a8be18207c22018a8df3d1c0c44a0de1c41718" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="3ebcd3975165b37b931c612b07a8444dee7bf4ba" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="e848233cf9ecbdf82c8e8de6e70adbc306411879" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="3b2c4d828dda6135f2f969f53d54df558a4e2ff7" upstream="master" dest-branch="master" groups="backup" />
-  <project name="cbbs" remote="couchbase-priv" revision="b6905d8107ca0ba863356308a30d5020c3b178c3" upstream="master" dest-branch="master" groups="backup,notdefault,enterprise" />
-  <project name="cbft" revision="b8622e239233beb686551b03197ecf55fbccce17" upstream="master" dest-branch="master" />
+  <project name="cbbs" remote="couchbase-priv" revision="36799170f817e70dbbc33fe8a0edf6cc0446c54b" upstream="master" dest-branch="master" groups="backup,notdefault,enterprise" />
+  <project name="cbft" revision="36544b25c19013c3cd7587eaca89e03c398cb9dd" upstream="master" dest-branch="master" />
   <project name="cbftx" remote="couchbase-priv" revision="5245694c136af0b4d9f2a6328b0742d9910cd28c" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="cbgt" revision="74e9948ad4f58b976493ac000b34c55917e9f0cd" upstream="master" dest-branch="master" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="fb656c91554a97318c44f58e3cc7f166f1eef4fc" upstream="master" dest-branch="master" />
@@ -56,7 +56,7 @@
   <project name="golang-snappy" path="godeps/src/github.com/golang/snappy" remote="couchbasedeps" revision="723cc1e459b8eea2dea4583200fd60757d40097a" />
   <project name="golang-tools" path="godeps/src/golang.org/x/tools" remote="couchbasedeps" revision="a28dfb48e06b2296b66678872c2cb638f0304f20" />
   <project name="golang_protobuf_extensions" path="godeps/src/github.com/matttproud/golang_protobuf_extensions" remote="couchbasedeps" revision="c182affec369e30f25d3eb8cd8a478dee585ae7d" />
-  <project name="gomemcached" path="goproj/src/github.com/couchbase/gomemcached" revision="01c8ac8ccd81e72321d8dc69c0b2aea92e7c3e59" upstream="master" dest-branch="master" groups="backup" />
+  <project name="gomemcached" path="goproj/src/github.com/couchbase/gomemcached" revision="93dd89cb118c231659a6d3f991ab94be69a31e28" upstream="master" dest-branch="master" groups="backup" />
   <project name="gometa" path="goproj/src/github.com/couchbase/gometa" revision="96e745a5fa9a8fafffe91bec77b5f86517ad2e8c" upstream="master" dest-branch="master" />
   <project name="goutils" path="goproj/src/github.com/couchbase/goutils" revision="594e0c6590bcde4d63feef6938e29b1473686141" upstream="master" dest-branch="master" groups="bsl" />
   <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" revision="9bfb6191540f3b17f8e64d684e829ca311e27872" upstream="master" dest-branch="master" groups="bsl" />
@@ -64,13 +64,13 @@
   <project name="hebrew" remote="couchbase-priv" revision="c57616b187889a5318688f49817ccaceb9c098b9" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="ea75e5e9e25780862a8e5549a266a828fdeef7dc" upstream="master" dest-branch="unstable" groups="bsl" />
   <project name="jsonschema" path="godeps/src/github.com/santhosh-tekuri/jsonschema" remote="couchbasedeps" revision="137f44a49015e5060a447c331aa37de6e0f50267" />
-  <project name="kv_engine" revision="21bf7d3734517dd54ea86492d708c87d541f84e3" upstream="master" dest-branch="master" groups="kv,bsl" />
+  <project name="kv_engine" revision="c91079137064ec9a459df36bce4650a464a4b5ac" upstream="master" dest-branch="master" groups="kv,bsl" />
   <project name="libcouchbase" revision="6e411d412ba3f5039d21ea4195dca86b0f82134b" upstream="refs/tags/3.3.8" dest-branch="refs/tags/3.3.8" />
-  <project name="magma" remote="couchbase-priv" revision="4af0b526bd6c798a428a55613225658de9681455" upstream="master" dest-branch="master" groups="notdefault,enterprise,kv_ee" />
+  <project name="magma" remote="couchbase-priv" revision="e06e18940c54bcd1bdb6e1c34657f121e21f6501" upstream="master" dest-branch="master" groups="notdefault,enterprise,kv_ee" />
   <project name="mux" path="godeps/src/github.com/gorilla/mux" remote="couchbasedeps" revision="043ee6597c29786140136a5747b6a886364f5282" />
   <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="666f354fcd02e237f935cd67709a46d9f73e71b8" upstream="master" dest-branch="master" groups="bsl" />
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="92d53613f4bbc5df7c36740f223b48acc5978618" upstream="master" dest-branch="unstable" groups="bsl" />
-  <project name="ns_server" revision="955a8dd3db9380995ce3d9d38dd5e23b3c53cd8f" upstream="master" dest-branch="master" groups="bsl" />
+  <project name="ns_server" revision="3f877d9002a9a7a479d4ffac844f12d85749ac38" upstream="master" dest-branch="master" groups="bsl" />
   <project name="participle" path="godeps/src/github.com/alecthomas/participle" remote="couchbasedeps" revision="d638c6e1953ed899e05a34da3935146790c60e46" />
   <project name="perks" path="godeps/src/github.com/beorn7/perks" remote="couchbasedeps" revision="37c8de3658fcb183f997c4e13e8337516ab753e6" upstream="refs/tags/v1.0.1" dest-branch="refs/tags/v1.0.1" />
   <project name="phosphor" revision="9116a3cd3021b5cf2e233544ac385fe899970231" upstream="master" dest-branch="master" groups="bsl,kv" />
@@ -78,11 +78,11 @@
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="7e43b2c65aaf07fe9f838fb87a1ba9c536585ed3" upstream="master" dest-branch="unstable" groups="bsl,notdefault,enterprise" />
   <project name="platform" revision="47c6c6d3c8b836fed19d7c926397c44816d44a8c" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="procfs" path="godeps/src/github.com/prometheus/procfs" remote="couchbasedeps" revision="76fc8b844e3a18c31bf689e4fe7efdd5a2f41298" />
-  <project name="product-metadata" revision="53731f9cdbbc651dbed7f98d2df420902e4a3744" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="13c6cc207524753e608aa0affd3f8a67b5ac2d92" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" upstream="master" dest-branch="master" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="d04d7b157bb510b1e0c10132224b616ac0e26b17" upstream="refs/tags/v1.4.2" dest-branch="refs/tags/v1.4.2" />
   <project name="protobuf-go" path="godeps/src/google.golang.org/protobuf" remote="couchbasedeps" revision="32051b4f86e54c2142c7c05362c6e96ae3454a1c" upstream="refs/tags/v1.28.0" dest-branch="refs/tags/v1.28.0" />
-  <project name="query" path="goproj/src/github.com/couchbase/query" revision="7ae697cd012a1a97446eb00e8681e4ac00cb326e" upstream="master" dest-branch="master" groups="bsl" />
+  <project name="query" path="goproj/src/github.com/couchbase/query" revision="8efa8a9aad3d7afda7f5f7add8f6fab63b5c44d3" upstream="master" dest-branch="master" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="bd90f95f494446f67ef617f714f598e449b718e2" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="query-ui" revision="60e37b97507fe0533cf2e38855aabd44cee512ad" upstream="master" dest-branch="master" groups="bsl" />
   <project name="regulator" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" revision="3cb6cb8e58ac6ce03bfa15c6c25c3535821fa2e2" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
@@ -90,8 +90,8 @@
   <project name="simdutf" path="third_party/simdutf" remote="couchbasedeps" revision="4a212616ba23c65c7048f9604faccbff5353300f" upstream="refs/tags/v3.2.14" dest-branch="refs/tags/v3.2.14" groups="kv" />
   <project name="subjson" revision="4b93d966f791209209a0825e46f7049df0673e8f" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="449a529091db84f343b7ed5e0dc7cd01cd3d0d03" upstream="master" dest-branch="master" />
-  <project name="tlm" revision="75d6ec12021cf02099157ef986a080c3dca9eebe" upstream="master" dest-branch="master" groups="bsl,kv">
+  <project name="testrunner" revision="9ac6bfadddb6db5beeb350c093a67bc77faf4e3c" upstream="master" dest-branch="master" />
+  <project name="tlm" revision="3f4c5dea2fd7dbae61ac1273aa071bf35e66c942" upstream="master" dest-branch="master" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
