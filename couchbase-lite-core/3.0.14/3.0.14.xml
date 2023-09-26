@@ -12,13 +12,13 @@
   <project name="build" path="cbbuild" revision="e8e0a7c59f24926729c3c2eba611467a321ce048">
     <annotation name="RELEASE" value="3.0.14" />
     <annotation name="PRODUCT" value="couchbase-lite-core" />
-    <annotation name="BLD_NUM" value="6" />
+    <annotation name="BLD_NUM" value="7" />
     <annotation name="VERSION" value="3.0.14" />
     <annotation name="BSL_PRODUCT" value="Couchbase Lite" />
     <annotation name="BSL_VERSION" value="3.0" />
     <annotation name="BSL_CHANGE_DATE" value="November 1, 2025" />
   </project>
-  <project name="couchbase-lite-core" revision="fbe1a9be657312cdfb2db13d2934ed3bfec7d9ec" upstream="cbl-4944" dest-branch="cbl-4944">
+  <project name="couchbase-lite-core" revision="4952e845308686f7ee1b7a7cc48ab3212d987638" upstream="release/lithium" dest-branch="release/lithium" groups="bsl">
     <copyfile src="jenkins/CMakeLists.txt" dest="CMakeLists.txt" />
   </project>
   <project name="couchbase-lite-core-EE" remote="couchbase-priv" revision="156754ffda07da2065353d710b380b6b457d4d23" upstream="release/lithium" dest-branch="release/lithium" groups="notdefault,enterprise" />
@@ -27,8 +27,8 @@
   <project name="googletest" path="couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
   <project name="ios-cmake" path="couchbase-lite-core/vendor/ios-cmake" remote="couchbasedeps" revision="29668dbcd9ef2fd7369140b7e9bd9df0485497f6" />
   <project name="jsonsl" path="couchbase-lite-core/vendor/fleece/vendor/jsonsl" remote="snej" revision="684b60f9af68b8c397422e74d0c2dd206de16a2c" />
-  <project name="mbedtls" path="couchbase-lite-core/vendor/mbedtls" remote="couchbasedeps" revision="23c05c107c51cec7f298e6fbb9945957716cf356" />
-  <project name="sockpp" path="couchbase-lite-core/vendor/sockpp" remote="couchbasedeps" revision="aa7c52855630fe4b65ab7a7ebace10f1a15df030" />
+  <project name="mbedtls" path="couchbase-lite-core/vendor/mbedtls" remote="couchbasedeps" revision="e60e09de73933aadf7a400a15ae3fbdf75cfd15e" />
+  <project name="sockpp" path="couchbase-lite-core/vendor/sockpp" remote="couchbasedeps" revision="060fe2fcdc057643367d0623d21ce0d322e3ed74" />
   <project name="sqlite3-unicodesn" path="couchbase-lite-core/vendor/sqlite3-unicodesn" remote="couchbasedeps" revision="9e0b20dfa4618c95a039bb5eaa7c40a70e0e1597" />
   <project name="zlib" path="couchbase-lite-core/vendor/zlib" remote="couchbasedeps" revision="04f42ceca40f73e2978b50e93806c2a18c1281fc" />
 </manifest>
