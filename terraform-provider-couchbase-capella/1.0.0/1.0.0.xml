@@ -1,0 +1,14 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase" review="review.couchbase.org" />
+  <remote name="couchbasecloud-priv" fetch="ssh://git@github.com/couchbasecloud/" />
+  
+  <default remote="couchbasecloud-priv" revision="main" />
+  
+  <project name="build" remote="couchbase" revision="c1b485bbf14aa1176be5ea26b7982f4002188429">
+    <annotation name="RELEASE" value="1.0.0" />
+    <annotation name="PRODUCT" value="terraform-provider-couchbase-capella" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="1.0.0" />
+  </project>
+  <project name="terraform-provider-couchbase-capella" revision="506ccc8ab3a8083c104857cb2877d2305cf84e99" upstream="main" dest-branch="main" />
+</manifest>
