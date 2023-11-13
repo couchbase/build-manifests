@@ -1,0 +1,14 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase" review="review.couchbase.org" />
+  <remote name="couchbasecloud" fetch="https://github.com/couchbasecloud" />
+  
+  <default remote="couchbasecloud" revision="main" />
+  
+  <project name="build" remote="couchbase" revision="c1b485bbf14aa1176be5ea26b7982f4002188429">
+    <annotation name="RELEASE" value="1.0.0" />
+    <annotation name="PRODUCT" value="vault-plugin-database-couchbasecapella" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="1.0.0" />
+  </project>
+  <project name="vault-plugin-database-couchbasecapella" revision="095851694102697cfa07b7959d6e1268345d0f5e" upstream="main" dest-branch="main" />
+</manifest>
