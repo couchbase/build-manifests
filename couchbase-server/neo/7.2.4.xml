@@ -14,7 +14,7 @@
   <project name="build" path="cbbuild" revision="d8a9c878b2a7ae1bb8354d54c05a386b7ffd76a7" upstream="neo" dest-branch="neo" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="7011" />
+    <annotation name="BLD_NUM" value="7012" />
     <annotation name="VERSION" value="7.2.4" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.2" />
@@ -64,7 +64,7 @@
   <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" revision="9dc27607717e864d3a34ad7b213f28ca4a303a51" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="e1c381746c2625a76227255f999ae9f14a062208" upstream="refs/tags/v0.38.1" dest-branch="refs/tags/v0.38.1" groups="kv" />
   <project name="hebrew" remote="couchbase-priv" revision="fd6a0a1013434e4ba8cae73f6c80d2433d72ed0b" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
-  <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="79a5b6bcc96cfd169ed70c63716f796ffd4f2325" upstream="neo" dest-branch="neo" groups="bsl" />
+  <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="d70a4705e2bb0b9cfd5138d90610eb986039377e" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="jsonschema" path="godeps/src/github.com/santhosh-tekuri/jsonschema" remote="couchbasedeps" revision="137f44a49015e5060a447c331aa37de6e0f50267" />
   <project name="kv_engine" revision="a5eef6ee34f908a8de858599281137c80e276339" upstream="neo" dest-branch="neo" groups="kv,bsl" />
   <project name="libcouchbase" revision="02e19c2144f1284846f7ce6d36b707891b8d2624" upstream="refs/tags/3.3.5" dest-branch="refs/tags/3.3.5" />
@@ -94,7 +94,7 @@
   <project name="sigar" revision="861fd04f3997c36e0dd82ec774d5a6f8f36a4433" upstream="neo" dest-branch="neo" groups="kv" />
   <project name="subjson" revision="0820f83427d69c6eb737876eb2f2cf6aefa45802" upstream="neo" dest-branch="neo" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="c2ce3ef49200f175fc1bf5a545f370b47bce0a84" upstream="neo" dest-branch="neo" />
+  <project name="testrunner" revision="f7573632a78396b98715824b1f73a9aab746cd60" upstream="neo" dest-branch="neo" />
   <project name="tlm" revision="9268dd126bd9abb74b2562c21a2bfd4633d4a345" upstream="neo" dest-branch="neo" groups="bsl,kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
