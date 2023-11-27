@@ -14,7 +14,7 @@
   <project name="build" path="cbbuild" revision="65c4361fb26fb6e1ba0e549cf16f7065b76f8649" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="trinity" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="1853" />
+    <annotation name="BLD_NUM" value="1854" />
     <annotation name="VERSION" value="7.6.0" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="Trinity" />
@@ -44,7 +44,7 @@
   <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="5aadb6f15e343ecf2256a6f1119aff5cc4fe5be2" upstream="trinity" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="8944db094b427b0768a977f3d0e5a306af42ae63" upstream="trinity" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="flatbuffers" path="godeps/src/github.com/google/flatbuffers" remote="couchbasedeps" revision="1a8968225130caeddd16e227678e6f8af1926303" />
-  <project name="forestdb" revision="54bd14315751738abeffbd9fd06bc7d087f2c355" upstream="cb-master" dest-branch="cb-master" groups="backup" />
+  <project name="forestdb" revision="8901b10e07f1bd69b3a4925c3d31e6804ca8b8d3" upstream="cb-master" dest-branch="cb-master" groups="backup" />
   <project name="geocouch" revision="68f3b9d36630682d17ca5232770f1693b9b8fa18" upstream="master" dest-branch="master" />
   <project name="go-couchbase" path="goproj/src/github.com/couchbase/go-couchbase" revision="959eaf944140a6c660990f38b1db310ddd6d8e42" upstream="trinity" dest-branch="trinity" groups="backup" />
   <project name="go-metrics" path="godeps/src/github.com/rcrowley/go-metrics" remote="couchbasedeps" revision="cf1acfcdf4751e0554ffa765d03e479ec491cad6" />
@@ -92,7 +92,7 @@
   <project name="simdutf" path="third_party/simdutf" remote="couchbasedeps" revision="4a212616ba23c65c7048f9604faccbff5353300f" upstream="refs/tags/v3.2.14" dest-branch="refs/tags/v3.2.14" groups="kv" />
   <project name="subjson" revision="4b93d966f791209209a0825e46f7049df0673e8f" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="622a6ecb0ac44b32ab9bcc2156a9c30841f19f15" upstream="master" dest-branch="master" />
+  <project name="testrunner" revision="98e0d245395165745db35e30ce25b3183ec2b4bf" upstream="master" dest-branch="master" />
   <project name="tlm" revision="16cfa715e33402809456b8caa26b2fc97a67178c" upstream="master" dest-branch="master" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
