@@ -14,14 +14,14 @@
   <project name="build" path="cbbuild" revision="b19e084112d8bdba3bd4158cd34aecea2c5cbc7a" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="trinity" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="1892" />
+    <annotation name="BLD_NUM" value="1893" />
     <annotation name="VERSION" value="7.6.0" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="Trinity" />
     <annotation name="BSL_CHANGE_DATE" value="November 1, 2027" />
   </project>
-  <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="a79657e5bff783637c2cf647c90d9cf6121f6d70" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="a296b07f48157a44d4f8236ad439a1fd952a713a" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise,analytics" />
+  <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="fbbb7c545df42c52e77cd6906d6a1e109dabcdc6" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="45d48b5cef7ec631f94f88d72cab94eacdf01a11" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="5325cd980fc55e0403e807026cb0bd87bfc3ba09" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="ad8a7fb66a5dd771fcb4a61c5017012ca2bcc14f" upstream="master" dest-branch="master" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="aa6e24f3d9010b47e35bbab7a97c1d91262b3ff7" upstream="master" dest-branch="master" groups="backup,notdefault,enterprise" />
@@ -92,8 +92,8 @@
   <project name="simdutf" path="third_party/simdutf" remote="couchbasedeps" revision="4a212616ba23c65c7048f9604faccbff5353300f" upstream="refs/tags/v3.2.14" dest-branch="refs/tags/v3.2.14" groups="kv" />
   <project name="subjson" revision="4b93d966f791209209a0825e46f7049df0673e8f" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="7c59ec5c6ad4656eb6e408f13b841cb4e70d2a9a" upstream="master" dest-branch="master" />
-  <project name="tlm" revision="efcfa8c59e5552fa5e492c93921209fa9efa031d" upstream="master" dest-branch="master" groups="bsl,kv">
+  <project name="testrunner" revision="805b3744cfa6885db600b929bd7c7a4329ff253f" upstream="master" dest-branch="master" />
+  <project name="tlm" revision="d2deb0a31aaa256558a4ae17d0bf182b50acca65" upstream="master" dest-branch="master" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
