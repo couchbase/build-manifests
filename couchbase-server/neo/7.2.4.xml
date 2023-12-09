@@ -9,20 +9,20 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="caed837aa163421a637222157b3f6353b4ca831a" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="9d10ad987f7d9b28dce2dbf77c4bdcaee8c38762" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="08f27221e51da58fb7dba3021c6d8c73a25aad28" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="9079019423f96566997d933ef789058c1e28baba" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="a4135a7f29b7b8d0769650cd51456bd539825505" upstream="neo" dest-branch="neo" groups="backup,notdefault,enterprise" />
   <project name="build" path="cbbuild" revision="d8a9c878b2a7ae1bb8354d54c05a386b7ffd76a7" upstream="neo" dest-branch="neo" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="7057" />
+    <annotation name="BLD_NUM" value="7058" />
     <annotation name="VERSION" value="7.2.4" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.2" />
     <annotation name="BSL_CHANGE_DATE" value="April 1, 2026" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="c03fffb86b802836af33f9bab6614517f0acea10" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="fdb0a8fca5791280ba45a3272c6f7813dbd63cf0" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-ui" revision="83ed8b5ed9d87ed80456a3b224448318129ebe95" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="d67095a90d1e228acc2bddf296d9b638a9cc209f" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-ui" revision="029112239f1739ebdf10b0dff9961e287c46ccca" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="c53230bd96cf1d5d4d28e4c065f8b937e2ffa0c2" upstream="neo" dest-branch="neo" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="3c07ad6e2d50a82f3bfff2113da734a76cce2b0d" upstream="neo" dest-branch="neo" groups="backup,notdefault,enterprise" />
   <project name="cbft" revision="c4bcaec3fb0c0a1334b06562d0364a0c3e3eff3a" upstream="neo" dest-branch="neo" />
@@ -90,11 +90,11 @@
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="84668698ea25b64748563aa20726db66a6b8d299" upstream="refs/tags/v1.3.5" dest-branch="refs/tags/v1.3.5" />
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="b8aa76e0e6adbcc8f5491156715b8b8cd397aeb5" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="b9330deb73a16e05d7bf5effdb53df6219b8f280" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
-  <project name="query-ui" revision="90be5c4ba685a5d161392e11f90717c6357043c1" upstream="neo" dest-branch="neo" groups="bsl" />
+  <project name="query-ui" revision="83e831236a17e940168132d32055abe726051694" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="sigar" revision="eaba4c5ea3276abda912cd6fa4ef637a55fcce10" upstream="neo" dest-branch="neo" groups="kv" />
   <project name="subjson" revision="0820f83427d69c6eb737876eb2f2cf6aefa45802" upstream="neo" dest-branch="neo" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="db79bb139c84af0d519e70ccec5dcffd0f8c96a0" upstream="neo" dest-branch="neo" />
+  <project name="testrunner" revision="7e53041defb02dbd42113ded74618d2abf3cbf8d" upstream="neo" dest-branch="neo" />
   <project name="tlm" revision="bf6586ef83106b52f9dc027159fff026f9dd8ac1" upstream="neo" dest-branch="neo" groups="bsl,kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
