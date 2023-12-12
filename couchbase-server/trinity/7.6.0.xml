@@ -14,7 +14,7 @@
   <project name="build" path="cbbuild" revision="b19e084112d8bdba3bd4158cd34aecea2c5cbc7a" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="trinity" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="1923" />
+    <annotation name="BLD_NUM" value="1924" />
     <annotation name="VERSION" value="7.6.0" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="Trinity" />
@@ -27,7 +27,7 @@
   <project name="cbbs" remote="couchbase-priv" revision="430de15d680cf83b4af60657f2c7aeb78cc8e21e" upstream="master" dest-branch="master" groups="backup,notdefault,enterprise" />
   <project name="cbft" revision="f51163dc0117d36e8879cb21e12b18201dbdc174" upstream="trinity" dest-branch="trinity" />
   <project name="cbftx" remote="couchbase-priv" revision="2c1df68293400bbdc5efea7166894b82154dba7f" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise" />
-  <project name="cbgt" revision="5752dc3019217ab7dd2871a783fc0195894c60ab" upstream="trinity" dest-branch="trinity" />
+  <project name="cbgt" revision="9075438a628cef2b39adb6cf6a7a75bea4e7b9d6" upstream="trinity" dest-branch="trinity" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="fb656c91554a97318c44f58e3cc7f166f1eef4fc" upstream="master" dest-branch="master" />
   <project name="chronicle" path="ns_server/deps/chronicle" revision="7de1bde10de09979908c30813d88fe2d73b425ed" />
   <project name="client_golang" path="godeps/src/github.com/prometheus/client_golang" remote="couchbasedeps" revision="2e1c4818ccfdcf953ce399cadad615ff2bed968c" upstream="refs/tags/v1.12.1" dest-branch="refs/tags/v1.12.1" />
@@ -81,7 +81,7 @@
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="8088cf45ef0bfa88f2c39b8e2b68a050993cf6d7" upstream="master" dest-branch="unstable" groups="bsl,notdefault,enterprise" />
   <project name="platform" revision="3695ac3d4bfdbe4b75e5fa78124600212cd17185" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="procfs" path="godeps/src/github.com/prometheus/procfs" remote="couchbasedeps" revision="76fc8b844e3a18c31bf689e4fe7efdd5a2f41298" />
-  <project name="product-metadata" revision="d6a3f616da7df28473d1079842d8c2a2944b5a73" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="e4e8749d8b83c5c72da103ca87a2a9d56411d504" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" upstream="master" dest-branch="master" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="d04d7b157bb510b1e0c10132224b616ac0e26b17" upstream="refs/tags/v1.4.2" dest-branch="refs/tags/v1.4.2" />
   <project name="protobuf-go" path="godeps/src/google.golang.org/protobuf" remote="couchbasedeps" revision="32051b4f86e54c2142c7c05362c6e96ae3454a1c" upstream="refs/tags/v1.28.0" dest-branch="refs/tags/v1.28.0" />
@@ -93,7 +93,7 @@
   <project name="simdutf" path="third_party/simdutf" remote="couchbasedeps" revision="4a212616ba23c65c7048f9604faccbff5353300f" upstream="refs/tags/v3.2.14" dest-branch="refs/tags/v3.2.14" groups="kv" />
   <project name="subjson" revision="4b93d966f791209209a0825e46f7049df0673e8f" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="4244bba59f707c25eff3c478849ef47150f9fcc0" upstream="master" dest-branch="master" />
+  <project name="testrunner" revision="106c871324879494c78c7ee6f353df29ffde16c1" upstream="master" dest-branch="master" />
   <project name="tlm" revision="0a8c80c1d9661bc5b58a26172d9b97b665e5be56" upstream="master" dest-branch="master" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
