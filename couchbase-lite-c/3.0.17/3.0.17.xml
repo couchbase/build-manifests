@@ -1,0 +1,34 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="google" fetch="https://github.com/google/" />
+  <remote name="snej" fetch="https://github.com/snej/" />
+  
+  <default remote="couchbase" revision="release/lithium" />
+  
+  <project name="SQLiteCpp" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="4727e1c9f1cc07e1384031663cdad90fe3be7a6c" />
+  <project name="build" path="cbbuild" revision="cf20ab9c0f7d81838212b1f2d719903ffb4a4d9e">
+    <annotation name="RELEASE" value="3.0.17" />
+    <annotation name="PRODUCT" value="couchbase-lite-c" />
+    <annotation name="BLD_NUM" value="1" />
+    <copyfile src="scripts/jenkins/lite-c/CMakeLists.txt" dest="CMakeLists.txt" />
+    <annotation name="VERSION" value="3.0.17" />
+  </project>
+  <project name="couchbase-lite-c" revision="fd69ae215d25de68f1173fc35b0a5e6bbf54fcff" upstream="release/lithium" dest-branch="release/lithium" />
+  <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="3becb76d6387c93f46784df4acd9b79c5c3c1a4d" upstream="release/lithium" dest-branch="release/lithium" groups="notdefault,enterprise" />
+  <project name="couchbase-lite-core" path="couchbase-lite-c/vendor/couchbase-lite-core" revision="59ae06c77398d79219b38f938c7b41d971bad592" />
+  <project name="couchbase-lite-core-EE" path="couchbase-lite-c-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="156754ffda07da2065353d710b380b6b457d4d23" groups="notdefault,enterprise" />
+  <project name="couchbase-lite-core.wiki" path="couchbase-lite-c/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
+  <project name="fleece" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/fleece" revision="6364f7a0ff7fdcd9936e6dd26ef54ff935ac46ab" />
+  <project name="googletest" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
+  <project name="ios-cmake" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/ios-cmake" remote="couchbasedeps" revision="29668dbcd9ef2fd7369140b7e9bd9df0485497f6" />
+  <project name="jsonsl" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/fleece/vendor/jsonsl" remote="snej" revision="684b60f9af68b8c397422e74d0c2dd206de16a2c" />
+  <project name="mbedtls" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/mbedtls" remote="couchbasedeps" revision="f4335b174661cdc8f87cbadbfd3f3e7b604f6750" />
+  <project name="product-texts" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" upstream="master" dest-branch="master" />
+  <project name="sockpp" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/sockpp" remote="couchbasedeps" revision="060fe2fcdc057643367d0623d21ce0d322e3ed74" />
+  <project name="sqlite3-unicodesn" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/sqlite3-unicodesn" remote="couchbasedeps" revision="9e0b20dfa4618c95a039bb5eaa7c40a70e0e1597" />
+  <project name="tlm" revision="2d46e032cf08727e8e5fab67d05c4f1b051989e4" />
+  <project name="zlib" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/zlib" remote="couchbasedeps" revision="04f42ceca40f73e2978b50e93806c2a18c1281fc" />
+</manifest>
