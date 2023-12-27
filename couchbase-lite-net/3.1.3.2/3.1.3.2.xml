@@ -1,0 +1,36 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="google" fetch="https://github.com/google/" />
+  <remote name="snej" fetch="https://github.com/snej/" />
+  
+  <default remote="couchbase" revision="release/3.1" />
+  
+  <project name="BLIP-Cpp" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/BLIP-Cpp" remote="couchbaselabs" revision="8bbba50dcb3d023eb07df0f0649389e7c8c003a9" />
+  <project name="SQLiteCpp" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="703aefabca4a3381201395a53176a7c5eba78f5e" />
+  <project name="build" path="cbbuild" revision="5547da1aeb276479ba3adc9cd25bf9795640d976">
+    <annotation name="RELEASE" value="3.1.3.2" />
+    <annotation name="PRODUCT" value="couchbase-lite-net" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="3.1.3.2" />
+  </project>
+  <project name="couchbase-lite-core" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core" revision="b14c3cce8689721362babfb889a46ff383b0689f" />
+  <project name="couchbase-lite-core-EE" path="couchbase-lite-net-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="2798a6e00ecefbad4cfc3e881f11954a23bdc6e8" groups="enterprise,notdefault" />
+  <project name="couchbase-lite-core.wiki" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
+  <project name="couchbase-lite-net" path="couchbase-lite-net-ee/couchbase-lite-net" revision="5385311aab86c55159147073ca48321540257e5d" />
+  <project name="couchbase-lite-net-ee" remote="couchbaselabs-priv" revision="963d4d13ef042b2ee230ee1b5f330532fe2ee126" groups="enterprise,notdefault" />
+  <project name="fleece" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/fleece" revision="f13c0b653b0e30f62346c0f65f334cd76a4c3ec6" />
+  <project name="googletest" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
+  <project name="ios-cmake" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/ios-cmake" remote="couchbasedeps" revision="29668dbcd9ef2fd7369140b7e9bd9df0485497f6" />
+  <project name="jsonsl" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/fleece/vendor/jsonsl" remote="snej" revision="684b60f9af68b8c397422e74d0c2dd206de16a2c" />
+  <project name="litecore-download-script" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/tools" remote="couchbaselabs" revision="93274f9fb0936af0b754a408154a2a24d2dd0041" />
+  <project name="litecore-download-script" path="couchbase-lite-net-ee/couchbase-lite-net/src/LiteCore/tools" remote="couchbaselabs" revision="a25b27b50baed58a7b05f8b8151a3269b5007044" />
+  <project name="mbedtls" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/mbedtls" remote="couchbasedeps" revision="f4335b174661cdc8f87cbadbfd3f3e7b604f6750" />
+  <project name="product-texts" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" upstream="master" dest-branch="master" />
+  <project name="sockpp" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/sockpp" remote="couchbasedeps" revision="01c7560ed14bf5a935f7e899f9eb4f72f7403d5d" />
+  <project name="sqlite3-unicodesn" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/sqlite3-unicodesn" remote="couchbasedeps" revision="9e0b20dfa4618c95a039bb5eaa7c40a70e0e1597" />
+  <project name="zlib" path="couchbase-lite-net-ee/couchbase-lite-net/vendor/couchbase-lite-core/vendor/zlib" remote="couchbasedeps" revision="04f42ceca40f73e2978b50e93806c2a18c1281fc" />
+</manifest>
