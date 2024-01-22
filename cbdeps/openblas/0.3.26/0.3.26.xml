@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="OpenBLAS" path="openblas" remote="couchbasedeps" revision="6c77e5e314474773a7749357b153caba4ec3817d" upstream="refs/tags/v0.3.26" dest-branch="refs/tags/v0.3.26" />
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="RELEASE" value="0.3.26" />
+    <annotation name="PRODUCT" value="cbdeps::openblas" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="0.3.26" />
+  </project>
+  <project name="build-tools" revision="db2407f06bf056a73f77e96398e4afed5efd3587" upstream="master" dest-branch="master" />
+</manifest>
