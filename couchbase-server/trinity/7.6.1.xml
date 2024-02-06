@@ -14,7 +14,7 @@
   <project name="build" path="cbbuild" revision="cedf9d4ec929eac7e61f8e86488aeac5402c8563" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="trinity" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="3083" />
+    <annotation name="BLD_NUM" value="3084" />
     <annotation name="VERSION" value="7.6.1" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="21b6dd9cab7b4d31e9259bfc67262927276a7c4d" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise,analytics" />
@@ -22,8 +22,8 @@
   <project name="cbas-ui" revision="704db180d01de15f70cacc9fc11c5d8d8d4ff965" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="5f07f05f3535b700cad845e669993520c3459c54" upstream="master" dest-branch="master" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="b6fb807610f0da99157b756f9f671c10d3d80c49" upstream="trinity" dest-branch="trinity" groups="backup,notdefault,enterprise" />
-  <project name="cbft" revision="8bc57436b5dad07034d05b6262096b4e6562aff7" upstream="trinity" dest-branch="trinity" />
-  <project name="cbftx" remote="couchbase-priv" revision="32441fab7b47d6ca1fbff8f89c860fa0c960a7fa" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise" />
+  <project name="cbft" revision="6bb5c2e0037088ef83383aaba4f3d8d0a8aabed0" upstream="trinity" dest-branch="trinity" />
+  <project name="cbftx" remote="couchbase-priv" revision="34690c415491bcbe689be781608f3f5d0f0d1ef4" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise" />
   <project name="cbgt" revision="afba0636fe3f1445cb47125aeb26c45e284b57e3" upstream="trinity" dest-branch="trinity" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="fb656c91554a97318c44f58e3cc7f166f1eef4fc" upstream="master" dest-branch="master" />
   <project name="chronicle" path="ns_server/deps/chronicle" revision="7de1bde10de09979908c30813d88fe2d73b425ed" />
@@ -40,7 +40,7 @@
   <project name="errors" path="godeps/src/github.com/pkg/errors" remote="couchbasedeps" revision="30136e27e2ac8d167177e8a583aa4c3fea5be833" />
   <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="add03c54ee7b6cc0361b1ff44f0fe8ca152dbe22" upstream="trinity" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="5425f180a0756868524081f889ab224cfc10b70d" upstream="trinity" dest-branch="unstable" groups="notdefault,enterprise" />
-  <project name="faiss" remote="blevesearch" revision="8672bf30278cb1e784e12acdd2e0495e0296b723" upstream="bleve" dest-branch="bleve" groups="notdefault,enterprise" />
+  <project name="faiss" remote="blevesearch" revision="6851683655f75de4ea63ff742a012148bff1abb5" upstream="bleve" dest-branch="bleve" groups="notdefault,enterprise" />
   <project name="flatbuffers" path="godeps/src/github.com/google/flatbuffers" remote="couchbasedeps" revision="1a8968225130caeddd16e227678e6f8af1926303" />
   <project name="forestdb" revision="8901b10e07f1bd69b3a4925c3d31e6804ca8b8d3" upstream="cb-master" dest-branch="cb-master" groups="backup" />
   <project name="geocouch" revision="68f3b9d36630682d17ca5232770f1693b9b8fa18" upstream="master" dest-branch="master" />
@@ -68,7 +68,7 @@
   <project name="libcouchbase" revision="684931e59cd87e0c6292e8142c2b18897be5b10c" />
   <project name="magma" remote="couchbase-priv" revision="f72b3e676b4333d52d2dffe54043219730c2ec5b" upstream="master" dest-branch="master" groups="notdefault,enterprise,kv_ee" />
   <project name="mux" path="godeps/src/github.com/gorilla/mux" remote="couchbasedeps" revision="043ee6597c29786140136a5747b6a886364f5282" />
-  <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="570d21f44a1b0482d59d8d25d0a08dc0e42301e5" upstream="trinity" dest-branch="trinity" groups="bsl" />
+  <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="ca305b169fa3f59405e27e12928d3d7a8aa20ded" upstream="trinity" dest-branch="trinity" groups="bsl" />
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="b70d849f0207f7cfe7ebf32b2db35b534929e041" upstream="master" dest-branch="unstable" groups="bsl" />
   <project name="ns_server" revision="45408850cdd03c7c4405899f360e67b79ab80fbe" upstream="trinity" dest-branch="trinity" groups="bsl" />
   <project name="participle" path="godeps/src/github.com/alecthomas/participle" remote="couchbasedeps" revision="d638c6e1953ed899e05a34da3935146790c60e46" />
@@ -78,11 +78,11 @@
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="d3346fca876c8e72e46d3fc0f7524b42a7748482" upstream="master" dest-branch="unstable" groups="bsl,notdefault,enterprise" />
   <project name="platform" revision="d5e52dbd8cc8c18c44a620643815004187e5291d" upstream="trinity" dest-branch="trinity" groups="bsl,kv" />
   <project name="procfs" path="godeps/src/github.com/prometheus/procfs" remote="couchbasedeps" revision="76fc8b844e3a18c31bf689e4fe7efdd5a2f41298" />
-  <project name="product-metadata" revision="9948c098273f548c3d24928c05d53f27fe7f6d1c" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="7f27241b70a9f50f1cf3e602d7cf593c2bb2748e" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" upstream="master" dest-branch="master" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="d04d7b157bb510b1e0c10132224b616ac0e26b17" upstream="refs/tags/v1.4.2" dest-branch="refs/tags/v1.4.2" />
   <project name="protobuf-go" path="godeps/src/google.golang.org/protobuf" remote="couchbasedeps" revision="32051b4f86e54c2142c7c05362c6e96ae3454a1c" upstream="refs/tags/v1.28.0" dest-branch="refs/tags/v1.28.0" />
-  <project name="query" path="goproj/src/github.com/couchbase/query" revision="9149366cca715fd22eb9b3dfd4f1ab482f813442" upstream="trinity" dest-branch="trinity" groups="bsl" />
+  <project name="query" path="goproj/src/github.com/couchbase/query" revision="fdc376057c10c5b75bb04c7c5c75563c9630f43a" upstream="trinity" dest-branch="trinity" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="d8a33a07ea8540aadc2e4649a7fc8451349aeabb" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise" />
   <project name="query-ui" revision="fae0de9c48621c5cdee03453f421910acbfb80cf" upstream="master" dest-branch="master" groups="bsl" />
   <project name="regulator" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" revision="3cb6cb8e58ac6ce03bfa15c6c25c3535821fa2e2" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
@@ -90,7 +90,7 @@
   <project name="simdutf" path="third_party/simdutf" remote="couchbasedeps" revision="4a212616ba23c65c7048f9604faccbff5353300f" upstream="refs/tags/v3.2.14" dest-branch="refs/tags/v3.2.14" groups="kv" />
   <project name="subjson" revision="a619faccb30e43a4bc0708ee11b1b24abb349f18" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="99f4db0e97c8323b15fa4d33467c8de61722da11" upstream="trinity" dest-branch="trinity" />
+  <project name="testrunner" revision="e90f964486028339c8f91f3f173745a2f7e87ceb" upstream="trinity" dest-branch="trinity" />
   <project name="tlm" revision="9d81ba2d5e9ab59c1c1c8fb3226e3be052f12ad9" upstream="trinity" dest-branch="trinity" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
