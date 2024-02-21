@@ -1,0 +1,17 @@
+<manifest>
+  <remote name="couchbase" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="8ba9841f5fd3b60f22203be47bc6e81f7b9b6b2e">
+    <annotation name="RELEASE" value="1.0.0" />
+    <annotation name="PRODUCT" value="couchbase-cloud-native-gateway" />
+    <annotation name="BLD_NUM" value="123" />
+    <annotation name="VERSION" value="1.0.0" />
+    <annotation name="GOVERSION" value="1.21" />
+    <annotation name="PROTOC_VERSION" value="22.0" />
+  </project>
+  <project name="golang" remote="couchbaselabs" revision="9ff55ba407a5ad18cd314b4f57655cee80913b2c" upstream="main" dest-branch="main" />
+  <project name="stellar-gateway" path="couchbase-cloud-native-gateway" revision="2bc4d39d129f9f14eaf6cd325efa6f54331b2c8e" upstream="master" dest-branch="master" sync-s="true" />
+</manifest>
