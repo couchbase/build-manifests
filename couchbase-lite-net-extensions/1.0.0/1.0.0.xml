@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="main" />
+  
+  <project name="build" path="cbbuild" revision="b0873a8e5340301c425e2e3c0f93da95f3a027cb">
+    <annotation name="RELEASE" value="1.0.0" />
+    <annotation name="PRODUCT" value="couchbase-lite-net-extensions" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="1.0.0" />
+  </project>
+  <project name="couchbase-lite-net-extensions" remote="couchbase-priv" revision="c04998a1120d0b40b27ceb66f59c277ee665c4eb" upstream="main" dest-branch="main" />
+  <project name="product-texts" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" upstream="master" dest-branch="master" />
+</manifest>
