@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="fa5df77677945a629aeb82aeaa3d43218df2a88d" groups="notdefault">
+    <annotation name="RELEASE" value="1.0.0" />
+    <annotation name="PRODUCT" value="couchbase-lite-java-vector-search" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="1.0.0" />
+  </project>
+  <project name="couchbase-lite-java-vector-search" path="cbl-vs" remote="couchbaselabs-priv" revision="7fb8488d60ea3b1f68988f0ae51e4dd5aa8973dd" upstream="master" dest-branch="master" />
+  <project name="product-texts" path="cbl-vs/legal" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" upstream="master" dest-branch="master" />
+</manifest>
