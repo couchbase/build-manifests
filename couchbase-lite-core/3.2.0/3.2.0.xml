@@ -8,14 +8,14 @@
   
   <default remote="couchbase" revision="release/3.2" />
   
-  <project name="SQLiteCpp" path="couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="88214f799fe7df8a7ad4470409f11aa7944d3e51" />
+  <project name="SQLiteCpp" path="couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="5e421fa15a4a061ce183373a2638e16a98b2b966" />
   <project name="build" path="cbbuild" revision="b0873a8e5340301c425e2e3c0f93da95f3a027cb">
     <annotation name="RELEASE" value="3.2.0" />
     <annotation name="PRODUCT" value="couchbase-lite-core" />
-    <annotation name="BLD_NUM" value="160" />
+    <annotation name="BLD_NUM" value="161" />
     <annotation name="VERSION" value="3.2.0" />
   </project>
-  <project name="couchbase-lite-core" revision="2a47869a3a6e1e8a522a90756b4d4b6ec4c65615" upstream="release/3.2" dest-branch="release/3.2">
+  <project name="couchbase-lite-core" revision="4c1c37c8d6d083336b400e74dae54c0d83ba6651" upstream="release/3.2" dest-branch="release/3.2">
     <copyfile src="jenkins/CMakeLists.txt" dest="CMakeLists.txt" />
   </project>
   <project name="couchbase-lite-core-EE" remote="couchbase-priv" revision="48adb7b9e73b2162c828bd887b43d190f492a164" upstream="release/3.2" dest-branch="release/3.2" groups="notdefault,enterprise" />
