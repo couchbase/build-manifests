@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="RELEASE" value="5.3.0" />
+    <annotation name="PRODUCT" value="cbdeps::jemalloc" />
+    <annotation name="BLD_NUM" value="10" />
+    <annotation name="VERSION" value="5.3.0" />
+  </project>
+  <project name="build-tools" revision="b947801c31239d44b76bb3c2b6b8426157715d3a" upstream="master" dest-branch="master" />
+  <project name="jemalloc" remote="couchbasedeps" revision="54eaed1d8b56b1aa528be3bdd1877e59c56fa90c" upstream="refs/tags/5.3.0" dest-branch="refs/tags/5.3.0" />
+</manifest>
