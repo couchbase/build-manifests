@@ -14,7 +14,7 @@
   <project name="build" path="cbbuild" revision="cedf9d4ec929eac7e61f8e86488aeac5402c8563" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="trinity" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="3534" />
+    <annotation name="BLD_NUM" value="3535" />
     <annotation name="VERSION" value="7.6.2" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="48126330c323df7e1e28d1d15855c848a53b23d9" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise,analytics" />
@@ -78,7 +78,7 @@
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="c98b00582c8686c57501f662e5069647b55ab82e" upstream="trinity" dest-branch="trinity" groups="bsl,notdefault,enterprise" />
   <project name="platform" revision="a158d359293665b6251973868fdc42c3b642474c" upstream="trinity" dest-branch="trinity" groups="bsl,kv" />
   <project name="procfs" path="godeps/src/github.com/prometheus/procfs" remote="couchbasedeps" revision="76fc8b844e3a18c31bf689e4fe7efdd5a2f41298" />
-  <project name="product-metadata" revision="013300702c986c48579725555d5c023673523ef7" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="f2012a82837543e25df04377bc4798ca7385d4ea" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" upstream="master" dest-branch="master" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="d04d7b157bb510b1e0c10132224b616ac0e26b17" upstream="refs/tags/v1.4.2" dest-branch="refs/tags/v1.4.2" />
   <project name="protobuf-go" path="godeps/src/google.golang.org/protobuf" remote="couchbasedeps" revision="32051b4f86e54c2142c7c05362c6e96ae3454a1c" upstream="refs/tags/v1.28.0" dest-branch="refs/tags/v1.28.0" />
@@ -88,10 +88,10 @@
   <project name="regulator" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" revision="3cb6cb8e58ac6ce03bfa15c6c25c3535821fa2e2" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
   <project name="sigar" revision="2da0c123cfb45ae39e76e730bd960db8812e3f20" groups="kv" />
   <project name="simdutf" path="third_party/simdutf" remote="couchbasedeps" revision="4a212616ba23c65c7048f9604faccbff5353300f" upstream="refs/tags/v3.2.14" dest-branch="refs/tags/v3.2.14" groups="kv" />
-  <project name="subjson" revision="a619faccb30e43a4bc0708ee11b1b24abb349f18" upstream="master" dest-branch="master" groups="bsl,kv" />
+  <project name="subjson" revision="a619faccb30e43a4bc0708ee11b1b24abb349f18" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
   <project name="testrunner" revision="f8e66d17b163ab1723f004c3543bc3489c221f74" upstream="trinity" dest-branch="trinity" />
-  <project name="tlm" revision="646b2ccb06e58bdc5baba49c0eaa3e5e6fb41fd7" upstream="trinity" dest-branch="trinity" groups="bsl,kv">
+  <project name="tlm" revision="43dcda2bd521e3e2d77c940919e235f45c130912" upstream="trinity" dest-branch="trinity" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
