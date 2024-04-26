@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="main" />
+  
+  <project name="build" path="cbbuild" revision="dee6c7d470e9a21e350a65bda8374d2ba9bc00a6">
+    <annotation name="RELEASE" value="0.1.0" />
+    <annotation name="PRODUCT" value="couchbase-k8s-event-collector" />
+    <annotation name="BLD_NUM" value="100" />
+    <annotation name="VERSION" value="0.1.0" />
+    <annotation name="GOVERSION" value="1.22" />
+  </project>
+  <project name="couchbase-k8s-event-collector" revision="b80ad54e1ccece1d4e3394d7c3955b83d33b55de" upstream="main" dest-branch="main" />
+  <project name="product-texts" revision="8e26ff1c35168d0d60e0020ae367d91c9f9ba00a" upstream="master" dest-branch="master" />
+</manifest>
