@@ -7,19 +7,19 @@
   <remote name="google" fetch="https://github.com/google/" />
   <remote name="snej" fetch="https://github.com/snej/" />
   
-  <default remote="couchbase" revision="master" />
+  <default remote="couchbase" revision="release/3.2" />
   
   <project name="SQLiteCpp" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="88214f799fe7df8a7ad4470409f11aa7944d3e51" />
   <project name="build" path="cbbuild" revision="a8ba0a9d6058381edc320648cafaf696a611908c">
     <annotation name="RELEASE" value="3.2.0" />
     <annotation name="PRODUCT" value="couchbase-lite-cblite" />
-    <annotation name="BLD_NUM" value="28" />
+    <annotation name="BLD_NUM" value="29" />
     <annotation name="VERSION" value="3.2.0" />
   </project>
   <project name="couchbase-lite-core" path="couchbase-mobile-tools/vendor/couchbase-lite-core" revision="1efca2e37b6f4a2049416c406bff510cce059c8b" upstream="release/master" dest-branch="release/master" />
   <project name="couchbase-lite-core-EE" path="couchbase-mobile-tools/vendor/couchbase-lite-core-EE" remote="couchbase-priv" revision="48adb7b9e73b2162c828bd887b43d190f492a164" upstream="release/master" dest-branch="release/master" />
   <project name="couchbase-lite-core.wiki" path="couchbase-mobile-tools/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
-  <project name="couchbase-mobile-tools" remote="couchbaselabs" revision="120599410437a6da203bd9f1a64e82ef678f5b49" upstream="master" dest-branch="master">
+  <project name="couchbase-mobile-tools" remote="couchbaselabs" revision="329e1d17891cdd1ba256f68e70f3775c74fcf162" upstream="release/3.2" dest-branch="release/3.2">
     <copyfile src="ci/cblite/CMakeLists.txt" dest="CMakeLists.txt" />
   </project>
   <project name="fleece" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/fleece" revision="8f89a3be0f9e72018596f831e528b8d25314587e" />
