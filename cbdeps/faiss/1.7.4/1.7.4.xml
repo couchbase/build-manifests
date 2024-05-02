@@ -1,5 +1,5 @@
 <manifest>
-  <remote name="blevesearch" fetch="https://github.com/blevesearch/" />
+  <remote name="blevesearch" fetch="https://github.com/ceejatec/" />
   <remote name="couchbase" fetch="https://github.com/couchbase/" />
   
   <default remote="couchbase" revision="master" />
@@ -7,11 +7,11 @@
   <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
     <annotation name="RELEASE" value="1.7.4" />
     <annotation name="PRODUCT" value="cbdeps::faiss" />
-    <annotation name="BLD_NUM" value="3" />
+    <annotation name="BLD_NUM" value="4" />
     <annotation name="VERSION" value="1.7.4" />
-    <annotation name="OPENBLAS_VERSION" value="0.3.25-1" />
+    <annotation name="OPENBLAS_VERSION" value="0.3.26-5" />
     <annotation name="LLVM_OPENMP_VERSION" value="16.0.4" />
   </project>
   <project name="build-tools" revision="aa5f782d08796603180851c6a0fcf3083d529b13" upstream="master" dest-branch="master" />
-  <project name="faiss" remote="blevesearch" revision="38f6b60c3658d82421a4627464855391444687e5" upstream="bleve" dest-branch="bleve" />
+  <project name="faiss" remote="blevesearch" revision="bd978775b523d76b00424605562a3d4992c1d471" upstream="bleve" dest-branch="bleve" />
 </manifest>
