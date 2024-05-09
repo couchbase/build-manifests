@@ -2,6 +2,7 @@
   <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
   <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
   <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="google" fetch="https://github.com/google/" />
   
   <default remote="couchbase" revision="master" />
   
@@ -10,10 +11,11 @@
   <project name="build" path="cbbuild" revision="b0873a8e5340301c425e2e3c0f93da95f3a027cb">
     <annotation name="RELEASE" value="1.0.0" />
     <annotation name="PRODUCT" value="couchbase-lite-vector-search" />
-    <annotation name="BLD_NUM" value="34" />
+    <annotation name="BLD_NUM" value="35" />
     <annotation name="VERSION" value="1.0.0" />
   </project>
   <project name="faiss" path="mobile-vector-search/vendor/faiss" remote="couchbasedeps" revision="ba19feb2685440c3d89d4f7dc41b09f385348c96" />
+  <project name="googletest" path="mobile-vector-search/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
   <project name="ios-cmake" path="mobile-vector-search/vendor/ios-cmake" remote="couchbasedeps" revision="06465b27698424cf4a04a5ca4904d50a3c966c45" />
-  <project name="mobile-vector-search" remote="couchbaselabs-priv" revision="20458e63fdedf2c914209b2232d64c7789dfa912" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
+  <project name="mobile-vector-search" remote="couchbaselabs-priv" revision="634fb13c65b67b59ddffc3cbd9f12eb9ef7983c5" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
 </manifest>
