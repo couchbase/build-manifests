@@ -14,7 +14,7 @@
   <project name="build" path="cbbuild" revision="d8a9c878b2a7ae1bb8354d54c05a386b7ffd76a7" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="8033" />
+    <annotation name="BLD_NUM" value="8034" />
     <annotation name="VERSION" value="7.2.6" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.2" />
@@ -40,7 +40,7 @@
   <project name="crypto" path="godeps/src/golang.org/x/crypto" remote="couchbasedeps" revision="eb61739cd99fb244c7cd188d3c5bae54824e781d" upstream="refs/tags/v0.15.0" dest-branch="refs/tags/v0.15.0" />
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="2e6af0c097c8bb98a596cbc81cdf6e169ae5b3cc" />
   <project name="errors" path="godeps/src/github.com/pkg/errors" remote="couchbasedeps" revision="30136e27e2ac8d167177e8a583aa4c3fea5be833" />
-  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="1a752fa751ccd7ff678630328ff9946df25c7078" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
+  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="5ac923bc13e933f094fb1988ea5299208a69a8bc" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="bad01b76913b1d740a590722e3494ed671102927" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
   <project name="flatbuffers" path="godeps/src/github.com/google/flatbuffers" remote="couchbasedeps" revision="1a8968225130caeddd16e227678e6f8af1926303" />
   <project name="forestdb" revision="48c31dcb979ca7e152c2db570af49149c6d3e2a7" groups="backup" />
@@ -86,7 +86,7 @@
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="33fde2f764ea1e4d8720a54261489a9995fc6c4c" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
   <project name="platform" revision="b01994d3e03ad628f178f19c75f36c7a567b8e19" upstream="neo" dest-branch="neo" groups="bsl,kv" />
   <project name="product-metadata" revision="ff7c24047435e393698847ec5147716017048636" groups="notdefault,packaging" />
-  <project name="product-texts" revision="8e26ff1c35168d0d60e0020ae367d91c9f9ba00a" upstream="master" dest-branch="master" />
+  <project name="product-texts" revision="ec39f811376df6d18e56c81873fd565093666505" upstream="master" dest-branch="master" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="84668698ea25b64748563aa20726db66a6b8d299" upstream="refs/tags/v1.3.5" dest-branch="refs/tags/v1.3.5" />
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="2e5b5006e27f1b3c2b75c1b3525dd0e823bdfe8f" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="91917c8273c829a4110f8e2325a915530179e507" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
@@ -94,8 +94,8 @@
   <project name="sigar" revision="d49c3f52cda141e1e021dde480e7213efcd0eaaa" upstream="neo" dest-branch="neo" groups="kv" />
   <project name="subjson" revision="0820f83427d69c6eb737876eb2f2cf6aefa45802" upstream="neo" dest-branch="neo" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="f604d7ee9e014c20dfd1b0d26427c64bbacfd0e9" upstream="neo" dest-branch="neo" />
-  <project name="tlm" revision="c5b7d588286f595fbf6c3013693af9f10acf106e" upstream="neo" dest-branch="neo" groups="bsl,kv">
+  <project name="testrunner" revision="7522b78f842fc6aec3b4b10261a955c1d015b1bb" upstream="neo" dest-branch="neo" />
+  <project name="tlm" revision="588f0675aeb43ded5649fbcd905d8c1967b9e83d" upstream="neo" dest-branch="neo" groups="bsl,kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
     <copyfile src="CMakeLists.txt" dest="CMakeLists.txt" />
