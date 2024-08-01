@@ -9,12 +9,12 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="081d9934d4a28b4abdadcd13891792ea423416c0" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="b15f379c0cb23a9a03d1027ad42588d76f2d0b34" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="225f47c44434ff7a178caf6c95131482e39cac26" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="f017d75f4bead6b36a4f74cde7acd0e86a26dac5" upstream="trinity" dest-branch="trinity" groups="backup,notdefault,enterprise" />
   <project name="build" path="cbbuild" revision="52ccbb83cd3878529d714c69bca04b68cfbaccf6" upstream="trinity" dest-branch="trinity" groups="notdefault,build">
     <annotation name="RELEASE" value="cypher" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="1017" />
+    <annotation name="BLD_NUM" value="1018" />
     <annotation name="VERSION" value="7.7.0" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="ff491c7521a9471c7809f601fbee9cd24a08c5ad" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise,analytics" />
@@ -74,7 +74,7 @@
   <project name="perks" path="godeps/src/github.com/beorn7/perks" remote="couchbasedeps" revision="37c8de3658fcb183f997c4e13e8337516ab753e6" upstream="refs/tags/v1.0.1" dest-branch="refs/tags/v1.0.1" />
   <project name="phosphor" revision="c0a034fe407eec4723f2e01db2d72762efdbc276" groups="bsl,kv" />
   <project name="pkcs8" path="godeps/src/github.com/youmark/pkcs8" remote="couchbasedeps" revision="1be2e3e5546da8a58903ff4adcfab015022538ea" upstream="refs/tags/v1.1" dest-branch="refs/tags/v1.1" />
-  <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="34f14cf1d8cc543932e60d9780cc13d48fa7ea5c" upstream="trinity" dest-branch="trinity" groups="bsl,notdefault,enterprise" />
+  <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="34f14cf1d8cc543932e60d9780cc13d48fa7ea5c" upstream="cypher" dest-branch="cypher" groups="bsl,notdefault,enterprise" />
   <project name="platform" revision="0e7a802da6c66ae81c113a7314251a2816ccc9af" upstream="trinity" dest-branch="trinity" groups="bsl,kv" />
   <project name="procfs" path="godeps/src/github.com/prometheus/procfs" remote="couchbasedeps" revision="76fc8b844e3a18c31bf689e4fe7efdd5a2f41298" />
   <project name="product-metadata" revision="4b3c9daca09b01b7bb64ce8f8cc60174e532deb8" upstream="master" dest-branch="master" groups="notdefault,packaging" />
