@@ -18,7 +18,7 @@
   <project name="build" path="cbbuild" revision="38898f2b80b38d059a77fd8116405142fdef2669" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="6401" />
+    <annotation name="BLD_NUM" value="6402" />
     <annotation name="VERSION" value="7.2.2" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.2" />
@@ -31,7 +31,7 @@
   <project name="cbbs" remote="couchbase-priv" revision="34b876c0d9a71d4e73c5614e16b7604cb82018ea" groups="backup,notdefault,enterprise" />
   <project name="cbft" revision="0bf6508bf2b69e77e647c70ff3bea54662e2286a" />
   <project name="cbftx" remote="couchbase-priv" revision="b81c182e69a6e13a4093ed935d2fad381a849443" groups="notdefault,enterprise" />
-  <project name="cbgt" revision="b658ea586fd984a4b3b85314830523aa1b2d6b13" upstream="neo" dest-branch="neo" />
+  <project name="cbgt" revision="b658ea586fd984a4b3b85314830523aa1b2d6b13" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="f87fb845cec005a9b0be9813b1cfaac0af84d964" />
   <project name="chronicle" path="ns_server/deps/chronicle" revision="67d2c3a847d8feeedd2c76ab383b508f1c29549c" />
   <project name="clog" path="godeps/src/github.com/couchbase/clog" revision="f935d1fdfc36541b505cf86fea4822e4067f9c39" />
@@ -92,12 +92,12 @@
   <project name="gtreap" path="godeps/src/github.com/steveyen/gtreap" remote="couchbasedeps" revision="0abe01ef9be25c4aedc174758ec2d917314d6d70" />
   <project name="hebrew" remote="couchbase-priv" revision="fd6a0a1013434e4ba8cae73f6c80d2433d72ed0b" groups="notdefault,enterprise" />
   <project name="httprouter" path="godeps/src/github.com/julienschmidt/httprouter" remote="couchbasedeps" revision="975b5c4c7c21c0e3d2764200bf2aa8e34657ae6e" />
-  <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="ab0156ed33167ce761f54cb6e35ca1d58fcbe7ee" groups="bsl" />
+  <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="56631cc2080f376e9bdfb875c709e903b3a317c1" upstream="7.2.2" dest-branch="7.2.2" groups="bsl" />
   <project name="json-iterator-go" path="godeps/src/github.com/json-iterator/go" remote="couchbasedeps" revision="f7279a603edee96fe7764d3de9c6ff8cf9970994" />
   <project name="jsonparser" path="godeps/src/github.com/buger/jsonparser" remote="couchbasedeps" revision="df3ea76ece10095374fd1c9a22a4fb85a44efc42" />
   <project name="jsonschema" path="godeps/src/github.com/santhosh-tekuri/jsonschema" remote="couchbasedeps" revision="137f44a49015e5060a447c331aa37de6e0f50267" />
   <project name="jsonx" path="godeps/src/gopkg.in/couchbaselabs/jsonx.v1" remote="couchbaselabs" revision="03f375ceefb769799cfa0d64352fdcc9f1192368" />
-  <project name="kv_engine" revision="2da6480644fc5cd0fcd951b31cd523d6a5318304" groups="kv,bsl" />
+  <project name="kv_engine" revision="2da6480644fc5cd0fcd951b31cd523d6a5318304" upstream="7.2.2" dest-branch="7.2.2" groups="kv,bsl" />
   <project name="libcouchbase" revision="02e19c2144f1284846f7ce6d36b707891b8d2624" upstream="refs/tags/3.3.5" dest-branch="refs/tags/3.3.5" />
   <project name="liner" path="godeps/src/github.com/peterh/liner" remote="couchbasedeps" revision="6f820f8f90ce9482ffbd40bb15f9ea9932f4942d" />
   <project name="liner" path="godeps/src/github.com/sbinet/liner" remote="couchbasedeps" revision="d9335eee40a45a4f5d74524c90040d6fe6013d50" />
@@ -122,7 +122,7 @@
   <project name="pierrec-lz4" path="godeps/src/github.com/pierrec/lz4" remote="couchbasedeps" revision="ed8d4cc3b461464e69798080a0092bd028910298" />
   <project name="pierrec-xxHash" path="godeps/src/github.com/pierrec/xxHash" remote="couchbasedeps" revision="a0006b13c722f7f12368c00a3d3c2ae8a999a0c6" />
   <project name="pkcs8" path="godeps/src/github.com/youmark/pkcs8" remote="couchbasedeps" revision="1be2e3e5546da8a58903ff4adcfab015022538ea" upstream="refs/tags/v1.1" dest-branch="refs/tags/v1.1" />
-  <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="7fdefc0c7ead2483872e3ff603c26264a6261eee" groups="notdefault,enterprise" />
+  <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="7fdefc0c7ead2483872e3ff603c26264a6261eee" upstream="7.2.2" dest-branch="7.2.2" groups="notdefault,enterprise" />
   <project name="platform" revision="d9c07467aacee7c5255b54591bec6549f0927427" groups="bsl,kv" />
   <project name="product-metadata" revision="ff7c24047435e393698847ec5147716017048636" groups="notdefault,packaging" />
   <project name="product-texts" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" />
