@@ -15,7 +15,7 @@
   <project name="build" path="cbbuild" revision="4f749cfaaf61cf5a95b1b5320ea72dc132a48cb9" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="morpheus" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="2114" />
+    <annotation name="BLD_NUM" value="2115" />
     <annotation name="VERSION" value="8.0.0" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="938c674a4e5ba5bb5f0519b374704736c9005f55" upstream="morpheus" dest-branch="morpheus" groups="notdefault,enterprise,analytics" />
@@ -50,7 +50,7 @@
   <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="c698a51f52b818a49670455f0b85aafca55d119c" upstream="master" dest-branch="unstable" groups="bsl" />
   <project name="kv_engine" revision="3a909edd13c9f40ef49d45c4a3441c950a3d0505" upstream="master" dest-branch="master" groups="kv,bsl" />
   <project name="libcouchbase" revision="684931e59cd87e0c6292e8142c2b18897be5b10c" />
-  <project name="magma" remote="couchbase-priv" revision="e4946e7260668ffa657f581abb465a5950425a98" upstream="master" dest-branch="master" groups="notdefault,enterprise,kv_ee" />
+  <project name="magma" remote="couchbase-priv" revision="44a326a8e7ad76b0d6afb2c58a286c9b3550461f" upstream="master" dest-branch="master" groups="notdefault,enterprise,kv_ee" />
   <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="6ab4725e835ca97c26bf61f44c56d4123e5eb579" upstream="master" dest-branch="master" groups="bsl" />
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="415e9c62aec937534ada10123d8d4490672b8524" upstream="master" dest-branch="unstable" groups="bsl" />
   <project name="ns_server" revision="cad6cc7445e4259a91621279816db7640e751d9b" upstream="master" dest-branch="master" groups="bsl" />
@@ -67,7 +67,7 @@
   <project name="simdutf" path="third_party/simdutf" remote="couchbasedeps" revision="4a212616ba23c65c7048f9604faccbff5353300f" upstream="refs/tags/v3.2.14" dest-branch="refs/tags/v3.2.14" groups="kv" />
   <project name="subjson" revision="dba4dfa86f4c7aac412ced66213c7190336de2c6" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="testrunner" revision="759395b4848a922d0b3d057b59e85c48cc132abc" upstream="master" dest-branch="master" />
-  <project name="tlm" revision="a61db652bf1285fbf631b64c57decc734be50f4f" upstream="master" dest-branch="master" groups="bsl,kv">
+  <project name="tlm" revision="f907e35199a188fc6cd985a446d5fab48f625c25" upstream="master" dest-branch="master" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
