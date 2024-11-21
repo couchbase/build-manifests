@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="RELEASE" value="6.4" />
+    <annotation name="PRODUCT" value="cbdeps::ncurses" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="6.4" />
+  </project>
+  <project name="build-tools" revision="8e6a762b818e636630690ee2173eab2f257d7f08" upstream="master" dest-branch="master" />
+  <project name="ncurses" remote="couchbasedeps" revision="79b9071f2be20a24c7be031655a5638f6032f29f" upstream="refs/tags/v6.4" dest-branch="refs/tags/v6.4" />
+</manifest>
