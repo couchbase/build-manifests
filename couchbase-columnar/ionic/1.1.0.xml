@@ -9,15 +9,15 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="33cb692f0cd3d8ad686e513f9a84ec1514b7088d" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="903ddacb2824c7dfafe9cce2f12a9bf95f37bf7e" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="903ddacb2824c7dfafe9cce2f12a9bf95f37bf7e" upstream="7.6.4" dest-branch="7.6.4" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="198c313f4059edfcb9ce51ee5996c1b5c7bfc782" groups="backup,notdefault,enterprise" />
   <project name="build" path="cbbuild" revision="2beb97fb2e69a8f661d27821e77282dd1426d26a" groups="notdefault,build">
     <annotation name="RELEASE" value="ionic" />
     <annotation name="PRODUCT" value="couchbase-columnar" />
-    <annotation name="BLD_NUM" value="1134" />
+    <annotation name="BLD_NUM" value="1135" />
     <annotation name="VERSION" value="1.1.0" />
     <annotation name="SERVER_VERSION" value="7.6.4" />
-    <annotation name="SERVER_BLD_NUM" value="5135" />
+    <annotation name="SERVER_BLD_NUM" value="5139" />
     <annotation name="SERVER_RELEASE" value="trinity" />
     <annotation name="COLUMNAR" value="true" />
   </project>
@@ -28,7 +28,7 @@
   <project name="cbbs" remote="couchbase-priv" revision="ac23deaa5d166ee122222320e6d09bcee65769b7" groups="backup,notdefault,enterprise" />
   <project name="cbft" revision="19ba128181450da0f565812d337ae8da28b0c07e" />
   <project name="cbftx" remote="couchbase-priv" revision="dd59a89ec9a09a05e1b821411f52bf037e959099" groups="notdefault,enterprise" />
-  <project name="cbgt" revision="791a75b464f5a6f96ec1becf96e459a934827332" />
+  <project name="cbgt" revision="4e524071e6f51ba22eb7e238bb4650aa3ddbbb4d" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="b93a39e6c46c3de1a73153d49579012f0737592b" />
   <project name="chronicle" path="ns_server/deps/chronicle" revision="8d1feeb0d8b15e2b6a4c1a417addfd159b422a71" />
   <project name="client_golang" path="godeps/src/github.com/prometheus/client_golang" remote="couchbasedeps" revision="2e1c4818ccfdcf953ce399cadad615ff2bed968c" upstream="refs/tags/v1.12.1" dest-branch="refs/tags/v1.12.1" />
@@ -42,7 +42,7 @@
   <project name="crypto" path="godeps/src/golang.org/x/crypto" remote="couchbasedeps" revision="eb61739cd99fb244c7cd188d3c5bae54824e781d" upstream="refs/tags/v0.15.0" dest-branch="refs/tags/v0.15.0" />
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="cf3254d7dfb042192c9a23bd2e64a281c32a29d8" />
   <project name="errors" path="godeps/src/github.com/pkg/errors" remote="couchbasedeps" revision="30136e27e2ac8d167177e8a583aa4c3fea5be833" />
-  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="a45691c59693290df21fb64e9edc82c6a8a1b1e0" upstream="trinity" dest-branch="unstable" groups="notdefault,enterprise" />
+  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="89e14e9640b37a2782e5e12e5536c3dd519058ca" upstream="trinity" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="b66aff60efa0fb95d5bba0e387eebb634f25d281" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="flatbuffers" path="godeps/src/github.com/google/flatbuffers" remote="couchbasedeps" revision="1a8968225130caeddd16e227678e6f8af1926303" />
   <project name="forestdb" revision="9efe6d75d7d61e742af70fb47fe97ad1d04ba86f" groups="backup" />
@@ -85,15 +85,15 @@
   <project name="product-texts" revision="a2495004ad0a30424e697b5eaf2aebb8b5d20231" upstream="master" dest-branch="master" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="d04d7b157bb510b1e0c10132224b616ac0e26b17" upstream="refs/tags/v1.4.2" dest-branch="refs/tags/v1.4.2" />
   <project name="protobuf-go" path="godeps/src/google.golang.org/protobuf" remote="couchbasedeps" revision="32051b4f86e54c2142c7c05362c6e96ae3454a1c" upstream="refs/tags/v1.28.0" dest-branch="refs/tags/v1.28.0" />
-  <project name="query" path="goproj/src/github.com/couchbase/query" revision="e0208caada465a12e946dfdd0c18b49488077101" upstream="trinity" dest-branch="trinity" groups="bsl" />
-  <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="d553514237b4c396e1c2f0618f46154ddbef224a" groups="notdefault,enterprise" />
+  <project name="query" path="goproj/src/github.com/couchbase/query" revision="109d1e967f19879aaf1bf12a3e374d2064e065de" upstream="7.6.4" dest-branch="7.6.4" groups="bsl" />
+  <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="d553514237b4c396e1c2f0618f46154ddbef224a" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise" />
   <project name="query-ui" revision="c5009a66c1c2e0f5ed8d868d4bb17ba337a5ca9d" groups="bsl" />
   <project name="regulator" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" revision="4ef404748ecc34fd87bdebc56074ebe99d240464" groups="notdefault,enterprise" />
   <project name="sigar" revision="2da0c123cfb45ae39e76e730bd960db8812e3f20" groups="kv" />
   <project name="simdutf" path="third_party/simdutf" remote="couchbasedeps" revision="4a212616ba23c65c7048f9604faccbff5353300f" upstream="refs/tags/v3.2.14" dest-branch="refs/tags/v3.2.14" groups="kv" />
   <project name="subjson" revision="a619faccb30e43a4bc0708ee11b1b24abb349f18" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="c5b3947fa2a0760a6a4d2ff4220f04945db66aab" upstream="trinity" dest-branch="trinity" />
+  <project name="testrunner" revision="30bcf16c451e7df75b31a10957d682906869cdec" upstream="trinity" dest-branch="trinity" />
   <project name="tlm" revision="fcefcae9a8a7e28736c9da7720d44f82a3a20dbc" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
