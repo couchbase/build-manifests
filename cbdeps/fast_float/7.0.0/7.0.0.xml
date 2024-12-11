@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="4f749cfaaf61cf5a95b1b5320ea72dc132a48cb9" upstream="master" dest-branch="master">
+    <annotation name="RELEASE" value="7.0.0" />
+    <annotation name="PRODUCT" value="cbdeps::fast_float" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="7.0.0" />
+  </project>
+  <project name="build-tools" revision="cc61847395926c1cfefbee3f7a5cf6cf427707f4" upstream="master" dest-branch="master" />
+  <project name="fast_float" remote="couchbasedeps" revision="cb1d42aaa1e14b09e1452cfdef373d051b8c02a4" upstream="refs/tags/v7.0.0" dest-branch="refs/tags/v7.0.0" />
+</manifest>
