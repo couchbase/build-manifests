@@ -15,11 +15,12 @@
   <project name="build" path="cbbuild" revision="4f749cfaaf61cf5a95b1b5320ea72dc132a48cb9" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="morpheus" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="2247" />
+    <annotation name="BLD_NUM" value="2248" />
     <annotation name="VERSION" value="8.0.0" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="8.0" />
     <annotation name="BSL_CHANGE_DATE" value="March 1, 2029" />
+    <annotation name="BSL_MAIN_OK" value="true" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="4582b43ae64c53c679563772b9ca634520e23698" upstream="morpheus" dest-branch="morpheus" groups="notdefault,enterprise,analytics" />
   <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="614e88ff9f249edbd819979cceca5a3960b8fa3d" upstream="morpheus" dest-branch="morpheus" groups="notdefault,enterprise,analytics" />
@@ -29,7 +30,7 @@
   <project name="cbft" revision="de096e58457e40366caa8b091f6fdb0a356e41af" upstream="master" dest-branch="master" />
   <project name="cbftx" remote="couchbase-priv" revision="18af4e1a79d00d676941a17983a9300c7922f353" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="cbgt" revision="3efc06d625d4fd6dc2587b8f1ffb88834d04fb22" upstream="master" dest-branch="master" />
-  <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="b93a39e6c46c3de1a73153d49579012f0737592b" upstream="master" dest-branch="master" />
+  <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="b93a39e6c46c3de1a73153d49579012f0737592b" upstream="master" dest-branch="master" groups="bsl" />
   <project name="couchbase-cli" revision="f4f24222e5ee492d68ffaad3307bc418cb36cbfb" upstream="master" dest-branch="master" groups="kv" />
   <project name="couchdb" revision="c873989222e4449421bc1d193487d9893524f90e" upstream="master" dest-branch="unstable" />
   <project name="couchdbx-app" revision="5261b8844cea741087f36de52cecba8c2c8865da" upstream="master" dest-branch="master" groups="notdefault,packaging" />
@@ -61,9 +62,9 @@
   <project name="phosphor" revision="a4d27b2bc07fb71b08af8d8295e97cad6f2ff39a" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="1107828047909b0e96670bccc2cd7827d1c59a40" upstream="master" dest-branch="unstable" groups="bsl,notdefault,enterprise" />
   <project name="platform" revision="f4f07d4bba34a5e1a61fdc382f74d0361cc4a736" upstream="master" dest-branch="master" groups="bsl,kv" />
-  <project name="product-metadata" revision="49bc7dae11f63de4200b935eae22a4249efc6f3d" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="1a3e56683bd9777531baea24007d41d9a9abd71f" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="a2495004ad0a30424e697b5eaf2aebb8b5d20231" upstream="master" dest-branch="master" />
-  <project name="query" path="goproj/src/github.com/couchbase/query" revision="09276eaee44a09f2e01e3a7cc74a8cfb89f4d210" upstream="master" dest-branch="master" groups="bsl" />
+  <project name="query" path="goproj/src/github.com/couchbase/query" revision="2a2aa424220c45ea2a1d5f748b8f46811ef5f2ad" upstream="master" dest-branch="master" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="47920cbb72e29256c52c9c5e7386e1f57510c07d" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="query-ui" revision="c4f26f161c63773a83d96a37f0b6fbf6047c3db4" upstream="master" dest-branch="master" groups="bsl" />
   <project name="regulator" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" revision="4ef404748ecc34fd87bdebc56074ebe99d240464" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
