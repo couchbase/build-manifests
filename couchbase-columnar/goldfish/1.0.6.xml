@@ -8,13 +8,13 @@
   <default remote="couchbase" revision="master" />
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" groups="kv" />
-  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="4971371e7542f7e32a54168632c98f7a3609f60f" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="1cffa2bc98bf851dfe2663190e1032cafc9df09d" upstream="7.6.4" dest-branch="7.6.4" groups="notdefault,enterprise,analytics" />
+  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="636d48f6eb89f7a9afdeb26e74750628668bbc4c" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="f9bb94e4b2492032131ed27a644a925d1fb0658b" upstream="7.6.4" dest-branch="7.6.4" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="198c313f4059edfcb9ce51ee5996c1b5c7bfc782" groups="backup,notdefault,enterprise" />
   <project name="build" path="cbbuild" revision="2beb97fb2e69a8f661d27821e77282dd1426d26a" groups="notdefault,build">
     <annotation name="RELEASE" value="goldfish" />
     <annotation name="PRODUCT" value="couchbase-columnar" />
-    <annotation name="BLD_NUM" value="2530" />
+    <annotation name="BLD_NUM" value="2531" />
     <annotation name="VERSION" value="1.0.6" />
     <annotation name="SERVER_VERSION" value="7.6.4" />
     <annotation name="SERVER_BLD_NUM" value="5146" />
@@ -22,7 +22,7 @@
     <annotation name="COLUMNAR" value="true" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="fb4a6d548f288fc8a4ebae16f0192839d31357fb" upstream="goldfish" dest-branch="goldfish" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="9e4d45ba105609a251cb4cf72adb3b6ad5bd733a" upstream="7.6.4" dest-branch="7.6.4" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="2184cf98eab813af4754575165768dfd697d1c2f" upstream="7.6.4" dest-branch="7.6.4" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="011d6a502cfb84af4a64bb1ca198e28daa375de9" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="7e2c65d6c289a1eca62917d001000ced20948a4a" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="ac23deaa5d166ee122222320e6d09bcee65769b7" groups="backup,notdefault,enterprise" />
