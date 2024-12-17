@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="RELEASE" value="1.10.0" />
+    <annotation name="PRODUCT" value="cbdeps::lz4" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="1.10.0" />
+  </project>
+  <project name="build-tools" revision="66686b93a39f82b1be3042e0532d093543f402ac" upstream="master" dest-branch="master" />
+  <project name="lz4" remote="couchbasedeps" revision="ebb370ca83af193212df4dcbadcc5d87bc0de2f0" upstream="refs/tags/v1.10.0" dest-branch="refs/tags/v1.10.0" />
+</manifest>
