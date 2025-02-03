@@ -15,7 +15,7 @@
   <project name="build" path="cbbuild" revision="69c4950c7ae9a6b5fdc57b9f2f62c84b477b8bdd" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="morpheus" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="2486" />
+    <annotation name="BLD_NUM" value="2487" />
     <annotation name="VERSION" value="8.0.0" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="8.0" />
@@ -34,7 +34,7 @@
   <project name="couchbase-cli" revision="b8e2a178e2307641e8d6305105f113269d52e2dd" upstream="master" dest-branch="master" groups="kv" />
   <project name="couchdb" revision="3a1b07b154a4e21e14f929b8cc89159efbd00d32" upstream="master" dest-branch="unstable" />
   <project name="couchdbx-app" revision="5261b8844cea741087f36de52cecba8c2c8865da" upstream="master" dest-branch="master" groups="notdefault,packaging" />
-  <project name="couchstore" revision="d39858c863620924f721e92ce56e7d61f0a0a9b4" upstream="master" dest-branch="master" groups="kv" />
+  <project name="couchstore" revision="75c80745abf64b9d2ad99019b8b8e55881644602" upstream="master" dest-branch="master" groups="kv" />
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="218129e2b4b06c6381c7aabb7b5c78dff7f07e3c" upstream="master" dest-branch="master" />
   <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="c6f2698182e97ddaf5663ec607e2092b9a7b692b" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="c9d77e312a09e2fc27ea6028c21d2a53efd3c2b4" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
@@ -53,7 +53,7 @@
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="e1c381746c2625a76227255f999ae9f14a062208" upstream="refs/tags/v0.38.1" dest-branch="refs/tags/v0.38.1" groups="kv" />
   <project name="hebrew" remote="couchbase-priv" revision="c57616b187889a5318688f49817ccaceb9c098b9" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="00a24380eea21064f0559c8110ca9c281d0ba8f4" upstream="master" dest-branch="unstable" groups="bsl" />
-  <project name="kv_engine" revision="d00449af24f2fe5cca92070c4e26d49b88960a0b" upstream="master" dest-branch="master" groups="kv,bsl" />
+  <project name="kv_engine" revision="faecb0b98f25ec0592b4507fae05e314125cf6cb" upstream="master" dest-branch="master" groups="kv,bsl" />
   <project name="libcouchbase" revision="828db738556011c4b4802d2d60660d6df233b0cb" upstream="refs/tags/3.3.15" dest-branch="refs/tags/3.3.15" />
   <project name="magma" remote="couchbase-priv" revision="20b24b1a09933cccb56473c4b4121717755a7f6c" upstream="master" dest-branch="master" groups="notdefault,enterprise,kv_ee" />
   <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="f22429655ea86de5e8d09b5b0c96ec0cbe596400" upstream="master" dest-branch="master" groups="bsl" />
@@ -72,7 +72,7 @@
   <project name="simdutf" path="third_party/simdutf" remote="couchbasedeps" revision="4a212616ba23c65c7048f9604faccbff5353300f" upstream="refs/tags/v3.2.14" dest-branch="refs/tags/v3.2.14" groups="kv" />
   <project name="subjson" revision="5152c29c1d7be53b3d98f6773a9de0d1588b0d35" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="testrunner" revision="be627088762a451a3f0e758b474563343c60366e" upstream="master" dest-branch="master" />
-  <project name="tlm" revision="9d2981bd1e161007ed9463b17e276a1c531b849a" upstream="master" dest-branch="master" groups="bsl,kv">
+  <project name="tlm" revision="571e88a0e4320f6e2f67711ce800dc04776ab40b" upstream="master" dest-branch="master" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
