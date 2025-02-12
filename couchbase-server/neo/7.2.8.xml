@@ -14,7 +14,7 @@
   <project name="build" path="cbbuild" revision="d8a9c878b2a7ae1bb8354d54c05a386b7ffd76a7" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="8801" />
+    <annotation name="BLD_NUM" value="8802" />
     <annotation name="VERSION" value="7.2.8" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.2" />
@@ -22,7 +22,7 @@
     <annotation name="BSL_MAIN_OK" value="true" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="baab50a2e64f77acacf711c5e2b6a77d5167419c" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="affe6531da3fea3654775d8ac824189e6480c1e3" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="d1b8dd3df340bfaf1417887b513442e7819ebdb8" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="19082ec66938e0c85b6edcb4eba79d10de59d22a" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="0685e2541e6703c286a690320452c7adb04849cc" upstream="neo" dest-branch="neo" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="3c07ad6e2d50a82f3bfff2113da734a76cce2b0d" upstream="neo" dest-branch="neo" groups="backup,notdefault,enterprise" />
@@ -95,7 +95,7 @@
   <project name="sigar" revision="d49c3f52cda141e1e021dde480e7213efcd0eaaa" upstream="neo" dest-branch="neo" groups="kv" />
   <project name="subjson" revision="6660a83914f8661bf2013ce5edd69f61cfd055ac" upstream="neo" dest-branch="neo" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="d81a99f6a140031ce4de15e66ba2b116a3b9bfb1" upstream="neo" dest-branch="neo" />
+  <project name="testrunner" revision="9aaae7b302a8fe5bd1f345dc9550747e00444e2f" upstream="neo" dest-branch="neo" />
   <project name="tlm" revision="65d0d680dcc9a997f6150195895101dd509ac72a" upstream="neo" dest-branch="neo" groups="bsl,kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
