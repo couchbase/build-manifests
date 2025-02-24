@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="RELEASE" value="8.12.1" />
+    <annotation name="PRODUCT" value="cbdeps::curl" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="8.12.1" />
+  </project>
+  <project name="build-tools" revision="9c4c28df963548b344cc7c256be893c80f4a32f1" upstream="master" dest-branch="master" />
+  <project name="curl" remote="couchbasedeps" revision="57495c64871d18905a0941db9196ef90bafe9a29" upstream="refs/tags/curl-8_12_1" dest-branch="refs/tags/curl-8_12_1" />
+</manifest>
