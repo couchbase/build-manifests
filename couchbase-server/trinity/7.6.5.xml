@@ -8,17 +8,17 @@
   <default remote="couchbase" revision="master" />
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" groups="kv" />
-  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="13238588ecf173dabad7f0b93e1abaaae90e27b1" upstream="7.6.5" dest-branch="7.6.5" groups="notdefault,enterprise,analytics" />
+  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="f630d126c55cf9ae53f6466ec075361bf426e617" upstream="7.6.5" dest-branch="7.6.5" groups="notdefault,enterprise,analytics" />
   <project name="asterixdb" path="analytics/asterixdb" revision="91c822e00c1aa094688abc8b04dc2d1f0cc0ec21" upstream="7.6.5" dest-branch="7.6.5" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="198c313f4059edfcb9ce51ee5996c1b5c7bfc782" groups="backup,notdefault,enterprise" />
   <project name="build" path="cbbuild" revision="86d8fdd68842f94d1c61db36c10fe0cd1e75e85f" groups="notdefault,build">
     <annotation name="RELEASE" value="trinity" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="5717" />
+    <annotation name="BLD_NUM" value="5718" />
     <annotation name="VERSION" value="7.6.5" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="ea9d16d081777f878b8ec37b2d3be9080e640dfd" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="f16b7d1cd9e5d6ffbf7cb3e368d0d0c2e37b2ac2" upstream="7.6.5" dest-branch="7.6.5" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="66955c9eda51cdf46383412a7938002d9019c091" upstream="7.6.5" dest-branch="7.6.5" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="704db180d01de15f70cacc9fc11c5d8d8d4ff965" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="7e2c65d6c289a1eca62917d001000ced20948a4a" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="ac23deaa5d166ee122222320e6d09bcee65769b7" groups="backup,notdefault,enterprise" />
@@ -89,7 +89,7 @@
   <project name="simdutf" path="third_party/simdutf" remote="couchbasedeps" revision="4a212616ba23c65c7048f9604faccbff5353300f" upstream="refs/tags/v3.2.14" dest-branch="refs/tags/v3.2.14" groups="kv" />
   <project name="subjson" revision="a619faccb30e43a4bc0708ee11b1b24abb349f18" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="0964210d705311223269da3e21c3aed2dff3b6c2" upstream="trinity" dest-branch="trinity" />
+  <project name="testrunner" revision="6558eb96f12553b519bec7d0f5cc2c5d5a8bff9c" upstream="trinity" dest-branch="trinity" />
   <project name="tlm" revision="bf83ad7c2505fb63bb6e656ba8006f6f443249cc" upstream="7.6.5" dest-branch="7.6.5" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
