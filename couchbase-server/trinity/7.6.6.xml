@@ -14,7 +14,7 @@
   <project name="build" path="cbbuild" revision="86d8fdd68842f94d1c61db36c10fe0cd1e75e85f" groups="notdefault,build">
     <annotation name="RELEASE" value="trinity" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="6105" />
+    <annotation name="BLD_NUM" value="6106" />
     <annotation name="VERSION" value="7.6.6" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="03ccacc9884d9f470b6904cdf85459aad91eac51" groups="notdefault,enterprise,analytics" />
@@ -22,7 +22,7 @@
   <project name="cbas-ui" revision="293991ffe6507cdc931f85f0a5057c717c67daea" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="7e2c65d6c289a1eca62917d001000ced20948a4a" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="a43cabc63854764aea7f9e2e0fa883b76919a875" groups="backup,notdefault,enterprise" />
-  <project name="cbft" revision="19d896b8b3d673a54bde18dbf5ea5bc243e8a45f" />
+  <project name="cbft" revision="19d896b8b3d673a54bde18dbf5ea5bc243e8a45f" upstream="7.6.6" dest-branch="7.6.6" />
   <project name="cbftx" remote="couchbase-priv" revision="5c66959a6a17937be5f9d77f7c18cc362d9d0f1a" groups="notdefault,enterprise" />
   <project name="cbgt" revision="066cc3bed17ba9c274b62f52eda4570b240eaac4" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="b93a39e6c46c3de1a73153d49579012f0737592b" />
@@ -81,7 +81,7 @@
   <project name="product-texts" revision="a2495004ad0a30424e697b5eaf2aebb8b5d20231" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="d04d7b157bb510b1e0c10132224b616ac0e26b17" upstream="refs/tags/v1.4.2" dest-branch="refs/tags/v1.4.2" />
   <project name="protobuf-go" path="godeps/src/google.golang.org/protobuf" remote="couchbasedeps" revision="32051b4f86e54c2142c7c05362c6e96ae3454a1c" upstream="refs/tags/v1.28.0" dest-branch="refs/tags/v1.28.0" />
-  <project name="query" path="goproj/src/github.com/couchbase/query" revision="eb36ae1333fb234efe6ff84d9d061b4123646b06" groups="bsl" />
+  <project name="query" path="goproj/src/github.com/couchbase/query" revision="548342f8e92af3d16b064af7df58f3fdaf38ec27" upstream="7.6.6" dest-branch="7.6.6" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="22fa2478f5fb04bad49de5c33d787d82e7ec02a6" groups="notdefault,enterprise" />
   <project name="query-ui" revision="2ce83586d5d14b19c88d158a933ede555aef1a91" groups="bsl" />
   <project name="regulator" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" revision="4ef404748ecc34fd87bdebc56074ebe99d240464" groups="notdefault,enterprise" />
