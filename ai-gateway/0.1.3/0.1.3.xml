@@ -1,0 +1,14 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase" review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
+  
+  <project name="ai-gateway" remote="couchbase-priv" revision="575897f479603ebff5892f4932d76176a3c1f0de" upstream="0.1" dest-branch="0.1" />
+  <project name="build" remote="couchbase" revision="4c88139fd4810c8bfd99c6bb91a936c827e065e1">
+    <annotation name="RELEASE" value="0.1.3" />
+    <annotation name="PRODUCT" value="ai-gateway" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="0.1.3" />
+  </project>
+  <project name="golang" remote="couchbaselabs" revision="6fb3a9b9eabea4a2af049896b9072586fa59ca52" upstream="main" dest-branch="main" />
+</manifest>
