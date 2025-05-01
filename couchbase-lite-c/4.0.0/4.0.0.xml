@@ -1,35 +1,18 @@
 <manifest>
   <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
   <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
-  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
-  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
-  <remote name="google" fetch="https://github.com/google/" />
-  <remote name="snej" fetch="https://github.com/snej/" />
   
   <default remote="couchbase" revision="master" />
   
-  <project name="SQLiteCpp" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="333b6d922d71977a704593713a3740c274fb464f" />
   <project name="build" path="cbbuild" revision="cf20ab9c0f7d81838212b1f2d719903ffb4a4d9e">
     <annotation name="RELEASE" value="4.0.0" />
     <annotation name="PRODUCT" value="couchbase-lite-c" />
-    <annotation name="BLD_NUM" value="25" />
+    <annotation name="BLD_NUM" value="26" />
     <annotation name="VERSION" value="4.0.0" />
   </project>
-  <project name="couchbase-lite-c" revision="b074373d538ee0fad770cac3a48ec90fe0bf81bf" upstream="master" dest-branch="master">
+  <project name="couchbase-lite-c" revision="62bfc999ec97cac9e05e031e4a650c0f5f4fcd16" upstream="master" dest-branch="master" sync-s="true">
     <copyfile src="jenkins/CMakeLists.txt" dest="CMakeLists.txt" />
   </project>
-  <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="43367024579beca0dec56a7389106460e1067849" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
-  <project name="couchbase-lite-core" path="couchbase-lite-c/vendor/couchbase-lite-core" revision="6d3748cd6dd8466bd4ac3c07744357662dfc1894" />
-  <project name="couchbase-lite-core-EE" path="couchbase-lite-c-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="81151912cf26bcfd9258b638ed6ea1d098cadc46" groups="notdefault,enterprise" />
-  <project name="couchbase-lite-core.wiki" path="couchbase-lite-c/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
-  <project name="fleece" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/fleece" revision="ebe000ea5a6a084c43170b743a31b5d35c2f93f9" />
-  <project name="googletest" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/SQLiteCpp/googletest" remote="google" revision="ec44c6c1675c25b9827aacd08c02433cccde7780" />
-  <project name="ios-cmake" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/ios-cmake" remote="couchbasedeps" revision="29668dbcd9ef2fd7369140b7e9bd9df0485497f6" />
-  <project name="jsonsl" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/fleece/vendor/jsonsl" remote="snej" revision="684b60f9af68b8c397422e74d0c2dd206de16a2c" />
-  <project name="litecore-download-script" path="couchbase-lite-c/vendor/couchbase-lite-core/tools" remote="couchbaselabs" revision="93274f9fb0936af0b754a408154a2a24d2dd0041" />
-  <project name="mbedtls" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/mbedtls" remote="couchbasedeps" revision="18cd3603d8a0879315b1bd56a2517a34b2673570" />
+  <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="bfe7f6429d16bd226d98a71fe2ff51ca1f18135f" upstream="main" dest-branch="main" groups="notdefault,enterprise" sync-s="true" />
   <project name="product-texts" revision="a2495004ad0a30424e697b5eaf2aebb8b5d20231" upstream="master" dest-branch="master" />
-  <project name="sockpp" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/sockpp" remote="couchbasedeps" revision="01c7560ed14bf5a935f7e899f9eb4f72f7403d5d" />
-  <project name="sqlite3-unicodesn" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/sqlite3-unicodesn" remote="couchbasedeps" revision="56f70205de560e96a6ef4766839e4fa67e0d0749" />
-  <project name="zlib" path="couchbase-lite-c/vendor/couchbase-lite-core/vendor/zlib" remote="couchbasedeps" revision="51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf" />
 </manifest>
