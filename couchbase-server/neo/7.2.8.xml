@@ -14,7 +14,7 @@
   <project name="build" path="cbbuild" revision="d8a9c878b2a7ae1bb8354d54c05a386b7ffd76a7" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="8866" />
+    <annotation name="BLD_NUM" value="8867" />
     <annotation name="VERSION" value="7.2.8" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.2" />
@@ -89,13 +89,13 @@
   <project name="product-metadata" revision="ff7c24047435e393698847ec5147716017048636" groups="notdefault,packaging" />
   <project name="product-texts" revision="a2495004ad0a30424e697b5eaf2aebb8b5d20231" upstream="master" dest-branch="master" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="84668698ea25b64748563aa20726db66a6b8d299" upstream="refs/tags/v1.3.5" dest-branch="refs/tags/v1.3.5" />
-  <project name="query" path="goproj/src/github.com/couchbase/query" revision="60df465f4fef2df3cdbc64fa2423b1b3f4963501" upstream="neo" dest-branch="neo" groups="bsl" />
+  <project name="query" path="goproj/src/github.com/couchbase/query" revision="ed06e5864855e050719867a40da91ca884015824" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="d1a566e814f31e95ec4e23cdef13efe7e1fbeda6" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
   <project name="query-ui" revision="630dfabf16fe98fd121a5e5bbb7eada4e24eb6e1" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="sigar" revision="d49c3f52cda141e1e021dde480e7213efcd0eaaa" upstream="neo" dest-branch="neo" groups="kv" />
   <project name="subjson" revision="6660a83914f8661bf2013ce5edd69f61cfd055ac" upstream="neo" dest-branch="neo" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="ce294cec6feb06b5d51a202cd6219df57ca0c948" upstream="neo" dest-branch="neo" />
+  <project name="testrunner" revision="8f1d66f8bec0c3bd6dd6196c63061eaf115835ea" upstream="neo" dest-branch="neo" />
   <project name="tlm" revision="e663412cc0acbdda2f9ebf9b697599f60dbcbeb6" upstream="neo" dest-branch="neo" groups="bsl,kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
