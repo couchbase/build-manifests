@@ -12,13 +12,13 @@
   <project name="build" path="cbbuild" revision="cf20ab9c0f7d81838212b1f2d719903ffb4a4d9e">
     <annotation name="RELEASE" value="3.2.4" />
     <annotation name="PRODUCT" value="couchbase-lite-c" />
-    <annotation name="BLD_NUM" value="2" />
+    <annotation name="BLD_NUM" value="3" />
     <annotation name="VERSION" value="3.2.4" />
   </project>
   <project name="couchbase-lite-c" revision="8b5ef69d0a2947071c39dbb0b25ba7e5717b4f9f" upstream="release/3.2" dest-branch="release/3.2">
     <copyfile src="jenkins/CMakeLists.txt" dest="CMakeLists.txt" />
   </project>
-  <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="413abe62572bfd3616bd6e7a75b5b9cba1a366b9" upstream="release/3.2" dest-branch="release/3.2" groups="notdefault,enterprise" />
+  <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="79f220889d851352ed2f0a265227cac390473004" upstream="release/3.2" dest-branch="release/3.2" groups="notdefault,enterprise" />
   <project name="couchbase-lite-core" path="couchbase-lite-c/vendor/couchbase-lite-core" revision="1890d69a5446e9e4e672aa60ae9d0ca316253db4" />
   <project name="couchbase-lite-core-EE" path="couchbase-lite-c-ee/couchbase-lite-core-EE" remote="couchbase-priv" revision="6cc2f7f1e2a097679d2e08ab86369707324faacf" groups="notdefault,enterprise" />
   <project name="couchbase-lite-core.wiki" path="couchbase-lite-c/vendor/couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
