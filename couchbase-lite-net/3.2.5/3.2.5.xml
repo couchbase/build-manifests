@@ -1,0 +1,18 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="release/3.2" />
+  
+  <project name="build" path="cbbuild" revision="d3ce6c1c71eb5d119273882cf233b69cdcddeff1" upstream="master" dest-branch="master">
+    <annotation name="RELEASE" value="3.2.5" />
+    <annotation name="PRODUCT" value="couchbase-lite-net" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="3.2.5" />
+  </project>
+  <project name="couchbase-lite-net" path="couchbase-lite-net-ee/couchbase-lite-net" revision="9049a5b1a0669490c859a7b8a1c20fc91f9e8a65" upstream="release/3.2" dest-branch="release/3.2" />
+  <project name="couchbase-lite-net-ee" remote="couchbase-priv" revision="7b927a42b3c50a0b75e5589a35d916d9856eb349" upstream="release/3.2" dest-branch="release/3.2" groups="enterprise" />
+  <project name="litecore-download-script" path="couchbase-lite-net-ee/jenkins/litecore_tools" remote="couchbaselabs" revision="a72684bc4043ad7dd52d8fabb0c773f94c91c4cd" upstream="release/3.2" dest-branch="release/3.2" />
+  <project name="product-texts" revision="a2495004ad0a30424e697b5eaf2aebb8b5d20231" upstream="master" dest-branch="master" />
+</manifest>
