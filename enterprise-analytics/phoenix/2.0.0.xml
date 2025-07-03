@@ -14,10 +14,10 @@
   <project name="build" path="cbbuild" revision="d3ce6c1c71eb5d119273882cf233b69cdcddeff1" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="phoenix" />
     <annotation name="PRODUCT" value="enterprise-analytics" />
-    <annotation name="BLD_NUM" value="1031" />
+    <annotation name="BLD_NUM" value="1032" />
     <annotation name="VERSION" value="2.0.0" />
     <annotation name="SERVER_VERSION" value="8.0.0" />
-    <annotation name="SERVER_BLD_NUM" value="3396" />
+    <annotation name="SERVER_BLD_NUM" value="3402" />
     <annotation name="SERVER_RELEASE" value="morpheus" />
     <annotation name="COLUMNAR" value="true" />
     <annotation name="COLUMNAR_COMPAT_VERSION" value="2.0.0" />
@@ -43,19 +43,19 @@
   <project name="gomemcached" path="goproj/src/github.com/couchbase/gomemcached" revision="b0c057f459354e969830267721c2057dde977dfa" upstream="master" dest-branch="master" groups="backup" />
   <project name="goutils" path="goproj/src/github.com/couchbase/goutils" revision="6e586a6dcf78e5e9e7fc0d94db2637e653427da5" upstream="master" dest-branch="master" groups="bsl" />
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="e1c381746c2625a76227255f999ae9f14a062208" upstream="refs/tags/v0.38.1" dest-branch="refs/tags/v0.38.1" groups="kv" />
-  <project name="kv_engine" revision="82c8a86d0f0c9908346832dd1f8d64d33dbf7e2c" upstream="master" dest-branch="master" groups="kv,bsl" />
+  <project name="kv_engine" revision="1c18408fd1f5dc8c7d48dd8daa7d91f4f01b4202" upstream="master" dest-branch="master" groups="kv,bsl" />
   <project name="libcouchbase" revision="5c05e44af1424591b223fb06a4cb007ea381923f" upstream="refs/tags/3.3.16" dest-branch="refs/tags/3.3.16" />
-  <project name="magma" remote="couchbase-priv" revision="574295c68cec1c7e2d0ce70fdc0a04a41bbf6f34" upstream="master" dest-branch="master" groups="notdefault,enterprise,kv_ee" />
-  <project name="ns_server" revision="df8c75fa859126eb572403ead852d37f78f431e9" upstream="master" dest-branch="master" groups="bsl" />
+  <project name="magma" remote="couchbase-priv" revision="53a74e2787524bb02bb21c36188019ced47f732a" upstream="master" dest-branch="master" groups="notdefault,enterprise,kv_ee" />
+  <project name="ns_server" revision="6edd8e2cfca428c70cbe50a283d91075add8a0d9" upstream="master" dest-branch="master" groups="bsl" />
   <project name="phosphor" revision="478dfeb2001957e6933d17287e50dfdc8534072d" upstream="master" dest-branch="master" groups="bsl,kv" />
-  <project name="platform" revision="ad07881dbd3c1bc763f1593e3abbeb78e3b90557" upstream="master" dest-branch="master" groups="bsl,kv" />
-  <project name="product-metadata" revision="16754a5a2247e6dbb5bab152dbf6c829d177335d" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="platform" revision="1c3ef32a9223b6523effd3c0405b26fc2162137e" upstream="master" dest-branch="master" groups="bsl,kv" />
+  <project name="product-metadata" revision="a80fdb20bee95b930345ed24f35c04fe7e58b190" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="a2495004ad0a30424e697b5eaf2aebb8b5d20231" upstream="master" dest-branch="master" />
   <project name="query-ui" revision="b62458fdf91264206871b7cf9413759fc5b180e0" upstream="master" dest-branch="master" groups="bsl" />
   <project name="regulator" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" revision="4ef404748ecc34fd87bdebc56074ebe99d240464" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
   <project name="sigar" revision="1eb584cb7f164a2491e60f2cb86cc0730b2db2a1" upstream="master" dest-branch="master" groups="kv" />
   <project name="subjson" revision="5152c29c1d7be53b3d98f6773a9de0d1588b0d35" upstream="master" dest-branch="master" groups="bsl,kv" />
-  <project name="testrunner" revision="5ec8ffa09c0dcc378644e8a02e45dabf33db8089" upstream="master" dest-branch="master" />
+  <project name="testrunner" revision="c034d88c1599db1cf18ce2465c7b8f916a89e6d6" upstream="master" dest-branch="master" />
   <project name="tlm" revision="c5994d5a0531bc4f38b34467a96f4d4707dfbdfe" upstream="master" dest-branch="master" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
