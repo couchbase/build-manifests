@@ -9,12 +9,12 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="8d14fda07c4da87369c155b91fbe58abce1559ba" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="7e36d6b277ae66ad2ffab4c3188ec6b9d9edd34d" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="b76b61ff0319f45b4cd314f7b9cfd571c66bab1b" upstream="morpheus" dest-branch="phoenix" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="d8d47548e87e73a12bbb13388fb29d482e131b34" upstream="morpheus" dest-branch="morpheus" groups="backup,notdefault,enterprise" />
   <project name="build" path="cbbuild" revision="ba76b34e3a349a3281804c9b97ee0706d8893c36" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="phoenix" />
     <annotation name="PRODUCT" value="enterprise-analytics" />
-    <annotation name="BLD_NUM" value="1042" />
+    <annotation name="BLD_NUM" value="1043" />
     <annotation name="VERSION" value="2.0.0" />
     <annotation name="SERVER_VERSION" value="7.9.0" />
     <annotation name="SERVER_BLD_NUM" value="8.0.0-3439" />
@@ -24,8 +24,8 @@
     <annotation name="MIN_SUPPORTED_COLUMNAR_COMPAT_VERSION" value="2.0.0" />
     <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="1.0.5" />
   </project>
-  <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="f2c39c40c46449d8ac5496f898ed9b55cae71cb8" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="00995e71693afd6d90af152af7196b719342b72e" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="5f4de24b59df8e621b906a7c4abe85630493bcca" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="00995e71693afd6d90af152af7196b719342b72e" upstream="morpheus" dest-branch="phoenix" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="027da5b620a7c78508c142e9f85b48a4d90707ae" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="164ea251e2c977ca0a911b97e60dbdde515f6085" upstream="master" dest-branch="master" groups="backup" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="4b185fb7d5f0e136755756b8cc3029ec64d51639" upstream="master" dest-branch="master" groups="bsl" />
