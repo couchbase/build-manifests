@@ -8,17 +8,17 @@
   <default remote="couchbase" revision="master" />
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="caed837aa163421a637222157b3f6353b4ca831a" groups="kv" />
-  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="44c11fd264a17dce6f65c0afa56573327f460199" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="7b4c7cd245c9721cbd8eb9219396a14678663c84" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
+  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="44c11fd264a17dce6f65c0afa56573327f460199" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="7b4c7cd245c9721cbd8eb9219396a14678663c84" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="2589d15c46bd52912b25c4cd1679a65a8c8f9d03" groups="backup,notdefault,enterprise" />
   <project name="build" path="cbbuild" revision="d8a9c878b2a7ae1bb8354d54c05a386b7ffd76a7" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="8927" />
+    <annotation name="BLD_NUM" value="8928" />
     <annotation name="VERSION" value="7.2.8" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="41a09e85f6084a9b7df401b684adc22dc6d91809" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="0700a5d28d8e56aefd5b4ac66272d4dacd21c75f" upstream="neo" dest-branch="neo" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="0700a5d28d8e56aefd5b4ac66272d4dacd21c75f" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="19082ec66938e0c85b6edcb4eba79d10de59d22a" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="0685e2541e6703c286a690320452c7adb04849cc" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="239ba7553188ff78557836bb4980c8fe817af8ca" groups="backup,notdefault,enterprise" />
@@ -46,7 +46,7 @@
   <project name="go-couchbase" path="goproj/src/github.com/couchbase/go-couchbase" revision="959eaf944140a6c660990f38b1db310ddd6d8e42" groups="backup" />
   <project name="go-metrics" path="godeps/src/github.com/rcrowley/go-metrics" remote="couchbasedeps" revision="dee209f2455f101a5e4e593dea94872d2c62d85d" />
   <project name="go-slab" path="godeps/src/github.com/couchbase/go-slab" revision="c259ef9754f3653b89420d0245665e3467ba2da9" groups="bsl" />
-  <project name="go_json" path="goproj/src/github.com/couchbase/go_json" revision="2936e21ca64c6efb687dd891dee1f8112e11618c" />
+  <project name="go_json" path="goproj/src/github.com/couchbase/go_json" revision="a9e64381314b5dba8a6258a1686e1e692d3a1d9b" />
   <project name="gocb" path="godeps/src/github.com/couchbase/gocb/v2" revision="40020eef484873e507745107edbf99c421927a93" upstream="refs/tags/v2.2.5" dest-branch="refs/tags/v2.2.5" />
   <project name="gocbcore" path="godeps/src/github.com/couchbase/gocbcore/v9" revision="0ece206041d8cf5f5fcd919767446603691bdb69" upstream="refs/tags/v9.1.6" dest-branch="refs/tags/v9.1.6" />
   <project name="godbc" path="goproj/src/github.com/couchbase/godbc" revision="7c2b871f63b894e46627da5e5aa5fffb3a017878" />
