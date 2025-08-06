@@ -8,22 +8,22 @@
   
   <default remote="couchbase" revision="release/3.2" />
   
-  <project name="SQLiteCpp" path="couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="a4a80ae25da3b1f664b3a470469bd28bef759222" />
+  <project name="SQLiteCpp" path="couchbase-lite-core/vendor/SQLiteCpp" remote="couchbasedeps" revision="33dca7270fe819a38e2b41fc3cd4f7f36ffd3fe5" />
   <project name="build" path="cbbuild" revision="b0873a8e5340301c425e2e3c0f93da95f3a027cb">
     <annotation name="RELEASE" value="3.2.5" />
     <annotation name="PRODUCT" value="couchbase-lite-core" />
-    <annotation name="BLD_NUM" value="4" />
+    <annotation name="BLD_NUM" value="5" />
     <annotation name="VERSION" value="3.2.5" />
     <annotation name="BSL_PRODUCT" value="Couchbase Lite" />
     <annotation name="BSL_VERSION" value="3.2" />
     <annotation name="BSL_CHANGE_DATE" value="February 28, 2029" />
   </project>
-  <project name="couchbase-lite-core" revision="d114bd01a2f07af45b59a232ded29cb942825678" upstream="release/3.2" dest-branch="release/3.2" groups="bsl">
+  <project name="couchbase-lite-core" revision="fecfa4ef7d08eb8ed32de5a3ff6e6a223477ae16" upstream="release/3.2" dest-branch="release/3.2" groups="bsl">
     <copyfile src="jenkins/CMakeLists.txt" dest="CMakeLists.txt" />
     <annotation name="BSL_REVIEW" value="github-pr" />
     <annotation name="BSL_REVIEWERS" value="jianminzhao,callumbirks" />
   </project>
-  <project name="couchbase-lite-core-EE" remote="couchbase-priv" revision="6cc2f7f1e2a097679d2e08ab86369707324faacf" upstream="release/3.2" dest-branch="release/3.2" groups="notdefault,enterprise" />
+  <project name="couchbase-lite-core-EE" remote="couchbase-priv" revision="68e858060e1ad2ddb26fe528fa0a3435d52a4a90" upstream="release/3.2" dest-branch="release/3.2" groups="notdefault,enterprise" />
   <project name="couchbase-lite-core.wiki" path="couchbase-lite-core/wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" />
   <project name="fleece" path="couchbase-lite-core/vendor/fleece" revision="8544eaf3335e2c135a4e83ae4733850385925cf5" dest-branch="release/3.2" groups="bsl">
     <annotation name="BSL_REVIEW" value="github-pr" />
