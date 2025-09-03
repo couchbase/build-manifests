@@ -1,0 +1,62 @@
+<manifest>
+  <remote name="chromium-deps" fetch="https://chromium.googlesource.com/chromium/deps/" />
+  <remote name="chromium-src" fetch="https://chromium.googlesource.com/chromium/src/" />
+  <remote name="chromium-tools" fetch="https://chromium.googlesource.com/chromium/tools/" />
+  <remote name="clang-tools" fetch="https://chromium.googlesource.com/external/github.com/llvm/llvm-project/clang/tools/" />
+  <remote name="client-libs" fetch="https://chromium.googlesource.com/infra/luci/luci-py/client/libs/" />
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="deps-third_party" fetch="https://chromium.googlesource.com/v8/deps/third_party/" />
+  <remote name="github.com-Maratyszcza" fetch="https://chromium.googlesource.com/external/github.com/Maratyszcza/" />
+  <remote name="github.com-fastfloat" fetch="https://chromium.googlesource.com/external/github.com/fastfloat/" />
+  <remote name="github.com-google" fetch="https://chromium.googlesource.com/external/github.com/google/" />
+  <remote name="github.com-open-source-parsers" fetch="https://chromium.googlesource.com/external/github.com/open-source-parsers/" />
+  <remote name="github.com-tc39" fetch="https://chromium.googlesource.com/external/github.com/tc39/" />
+  <remote name="gn.googlesource.com" fetch="https://gn.googlesource.com/" />
+  <remote name="llvm-llvm-project" fetch="https://chromium.googlesource.com/external/github.com/llvm/llvm-project/" />
+  <remote name="platform-external" fetch="https://android.googlesource.com/platform/external/" />
+  <remote name="src-third_party" fetch="https://chromium.googlesource.com/chromium/src/third_party/" />
+  <remote name="src-tools" fetch="https://chromium.googlesource.com/chromium/src/tools/" />
+  <remote name="v8" fetch="https://chromium.googlesource.com/v8/" />
+  
+  <project name="FP16" path="v8/third_party/fp16/src" remote="github.com-Maratyszcza" revision="0a92994d729ff76a58f692d3028ca1b64b145d91" />
+  <project name="abseil-cpp" path="v8/third_party/abseil-cpp" remote="src-third_party" revision="aaed376e01b9f98ff29f70fd47468b7e806e1639" />
+  <project name="benchmark" path="v8/third_party/google_benchmark_chrome/src" remote="github.com-google" revision="761305ec3b33abf30e08d50eb829e19a802581cc" />
+  <project name="benchmarks" path="v8/test/benchmarks/data" remote="deps-third_party" revision="05d7188267b4560491ff9155c5ee13e207ecd65f" />
+  <project name="build" path="v8/build" remote="chromium-src" revision="a9640b2af4c541cbe6b716f447315d487351ae46" />
+  <project name="build" path="cbbuild" remote="couchbase" revision="ca92a4864bbcc878fb7b00f3c94c2c534c7ebd1a">
+    <annotation name="RELEASE" value="13.4.115" />
+    <annotation name="PRODUCT" value="cbdeps::v8" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="13.4.115" />
+  </project>
+  <project name="build-tools" remote="couchbase" revision="7cea32087363ec99cd274db379080b729d2b9b49" upstream="master" dest-branch="master" />
+  <project name="buildtools" path="v8/buildtools" remote="chromium-src" revision="6b4eaa1ed0f3a604f354b4098e4f676f7815f1da" />
+  <project name="clang" path="v8/tools/clang" remote="src-tools" revision="a037c8c5ad9a5591d9699730ed8c30f3e0a9a5ac" />
+  <project name="clang-format" path="v8/third_party/clang-format/script" remote="clang-tools" revision="37f6e68a107df43b7d7e044fd36a13cbae3413f2" />
+  <project name="depot_tools" path="v8/third_party/depot_tools" remote="chromium-tools" revision="98b7273c8d49aba8d200a568c0d300fdb4d707fd" />
+  <project name="fast_float" path="v8/third_party/fast_float/src" remote="github.com-fastfloat" revision="cb1d42aaa1e14b09e1452cfdef373d051b8c02a4" />
+  <project name="fuzztest" path="v8/third_party/fuzztest" remote="src-third_party" revision="add91db8abc49d7b20e025d1869cbab0d629dc19" />
+  <project name="fuzztest" path="v8/third_party/fuzztest/src" remote="github.com-google" revision="44ac6c2594a880edbb9cb1e4e197c2b53d078130" />
+  <project name="gn" remote="gn.googlesource.com" revision="5d0a4153b0bcc86c5a23310d5b648a587be3c56d" upstream="main" dest-branch="main" />
+  <project name="google_benchmark" path="v8/third_party/google_benchmark_chrome" remote="src-third_party" revision="917e1208b42fdce63511e401067677ffee3a5c7d" />
+  <project name="googletest" path="v8/third_party/googletest/src" remote="github.com-google" revision="e235eb34c6c4fed790ccdad4b16394301360dcd4" />
+  <project name="highway" path="v8/third_party/highway/src" remote="github.com-google" revision="00fe003dac355b979f36157f9407c7c46448958e" />
+  <project name="icu" path="v8/third_party/icu" remote="chromium-deps" revision="bbccc2f6efc1b825de5f2c903c48be685cd0cf22" />
+  <project name="jinja2" path="v8/third_party/jinja2" remote="src-third_party" revision="5e1ee241ab04b38889f8d517f2da8b3df7cfbd9a" />
+  <project name="jsoncpp" path="v8/third_party/jsoncpp/source" remote="github.com-open-source-parsers" revision="42e892d96e47b1f6e29844cc705e148ec4856448" />
+  <project name="libc" path="v8/third_party/llvm-libc/src" remote="llvm-llvm-project" revision="6b4e376d4537ac5c0601bc1459e315a86f0dafd8" />
+  <project name="libcxx" path="v8/third_party/libc++/src" remote="llvm-llvm-project" revision="2e25154d49c29fa9aa42c30ad4a027bd30123434" />
+  <project name="libcxxabi" path="v8/third_party/libc++abi/src" remote="llvm-llvm-project" revision="634228a732a1d9ae1a6d459556e8fc58707cf961" />
+  <project name="libunwind" path="v8/third_party/libunwind/src" remote="llvm-llvm-project" revision="e55d8cf51c6db1fdd4bb56c158945ec59772c8ee" />
+  <project name="logdog" path="v8/third_party/logdog/logdog" remote="client-libs" revision="0b2078a90f7a638d576b3a7c407d136f2fb62399" />
+  <project name="markupsafe" path="v8/third_party/markupsafe" remote="src-third_party" revision="9f8efc8637f847ab1ba984212598e6fb9cf1b3d4" />
+  <project name="mozilla-tests" path="v8/test/mozilla/data" remote="deps-third_party" revision="f6c578a10ea707b1a8ab0b88943fe5115ce2b9be" />
+  <project name="perfetto" path="v8/third_party/perfetto" remote="platform-external" revision="22c1eb49eefd18c66942e8fa0a1d53f001703616" />
+  <project name="protobuf" path="v8/third_party/protobuf" remote="src-third_party" revision="6f49850910a5160e9f8c3f35f4e07b6fc02feae0" />
+  <project name="protoc_wrapper" path="v8/tools/protoc_wrapper" remote="src-tools" revision="dbcbea90c20ae1ece442d8ef64e61c7b10e2b013" />
+  <project name="re2" path="v8/third_party/re2/src" remote="github.com-google" revision="6dcd83d60f7944926bfd308cc13979fc53dd69ca" />
+  <project name="simdutf" path="v8/third_party/simdutf" remote="src-third_party" revision="5a9a2134b280c1b956ad68a0643797fe26dd1c94" />
+  <project name="test262" path="v8/test/test262/data" remote="github.com-tc39" revision="e7a84b0a090ca86cc05f2e90116115c8c2a7c059" />
+  <project name="v8" remote="v8" revision="80d8d99c3e32941a61a8de0dfa26674fb95aaf58" />
+  <project name="zlib" path="v8/third_party/zlib" remote="src-third_party" revision="5634698162b2182c350e4cb360a0f4dd7706afec" />
+</manifest>
