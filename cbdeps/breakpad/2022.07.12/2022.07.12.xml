@@ -1,0 +1,21 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  <remote name="google" fetch="https://github.com/google/" />
+  <remote name="googlesource" fetch="https://chromium.googlesource.com/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="RELEASE" value="2022.07.12" />
+    <annotation name="PRODUCT" value="cbdeps::breakpad" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="2022.07.12" />
+  </project>
+  <project name="build-tools" revision="7cea32087363ec99cd274db379080b729d2b9b49" upstream="master" dest-branch="master" />
+  <project name="external/gyp" path="breakpad/src/tools/gyp" remote="googlesource" revision="1615ec326858f8c2bd8f30b3a86ea71830409ce4" />
+  <project name="google-breakpad" path="breakpad" remote="couchbasedeps" revision="335e61656fa6034fabc3431a91e5800ba6fc3dc9" upstream="v2022.07.12" dest-branch="v2022.07.12" />
+  <project name="googletest" path="breakpad/src/testing" remote="google" revision="e2239ee6043f73722e7aa812a459f54a28552929" />
+  <project name="linux-syscall-support" path="breakpad/src/third_party/lss" remote="googlesource" revision="e1e7b0ad8ee99a875b272c8e33e308472e897660" />
+  <project name="protobuf" path="breakpad/src/third_party/protobuf/protobuf" remote="google" revision="cb6dd4ef5f82e41e06179dcd57d3b1d9246ad6ac" />
+</manifest>
