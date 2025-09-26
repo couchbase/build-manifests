@@ -14,10 +14,10 @@
   <project name="build" path="cbbuild" revision="370d8bcec3b51ed409abbda23d5c9644f0725931" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="lumina" />
     <annotation name="PRODUCT" value="enterprise-analytics" />
-    <annotation name="BLD_NUM" value="1063" />
+    <annotation name="BLD_NUM" value="1064" />
     <annotation name="VERSION" value="2.2.0" />
     <annotation name="SERVER_VERSION" value="8.0.0" />
-    <annotation name="SERVER_BLD_NUM" value="8.0.0-3767" />
+    <annotation name="SERVER_BLD_NUM" value="8.0.0-3769" />
     <annotation name="SERVER_RELEASE" value="morpheus" />
     <annotation name="COLUMNAR" value="true" />
     <annotation name="COLUMNAR_COMPAT_VERSION" value="2.2.0" />
@@ -43,20 +43,20 @@
   <project name="gomemcached" path="goproj/src/github.com/couchbase/gomemcached" revision="ffae62959cd28220e0b2f914fa8c045647d89a8e" upstream="morpheus" dest-branch="morpheus" groups="backup" />
   <project name="goutils" path="goproj/src/github.com/couchbase/goutils" revision="6e586a6dcf78e5e9e7fc0d94db2637e653427da5" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="e1c381746c2625a76227255f999ae9f14a062208" upstream="refs/tags/v0.38.1" dest-branch="refs/tags/v0.38.1" groups="kv" />
-  <project name="kv_engine" revision="1fa2c51e3d7f1a6edb3040652f6e66f3924a6654" upstream="morpheus" dest-branch="morpheus" groups="kv,bsl" />
+  <project name="kv_engine" revision="8a783c34a0558cb6af10ad5f0acaf29c26e0f350" upstream="morpheus" dest-branch="morpheus" groups="kv,bsl" />
   <project name="libcouchbase" revision="a8e17873d167ec75338a358e54cec3994612d260" upstream="refs/tags/3.3.18" dest-branch="refs/tags/3.3.18" />
-  <project name="magma" remote="couchbase-priv" revision="50e7dc63043ce9dd6d68219856b9e75546d4bd82" upstream="morpheus" dest-branch="morpheus" groups="notdefault,enterprise,kv_ee" />
-  <project name="ns_server" revision="ecf692afae75e4033c65c67343edfb54c6e55a65" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
+  <project name="magma" remote="couchbase-priv" revision="1b7f789d488dfae0cb21a0e2fb2acb72def312c8" upstream="morpheus" dest-branch="morpheus" groups="notdefault,enterprise,kv_ee" />
+  <project name="ns_server" revision="ad0be7064b881e2919873d96e6ebc8753e26e27b" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="phosphor" revision="f7128859bec2052473cf8839edf9a5d36be82b01" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
   <project name="platform" revision="974c10b838347a3ca1f4d5f71eadbd45545f3961" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
-  <project name="product-metadata" revision="d806a86b887cd51a9071e4931d951555e08a6c64" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="d6621bbb4c01439813f2ac8fb405f67258b8a180" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="3045d75408333b6fd7c2209fbfd7a2e4a85b3d96" upstream="master" dest-branch="master" />
   <project name="query-ui" revision="4fe860accce7b0a095d10bdfe1ab03461af3d14c" upstream="master" dest-branch="master" groups="bsl" />
   <project name="regulator" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" revision="54ca6af1f3f0fd83fb684417b23c6741a81d31c0" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
   <project name="sigar" revision="b1718d5c99a2bd37d97fe2c96eb0fd33a06461af" upstream="morpheus" dest-branch="morpheus" groups="kv" />
   <project name="subjson" revision="ae77e5120fa08e93ba0f541670c46a4a3d1825cc" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
-  <project name="testrunner" revision="0b07e65f5a497a4f8418aeda93c966475ef22a63" upstream="master" dest-branch="master" />
-  <project name="tlm" revision="b9da1fcb3492a20313d336e57b0760cb6debc8b4" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv">
+  <project name="testrunner" revision="c90c59ded1e31e7a78741e0a1517aba6b556f9c9" upstream="master" dest-branch="master" />
+  <project name="tlm" revision="b9da1fcb3492a20313d336e57b0760cb6debc8b4" upstream="8.0.0" dest-branch="8.0.0" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
