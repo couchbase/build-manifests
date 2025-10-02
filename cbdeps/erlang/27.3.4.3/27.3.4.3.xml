@@ -1,0 +1,17 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="RELEASE" value="27.3.4.3" />
+    <annotation name="PRODUCT" value="cbdeps::erlang" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="27.3.4.3" />
+    <annotation name="OPENSSL_VERSION" value="3.5.1-1" />
+    <annotation name="NCURSES_VERSION" value="6.4-1" />
+  </project>
+  <project name="build-tools" revision="d65e13fa70c49fb3f82ca3f40c171bd80587ad41" upstream="master" dest-branch="master" />
+  <project name="erlang" remote="couchbasedeps" revision="7dfff594697e091cb5a234d978807d6d2a5c5730" upstream="couchbase-27.3.4.3" dest-branch="couchbase-27.3.4.3" />
+</manifest>
