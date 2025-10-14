@@ -14,7 +14,7 @@
   <project name="build" path="cbbuild" revision="d8a9c878b2a7ae1bb8354d54c05a386b7ffd76a7" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="9194" />
+    <annotation name="BLD_NUM" value="9195" />
     <annotation name="VERSION" value="7.2.9" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.2" />
@@ -91,12 +91,12 @@
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="84668698ea25b64748563aa20726db66a6b8d299" upstream="refs/tags/v1.3.5" dest-branch="refs/tags/v1.3.5" />
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="7ba3e3d78650a01979762dd6d1cfd5a43f6b6a38" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="a97d424e4f977a57c7a0ff6fa093bec1f63b5a93" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
-  <project name="query-ui" revision="90a9fe645e3fb3bb1be7e2be17c99be12ad3a174" upstream="neo" dest-branch="neo" groups="bsl" />
+  <project name="query-ui" revision="bf560714628d0877c9cf4114bad3a586dd09b83f" upstream="neo" dest-branch="neo" groups="bsl" />
   <project name="sigar" revision="a88ac7f0d80b6ec4a47ac127c10793ce20a44e11" upstream="neo" dest-branch="neo" groups="kv" />
   <project name="subjson" revision="6660a83914f8661bf2013ce5edd69f61cfd055ac" upstream="neo" dest-branch="neo" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
   <project name="testrunner" revision="0d8e7bae0ea04221433af06ff1bebceca90c9079" upstream="neo" dest-branch="neo" />
-  <project name="tlm" revision="ebfc8c16e9ae0c0bf0a8126334790b7c2a4b4ee8" upstream="neo" dest-branch="neo" groups="bsl,kv">
+  <project name="tlm" revision="2daa68c4e2cf0165aae5be1524fc363680642f15" upstream="neo" dest-branch="neo" groups="bsl,kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
     <copyfile src="CMakeLists.txt" dest="CMakeLists.txt" />
