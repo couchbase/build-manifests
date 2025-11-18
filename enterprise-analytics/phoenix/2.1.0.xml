@@ -9,12 +9,12 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="30363597f48fdef6769b74074362ebe563dea855" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="9b5e49c2161859d21617c38f277578beac3e9c23" upstream="morpheus" dest-branch="phoenix" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="e4d729f7a72d06504278e1a82fe1f4a83adfa92c" upstream="morpheus" dest-branch="phoenix" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="d8d47548e87e73a12bbb13388fb29d482e131b34" upstream="morpheus" dest-branch="morpheus" groups="backup,notdefault,enterprise" />
   <project name="build" path="cbbuild" revision="ba76b34e3a349a3281804c9b97ee0706d8893c36" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="phoenix" />
     <annotation name="PRODUCT" value="enterprise-analytics" />
-    <annotation name="BLD_NUM" value="1374" />
+    <annotation name="BLD_NUM" value="1375" />
     <annotation name="VERSION" value="2.1.0" />
     <annotation name="SERVER_VERSION" value="7.9.1" />
     <annotation name="SERVER_BLD_NUM" value="8.0.0-3439" />
@@ -49,7 +49,7 @@
   <project name="ns_server" revision="e0a0eb9074ac784210444d0d973c149a117212b5" upstream="master" dest-branch="phoenix" groups="bsl" />
   <project name="phosphor" revision="478dfeb2001957e6933d17287e50dfdc8534072d" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="platform" revision="2476aac1d888902ffbbca2f0d65522c77752944a" upstream="master" dest-branch="master" groups="bsl,kv" />
-  <project name="product-metadata" revision="245ceeab5b28afd66b16287aedcf426a860754f2" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="fcb220588b279dd817a6fa9c9d20267279408a7b" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="3045d75408333b6fd7c2209fbfd7a2e4a85b3d96" upstream="master" dest-branch="master" />
   <project name="query-ui" revision="868a39fa45a3de67f74a3d95fb0030c0d3ed9f19" upstream="master" dest-branch="master" groups="bsl" />
   <project name="regulator" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" revision="54ca6af1f3f0fd83fb684417b23c6741a81d31c0" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
@@ -66,5 +66,5 @@
     <copyfile src="third-party-CMakeLists.txt" dest="third_party/CMakeLists.txt" />
   </project>
   <project name="vbmap" revision="5fde1efec33838bc0b9a1b08b233b4b423101d99" upstream="master" dest-branch="master" />
-  <project name="voltron" remote="couchbase-priv" revision="a8bffb8260b5e242dbb8a2dc8bcc2e4c214c355e" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="voltron" remote="couchbase-priv" revision="ae640f32c36550b095641906b319bd28cfe059dc" upstream="master" dest-branch="phoenix" groups="notdefault,packaging" />
 </manifest>
