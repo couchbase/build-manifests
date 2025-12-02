@@ -14,7 +14,7 @@
   <project name="build" path="cbbuild" revision="d8a9c878b2a7ae1bb8354d54c05a386b7ffd76a7" groups="notdefault,build">
     <annotation name="RELEASE" value="neo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="9223" />
+    <annotation name="BLD_NUM" value="9224" />
     <annotation name="VERSION" value="7.2.9" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.2" />
@@ -41,8 +41,8 @@
   <project name="crypto" path="godeps/src/golang.org/x/crypto" remote="couchbasedeps" revision="eb61739cd99fb244c7cd188d3c5bae54824e781d" upstream="refs/tags/v0.15.0" dest-branch="refs/tags/v0.15.0" />
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="2e6af0c097c8bb98a596cbc81cdf6e169ae5b3cc" />
   <project name="errors" path="godeps/src/github.com/pkg/errors" remote="couchbasedeps" revision="30136e27e2ac8d167177e8a583aa4c3fea5be833" />
-  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="905bfe292d50e143da486b7406c3cf6bcb8b6125" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
-  <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="c2bf32e61822e481134fd695cac968dc22bc79aa" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
+  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="7324ba5b9df33510bb52fa51aea93be26937c0a3" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
+  <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="7a1bbdb0bdc3ca1f4386ba15260674f72c890622" upstream="neo" dest-branch="neo" groups="notdefault,enterprise" />
   <project name="flatbuffers" path="godeps/src/github.com/google/flatbuffers" remote="couchbasedeps" revision="595bf0007ab1929570c7671f091313c8fc20644e" upstream="refs/tags/v24.3.25" dest-branch="refs/tags/v24.3.25" />
   <project name="forestdb" revision="be17128305c7987f5f3938723b553c001f7a42f3" upstream="neo" dest-branch="neo" groups="backup" />
   <project name="geocouch" revision="68f3b9d36630682d17ca5232770f1693b9b8fa18" />
@@ -95,8 +95,8 @@
   <project name="sigar" revision="a88ac7f0d80b6ec4a47ac127c10793ce20a44e11" upstream="neo" dest-branch="neo" groups="kv" />
   <project name="subjson" revision="6660a83914f8661bf2013ce5edd69f61cfd055ac" upstream="neo" dest-branch="neo" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="813d66f8dcd015dfd384afc903bfb8097d54ee85" upstream="neo" dest-branch="neo" />
-  <project name="tlm" revision="95e1b609a6951fa2fe3bf9d4d069c141731208e2" upstream="neo" dest-branch="neo" groups="bsl,kv">
+  <project name="testrunner" revision="4484d4d72c4fd4d0c187926190e806817ecd1c3e" upstream="neo" dest-branch="neo" />
+  <project name="tlm" revision="65dec5b361625c194fb0edb9b363b5e15b8b24f9" upstream="neo" dest-branch="neo" groups="bsl,kv">
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
     <copyfile src="CMakeLists.txt" dest="CMakeLists.txt" />
