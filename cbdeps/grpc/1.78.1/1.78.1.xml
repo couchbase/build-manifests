@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="RELEASE" value="1.78.1" />
+    <annotation name="PRODUCT" value="cbdeps::grpc" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="1.78.1" />
+  </project>
+  <project name="build-tools" revision="86c173dfe493c85cde70079f068dae3a9350ad1f" upstream="master" dest-branch="master" />
+  <project name="grpc" remote="couchbasedeps" revision="5b6492ea90b2b867a6adad1b10a6edda28e860d1" upstream="refs/tags/v1.78.1" dest-branch="refs/tags/v1.78.1" />
+</manifest>
