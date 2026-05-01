@@ -1,0 +1,22 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="release/3.2" />
+  
+  <project name="build" path="cbbuild" revision="b0873a8e5340301c425e2e3c0f93da95f3a027cb">
+    <annotation name="RELEASE" value="3.2.6" />
+    <annotation name="PRODUCT" value="couchbase-lite-core" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="3.2.6" />
+    <annotation name="BSL_PRODUCT" value="Couchbase Lite" />
+    <annotation name="BSL_VERSION" value="3.2" />
+    <annotation name="BSL_CHANGE_DATE" value="February 28, 2029" />
+  </project>
+  <project name="couchbase-lite-core" revision="76d9487af267eb70806d3cddc1d26b7ba2197180" upstream="release/3.2" dest-branch="release/3.2" groups="bsl" sync-s="true">
+    <copyfile src="jenkins/CMakeLists.txt" dest="CMakeLists.txt" />
+    <annotation name="BSL_REVIEW" value="github-pr" />
+    <annotation name="BSL_REVIEWERS" value="jianminzhao,callumbirks" />
+  </project>
+  <project name="couchbase-lite-core-EE" remote="couchbase-priv" revision="b5829233b2e09eea74979fac518b1cb5cf5e8d31" upstream="release/3.2" dest-branch="release/3.2" groups="notdefault,enterprise" sync-s="true" />
+</manifest>
