@@ -14,7 +14,7 @@
   <project name="build" path="cbbuild" revision="86d8fdd68842f94d1c61db36c10fe0cd1e75e85f" groups="notdefault,build">
     <annotation name="RELEASE" value="trinity" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="8498" />
+    <annotation name="BLD_NUM" value="8499" />
     <annotation name="VERSION" value="7.6.11" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.6" />
@@ -36,7 +36,7 @@
   <project name="common" path="godeps/src/github.com/prometheus/common" remote="couchbasedeps" revision="902cb39e6c079571d32c2db8da220da13c11b562" upstream="refs/tags/v0.33.0" dest-branch="refs/tags/v0.33.0" />
   <project name="couchbase-cli" revision="f3ab16cba348faf28071c43b9798f7c5abc34778" groups="kv" />
   <project name="couchbase-jvm-core" path="analytics/couchbase-jvm-core" revision="b712718b5a9a3ea4699e537871644446494fe9e3" upstream="refs/tags/1.7.24" dest-branch="refs/tags/1.7.24" groups="notdefault,enterprise,analytics" />
-  <project name="couchdb" revision="89fdff7376b9c21a5dca4995bd95122329bb7e31" dest-branch="unstable" />
+  <project name="couchdb" revision="a695d4009252ac673ae662bb9a701d6de555acab" upstream="7.6.11" dest-branch="unstable" />
   <project name="couchdbx-app" revision="c5fb480056225d137277b46463c7e54fa180f34f" groups="notdefault,packaging" />
   <project name="couchstore" revision="046078da28752f5918177e931db597afd919c9be" groups="kv" />
   <project name="crypto" path="godeps/src/golang.org/x/crypto" remote="couchbasedeps" revision="eb61739cd99fb244c7cd188d3c5bae54824e781d" upstream="refs/tags/v0.15.0" dest-branch="refs/tags/v0.15.0" />
@@ -93,7 +93,7 @@
   <project name="simdutf" path="third_party/simdutf" remote="couchbasedeps" revision="4a212616ba23c65c7048f9604faccbff5353300f" upstream="refs/tags/v3.2.14" dest-branch="refs/tags/v3.2.14" groups="kv" />
   <project name="subjson" revision="9e445e8544fab2171f2ccb1b688fecf9257e02c8" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="77cbc2fdf5117000fe59a95ce45ea9ddae5a58d8" upstream="trinity" dest-branch="trinity" />
+  <project name="testrunner" revision="12a91c7e9083ca69b930fb0d566024526084fa7a" upstream="trinity" dest-branch="trinity" />
   <project name="tlm" revision="1925ab8fc1d4f744ac6c2946f1e2689ba009c4ed" upstream="7.6.11" dest-branch="7.6.11" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
