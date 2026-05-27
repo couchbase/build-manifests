@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="aws-sdk-cpp" path="AWSSDK" remote="couchbasedeps" revision="08babee261cd61790ab6584c78a9c463b0206834" upstream="refs/tags/1.11.800" dest-branch="refs/tags/1.11.800" sync-s="true" />
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="RELEASE" value="1.11.800" />
+    <annotation name="PRODUCT" value="cbdeps::AWSSDK" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="1.11.800" />
+  </project>
+  <project name="build-tools" revision="0f569e3e8c98f2543cc924f5efa42e5cab569108" upstream="master" dest-branch="master" />
+</manifest>
