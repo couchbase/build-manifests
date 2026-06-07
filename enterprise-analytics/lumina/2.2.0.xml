@@ -10,12 +10,12 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="ba19fe7f2247a1e746432a6efdef683262cd15d2" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="bafe9ba1b8b9985cc9b4e25256203abd465fdadc" upstream="lumina" dest-branch="lumina" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="44e54a6e677837a5d415ef9e366fc077990aa1eb" upstream="lumina" dest-branch="lumina" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="983714b2982e1e493e547acbca63790941897464" groups="backup,notdefault,enterprise" />
   <project name="build" path="cbbuild" revision="847121d4f4cbf50a639b428ae12ceef54cc80769" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="lumina" />
     <annotation name="PRODUCT" value="enterprise-analytics" />
-    <annotation name="BLD_NUM" value="1301" />
+    <annotation name="BLD_NUM" value="1302" />
     <annotation name="VERSION" value="2.2.0" />
     <annotation name="SERVER_VERSION" value="8.0.1" />
     <annotation name="SERVER_BLD_NUM" value="8.0.1-4795" />
@@ -25,8 +25,8 @@
     <annotation name="MIN_SUPPORTED_COLUMNAR_COMPAT_VERSION" value="2.0.0" />
     <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="2.1.0" />
   </project>
-  <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="ed15499e56ec883b210c47b14bd6933ec76f9d3f" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="38dc6ef75d64227b0363fd38b3c74eb0f6308cc8" upstream="lumina" dest-branch="lumina" groups="notdefault,enterprise,analytics" />
+  <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="ee83cc9db50d7fd1ae15aea1ec6a49ab8bba50fe" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="c78d52a5564d6e25cc9e0660206dab8adf221cdd" upstream="lumina" dest-branch="lumina" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="50bf2b2e709a5798842c805c333bf5557515822e" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="0338360b4d7c8917a872d3406700d46dae2d817c" groups="backup" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="4b185fb7d5f0e136755756b8cc3029ec64d51639" groups="bsl" />
@@ -50,7 +50,7 @@
   <project name="ns_server" remote="mblow" revision="52eb2e80714642b995fe4a23e70e2e4f3aa4b0a9" upstream="lumina" dest-branch="lumina" groups="bsl" />
   <project name="phosphor" revision="df9f5319f138bbf973f98b8180c80f3c5f95a9d1" groups="bsl,kv" />
   <project name="platform" revision="31a94f3d539f0759c1d08597bcfea31516f996e3" groups="bsl,kv" />
-  <project name="product-metadata" revision="089dddb899109b7bb71b1b9de974cbf314adaba3" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="1f85910891472e6d6ed519497efd4c8a69bbfb95" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="3045d75408333b6fd7c2209fbfd7a2e4a85b3d96" upstream="master" dest-branch="master" />
   <project name="query-ui" revision="6f58f98c59557d13fc3bafdd440bd5456a7ca883" groups="bsl" />
   <project name="sigar" revision="b1718d5c99a2bd37d97fe2c96eb0fd33a06461af" groups="kv" />
