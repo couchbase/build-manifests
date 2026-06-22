@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="main" />
+  
+  <project name="build" path="cbbuild" revision="0961883a4a6afcc1fb82e9e876af454f43944298">
+    <annotation name="RELEASE" value="1.2.0" />
+    <annotation name="PRODUCT" value="couchbase-lite-react-native" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="1.2.0" />
+  </project>
+  <project name="couchbase-lite-react-native" remote="couchbase-priv" revision="6f5ab2d7c031302a93ee5a38fc56369cc2cd732e" upstream="main" dest-branch="main" sync-s="true" />
+  <project name="product-texts" revision="3045d75408333b6fd7c2209fbfd7a2e4a85b3d96" upstream="master" dest-branch="master" />
+</manifest>
