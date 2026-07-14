@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="RELEASE" value="1.5.7" />
+    <annotation name="PRODUCT" value="cbdeps::zstd-cpp" />
+    <annotation name="BLD_NUM" value="1" />
+    <annotation name="VERSION" value="1.5.7" />
+  </project>
+  <project name="build-tools" revision="3808bdd640f2d3356d0b073b95331d805c6eec2d" upstream="master" dest-branch="master" />
+  <project name="zstd-cpp" remote="couchbasedeps" revision="f8745da6ff1ad1e7bab384bd1f9d742439278e99" upstream="refs/tags/v1.5.7" dest-branch="refs/tags/v1.5.7" />
+</manifest>
