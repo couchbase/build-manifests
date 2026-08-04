@@ -1,0 +1,16 @@
+<manifest>
+  <remote name="couchbase" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="main" />
+  
+  <project name="build" path="cbbuild" revision="8ba9841f5fd3b60f22203be47bc6e81f7b9b6b2e">
+    <annotation name="RELEASE" value="1.0.0" />
+    <annotation name="PRODUCT" value="stellar-rosetta" />
+    <annotation name="BLD_NUM" value="100" />
+    <annotation name="VERSION" value="1.0.0" />
+    <annotation name="GOVERSION" value="SUPPORTED_NEWER" />
+  </project>
+  <project name="golang" remote="couchbaselabs" revision="4fa24f854d744799bc5dacb48d3291274ae456b5" upstream="main" dest-branch="main" />
+  <project name="stellar-rosetta" remote="couchbaselabs" revision="8eb69d8037fd98e13437e111eb031720bba6c9a6" upstream="main" dest-branch="main" sync-s="true" />
+</manifest>
