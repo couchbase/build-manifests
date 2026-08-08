@@ -9,15 +9,15 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="202aaf53504d707fae9fc4f0c12a7f5049f17ef7" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="96612e74472353e21cbbb48a03b8ded267e11c39" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="c12ed40b5762e7491f1436c329bfb60fef7c5696" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="bc899e4a172d70577b7ff00f871b6564984da3df" upstream="morpheus" dest-branch="morpheus" groups="backup,notdefault,enterprise" />
   <project name="build" path="cbbuild" revision="847121d4f4cbf50a639b428ae12ceef54cc80769" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="helios" />
     <annotation name="PRODUCT" value="enterprise-analytics" />
-    <annotation name="BLD_NUM" value="1121" />
+    <annotation name="BLD_NUM" value="1122" />
     <annotation name="VERSION" value="2.3.0" />
     <annotation name="SERVER_VERSION" value="8.0.3" />
-    <annotation name="SERVER_BLD_NUM" value="8.0.3-5901" />
+    <annotation name="SERVER_BLD_NUM" value="8.0.3-5912" />
     <annotation name="SERVER_RELEASE" value="morpheus" />
     <annotation name="COLUMNAR" value="true" />
     <annotation name="COLUMNAR_COMPAT_VERSION" value="2.3.0" />
@@ -47,15 +47,15 @@
   <project name="kv_engine" revision="24b00432152249be4b8b0648dfa779802c5cd252" upstream="morpheus" dest-branch="morpheus" groups="kv,bsl" />
   <project name="libcouchbase" revision="93bbcb6ac9301cb813ba84216235ec9afcfceb0f" upstream="refs/tags/3.3.19" dest-branch="refs/tags/3.3.19" />
   <project name="magma" remote="couchbase-priv" revision="94ef61ddc6609825b956b38d338e8c1a78049c8c" upstream="morpheus" dest-branch="morpheus" groups="notdefault,enterprise,kv_ee" />
-  <project name="ns_server" revision="d445f0ac6f5a91f0636cee0ea15c4be772118639" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
+  <project name="ns_server" revision="eb0a952591c11025c77b8d35ac84fb7ef3a9f34a" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="phosphor" revision="df9f5319f138bbf973f98b8180c80f3c5f95a9d1" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
   <project name="platform" revision="d62aa33a0288e7dd75f7ec0d417eda8e48d8923d" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
-  <project name="product-metadata" revision="2d5d60ba5397305c7fef5e189f18aef5ea8eb677" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="429e4d0ddf1adc62e898967dea82a39c40b37669" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="3045d75408333b6fd7c2209fbfd7a2e4a85b3d96" upstream="master" dest-branch="master" />
-  <project name="query-ui" revision="26d3f94751caece9f6617979bb357b19f93f47d6" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
+  <project name="query-ui" revision="c9d088658df5a92ca30c847edd7c4f92821a803e" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="sigar" revision="b1718d5c99a2bd37d97fe2c96eb0fd33a06461af" upstream="morpheus" dest-branch="morpheus" groups="kv" />
   <project name="subjson" revision="9ad6776cafbffed50a08590b675a106102d61471" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
-  <project name="testrunner" revision="79e312f059030f97b33a1be77d3090d402991c36" upstream="morpheus" dest-branch="morpheus" />
+  <project name="testrunner" revision="ed44d8ef9b40fc12c2ee82d041323d086362fd58" upstream="morpheus" dest-branch="morpheus" />
   <project name="tlm" revision="5bbb1ef041f85f80f958d13d8dbb4447222b23b4" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
