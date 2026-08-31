@@ -15,7 +15,7 @@
   <project name="build" path="cbbuild" revision="847121d4f4cbf50a639b428ae12ceef54cc80769" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="totoro" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="1065" />
+    <annotation name="BLD_NUM" value="1066" />
     <annotation name="VERSION" value="8.5.0" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="7e5466358e8d0cb9fd2761de3183612d7addfa24" upstream="totoro" dest-branch="totoro" groups="notdefault,enterprise,analytics" />
@@ -32,8 +32,8 @@
   <project name="couchdbx-app" revision="f797baeb32ff473cec77dae36e239dd806afc519" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="couchstore" revision="bd43678b72fa4745d9a97af7240789f8ded8fb42" upstream="master" dest-branch="master" groups="kv" />
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="218129e2b4b06c6381c7aabb7b5c78dff7f07e3c" upstream="master" dest-branch="master" />
-  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="c392e5b69f0e207162e089fba4c9e395bf42ec6b" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
-  <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="a0bc30e8bb04fe50f686fd9fe543a4ea41fa72f6" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
+  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="53dada2f722f08e61ed8f9da2f8fd86354bb6f9c" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
+  <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="f92f1b350a3c5d5830a6c192365a6a16a25dc74b" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="forestdb" revision="9efe6d75d7d61e742af70fb47fe97ad1d04ba86f" upstream="cb-master" dest-branch="cb-master" groups="backup" />
   <project name="fusion" remote="couchbase-priv" revision="60681fc6f3ff0708a58a437634c8cad7f5e51e2b" upstream="main" dest-branch="main" groups="notdefault,enterprise,kv_ee" />
   <project name="geocouch" revision="68f3b9d36630682d17ca5232770f1693b9b8fa18" upstream="master" dest-branch="master" />
@@ -42,11 +42,11 @@
   <project name="gocbcrypto" path="goproj/src/github.com/couchbase/gocbcrypto" remote="couchbase-priv" revision="4a5c40fa7dde51632e3d589ada4e8c755662275b" upstream="main" dest-branch="main" />
   <project name="gocoverage" revision="9bb9cdea7e40df44f3f7ad1bc4a8e0f14f808f2a" upstream="main" dest-branch="main" />
   <project name="godbc" path="goproj/src/github.com/couchbase/godbc" revision="0781716365b3dc4078ad01ed0f8122161a47ebe5" upstream="master" dest-branch="master" />
-  <project name="golang" remote="couchbaselabs" revision="cc6a95b3ec742e27b5018af2d9df45749c737eb8" upstream="main" dest-branch="main" groups="kv" />
+  <project name="golang" remote="couchbaselabs" revision="cbe90b9e0231d4e75d68f5551920bddf567c1f6b" upstream="main" dest-branch="main" groups="kv" />
   <project name="gomemcached" path="goproj/src/github.com/couchbase/gomemcached" revision="07bb3f5b1a7ffed2bed49d83e0849849ef7f3394" upstream="master" dest-branch="master" groups="backup" />
   <project name="gometa" path="goproj/src/github.com/couchbase/gometa" revision="1e238066837f923e6a86a5b170fa79f2b59424bd" upstream="master" dest-branch="master" />
   <project name="goutils" path="goproj/src/github.com/couchbase/goutils" revision="e96fa260fef42508a5ef063dd149b9d8982c4486" upstream="master" dest-branch="master" groups="bsl" />
-  <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" remote="couchbase-priv" revision="67fe01d3cb6c55e165cf8268318e2f2691c0e70d" upstream="master" dest-branch="master" groups="bsl" />
+  <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" remote="couchbase-priv" revision="9fbb3fa50ac194394343ef438a18662dbac2fd58" upstream="master" dest-branch="master" groups="bsl" />
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="e1c381746c2625a76227255f999ae9f14a062208" upstream="refs/tags/v0.38.1" dest-branch="refs/tags/v0.38.1" groups="kv" />
   <project name="hebrew" remote="couchbase-priv" revision="c57616b187889a5318688f49817ccaceb9c098b9" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="44e750e8ac4241eee554e44f2359ee6066aa594d" upstream="master" dest-branch="unstable" groups="bsl" />
@@ -61,7 +61,7 @@
   <project name="platform" revision="d0d3b456c9c419213eb77bdbc0416792a773b34e" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="product-metadata" revision="6ce4de1dcdb64a51118224f06b23d621be258e4b" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="3045d75408333b6fd7c2209fbfd7a2e4a85b3d96" upstream="master" dest-branch="master" />
-  <project name="query" path="goproj/src/github.com/couchbase/query" revision="1c92bffa3354fd39f8d6dec2c7c102b23681a897" upstream="master" dest-branch="master" groups="bsl" />
+  <project name="query" path="goproj/src/github.com/couchbase/query" revision="cf0c56cad70beac082d2da3eae4e5d7663cb2d4f" upstream="master" dest-branch="master" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="28248ec88e2e16389f628b6a18bcc91a0fabc266" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="query-ui" revision="d91e036e22066a752c308941d33809aa8b645368" upstream="master" dest-branch="master" groups="bsl" />
   <project name="regulator" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" revision="f34a854e2c51e8e475c8a72ff2323f56c9e26bc4" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
