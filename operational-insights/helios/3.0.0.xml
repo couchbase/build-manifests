@@ -9,12 +9,12 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="cb1c6b7b3db58131f4aef63a25574983afd7b69e" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="063142e68d68b27bb50b2134d205c9abd8cc3b7b" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="01af06d2d04694859e89f062659fcca199d09726" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="18d820c7c6409f151c43302413c3b86fbbbcb782" upstream="8.0.3" dest-branch="8.0.3" groups="backup,notdefault,enterprise" />
-  <project name="build" path="cbbuild" revision="a109154172814a444e4c07d140ff568a0667c2de" upstream="master" dest-branch="master" groups="notdefault,build">
+  <project name="build" path="cbbuild" revision="28c54a2a9a305d2951c6f75cd6beb6dda6301e5a" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="helios" />
     <annotation name="PRODUCT" value="operational-insights" />
-    <annotation name="BLD_NUM" value="1017" />
+    <annotation name="BLD_NUM" value="1018" />
     <annotation name="VERSION" value="3.0.0" />
     <annotation name="SERVER_VERSION" value="8.0.3" />
     <annotation name="SERVER_BLD_NUM" value="8.0.3-5925" />
@@ -71,5 +71,5 @@
     <copyfile src="third-party-CMakeLists.txt" dest="third_party/CMakeLists.txt" />
   </project>
   <project name="vbmap" revision="5fde1efec33838bc0b9a1b08b233b4b423101d99" />
-  <project name="voltron" remote="couchbase-priv" revision="d3671315e7825fcfbb99b87043988134200fae4e" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="voltron" remote="couchbase-priv" revision="193adc07b24741617d67bb76ac435ff4c3a0ef7b" upstream="master" dest-branch="master" groups="notdefault,packaging" />
 </manifest>
