@@ -9,12 +9,12 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="58965e06f88855f1a5516020435079cc483257df" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="3733cc9cb11547ac07d9b25f6c6dfc3a57056dbb" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="db10942a96276511e210204937538eae6cced902" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="backup" remote="couchbase-priv" revision="18d820c7c6409f151c43302413c3b86fbbbcb782" upstream="8.0.3" dest-branch="8.0.3" groups="backup,notdefault,enterprise" />
   <project name="build" path="cbbuild" revision="28c54a2a9a305d2951c6f75cd6beb6dda6301e5a" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="helios" />
     <annotation name="PRODUCT" value="operational-insights" />
-    <annotation name="BLD_NUM" value="1021" />
+    <annotation name="BLD_NUM" value="1022" />
     <annotation name="VERSION" value="3.0.0" />
     <annotation name="SERVER_VERSION" value="8.0.3" />
     <annotation name="SERVER_BLD_NUM" value="8.0.3-5925" />
@@ -29,8 +29,8 @@
     <annotation name="MIN_SUPPORTED_COLUMNAR_COMPAT_VERSION" value="2.0.0" />
     <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="2.1.0" />
   </project>
-  <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="95ebbf069bb6459166e3372af6bb6ca78b2fb70d" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="6e2e9daec90aa6c5eb04d47495898623546a510f" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="d2a0b721af8502b67547e06a737e46a5e3e9eeab" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="fe9fdacfc674ad99cc85616e06d179f89b0259ab" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="bfed3f17b757a2e93e125d828c7b689af385db82" upstream="master" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="81a5b0d15e750963b7101a862e02b5f229d4826e" groups="backup" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="4b185fb7d5f0e136755756b8cc3029ec64d51639" groups="bsl" />
@@ -71,5 +71,5 @@
     <copyfile src="third-party-CMakeLists.txt" dest="third_party/CMakeLists.txt" />
   </project>
   <project name="vbmap" revision="5fde1efec33838bc0b9a1b08b233b4b423101d99" />
-  <project name="voltron" remote="couchbase-priv" revision="193adc07b24741617d67bb76ac435ff4c3a0ef7b" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="voltron" remote="couchbase-priv" revision="75229c8303a5ba1fb6ae022fdab787b027e82e97" upstream="master" dest-branch="master" groups="notdefault,packaging" />
 </manifest>
