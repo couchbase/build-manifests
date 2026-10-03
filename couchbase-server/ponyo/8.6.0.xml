@@ -15,7 +15,7 @@
   <project name="build" path="cbbuild" revision="28c54a2a9a305d2951c6f75cd6beb6dda6301e5a" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="ponyo" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="1002" />
+    <annotation name="BLD_NUM" value="1003" />
     <annotation name="VERSION" value="8.6.0" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="d2aa10b66284820fbab2d1e41b1d6067bbee1224" upstream="totoro" dest-branch="totoro" groups="notdefault,enterprise,analytics" />
@@ -27,7 +27,7 @@
   <project name="cbftx" remote="couchbase-priv" revision="210d771e5eff236ece7a7b2552657f5d6fc2d117" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="cbgt" revision="0c7e969a5c416f2129c3343447e6312df1036455" upstream="master" dest-branch="master" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="4b185fb7d5f0e136755756b8cc3029ec64d51639" upstream="master" dest-branch="master" groups="bsl" />
-  <project name="couchbase-cli" revision="05428f3eb86ad82b385ea60f62f127fa8e40e7c3" upstream="master" dest-branch="master" groups="kv" />
+  <project name="couchbase-cli" revision="67392075eb59ad3c2778df93117a8cafadc0b52f" upstream="master" dest-branch="master" groups="kv" />
   <project name="couchdb" revision="896d9678e277096b0e00d6df599ac36a1735972e" upstream="master" dest-branch="unstable" />
   <project name="couchdbx-app" revision="f797baeb32ff473cec77dae36e239dd806afc519" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="couchstore" revision="bea5ea96925bafe0b397a3ecb102a05b58622ecd" upstream="master" dest-branch="master" groups="kv" />
@@ -50,16 +50,16 @@
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="e1c381746c2625a76227255f999ae9f14a062208" upstream="refs/tags/v0.38.1" dest-branch="refs/tags/v0.38.1" groups="kv" />
   <project name="hebrew" remote="couchbase-priv" revision="c57616b187889a5318688f49817ccaceb9c098b9" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="fcd63810d280fec92befee9e11de3eb056d26152" upstream="master" dest-branch="unstable" groups="bsl" />
-  <project name="kv_engine" revision="2a412d518a0a64cc0a98bb34d439502b389e788c" upstream="master" dest-branch="master" groups="kv,bsl" />
+  <project name="kv_engine" revision="3e71183d299c524190753eb1aca66b84f759d03f" upstream="master" dest-branch="master" groups="kv,bsl" />
   <project name="libcouchbase" revision="93bbcb6ac9301cb813ba84216235ec9afcfceb0f" upstream="refs/tags/3.3.19" dest-branch="refs/tags/3.3.19" />
   <project name="magma" remote="couchbase-priv" revision="07a2f1f52b9d022398c6b67448645f68d82d41a9" upstream="master" dest-branch="master" groups="notdefault,enterprise,kv_ee" />
   <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="c22b06f9dc5e59b9c7c14cff52bb482069df7aab" upstream="master" dest-branch="master" groups="bsl" />
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="fe9f748c807a28680dae737a799ed796d8ad1271" upstream="master" dest-branch="unstable" groups="bsl" />
-  <project name="ns_server" revision="e4f2df26f343defc8004021799735ee84ff89a77" upstream="master" dest-branch="master" groups="bsl" />
+  <project name="ns_server" revision="e8888e88f5923b5d06767c20c5ddbfb1c9068d40" upstream="master" dest-branch="master" groups="bsl" />
   <project name="phosphor" revision="92240155c59fe044f97a8e84ed584f10e82af520" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="72138efb8c63d2f00317f5c672fbbb291fb10953" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="platform" revision="0ce29192a58f31a6b7520018c034c1af5686cd42" upstream="master" dest-branch="master" groups="bsl,kv" />
-  <project name="product-metadata" revision="6805fa9c2f715c4810fd9535e0d0711d566947d2" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="276872a21e69208fec18aafb31c02fa7a110bbf0" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="ab8c95f00104a2146cf2e0db9d74b9b2e0eb29a5" upstream="master" dest-branch="master" />
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="d7bb92dbb413ca854b9867924da702a3911f502e" upstream="master" dest-branch="master" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="874a05e2f29088288c451145de01fb9ea5be0927" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
@@ -67,7 +67,7 @@
   <project name="regulator" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" revision="f34a854e2c51e8e475c8a72ff2323f56c9e26bc4" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
   <project name="server-ui" remote="couchbase-priv" revision="80cc15994994c37b626872db00c74f3dfb16dd94" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
   <project name="sigar" revision="5534f1b365477fa096aaf658800cc817b75d1135" upstream="master" dest-branch="master" groups="kv" />
-  <project name="subjson" revision="b71c407648a642dda564aeea556cffe8d925e7d1" upstream="master" dest-branch="master" groups="bsl,kv" />
+  <project name="subjson" revision="88a2125b961d713f53755a85f7fe31770ed53cfe" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="testrunner" revision="1fe16f30ad296a06f544dddb57d4449957b7780c" upstream="master" dest-branch="master" />
   <project name="tlm" revision="f3459972fe5331c692c754be20fa57a8d9ef948a" upstream="master" dest-branch="master" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
