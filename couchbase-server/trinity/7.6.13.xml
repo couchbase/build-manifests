@@ -14,7 +14,7 @@
   <project name="build" path="cbbuild" revision="b30f5e7d901a3efd1b633701887bd544c6f0d887" upstream="trinity" dest-branch="trinity" groups="notdefault,build">
     <annotation name="RELEASE" value="trinity" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="9375" />
+    <annotation name="BLD_NUM" value="9376" />
     <annotation name="VERSION" value="7.6.13" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="7.6" />
@@ -24,7 +24,7 @@
   <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="cc427eacdc1267aea6990159911d834735bbfdd7" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="82e8bdc204ed944593c16f6b25bd45245b1aa37b" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="3ec42760c0867d1b88bb5c8cdac461b2f9a1ef2e" upstream="trinity" dest-branch="trinity" groups="backup" />
-  <project name="cbbs" remote="couchbase-priv" revision="96ed2bf75193193e5a843e624dd767848e1588da" upstream="trinity" dest-branch="trinity" groups="backup,notdefault,enterprise" />
+  <project name="cbbs" remote="couchbase-priv" revision="41472f54519ef36a058692f40d66ba5022bbc71f" upstream="trinity" dest-branch="trinity" groups="backup,notdefault,enterprise" />
   <project name="cbft" revision="2fbfda7887e3038d64053183e7a03c695ab00aff" upstream="trinity" dest-branch="trinity" />
   <project name="cbftx" remote="couchbase-priv" revision="458c40588343e102bd5e4d37bac08c8143722330" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise" />
   <project name="cbgt" revision="11da5bce29d0f8c653869e4db7c1b4646d9583e3" upstream="trinity" dest-branch="trinity" />
@@ -82,7 +82,7 @@
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="81f6170e7bfeee9616c213644505357d10ec4183" upstream="trinity" dest-branch="trinity" groups="notdefault,enterprise" />
   <project name="platform" revision="a84c5924b31af704a46be70871689b39aeffece9" upstream="trinity" dest-branch="trinity" groups="bsl,kv" />
   <project name="procfs" path="godeps/src/github.com/prometheus/procfs" remote="couchbasedeps" revision="76fc8b844e3a18c31bf689e4fe7efdd5a2f41298" />
-  <project name="product-metadata" revision="99fe8374cb242624fdb78a144194796ecd005959" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="1804bf9af7328296380f1147e67078083bf55c2f" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="ab8c95f00104a2146cf2e0db9d74b9b2e0eb29a5" upstream="master" dest-branch="master" />
   <project name="protobuf" path="godeps/src/github.com/golang/protobuf" remote="couchbasedeps" revision="d04d7b157bb510b1e0c10132224b616ac0e26b17" upstream="refs/tags/v1.4.2" dest-branch="refs/tags/v1.4.2" />
   <project name="protobuf-go" path="godeps/src/google.golang.org/protobuf" remote="couchbasedeps" revision="32051b4f86e54c2142c7c05362c6e96ae3454a1c" upstream="refs/tags/v1.28.0" dest-branch="refs/tags/v1.28.0" />
@@ -94,7 +94,7 @@
   <project name="simdutf" path="third_party/simdutf" remote="couchbasedeps" revision="4a212616ba23c65c7048f9604faccbff5353300f" upstream="refs/tags/v3.2.14" dest-branch="refs/tags/v3.2.14" groups="kv" />
   <project name="subjson" revision="9e445e8544fab2171f2ccb1b688fecf9257e02c8" upstream="trinity" dest-branch="trinity" groups="bsl,kv" />
   <project name="sys" path="godeps/src/golang.org/x/sys" remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" />
-  <project name="testrunner" revision="1c9e02a20ba62f423bb26d79eb13dd87e073ca6e" upstream="trinity" dest-branch="trinity" />
+  <project name="testrunner" revision="d6b70935b20b503bbd37ec04b9f311b863eca8e5" upstream="trinity" dest-branch="trinity" />
   <project name="tlm" revision="aad93d2c197cb702f72edea57d860a618ce7c376" upstream="trinity" dest-branch="trinity" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
