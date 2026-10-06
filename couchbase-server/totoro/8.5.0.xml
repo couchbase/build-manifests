@@ -15,14 +15,14 @@
   <project name="build" path="cbbuild" revision="28c54a2a9a305d2951c6f75cd6beb6dda6301e5a" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="totoro" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="1285" />
+    <annotation name="BLD_NUM" value="1286" />
     <annotation name="VERSION" value="8.5.0" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="d2aa10b66284820fbab2d1e41b1d6067bbee1224" upstream="totoro" dest-branch="totoro" groups="notdefault,enterprise,analytics" />
   <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="1595076053391c329771a864a6779d49ee32dbea" upstream="totoro" dest-branch="totoro" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="5384381db9bf02bcbcdaec085c07cd5f852e9505" upstream="totoro" dest-branch="totoro" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="d676e6d94f9964ab3d6c3286b5c002c90ad5caa7" upstream="totoro" dest-branch="totoro" groups="backup" />
-  <project name="cbbs" remote="couchbase-priv" revision="30fae3f58df7a3487f4981e20427df0f18059325" upstream="master" dest-branch="master" groups="backup,notdefault,enterprise" />
+  <project name="cbbs" remote="couchbase-priv" revision="26197f4ae5fea34319a4b496001daa1226c1fec3" upstream="master" dest-branch="master" groups="backup,notdefault,enterprise" />
   <project name="cbft" revision="c745d016bf6c97b7b6605b6e37aa77dc59e62419" upstream="totoro" dest-branch="totoro" />
   <project name="cbftx" remote="couchbase-priv" revision="210d771e5eff236ece7a7b2552657f5d6fc2d117" upstream="totoro" dest-branch="totoro" groups="notdefault,enterprise" />
   <project name="cbgt" revision="0c7e969a5c416f2129c3343447e6312df1036455" upstream="totoro" dest-branch="totoro" />
@@ -32,7 +32,7 @@
   <project name="couchdbx-app" revision="f797baeb32ff473cec77dae36e239dd806afc519" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="couchstore" revision="ba571546f0a51e90cea92a09d72d637de328139e" upstream="totoro" dest-branch="totoro" groups="kv" />
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="218129e2b4b06c6381c7aabb7b5c78dff7f07e3c" upstream="master" dest-branch="master" />
-  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="6602bb960671de054bcdddcaed745bc4fcc86e7c" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
+  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="e5beef40fc0ebcabe84a417b3a7b3c4eb8047ca8" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="a02a341a90bb7ea2a97a35edb8cdad37a7a30fb2" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="forestdb" revision="9efe6d75d7d61e742af70fb47fe97ad1d04ba86f" upstream="cb-master" dest-branch="cb-master" groups="backup" />
   <project name="fusion" remote="couchbase-priv" revision="7a24a3b96b68b73b884b10faf3bc4b4bbf7445b9" upstream="main" dest-branch="main" groups="notdefault,enterprise,kv_ee" />
@@ -50,7 +50,7 @@
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="e1c381746c2625a76227255f999ae9f14a062208" upstream="refs/tags/v0.38.1" dest-branch="refs/tags/v0.38.1" groups="kv" />
   <project name="hebrew" remote="couchbase-priv" revision="c57616b187889a5318688f49817ccaceb9c098b9" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="84e24f061c03cae96e5429bc0dbaba892d5ba7c6" upstream="master" dest-branch="unstable" groups="bsl" />
-  <project name="kv_engine" revision="5dc86dd3e3c39502b5228e1938eae706a7452151" upstream="totoro" dest-branch="totoro" groups="kv,bsl" />
+  <project name="kv_engine" revision="b0552e69b498df596448854e4d780f98f1e91442" upstream="totoro" dest-branch="totoro" groups="kv,bsl" />
   <project name="libcouchbase" revision="93bbcb6ac9301cb813ba84216235ec9afcfceb0f" upstream="refs/tags/3.3.19" dest-branch="refs/tags/3.3.19" />
   <project name="magma" remote="couchbase-priv" revision="07a2f1f52b9d022398c6b67448645f68d82d41a9" upstream="master" dest-branch="master" groups="notdefault,enterprise,kv_ee" />
   <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="c22b06f9dc5e59b9c7c14cff52bb482069df7aab" upstream="totoro" dest-branch="totoro" groups="bsl" />
@@ -59,7 +59,7 @@
   <project name="phosphor" revision="8f2133839d299c3cf8bb8d15fd8dcdd06b3bd508" upstream="totoro" dest-branch="totoro" groups="bsl,kv" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="72138efb8c63d2f00317f5c672fbbb291fb10953" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="platform" revision="73fb981c670ef095df15d6517de0e763bf72a09b" upstream="totoro" dest-branch="totoro" groups="bsl,kv" />
-  <project name="product-metadata" revision="4a487710368859cd0a339806d8d4549bf49d6525" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="b12af3019241af84e36de41667bd7c1ee55a6c0b" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="ab8c95f00104a2146cf2e0db9d74b9b2e0eb29a5" upstream="master" dest-branch="master" />
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="a930686ff45a88c001f6ee7a1edabce79e93a85e" upstream="totoro" dest-branch="totoro" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="8ac2bf70e843c722322253fbfe052355bb93e60a" upstream="totoro" dest-branch="totoro" groups="notdefault,enterprise" />
