@@ -1,0 +1,14 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="main" />
+  
+  <project name="build" path="cbbuild" revision="8ba9841f5fd3b60f22203be47bc6e81f7b9b6b2e">
+    <annotation name="RELEASE" value="2.0" />
+    <annotation name="PRODUCT" value="couchbase-powerbi-connector" />
+    <annotation name="BLD_NUM" value="100" />
+    <annotation name="VERSION" value="2.0" />
+  </project>
+  <project name="couchbase-powerbi-connector" remote="couchbase-priv" revision="197c851865165c158e1879d044650730b9c3f53a" upstream="main" dest-branch="main" />
+</manifest>
