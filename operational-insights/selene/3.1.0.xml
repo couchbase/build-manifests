@@ -9,11 +9,11 @@
   
   <project name="HdrHistogram_c" path="third_party/HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" groups="kv" />
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="f13baa77c4f619a3c92acb6fe89f11b574e59160" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="asterixdb" path="analytics/asterixdb" revision="afde33335ba5bea91d412a56355faeeba2255ee6" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="asterixdb" path="analytics/asterixdb" revision="3e8202e504e80d85542ae175e06c14150c9755f0" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="build" path="cbbuild" revision="28c54a2a9a305d2951c6f75cd6beb6dda6301e5a" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="selene" />
     <annotation name="PRODUCT" value="operational-insights" />
-    <annotation name="BLD_NUM" value="1030" />
+    <annotation name="BLD_NUM" value="1031" />
     <annotation name="VERSION" value="3.1.0" />
     <annotation name="SERVER_VERSION" value="8.0.4" />
     <annotation name="SERVER_BLD_NUM" value="8.0.4-6326" />
@@ -29,7 +29,7 @@
     <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="2.1.0" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="248b8f2fbf0c41099bfd1883b746ab1ab4385ef9" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="0796671e31eb2ec23548b1174ad6293d211dae48" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="d2ba697bbedb9bf71db34b8ce656d93c5bf12c7d" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="3f11b94a47228b9ad18ce7c98fd355e02ebce9e7" upstream="morpheus" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="06758dcae7533fd82131bc6c02b9ce335a4767d2" upstream="morpheus" dest-branch="morpheus" groups="backup" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="4b185fb7d5f0e136755756b8cc3029ec64d51639" upstream="master" dest-branch="master" groups="bsl" />
@@ -45,7 +45,7 @@
   <project name="ns_server" revision="3e2b1c6459a8295db5262cd8f2a19d052b64fde5" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="phosphor" revision="df9f5319f138bbf973f98b8180c80f3c5f95a9d1" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
   <project name="platform" revision="29e0c85facc59761f8d6742eea80d32e5b01ac06" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
-  <project name="product-metadata" revision="18cfb1800009006eb39e06efb9600e83ab4b1773" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="6b6cad8cc170ae1d0467131bf3971b1e6df1297b" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="ab8c95f00104a2146cf2e0db9d74b9b2e0eb29a5" upstream="master" dest-branch="master" />
   <project name="query-ui" revision="c173057f97a98816f61189e102293eaaea94ee60" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="sigar" revision="b1718d5c99a2bd37d97fe2c96eb0fd33a06461af" upstream="morpheus" dest-branch="morpheus" groups="kv" />
@@ -59,5 +59,5 @@
     <copyfile src="dot-clang-tidy" dest=".clang-tidy" />
     <copyfile src="third-party-CMakeLists.txt" dest="third_party/CMakeLists.txt" />
   </project>
-  <project name="voltron" remote="couchbase-priv" revision="955d5cdb96b6dc41cf87860fe24974c46af34258" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="voltron" remote="couchbase-priv" revision="0b5aa3b9f92894f847768e5bbfb143cc4b5af78d" upstream="master" dest-branch="master" groups="notdefault,packaging" />
 </manifest>
