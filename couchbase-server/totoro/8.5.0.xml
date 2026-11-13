@@ -15,7 +15,7 @@
   <project name="build" path="cbbuild" revision="09ad83a7eda35936d4f5761e39445721428dc49d" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="totoro" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="1468" />
+    <annotation name="BLD_NUM" value="1469" />
     <annotation name="VERSION" value="8.5.0" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="eab1df84db5ef6008f90672209068cb633ed2465" upstream="totoro" dest-branch="totoro" groups="notdefault,enterprise,analytics" />
@@ -27,12 +27,12 @@
   <project name="cbgt" revision="0c7e969a5c416f2129c3343447e6312df1036455" upstream="totoro" dest-branch="totoro" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="4b185fb7d5f0e136755756b8cc3029ec64d51639" upstream="master" dest-branch="master" groups="bsl" />
   <project name="couchbase-cli" revision="d98e187d7e4e9758a46d859393aeee84801ba75e" upstream="totoro" dest-branch="totoro" groups="kv" />
-  <project name="couchdb" revision="6f1b893f4e23b6c8502df2c9d85aa3d5c782ab95" upstream="master" dest-branch="unstable" />
+  <project name="couchdb" revision="6f1b893f4e23b6c8502df2c9d85aa3d5c782ab95" upstream="totoro" dest-branch="unstable" />
   <project name="couchdbx-app" revision="f797baeb32ff473cec77dae36e239dd806afc519" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="couchstore" revision="ba571546f0a51e90cea92a09d72d637de328139e" upstream="totoro" dest-branch="totoro" groups="kv" />
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="218129e2b4b06c6381c7aabb7b5c78dff7f07e3c" upstream="master" dest-branch="master" />
-  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="4aacaa5d4a23c15298b38f40a41a4c0913fa3573" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
-  <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="36b5a69316551e8711efcfcd1b971e39cab29b98" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
+  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="4aacaa5d4a23c15298b38f40a41a4c0913fa3573" upstream="totoro" dest-branch="unstable" groups="notdefault,enterprise" />
+  <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="36b5a69316551e8711efcfcd1b971e39cab29b98" upstream="totoro" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="forestdb" revision="9efe6d75d7d61e742af70fb47fe97ad1d04ba86f" upstream="cb-master" dest-branch="cb-master" groups="backup" />
   <project name="fusion" remote="couchbase-priv" revision="dd86b3a2e4a835dd20c5b1e05b04b6d43ad0420c" upstream="totoro" dest-branch="totoro" groups="notdefault,enterprise,kv_ee" />
   <project name="geocouch" revision="68f3b9d36630682d17ca5232770f1693b9b8fa18" upstream="master" dest-branch="master" />
@@ -55,11 +55,11 @@
   <project name="magma" remote="couchbase-priv" revision="5a04139ea4555b5019d41c7ae26cd0fd519be119" upstream="totoro" dest-branch="totoro" groups="notdefault,enterprise,kv_ee" />
   <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="55ffe731365bd3ee29543df5a8d8457cae1d3c16" upstream="totoro" dest-branch="totoro" groups="bsl" />
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="fe9f748c807a28680dae737a799ed796d8ad1271" upstream="totoro" dest-branch="unstable" groups="bsl" />
-  <project name="ns_server" revision="5809c541b14f121cc6adfee7ae3b99aa14e9e331" upstream="totoro" dest-branch="totoro" groups="bsl" />
+  <project name="ns_server" revision="453f33fdb8117bc0f84d972ab332bb5bb907a2e0" upstream="totoro" dest-branch="totoro" groups="bsl" />
   <project name="phosphor" revision="8f2133839d299c3cf8bb8d15fd8dcdd06b3bd508" upstream="totoro" dest-branch="totoro" groups="bsl,kv" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="5acba81c8858956b7bc44e61c0a7141ffd60ffd3" upstream="totoro" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="platform" revision="98a459cc99a7379efeb37c9b36968808fd5016b7" upstream="totoro" dest-branch="totoro" groups="bsl,kv" />
-  <project name="product-metadata" revision="4fd5e2ab1a93d4b4c348162964ccc790a2cfd8d1" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="f298e4eed5ec2f13a6a14b8c0b0998f32007da60" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="ab8c95f00104a2146cf2e0db9d74b9b2e0eb29a5" upstream="master" dest-branch="master" />
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="63104ef206645b768aebd5b6d47450310df0a220" upstream="totoro" dest-branch="totoro" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="4f2ca229396eaed29d6d9d510288c85e86237958" upstream="totoro" dest-branch="totoro" groups="notdefault,enterprise" />
@@ -67,7 +67,7 @@
   <project name="server-ui" remote="couchbase-priv" revision="6d3af07f7cc52310044a602bbf281407ccab714a" upstream="totoro" dest-branch="totoro" groups="notdefault,enterprise" />
   <project name="sigar" revision="5534f1b365477fa096aaf658800cc817b75d1135" upstream="totoro" dest-branch="totoro" groups="kv" />
   <project name="subjson" revision="3a12a0ad372a24994cd5d1b35e0132e0a42217d3" upstream="totoro" dest-branch="totoro" groups="bsl,kv" />
-  <project name="testrunner" revision="bf4321c9f162d62563dd35cb76ce841c2ea0ee23" upstream="totoro" dest-branch="totoro" />
+  <project name="testrunner" revision="b7798442afcde4afd20d3598c1e0ceca47cf87d4" upstream="totoro" dest-branch="totoro" />
   <project name="tlm" revision="cdbeba4599d8304964971502567077dc710ec85a" upstream="totoro" dest-branch="totoro" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
