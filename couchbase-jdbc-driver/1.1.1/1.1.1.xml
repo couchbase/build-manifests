@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="main" />
+  
+  <project name="build" path="cbbuild" revision="28c54a2a9a305d2951c6f75cd6beb6dda6301e5a">
+    <annotation name="RELEASE" value="1.1.1" />
+    <annotation name="PRODUCT" value="couchbase-jdbc-driver" />
+    <annotation name="BLD_NUM" value="100" />
+    <annotation name="VERSION" value="1.1.1" />
+    <annotation name="SIGN" value="false" />
+  </project>
+  <project name="couchbase-jdbc-driver" remote="couchbaselabs" revision="2ab5b7806e8e56b074e222a10ea8e26a1685a5ba" upstream="main" dest-branch="main" />
+</manifest>
