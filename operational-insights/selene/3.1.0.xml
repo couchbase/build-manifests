@@ -13,10 +13,10 @@
   <project name="build" path="cbbuild" revision="09ad83a7eda35936d4f5761e39445721428dc49d" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="selene" />
     <annotation name="PRODUCT" value="operational-insights" />
-    <annotation name="BLD_NUM" value="1117" />
+    <annotation name="BLD_NUM" value="1118" />
     <annotation name="VERSION" value="3.1.0" />
     <annotation name="SERVER_VERSION" value="8.0.5" />
-    <annotation name="SERVER_BLD_NUM" value="8.0.5-6674" />
+    <annotation name="SERVER_BLD_NUM" value="8.0.5-6680" />
     <annotation name="SERVER_RELEASE" value="morpheus" />
     <annotation name="COLUMNAR" value="true" />
     <annotation name="PRODUCT" value="operational-insights" />
@@ -41,16 +41,16 @@
   <project name="golang" remote="couchbaselabs" revision="75692dffa75b7e97468be344f161c290482bd399" upstream="main" dest-branch="main" groups="kv" />
   <project name="goutils" path="goproj/src/github.com/couchbase/goutils" revision="50a63867412d55ae376416a1baf94126fdfb0609" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="e1c381746c2625a76227255f999ae9f14a062208" upstream="refs/tags/v0.38.1" dest-branch="refs/tags/v0.38.1" groups="kv" />
-  <project name="kv_engine" revision="2d00a1354747d731c6a348588bb4b771025397bd" upstream="morpheus" dest-branch="morpheus" groups="kv,bsl" />
+  <project name="kv_engine" revision="1796b8d4f389f968159e57a1b7fc7818fb3f0971" upstream="morpheus" dest-branch="morpheus" groups="kv,bsl" />
   <project name="ns_server" revision="d6456465e3e38df9ae4b7f65379820c1c952027c" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="phosphor" revision="df9f5319f138bbf973f98b8180c80f3c5f95a9d1" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
   <project name="platform" revision="29e0c85facc59761f8d6742eea80d32e5b01ac06" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
-  <project name="product-metadata" revision="08a3582a8140ca5e53597c61355e05c6f67b1262" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="0efe06f063f01b96f9899f27c655828edff438bf" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="ab8c95f00104a2146cf2e0db9d74b9b2e0eb29a5" upstream="master" dest-branch="master" />
   <project name="query-ui" revision="9c63c6f8fc0d53258fa16139818e558d39fcc4f0" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="sigar" revision="b1718d5c99a2bd37d97fe2c96eb0fd33a06461af" upstream="morpheus" dest-branch="morpheus" groups="kv" />
   <project name="subjson" revision="1e65a5472e3b4f496aa9338dfde99e269a377661" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
-  <project name="tlm" revision="8956777fffc975cefc3da242c9531c3792a3d5c5" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv">
+  <project name="tlm" revision="934e1cc2c10c75edec58cdbb7a688ddbdb7efb06" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
     <copyfile src="Makefile" dest="Makefile" />
